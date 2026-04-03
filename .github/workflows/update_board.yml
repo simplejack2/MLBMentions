@@ -4,10 +4,10 @@ on:
   # Run every 20 minutes during MLB game hours (16:00–03:00 UTC = noon–11pm ET)
   # April through October (MLB regular season + playoffs)
   schedule:
-    - cron: '0,20,40 16-23 * 4-10 *'   # every 20 min, 16:00-23:59 UTC
-    - cron: '0,20,40 0-3  * 4-10 *'    # every 20 min, 00:00-03:59 UTC
+    - cron: '0,20,40 16-23 * 4-10 *'
+    - cron: '0,20,40 0-3  * 4-10 *'
 
-  # Allow manual trigger from the Actions tab
+  # Manual trigger from the Actions tab
   workflow_dispatch:
 
 permissions:
@@ -33,12 +33,13 @@ jobs:
       - name: Run pipeline → generate docs/index.html
         run: python -m app.static_gen
 
-      - name: Commit and push updated board
-        run: |
-          git config user.name  "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add docs/index.html docs/board.json
-          # Only commit if there are actual changes
-          git diff --staged --quiet && echo "No changes." || \
-            git commit -m "chore: update board $(date -u '+%Y-%m-%d %H:%M UTC') [skip ci]"
-          git push
+      # Push the docs/ output to the gh-pages branch (root).
+      # GitHub Pages must be set to: branch=gh-pages, folder=/ (root).
+      - name: Deploy to gh-pages
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./docs
+          publish_branch: gh-pages
+          commit_message: "board update ${{ github.run_number }} [skip ci]"
+          keep_files: false
