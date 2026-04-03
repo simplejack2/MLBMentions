@@ -21,11 +21,22 @@
     * { box-sizing: border-box; }
     body { background: var(--bg); color: var(--text);
            font-family: 'Segoe UI', system-ui, sans-serif; margin: 0; }
+
+    /* ---- nav ---- */
     .topbar { background: var(--surface); border-bottom: 1px solid var(--border);
               padding: .75rem 1.5rem; display: flex; align-items: center;
               justify-content: space-between; gap: 1rem; flex-wrap: wrap; }
-    .topbar-brand { font-weight: 700; font-size: 1.05rem; }
-    .topbar-right { font-size: .78rem; color: var(--muted); }
+    .topbar-brand { font-weight: 700; font-size: 1.05rem; display: flex;
+                    align-items: center; gap: .5rem; }
+    .topbar-right { display: flex; align-items: center; gap: .75rem;
+                    font-size: .78rem; color: var(--muted); }
+    .btn-refresh { background: transparent; border: 1px solid var(--border);
+                   color: var(--text); border-radius: 6px; padding: .3rem .85rem;
+                   font-size: .78rem; cursor: pointer; text-decoration: none;
+                   transition: background .15s; }
+    .btn-refresh:hover { background: var(--border); color: var(--text); }
+
+    /* ---- stat cards ---- */
     .cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(130px,1fr));
              gap: .75rem; padding: 1.25rem 1.5rem 0; }
     .card { background: var(--surface); border: 1px solid var(--border);
@@ -33,29 +44,44 @@
     .card-label { font-size: .7rem; color: var(--muted); text-transform: uppercase;
                   letter-spacing: .7px; margin-bottom: .3rem; }
     .card-value { font-size: 1.85rem; font-weight: 700; line-height: 1; }
+
+    /* ---- game slate ---- */
     .slate { padding: .9rem 1.5rem; display: flex; flex-wrap: wrap; gap: .5rem; }
     .game-chip { background: var(--surface); border: 1px solid var(--border);
                  border-radius: 6px; padding: .3rem .7rem; font-size: .75rem; }
     .game-chip span { color: var(--muted); }
+
+    /* ---- table ---- */
     .board-wrap { padding: 0 1.5rem 2rem; overflow-x: auto; }
     table { width: 100%; border-collapse: collapse; font-size: .85rem; }
     thead th { background: var(--surface); color: var(--muted); font-size: .68rem;
                text-transform: uppercase; letter-spacing: .6px; padding: .65rem .75rem;
                border-bottom: 1px solid var(--border); white-space: nowrap;
                position: sticky; top: 0; z-index: 2; }
-    tbody td { padding: .6rem .75rem; border-bottom: 1px solid #1c2128; vertical-align: middle; }
+    tbody td { padding: .6rem .75rem; border-bottom: 1px solid #1c2128;
+               vertical-align: middle; }
     tbody tr:hover td { background: #1c2128 !important; }
+
+    /* edge row tints */
     .r-hot  td { background: rgba(35,134,54,.12); }
     .r-warm td { background: rgba(187,128,9,.09); }
+
+    /* edge value colours */
     .ev-hot  { color: var(--green); font-weight: 700; }
     .ev-warm { color: var(--amber); font-weight: 700; }
     .ev-cool { color: var(--muted); font-weight: 600; }
+
+    /* prob bars */
     .bar-wrap { display: inline-flex; align-items: center; gap: 5px; }
-    .bar-bg   { width: 60px; height: 5px; background: var(--border); border-radius: 3px; overflow: hidden; flex-shrink: 0; }
+    .bar-bg   { width: 60px; height: 5px; background: var(--border);
+                border-radius: 3px; overflow: hidden; flex-shrink: 0; }
     .bar-fill { height: 100%; border-radius: 3px; }
     .bar-mkt  { background: var(--muted); }
     .bar-mdl  { background: var(--blue); }
-    .fam { display: inline-block; font-size: .68rem; padding: .25em .6em; border-radius: 5px; font-weight: 600; white-space: nowrap; }
+
+    /* family badges */
+    .fam { display: inline-block; font-size: .68rem; padding: .25em .6em;
+           border-radius: 5px; font-weight: 600; white-space: nowrap; }
     .fam-bunt               { background:#1f4a2e; color:#3fb950; }
     .fam-bases_loaded       { background:#1b3a5c; color:#58a6ff; }
     .fam-grand_slam         { background:#4a1f1f; color:#f85149; }
@@ -64,35 +90,196 @@
     .fam-venue              { background:#0e3a3a; color:#39d353; }
     .fam-narrative          { background:#3a1a3a; color:#db61a2; }
     .fam-subjective_highlight { background:#1a2a3a; color:#79c0ff; }
+
     .odds-pos { color: var(--green); }
     .odds-neg { color: var(--red); }
     .matchup  { font-size: .75rem; color: var(--muted); white-space: nowrap; }
     .ticker   { font-family: monospace; font-size: .73rem; color: var(--blue); }
     .title-cell { max-width: 320px; line-height: 1.4; }
+
+    /* empty / error states */
     .empty-box { background: var(--surface); border: 1px solid var(--border);
                  border-radius: 10px; padding: 3rem; text-align: center;
                  color: var(--muted); margin: 1.5rem; }
+
+    /* legend */
     .legend { display: flex; flex-wrap: wrap; gap: 1.25rem; padding: .75rem 1.5rem;
               font-size: .73rem; color: var(--muted); border-top: 1px solid var(--border); }
-    .legend-dot { display: inline-block; width: 10px; height: 10px; border-radius: 2px; margin-right: 3px; }
+    .legend-dot { display: inline-block; width: 10px; height: 10px;
+                  border-radius: 2px; margin-right: 3px; }
   </style>
 </head>
 <body>
 
+<!-- ================================================================ TOP BAR -->
 <div class="topbar">
-  <div class="topbar-brand">&#9883; MLB Mentions Model</div>
-  <div class="topbar-right">Loading fresh data &mdash; auto-refreshes every 15 min</div>
-</div>
-
-<div class="empty-box" style="margin:2rem;">
-  <div style="font-size:2.5rem">&#9883;</div>
-  <div style="margin-top:.75rem;font-size:1.1rem;color:var(--text)">MLB Mentions Model</div>
-  <div style="margin-top:.5rem">Waiting for the first scheduled pipeline run.</div>
-  <div style="margin-top:.35rem;font-size:.83rem">
-    The GitHub Actions workflow will populate this page automatically.<br>
-    To trigger it now: <strong>Actions &rarr; Update MLB Board &rarr; Run workflow</strong>
+  <div class="topbar-brand">⚾ MLB Mentions Model</div>
+  <div class="topbar-right">
+    
+      <span>Updated Apr 3 · 19:21 UTC</span>
+    
+    
+      <span>· auto-refreshes every 15 min</span>
+    
   </div>
 </div>
+
+<!-- ================================================================ ERROR -->
+
+
+<!-- ================================================================ STAT CARDS -->
+<div class="cards">
+  <div class="card">
+    <div class="card-label">Markets Scanned</div>
+    <div class="card-value">1000</div>
+  </div>
+  <div class="card">
+    <div class="card-label">In Price Band</div>
+    <div class="card-value">0</div>
+  </div>
+  <div class="card">
+    <div class="card-label">Games Today</div>
+    <div class="card-value">15</div>
+  </div>
+  <div class="card">
+    <div class="card-label">Ranked Picks</div>
+    <div class="card-value"
+         style="color:var(--muted)">
+      0
+    </div>
+  </div>
+</div>
+
+<!-- ================================================================ SLATE -->
+
+<div class="slate">
+  
+  <div class="game-chip">
+    <strong>LAD</strong>
+    &nbsp;@&nbsp;
+    <strong>WSH</strong>
+    <span>&nbsp;· Nationals Park</span>
+  </div>
+  
+  <div class="game-chip">
+    <strong>STL</strong>
+    &nbsp;@&nbsp;
+    <strong>DET</strong>
+    <span>&nbsp;· Comerica Park</span>
+  </div>
+  
+  <div class="game-chip">
+    <strong>MIA</strong>
+    &nbsp;@&nbsp;
+    <strong>NYY</strong>
+    <span>&nbsp;· Yankee Stadium</span>
+  </div>
+  
+  <div class="game-chip">
+    <strong>SD</strong>
+    &nbsp;@&nbsp;
+    <strong>BOS</strong>
+    <span>&nbsp;· Fenway Park</span>
+  </div>
+  
+  <div class="game-chip">
+    <strong>TOR</strong>
+    &nbsp;@&nbsp;
+    <strong>CWS</strong>
+    <span>&nbsp;· Rate Field</span>
+  </div>
+  
+  <div class="game-chip">
+    <strong>CIN</strong>
+    &nbsp;@&nbsp;
+    <strong>TEX</strong>
+    <span>&nbsp;· Globe Life Field</span>
+  </div>
+  
+  <div class="game-chip">
+    <strong>CHC</strong>
+    &nbsp;@&nbsp;
+    <strong>CLE</strong>
+    <span>&nbsp;· Progressive Field</span>
+  </div>
+  
+  <div class="game-chip">
+    <strong>TB</strong>
+    &nbsp;@&nbsp;
+    <strong>MIN</strong>
+    <span>&nbsp;· Target Field</span>
+  </div>
+  
+  <div class="game-chip">
+    <strong>PHI</strong>
+    &nbsp;@&nbsp;
+    <strong>COL</strong>
+    <span>&nbsp;· Coors Field</span>
+  </div>
+  
+  <div class="game-chip">
+    <strong>BAL</strong>
+    &nbsp;@&nbsp;
+    <strong>PIT</strong>
+    <span>&nbsp;· PNC Park</span>
+  </div>
+  
+  <div class="game-chip">
+    <strong>MIL</strong>
+    &nbsp;@&nbsp;
+    <strong>KC</strong>
+    <span>&nbsp;· Kauffman Stadium</span>
+  </div>
+  
+  <div class="game-chip">
+    <strong>SEA</strong>
+    &nbsp;@&nbsp;
+    <strong>LAA</strong>
+    <span>&nbsp;· Angel Stadium</span>
+  </div>
+  
+  <div class="game-chip">
+    <strong>HOU</strong>
+    &nbsp;@&nbsp;
+    <strong>ATH</strong>
+    <span>&nbsp;· Sutter Health Park</span>
+  </div>
+  
+  <div class="game-chip">
+    <strong>ATL</strong>
+    &nbsp;@&nbsp;
+    <strong>AZ</strong>
+    <span>&nbsp;· Chase Field</span>
+  </div>
+  
+  <div class="game-chip">
+    <strong>NYM</strong>
+    &nbsp;@&nbsp;
+    <strong>SF</strong>
+    <span>&nbsp;· Oracle Park</span>
+  </div>
+  
+</div>
+
+
+<!-- ================================================================ BOARD -->
+<div class="board-wrap" style="margin-top:.75rem;">
+
+  <div class="empty-box">
+    
+      <div style="font-size:2rem">🔍</div>
+      <div style="margin-top:.5rem">No markets with positive edge right now.</div>
+      <div style="margin-top:.35rem; font-size:.83rem;">
+        0 in price band · 15 games on slate.
+      </div>
+    
+    
+  </div>
+
+</div>
+
+<!-- ================================================================ SCRIPTS -->
+
 
 </body>
 </html>
