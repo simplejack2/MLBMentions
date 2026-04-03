@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>MLB Mentions Model</title>
-  {% if static_mode %}<meta http-equiv="refresh" content="900">{% endif %}
+  <meta http-equiv="refresh" content="900">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <style>
     :root {
@@ -115,211 +115,64 @@
 <div class="topbar">
   <div class="topbar-brand">⚾ MLB Mentions Model</div>
   <div class="topbar-right">
-    {% if result.run_at %}
-      <span>Updated {{ result.run_at.strftime('%b %-d · %H:%M UTC') }}</span>
-    {% endif %}
-    {% if static_mode %}
+    
+      <span>Updated Apr 3 · 15:21 UTC</span>
+    
+    
       <span>· auto-refreshes every 15 min</span>
-    {% else %}
-      <span id="cd-wrap">next refresh in <strong id="countdown">—</strong></span>
-      <a href="/refresh" class="btn-refresh">↻ Refresh now</a>
-    {% endif %}
+    
   </div>
 </div>
 
 <!-- ================================================================ ERROR -->
-{% if result.error %}
+
 <div style="background:#4a1f1f;border-bottom:1px solid #f85149;padding:.6rem 1.5rem;
             font-size:.82rem;color:#f85149;">
-  ⚠ Pipeline error — {{ result.error }}
+  ⚠ Pipeline error — HTTPSConnectionPool(host=&#39;api.elections.kalshi.com&#39;, port=443): Max retries exceeded with url: /trade-api/v2/markets?limit=200&amp;status=open (Caused by ProxyError(&#39;Unable to connect to proxy&#39;, OSError(&#39;Tunnel connection failed: 403 Forbidden&#39;)))
 </div>
-{% endif %}
+
 
 <!-- ================================================================ STAT CARDS -->
 <div class="cards">
   <div class="card">
     <div class="card-label">Markets Scanned</div>
-    <div class="card-value">{{ result.total_markets_fetched }}</div>
+    <div class="card-value">0</div>
   </div>
   <div class="card">
     <div class="card-label">In Price Band</div>
-    <div class="card-value">{{ result.candidate_markets }}</div>
+    <div class="card-value">0</div>
   </div>
   <div class="card">
     <div class="card-label">Games Today</div>
-    <div class="card-value">{{ result.games | length }}</div>
+    <div class="card-value">0</div>
   </div>
   <div class="card">
     <div class="card-label">Ranked Picks</div>
     <div class="card-value"
-         style="color:{% if result.rows %}var(--green){% else %}var(--muted){% endif %}">
-      {{ result.rows | length }}
+         style="color:var(--muted)">
+      0
     </div>
   </div>
 </div>
 
 <!-- ================================================================ SLATE -->
-{% if result.games %}
-<div class="slate">
-  {% for g in result.games %}
-  <div class="game-chip">
-    <strong>{{ g.away_team.abbreviation or g.away_team.name }}</strong>
-    &nbsp;@&nbsp;
-    <strong>{{ g.home_team.abbreviation or g.home_team.name }}</strong>
-    <span>&nbsp;· {{ g.venue.name }}</span>
-  </div>
-  {% endfor %}
-</div>
-{% endif %}
+
 
 <!-- ================================================================ BOARD -->
 <div class="board-wrap" style="margin-top:.75rem;">
-{% if result.rows %}
-  <table>
-    <thead>
-      <tr>
-        <th>Edge ▾</th>
-        <th>Family</th>
-        <th>Market</th>
-        <th>Model</th>
-        <th>Odds</th>
-        <th>Matchup</th>
-        <th>Market Title</th>
-        <th>Spread</th>
-        <th>Vol</th>
-      </tr>
-    </thead>
-    <tbody>
-      {% for row in result.rows %}
-      {% set ep = (row.edge * 100) | round(1) %}
-      {% set rc = 'r-hot' if row.edge >= 0.10 else ('r-warm' if row.edge >= 0.05 else '') %}
-      {% set ec = 'ev-hot' if row.edge >= 0.10 else ('ev-warm' if row.edge >= 0.05 else 'ev-cool') %}
-      <tr class="{{ rc }}">
 
-        <!-- Edge -->
-        <td><span class="{{ ec }}">+{{ ep }}%</span></td>
-
-        <!-- Family -->
-        <td>
-          <span class="fam fam-{{ row.family }}">
-            {{ row.family | replace('_',' ') }}
-          </span>
-        </td>
-
-        <!-- Market prob -->
-        <td>
-          <div class="bar-wrap">
-            <div class="bar-bg">
-              <div class="bar-fill bar-mkt"
-                   style="width:{{ (row.market_probability * 100) | round(0) }}%"></div>
-            </div>
-            {{ (row.market_probability * 100) | round(1) }}%
-          </div>
-        </td>
-
-        <!-- Model prob -->
-        <td>
-          <div class="bar-wrap">
-            <div class="bar-bg">
-              <div class="bar-fill bar-mdl"
-                   style="width:{{ (row.model_probability * 100) | round(0) }}%"></div>
-            </div>
-            <span style="color:var(--blue)">
-              {{ (row.model_probability * 100) | round(1) }}%
-            </span>
-          </div>
-        </td>
-
-        <!-- American odds -->
-        <td>
-          {% if row.american_odds > 0 %}
-            <span class="odds-pos">+{{ row.american_odds }}</span>
-          {% else %}
-            <span class="odds-neg">{{ row.american_odds }}</span>
-          {% endif %}
-        </td>
-
-        <!-- Matchup -->
-        <td><span class="matchup">{{ row.matchup }}</span></td>
-
-        <!-- Title + ticker -->
-        <td class="title-cell">
-          <div>{{ row.title }}</div>
-          <div class="ticker">{{ row.ticker }}</div>
-        </td>
-
-        <!-- Spread -->
-        <td style="color:var(--muted); white-space:nowrap;">
-          {% if row.spread is not none %}{{ (row.spread * 100) | round(1) }}¢{% endif %}
-        </td>
-
-        <!-- Volume -->
-        <td style="color:var(--muted); font-size:.78rem; white-space:nowrap;">
-          {% if row.volume %}
-            {% set v = row.volume %}
-            {% if v >= 1000000 %}{{ (v / 1000000) | round(1) }}M
-            {% elif v >= 1000 %}{{ (v / 1000) | round(0) | int }}K
-            {% else %}{{ v | int }}{% endif %}
-          {% endif %}
-        </td>
-
-      </tr>
-      {% endfor %}
-    </tbody>
-  </table>
-
-  <!-- Legend -->
-  <div class="legend">
-    <span><span class="legend-dot" style="background:rgba(35,134,54,.5)"></span>Edge ≥ 10%</span>
-    <span><span class="legend-dot" style="background:rgba(187,128,9,.5)"></span>Edge 5–10%</span>
-    <span><span class="legend-dot" style="background:var(--border)"></span>Edge 2–5%</span>
-    <span style="margin-left:auto">
-      <span class="legend-dot" style="background:var(--muted)"></span>Market prob &nbsp;
-      <span class="legend-dot" style="background:var(--blue)"></span>Model prob
-    </span>
-  </div>
-
-{% else %}
   <div class="empty-box">
-    {% if result.error %}
+    
       <div style="font-size:2rem">⚠️</div>
       <div style="margin-top:.5rem">Pipeline failed — check logs.</div>
-    {% elif result.candidate_markets == 0 and result.total_markets_fetched == 0 %}
-      <div style="font-size:2rem">🔄</div>
-      <div style="margin-top:.5rem">No data yet — pipeline hasn't run.</div>
-    {% else %}
-      <div style="font-size:2rem">🔍</div>
-      <div style="margin-top:.5rem">No markets with positive edge right now.</div>
-      <div style="margin-top:.35rem; font-size:.83rem;">
-        {{ result.candidate_markets }} in price band · {{ result.games | length }} games on slate.
-      </div>
-    {% endif %}
-    {% if not static_mode %}
-      <a href="/refresh" class="btn-refresh" style="display:inline-block;margin-top:1rem">↻ Force Refresh</a>
-    {% endif %}
+    
+    
   </div>
-{% endif %}
+
 </div>
 
 <!-- ================================================================ SCRIPTS -->
-{% if not static_mode %}
-<script>
-(function () {
-  const TTL = 300;
-  let rem = TTL - {{ result.age_seconds | round(0) | int }};
-  const el = document.getElementById('countdown');
-  function fmt(s) {
-    const m = Math.floor(s / 60), sec = s % 60;
-    return m > 0 ? m + 'm ' + String(sec).padStart(2,'0') + 's' : sec + 's';
-  }
-  function tick() {
-    if (rem <= 0) { window.location.reload(); return; }
-    if (el) el.textContent = fmt(rem--);
-  }
-  tick(); setInterval(tick, 1000);
-})();
-</script>
-{% endif %}
+
 
 </body>
 </html>
