@@ -22,26 +22,34 @@ jobs:
         uses: actions/checkout@v4
         with:
           ref: claude/mlb-mentions-scaffold-vCHET
+          # Persist credentials so git push works
+          persist-credentials: true
 
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
           python-version: '3.11'
-          cache: 'pip'
 
       - name: Install dependencies
-        run: pip install -e .
+        run: |
+          pip install --upgrade pip setuptools wheel
+          pip install -e .
+
+      - name: Verify imports
+        run: python -c "from app.static_gen import main; print('imports OK')"
 
       - name: Run pipeline
         run: python -m app.static_gen
 
-      - name: Commit index.html to branch root
+      - name: Commit updated board to branch root
         run: |
           git config user.name  "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           cp docs/index.html index.html
           cp docs/board.json board.json
-          git add index.html board.json
-          git diff --staged --quiet && echo "No changes." || \
+          # Also commit debug titles if present
+          [ -f docs/debug_titles.json ] && cp docs/debug_titles.json debug_titles.json || true
+          git add index.html board.json debug_titles.json 2>/dev/null || git add index.html board.json
+          git diff --staged --quiet && echo "No changes to commit." || \
             git commit -m "board $(date -u '+%Y-%m-%d %H:%M UTC') [skip ci]"
-          git push
+          git push origin HEAD:claude/mlb-mentions-scaffold-vCHET
