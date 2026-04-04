@@ -18,7 +18,6 @@ from app.data_sources.mlb_client import MLBClient, MLBAPIError
 from app.features.game_context import GameContext, build_game_context
 from app.parsers.game_matcher import match_market_to_game
 from app.parsers.market_family_classifier import classify_market_family
-from app.ranking.edge import is_target_probability_band
 from app.ranking.ranker import RankedRow, build_ranked_board, write_ranked_csv
 from app.schemas.game import Game
 from app.schemas.market import Market
@@ -135,15 +134,15 @@ def _run_pipeline() -> PipelineResult:
 
 
 def _filter_markets(markets: list[Market]) -> list[tuple[Market, str]]:
+    """Keep any MLB-like market with a valid price and a recognised family.
+
+    The price-band filter has been intentionally removed here.  Many Kalshi
+    MLB markets (grand slam ~12%, bases loaded ~72%) sit outside the old
+    33-60% band.  The edge filter in the ranker handles value selection.
+    """
     result: list[tuple[Market, str]] = []
     for market in markets:
         if market.implied_probability is None:
-            continue
-        if not is_target_probability_band(
-            market.implied_probability,
-            min_probability=SETTINGS.target_min_probability,
-            max_probability=SETTINGS.target_max_probability,
-        ):
             continue
         classification = classify_market_family(market.title, market.rules_primary)
         if not classification.family:

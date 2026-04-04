@@ -17,6 +17,7 @@ from pathlib import Path
 
 from jinja2 import Environment, FileSystemLoader
 
+from app.data_sources.kalshi_client import KalshiClient
 from app.web.pipeline import _run_pipeline
 
 DOCS_DIR = Path(__file__).parent.parent / "docs"
@@ -81,6 +82,21 @@ def main() -> None:
     json_path = DOCS_DIR / "board.json"
     json_path.write_text(json.dumps(board_data, indent=2), encoding="utf-8")
     print(f"  Wrote {json_path}")
+
+    # ------------------------------------------------------------------ #
+    # Debug: dump a sample of raw Kalshi titles so we can tune the        #
+    # classifier against what Kalshi actually publishes.                  #
+    # ------------------------------------------------------------------ #
+    try:
+        from app.config import SETTINGS
+        kalshi = KalshiClient(base_url=SETTINGS.kalshi_base_url, timeout=20)
+        raw_markets = kalshi.get_open_markets(limit=200, max_pages=1)
+        sample = [m.get("title") or m.get("subtitle") or "" for m in raw_markets[:120]]
+        debug_path = DOCS_DIR / "debug_titles.json"
+        debug_path.write_text(json.dumps(sample, indent=2), encoding="utf-8")
+        print(f"  Wrote {debug_path} ({len(sample)} titles)")
+    except Exception as exc:
+        print(f"  Debug dump skipped: {exc}")
 
     print("Done.")
 

@@ -158,6 +158,14 @@
   </div>
 </div>
 
+<!-- ================================================================ DEBUG BAR -->
+<div style="padding:.4rem 1.5rem;font-size:.72rem;color:var(--muted);border-bottom:1px solid var(--border);background:var(--surface);">
+  {{ result.total_markets_fetched }} Kalshi markets scanned
+  &nbsp;·&nbsp; {{ result.candidate_markets }} matched MLB families
+  &nbsp;·&nbsp; {{ result.rows | length }} picks with edge ≥ 3 pp
+  {% if result.error %}&nbsp;·&nbsp; <span style="color:var(--red)">⚠ {{ result.error[:80] }}</span>{% endif %}
+</div>
+
 <!-- ================================================================ SLATE -->
 {% if result.games %}
 <div class="slate">
@@ -178,6 +186,7 @@
   <table>
     <thead>
       <tr>
+        <th>Bet</th>
         <th>Edge ▾</th>
         <th>Family</th>
         <th>Market</th>
@@ -191,13 +200,23 @@
     </thead>
     <tbody>
       {% for row in result.rows %}
-      {% set ep = (row.edge * 100) | round(1) %}
-      {% set rc = 'r-hot' if row.edge >= 0.10 else ('r-warm' if row.edge >= 0.05 else '') %}
-      {% set ec = 'ev-hot' if row.edge >= 0.10 else ('ev-warm' if row.edge >= 0.05 else 'ev-cool') %}
+      {% set ep = (row.edge * 100) | abs | round(1) %}
+      {% set abs_edge = row.edge | abs %}
+      {% set rc = 'r-hot' if abs_edge >= 0.10 else ('r-warm' if abs_edge >= 0.05 else '') %}
+      {% set ec = 'ev-hot' if abs_edge >= 0.10 else ('ev-warm' if abs_edge >= 0.05 else 'ev-cool') %}
       <tr class="{{ rc }}">
 
+        <!-- Bet direction -->
+        <td>
+          {% if row.bet == 'YES' %}
+            <span style="color:var(--green);font-weight:700;font-size:.8rem">YES</span>
+          {% else %}
+            <span style="color:var(--red);font-weight:700;font-size:.8rem">NO</span>
+          {% endif %}
+        </td>
+
         <!-- Edge -->
-        <td><span class="{{ ec }}">+{{ ep }}%</span></td>
+        <td><span class="{{ ec }}">{{ '+' if row.edge > 0 else '-' }}{{ ep }}%</span></td>
 
         <!-- Family -->
         <td>

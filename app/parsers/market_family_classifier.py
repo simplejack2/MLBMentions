@@ -35,7 +35,8 @@ def classify_market_family(title: str, rules_text: str | None = None) -> Classif
     if _looks_like_venue_market(haystack):
         return ClassificationResult(family="venue", is_mlb_like=True, reason="Matched venue keywords")
 
-    return ClassificationResult(family=None, is_mlb_like=True, reason="MLB-like market but unsupported family")
+    # Any MLB-like market gets the generic fallback so it reaches the model
+    return ClassificationResult(family="generic_mlb", is_mlb_like=True, reason="MLB-like market, generic model")
 
 
 def annotate_market_family(market: Market) -> Market:
