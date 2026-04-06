@@ -53,7 +53,9 @@ MLB_HINTS = (
     "extra innings",
     "hit by pitch",
     "shutout",
-    # Unambiguously-baseball team names only
+    # Team names that are unambiguous enough to serve as MLB hints.
+    # Excluded: "rangers" (NHL NY Rangers), "giants" (NFL NY Giants),
+    # "cardinals" (NFL AZ Cardinals).
     "yankees",
     "red sox",
     "dodgers",
@@ -77,6 +79,9 @@ MLB_HINTS = (
     "royals",
     "tigers",
     "twins",
+    "pirates",
+    "athletics",
+    "angels",
 )
 
 VENUE_KEYWORDS = (

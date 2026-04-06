@@ -90,11 +90,20 @@ def main() -> None:
     try:
         from app.config import SETTINGS
         kalshi = KalshiClient(base_url=SETTINGS.kalshi_base_url, timeout=20)
-        raw_markets = kalshi.get_open_markets(limit=200, max_pages=1)
-        sample = [m.get("title") or m.get("subtitle") or "" for m in raw_markets[:120]]
+        raw_markets = kalshi.get_open_markets(limit=200, max_pages=5)
+        # Dump title + key structural fields so we can tune the classifier.
+        sample = [
+            {
+                "title": m.get("title") or m.get("subtitle") or "",
+                "series_ticker": m.get("series_ticker") or "",
+                "event_ticker": m.get("event_ticker") or "",
+                "ticker": m.get("ticker") or "",
+            }
+            for m in raw_markets
+        ]
         debug_path = DOCS_DIR / "debug_titles.json"
         debug_path.write_text(json.dumps(sample, indent=2), encoding="utf-8")
-        print(f"  Wrote {debug_path} ({len(sample)} titles)")
+        print(f"  Wrote {debug_path} ({len(sample)} entries)")
     except Exception as exc:
         print(f"  Debug dump skipped: {exc}")
 

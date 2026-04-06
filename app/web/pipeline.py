@@ -9,7 +9,6 @@ from __future__ import annotations
 
 import datetime
 import logging
-import time
 from dataclasses import dataclass, field
 
 from app.config import SETTINGS
@@ -136,19 +135,43 @@ def _run_pipeline() -> PipelineResult:
 def _filter_markets(markets: list[Market]) -> list[tuple[Market, str]]:
     """Keep any MLB-like market with a valid price and a recognised family.
 
-    The price-band filter has been intentionally removed here.  Many Kalshi
-    MLB markets (grand slam ~12%, bases loaded ~72%) sit outside the old
-    33-60% band.  The edge filter in the ranker handles value selection.
+    Two-pass detection:
+    1. Structural: Kalshi sets series_ticker / event_ticker to an MLB-specific
+       value (e.g. "MLB", "KXMLB-...") even when the market title doesn't
+       contain explicit baseball keywords.
+    2. Keyword: title/rules contain baseball-specific terminology.
+
+    Edge filter (≥3 pp) in the ranker handles value selection; we don't apply
+    a probability-band filter here.
     """
     result: list[tuple[Market, str]] = []
     for market in markets:
         if market.implied_probability is None:
             continue
-        classification = classify_market_family(market.title, market.rules_primary)
-        if not classification.family:
+
+        # Structural detection: treat any market whose Kalshi series/event
+        # ticker explicitly contains "mlb" as baseball-related, then classify
+        # by title keywords (fallback to generic_mlb).
+        if _ticker_is_mlb(market):
+            classification = classify_market_family(market.title, market.rules_primary)
+            family = classification.family or "generic_mlb"
+            result.append((market, family))
             continue
-        result.append((market, classification.family))
+
+        # Keyword detection (title + rules text).
+        classification = classify_market_family(market.title, market.rules_primary)
+        if classification.family:
+            result.append((market, classification.family))
+
     return result
+
+
+def _ticker_is_mlb(market: Market) -> bool:
+    """Return True if Kalshi's structural fields mark this market as MLB."""
+    for field_value in (market.series_ticker, market.event_ticker, market.ticker):
+        if field_value and "mlb" in field_value.lower():
+            return True
+    return False
 
 
 def _enrich_all(
