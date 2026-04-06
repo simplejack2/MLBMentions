@@ -1,13 +1,12 @@
 """Assemble per-game feature context used by all family models.
 
 GameContext is the single object passed into every model. It aggregates:
-- Park factors for the venue
-- Probable pitcher stats (both starters)
-- Team-level hitting stats (both teams)
-- Optional lineup-level aggregates
+- Park factors for the venue (home team)
+- Probable pitcher stats for both starters
+- Team-level hitting stats for both teams
 
-All numeric features are normalised to a [-1, +1] or [0, 1] range where
-practical so that model weight magnitudes are directly comparable.
+All numeric features are normalised as deltas from league average so that
+model weight magnitudes are directly comparable across families.
 """
 
 from __future__ import annotations
@@ -19,9 +18,7 @@ from app.features.park_factors import get_hr_factor, get_run_factor, get_triple_
 from app.schemas.game import Game, ProbablePitcher
 from app.schemas.player import HittingStats, PitchingStats
 
-# ------------------------------------------------------------------ #
-# League-average reference values (2022-2024 combined)               #
-# ------------------------------------------------------------------ #
+# League-average reference values (2022-2024 combined)
 _LG_ERA = 4.20
 _LG_WHIP = 1.28
 _LG_K9 = 8.80
@@ -30,22 +27,22 @@ _LG_HR9 = 1.20
 _LG_OPS = 0.715
 _LG_SLG = 0.405
 _LG_ISO = 0.155
-_LG_SB_RATE = 0.055     # SB / PA
+_LG_SB_RATE = 0.055    # SB / PA
 _LG_TRIPLE_RATE = 0.004  # 3B / PA
-_LG_HR_RATE = 0.032      # HR / PA
+_LG_HR_RATE = 0.032     # HR / PA
 
 
 @dataclass
 class PitcherContext:
     """Normalised pitching features for one starter."""
 
-    era_delta: float = 0.0       # (lg_avg - ERA) / lg_avg  (positive = better pitcher)
-    whip_delta: float = 0.0      # (lg_avg - WHIP) / lg_avg
-    k9_delta: float = 0.0        # (K/9 - lg_avg) / lg_avg
-    bb9_delta: float = 0.0       # (BB/9 - lg_avg) / lg_avg (positive = more walks)
-    hr9_delta: float = 0.0       # (HR/9 - lg_avg) / lg_avg (positive = more HRs allowed)
-    gb_rate: float = 0.45        # ground-ball rate (raw; lg avg ~0.44)
-    innings_pitched: float = 0.0  # raw, for reliability weighting
+    era_delta: float = 0.0      # (lg_avg - ERA) / lg_avg  (positive = better pitcher)
+    whip_delta: float = 0.0     # (lg_avg - WHIP) / lg_avg
+    k9_delta: float = 0.0       # (K/9 - lg_avg) / lg_avg
+    bb9_delta: float = 0.0      # (BB/9 - lg_avg) / lg_avg  (positive = more walks allowed)
+    hr9_delta: float = 0.0      # (HR/9 - lg_avg) / lg_avg  (positive = more HRs allowed)
+    gb_rate: float = 0.44       # ground-ball rate (raw; lg avg ~0.44)
+    innings_pitched: float = 0.0
     is_reliable: bool = False
 
 
@@ -53,10 +50,10 @@ class PitcherContext:
 class OffenseContext:
     """Normalised team hitting features."""
 
-    ops_delta: float = 0.0       # (OPS - lg_avg) / lg_avg
+    ops_delta: float = 0.0
     slg_delta: float = 0.0
-    iso_delta: float = 0.0       # power
-    speed_score: float = 0.0     # (SB_rate - lg_avg) / lg_avg  (positive = faster)
+    iso_delta: float = 0.0          # power
+    speed_score: float = 0.0        # (SB_rate - lg_avg) / lg_avg  (positive = faster)
     triple_rate_delta: float = 0.0
     hr_rate_delta: float = 0.0
 
@@ -93,10 +90,6 @@ class GameContext:
         return self.game.away_team.abbreviation or ""
 
 
-# ------------------------------------------------------------------ #
-# Factory                                                              #
-# ------------------------------------------------------------------ #
-
 def build_game_context(
     game: Game,
     home_pitching: PitchingStats | None = None,
@@ -114,13 +107,8 @@ def build_game_context(
         run_factor=get_run_factor(home_abbr),
     )
 
-    # Enrich pitcher contexts — fall back to probable pitcher stub if no stats
-    home_pp = game.home_probable_pitcher
-    away_pp = game.away_probable_pitcher
-
-    ctx.home_pitcher = _build_pitcher_ctx(home_pp, home_pitching)
-    ctx.away_pitcher = _build_pitcher_ctx(away_pp, away_pitching)
-
+    ctx.home_pitcher = _build_pitcher_ctx(game.home_probable_pitcher, home_pitching)
+    ctx.away_pitcher = _build_pitcher_ctx(game.away_probable_pitcher, away_pitching)
     ctx.home_offense = _build_offense_ctx(home_hitting)
     ctx.away_offense = _build_offense_ctx(away_hitting)
 
@@ -134,7 +122,6 @@ def _build_pitcher_ctx(
     pp: ProbablePitcher | None,
     stats: PitchingStats | None,
 ) -> PitcherContext:
-    # Use stats if available, otherwise fall back to pitcher stub fields
     era = (stats.era if stats else None) or (pp.era if pp else None)
     whip = (stats.whip if stats else None) or (pp.whip if pp else None)
     k9 = (stats.k_per_9 if stats else None) or (pp.k_per_9 if pp else None)
@@ -162,7 +149,7 @@ def _build_offense_ctx(stats: HittingStats | None) -> OffenseContext:
         ops_delta=_delta(stats.ops, _LG_OPS, _LG_OPS),
         slg_delta=_delta(stats.slg, _LG_SLG, _LG_SLG),
         iso_delta=_delta(stats.iso, _LG_ISO, _LG_ISO),
-        speed_score=_delta(stats.hr_rate, _LG_SB_RATE, _LG_SB_RATE),
+        speed_score=_delta(stats.stolen_base_rate, _LG_SB_RATE, _LG_SB_RATE),
         triple_rate_delta=_delta(stats.triple_rate, _LG_TRIPLE_RATE, _LG_TRIPLE_RATE),
         hr_rate_delta=_delta(stats.hr_rate, _LG_HR_RATE, _LG_HR_RATE),
     )

@@ -11,7 +11,6 @@ SUPPORTED_FAMILIES = {
     "venue",
     "narrative",
     "subjective_highlight",
-    # Extended families matching real Kalshi market titles
     "home_run",
     "strikeout",
     "no_hitter",
@@ -20,15 +19,17 @@ SUPPORTED_FAMILIES = {
     "generic_mlb",
 }
 
-# Broad hints that mark a market as baseball-related.
-# Includes team names, common Kalshi title prefixes, and play terminology.
+# Terms that are unambiguously baseball — used to gate MLB detection.
+# Deliberately excludes team nicknames that overlap with other sports
+# (e.g. "rangers"→NHL, "giants"→NFL, "cardinals"→NFL, "angels", "reds").
 MLB_HINTS = (
-    # Explicit tags Kalshi uses
+    # Explicit labels Kalshi uses
     "mlb",
     "baseball",
-    # Play terminology
+    # Baseball-only play terminology
     "inning",
     "ballpark",
+    "ball park",
     "pitcher",
     "batter",
     "home run",
@@ -37,25 +38,22 @@ MLB_HINTS = (
     "bases loaded",
     "bunt",
     "bunted",
-    "triple",
+    "sac bunt",
     "strikeout",
     "strike out",
     "no-hitter",
     "no hitter",
     "perfect game",
     "stolen base",
-    "steal",
-    "challenge",
-    "mvp",
     "at bat",
     "walk off",
-    "shutout",
+    "rbi",
+    "earned run",
     "double play",
     "extra innings",
     "hit by pitch",
-    "rbi",
-    "earned run",
-    # Team names (covers "Yankees", "Red Sox", etc. in Kalshi titles)
+    "shutout",
+    # Unambiguously-baseball team names only
     "yankees",
     "red sox",
     "dodgers",
@@ -63,29 +61,22 @@ MLB_HINTS = (
     "mets",
     "braves",
     "astros",
-    "cardinals",
-    "giants",
-    "phillies",
-    "nationals",
-    "royals",
-    "tigers",
     "mariners",
     "padres",
     "brewers",
-    "reds",
     "rockies",
-    "pirates",
     "marlins",
-    "twins",
     "guardians",
     "white sox",
     "orioles",
     "rays",
-    "rangers",
     "blue jays",
-    "athletics",
-    "angels",
     "diamondbacks",
+    "phillies",
+    "nationals",
+    "royals",
+    "tigers",
+    "twins",
 )
 
 VENUE_KEYWORDS = (
@@ -96,7 +87,7 @@ VENUE_KEYWORDS = (
     "park",
 )
 
-FAMILY_KEYWORDS = {
+FAMILY_KEYWORDS: dict[str, tuple[str, ...]] = {
     "grand_slam": (
         "grand slam",
         "grand-slam",
@@ -138,7 +129,6 @@ FAMILY_KEYWORDS = {
         "diving catch",
         "robbed",
     ),
-    # Extended families
     "home_run": (
         "home run",
         "homer",

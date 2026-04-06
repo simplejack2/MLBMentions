@@ -1,4 +1,4 @@
-"""Helpers for classifying MLB mentions markets into model families."""
+"""Classify Kalshi market titles into MLB market family buckets."""
 
 from __future__ import annotations
 
@@ -6,7 +6,6 @@ import re
 from dataclasses import dataclass
 
 from app.constants import FAMILY_KEYWORDS, MLB_HINTS, SUPPORTED_FAMILIES, VENUE_KEYWORDS
-from app.schemas.market import Market
 
 
 @dataclass(slots=True, frozen=True)
@@ -19,36 +18,28 @@ class ClassificationResult:
 def classify_market_family(title: str, rules_text: str | None = None) -> ClassificationResult:
     """Classify a market title into one of the supported family buckets.
 
-    This starter intentionally uses deterministic keyword rules. They are easy to
-    audit and easy to replace later with a richer classifier.
+    Uses deterministic keyword rules — auditable and easy to tune.
+    A market must contain a BASEBALL-SPECIFIC term from MLB_HINTS to be
+    considered MLB at all; generic city/team names that overlap with other
+    sports are intentionally excluded from that gate.
     """
     haystack = _normalize(" ".join(filter(None, [title, rules_text or ""])))
-    is_mlb_like = _looks_like_mlb(haystack)
 
-    if not is_mlb_like:
-        return ClassificationResult(family=None, is_mlb_like=False, reason="No MLB/baseball hints found")
+    if not _looks_like_mlb(haystack):
+        return ClassificationResult(family=None, is_mlb_like=False, reason="No baseball-specific hints found")
 
     for family, keywords in FAMILY_KEYWORDS.items():
-        if any(keyword in haystack for keyword in keywords):
+        if any(kw in haystack for kw in keywords):
             return ClassificationResult(family=family, is_mlb_like=True, reason=f"Matched {family} keywords")
 
     if _looks_like_venue_market(haystack):
         return ClassificationResult(family="venue", is_mlb_like=True, reason="Matched venue keywords")
 
-    # Any MLB-like market gets the generic fallback so it reaches the model
     return ClassificationResult(family="generic_mlb", is_mlb_like=True, reason="MLB-like market, generic model")
 
 
-def annotate_market_family(market: Market) -> Market:
-    """Return a copy of the market with `market_family` populated."""
-    result = classify_market_family(market.title, market.rules_primary)
-    market.market_family = result.family
-    return market
-
-
-def is_supported_market(market: Market) -> bool:
-    """Whether a market is MLB-like and belongs to a supported family."""
-    result = classify_market_family(market.title, market.rules_primary)
+def is_supported_market(title: str, rules_text: str | None = None) -> bool:
+    result = classify_market_family(title, rules_text)
     return bool(result.is_mlb_like and result.family in SUPPORTED_FAMILIES)
 
 
@@ -57,7 +48,7 @@ def _looks_like_mlb(haystack: str) -> bool:
 
 
 def _looks_like_venue_market(haystack: str) -> bool:
-    return any(keyword in haystack for keyword in VENUE_KEYWORDS)
+    return any(kw in haystack for kw in VENUE_KEYWORDS)
 
 
 def _normalize(text: str) -> str:

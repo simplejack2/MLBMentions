@@ -1,16 +1,16 @@
 """Match Kalshi market titles to specific MLB games.
 
-The Kalshi market title might say any of:
-  "Will a grand slam be hit in the Yankees vs Red Sox game?"
-  "MLB: Will a bunt occur during Cubs @ Cardinals?"
-  "Will the Dodgers hit a triple tonight?"
-
 Strategy
 --------
-1. Extract all team tokens from each game (full name words + abbreviation).
+1. Build a token→abbreviation map for all 30 MLB teams.
 2. Normalise the market title (lower, strip punctuation).
-3. Score each game by how many of its team tokens appear in the title.
-4. Return the best-matching game if its score clears a threshold; None otherwise.
+3. Score each game: +2 per unambiguous team token found in the title.
+4. Return the best-matching game if its score reaches the threshold.
+
+The threshold of 2 requires at least one clear team token match — a single
+ambiguous city word (e.g. "Milwaukee" alone from a multi-sport parlay) won't
+reach the bar because those markets should have been rejected by the MLB
+classifier before they get here.
 """
 
 from __future__ import annotations
@@ -21,7 +21,6 @@ from app.schemas.game import Game
 from app.schemas.market import Market
 
 # All known team name tokens (lower-case) → canonical abbreviation.
-# This lets us catch "yankees", "new york", "NY", "NYY", etc.
 _TEAM_TOKENS: dict[str, str] = {
     # Arizona Diamondbacks
     "arizona": "ARI", "diamondbacks": "ARI", "dbacks": "ARI", "ari": "ARI",
@@ -30,7 +29,7 @@ _TEAM_TOKENS: dict[str, str] = {
     # Baltimore Orioles
     "baltimore": "BAL", "orioles": "BAL", "bal": "BAL",
     # Boston Red Sox
-    "boston": "BOS", "sox": "BOS", "redsox": "BOS", "bos": "BOS",
+    "boston": "BOS", "redsox": "BOS", "bos": "BOS",
     # Chicago Cubs
     "cubs": "CHC", "chc": "CHC",
     # Chicago White Sox
@@ -61,16 +60,16 @@ _TEAM_TOKENS: dict[str, str] = {
     "mets": "NYM", "nym": "NYM",
     # New York Yankees
     "yankees": "NYY", "yanks": "NYY", "nyy": "NYY",
-    # Oakland Athletics
+    # Oakland / Sacramento Athletics
     "oakland": "OAK", "athletics": "OAK", "oak": "OAK", "sac": "OAK",
     # Philadelphia Phillies
     "philadelphia": "PHI", "phillies": "PHI", "phi": "PHI",
     # Pittsburgh Pirates
     "pittsburgh": "PIT", "pirates": "PIT", "pit": "PIT",
     # San Diego Padres
-    "san diego": "SDP", "padres": "SDP", "sdp": "SDP", "sd": "SDP",
+    "padres": "SDP", "sdp": "SDP", "sd": "SDP",
     # San Francisco Giants
-    "san francisco": "SFG", "giants": "SFG", "sfg": "SFG", "sf": "SFG",
+    "giants": "SFG", "sfg": "SFG", "sf": "SFG",
     # Seattle Mariners
     "seattle": "SEA", "mariners": "SEA", "sea": "SEA",
     # St. Louis Cardinals
@@ -83,12 +82,13 @@ _TEAM_TOKENS: dict[str, str] = {
     "toronto": "TOR", "jays": "TOR", "bluejays": "TOR", "tor": "TOR",
     # Washington Nationals
     "washington": "WSN", "nationals": "WSN", "wsn": "WSN", "wsh": "WSN", "nats": "WSN",
-    # Generic "chicago" token — could be Cubs or White Sox; handled by scoring
+    # Generic "chicago" — could be Cubs or White Sox; resolved by scoring
     "chicago": "_CHI",
 }
 
-# Minimum number of team token matches required to consider a game matched.
-_MATCH_THRESHOLD = 1
+# Minimum score to consider a market matched to a game.
+# Score of 2 = one clear team token matched.
+_MATCH_THRESHOLD = 2
 
 
 def match_market_to_game(market: Market, games: list[Game]) -> Game | None:
@@ -110,17 +110,7 @@ def match_market_to_game(market: Market, games: list[Game]) -> Game | None:
     return best_game if best_score >= _MATCH_THRESHOLD else None
 
 
-def match_all(markets: list[Market], games: list[Game]) -> list[tuple[Market, Game | None]]:
-    """Return [(market, matched_game_or_None)] for every market."""
-    return [(m, match_market_to_game(m, games)) for m in markets]
-
-
-# ------------------------------------------------------------------ #
-# Internals                                                            #
-# ------------------------------------------------------------------ #
-
 def _score_game(haystack: str, game: Game) -> int:
-    """Count how many of this game's team tokens appear in the market text."""
     score = 0
     game_abbrs = {
         (game.home_team.abbreviation or "").upper(),
@@ -128,26 +118,20 @@ def _score_game(haystack: str, game: Game) -> int:
     }
 
     for token, abbr in _TEAM_TOKENS.items():
-        # Skip ambiguous chicago token
         if abbr == "_CHI":
             if "chicago" in haystack:
-                # Check for "cubs" or "white sox" specificity
-                if "cubs" in haystack:
-                    if "CHC" in game_abbrs:
-                        score += 2
-                elif "white" in haystack or "sox" in haystack:
-                    if "CWS" in game_abbrs:
-                        score += 2
-                else:
-                    # Generic "Chicago" mention — credit either team
-                    if "CHC" in game_abbrs or "CWS" in game_abbrs:
-                        score += 1
+                if "cubs" in haystack and "CHC" in game_abbrs:
+                    score += 2
+                elif ("white" in haystack or "sox" in haystack) and "CWS" in game_abbrs:
+                    score += 2
+                elif "CHC" in game_abbrs or "CWS" in game_abbrs:
+                    score += 1
             continue
 
         if token in haystack and abbr in game_abbrs:
-            score += 2  # exact team token match
+            score += 2
 
-    # Fallback: city token match against team name words
+    # Fallback: match team name words for cities not in the token map
     for word in game.team_names_lower:
         if len(word) > 3 and word in haystack:
             score += 1

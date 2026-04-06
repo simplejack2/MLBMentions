@@ -6,7 +6,7 @@ from pydantic import BaseModel, ConfigDict
 
 
 class HittingStats(BaseModel):
-    """Season hitting stats for a position player."""
+    """Season hitting stats for a player or team."""
 
     games: int | None = None
     plate_appearances: int | None = None
@@ -21,17 +21,16 @@ class HittingStats(BaseModel):
     rbi: int | None = None
     stolen_bases: int | None = None
     stolen_base_attempts: int | None = None
-    strikeout_rate: float | None = None  # SO/PA
-    walk_rate: float | None = None       # BB/PA
+    strikeout_rate: float | None = None  # SO / PA
+    walk_rate: float | None = None       # BB / PA
     iso: float | None = None             # SLG - AVG (isolated power)
-    babip: float | None = None
-    sprint_speed: float | None = None    # ft/s; MLB avg ~27.0
 
     @property
-    def stolen_base_pct(self) -> float | None:
-        if self.stolen_bases is None or not self.stolen_base_attempts:
+    def stolen_base_rate(self) -> float | None:
+        """Stolen bases per plate appearance (speed proxy)."""
+        if self.stolen_bases is None or not self.plate_appearances:
             return None
-        return round(self.stolen_bases / self.stolen_base_attempts, 4)
+        return round(self.stolen_bases / self.plate_appearances, 4)
 
     @property
     def hr_rate(self) -> float | None:
@@ -59,12 +58,10 @@ class PitchingStats(BaseModel):
     k_per_9: float | None = None
     bb_per_9: float | None = None
     hr_per_9: float | None = None
-    ground_ball_rate: float | None = None  # GB%
-    fly_ball_rate: float | None = None     # FB%
+    ground_ball_rate: float | None = None
 
     @property
     def is_reliable(self) -> bool:
-        """Whether the pitcher has thrown enough innings to trust the stats."""
         return (self.innings_pitched or 0.0) >= 20.0
 
 
@@ -73,9 +70,9 @@ class Player(BaseModel):
 
     player_id: int
     full_name: str
-    position: str | None = None     # "SP", "RP", "1B", "CF", etc.
-    batting_side: str | None = None  # "L", "R", "S"
-    pitching_hand: str | None = None # "L", "R"
+    position: str | None = None
+    batting_side: str | None = None
+    pitching_hand: str | None = None
     hitting: HittingStats | None = None
     pitching: PitchingStats | None = None
     active: bool = True

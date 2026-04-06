@@ -1,4 +1,4 @@
-"""MLB Stats API client for game schedules, rosters, and player stats.
+"""MLB Stats API client for game schedules and player/team stats.
 
 Uses the free public MLB Stats API (no auth required).
 Base URL: https://statsapi.mlb.com/api/v1
@@ -14,7 +14,7 @@ from typing import Any
 import requests
 
 from app.schemas.game import Game, ProbablePitcher, TeamInfo, VenueInfo
-from app.schemas.player import HittingStats, PitchingStats, Player
+from app.schemas.player import HittingStats, PitchingStats
 
 log = logging.getLogger(__name__)
 
@@ -36,10 +36,6 @@ class MLBClient:
         default_factory=requests.Session, init=False, repr=False
     )
 
-    # ------------------------------------------------------------------ #
-    # Low-level request                                                    #
-    # ------------------------------------------------------------------ #
-
     def _get(self, path: str, params: dict[str, Any] | None = None) -> Any:
         url = f"{self.base_url.rstrip('/')}/{path.lstrip('/')}"
         try:
@@ -48,10 +44,6 @@ class MLBClient:
             return resp.json()
         except requests.RequestException as exc:
             raise MLBAPIError(f"MLB API request failed: {url} — {exc}") from exc
-
-    # ------------------------------------------------------------------ #
-    # Schedule                                                             #
-    # ------------------------------------------------------------------ #
 
     def get_schedule(self, date: datetime.date | None = None) -> list[Game]:
         """Return normalized Game objects for the given date (default: today)."""
@@ -72,99 +64,7 @@ class MLBClient:
                     games.append(game)
         return games
 
-    # ------------------------------------------------------------------ #
-    # Lineups                                                              #
-    # ------------------------------------------------------------------ #
-
-    def get_lineups(self, game_pk: int) -> dict[str, list[int]]:
-        """Return {'home': [player_ids], 'away': [player_ids]} from live feed.
-
-        Returns empty lists if the lineup is not yet posted.
-        """
-        try:
-            data = self._get(f"game/{game_pk}/feed/live")
-        except MLBAPIError:
-            return {"home": [], "away": []}
-
-        lineups: dict[str, list[int]] = {"home": [], "away": []}
-        boxscore = data.get("liveData", {}).get("boxscore", {})
-        for side in ("home", "away"):
-            team_data = boxscore.get("teams", {}).get(side, {})
-            batting_order = team_data.get("battingOrder", [])
-            lineups[side] = [int(pid) for pid in batting_order if pid]
-        return lineups
-
-    # ------------------------------------------------------------------ #
-    # Player data                                                          #
-    # ------------------------------------------------------------------ #
-
-    def get_player(self, player_id: int) -> Player | None:
-        """Fetch basic player info."""
-        try:
-            data = self._get(f"people/{player_id}")
-        except MLBAPIError:
-            return None
-        people = data.get("people", [])
-        if not people:
-            return None
-        p = people[0]
-        return Player(
-            player_id=player_id,
-            full_name=p.get("fullName", ""),
-            position=p.get("primaryPosition", {}).get("abbreviation"),
-            batting_side=p.get("batSide", {}).get("code"),
-            pitching_hand=p.get("pitchHand", {}).get("code"),
-            active=p.get("active", True),
-        )
-
-    def get_hitting_stats(
-        self, player_id: int, season: int | None = None
-    ) -> HittingStats | None:
-        """Fetch season hitting stats for a player."""
-        season = season or _CURRENT_SEASON
-        try:
-            data = self._get(
-                f"people/{player_id}/stats",
-                params={"stats": "season", "group": "hitting", "season": season},
-            )
-        except MLBAPIError:
-            return None
-
-        splits = _first_splits(data)
-        if not splits:
-            return None
-        s = splits.get("stat", {})
-
-        pa = _int(s, "plateAppearances") or 0
-        so = _int(s, "strikeOuts") or 0
-        bb = _int(s, "baseOnBalls") or 0
-        sb = _int(s, "stolenBases") or 0
-        sba = _int(s, "stolenBaseAttempts") or sb
-        avg = _float(s, "avg")
-        slg = _float(s, "slg")
-
-        return HittingStats(
-            games=_int(s, "gamesPlayed"),
-            plate_appearances=pa or None,
-            at_bats=_int(s, "atBats"),
-            avg=avg,
-            obp=_float(s, "obp"),
-            slg=slg,
-            ops=_float(s, "ops"),
-            hr=_int(s, "homeRuns"),
-            triples=_int(s, "triples"),
-            doubles=_int(s, "doubles"),
-            rbi=_int(s, "rbi"),
-            stolen_bases=sb or None,
-            stolen_base_attempts=sba or None,
-            strikeout_rate=round(so / pa, 4) if pa > 0 else None,
-            walk_rate=round(bb / pa, 4) if pa > 0 else None,
-            iso=round(slg - avg, 4) if slg is not None and avg is not None else None,
-        )
-
-    def get_pitching_stats(
-        self, player_id: int, season: int | None = None
-    ) -> PitchingStats | None:
+    def get_pitching_stats(self, player_id: int, season: int | None = None) -> PitchingStats | None:
         """Fetch season pitching stats for a player."""
         season = season or _CURRENT_SEASON
         try:
@@ -188,23 +88,6 @@ class MLBClient:
             k_per_9=_float(s, "strikeoutsPer9Inn"),
             bb_per_9=_float(s, "walksPer9Inn"),
             hr_per_9=_float(s, "homeRunsPer9"),
-        )
-
-    def enrich_pitcher(self, pitcher: ProbablePitcher, season: int | None = None) -> ProbablePitcher:
-        """Return a copy of `pitcher` with season stats filled in."""
-        stats = self.get_pitching_stats(pitcher.player_id, season)
-        if stats is None:
-            return pitcher
-        return pitcher.model_copy(
-            update={
-                "era": stats.era,
-                "whip": stats.whip,
-                "k_per_9": stats.k_per_9,
-                "bb_per_9": stats.bb_per_9,
-                "hr_per_9": stats.hr_per_9,
-                "ground_ball_rate": stats.ground_ball_rate,
-                "innings_pitched": stats.innings_pitched,
-            }
         )
 
     def get_team_hitting_stats(self, team_id: int, season: int | None = None) -> HittingStats | None:
@@ -245,10 +128,6 @@ class MLBClient:
             iso=round(slg - avg, 4) if slg is not None and avg is not None else None,
         )
 
-    # ------------------------------------------------------------------ #
-    # Normalization helpers                                                #
-    # ------------------------------------------------------------------ #
-
     def _normalize_game(self, raw: dict[str, Any]) -> Game | None:
         try:
             game_pk = raw["gamePk"]
@@ -268,29 +147,20 @@ class MLBClient:
         if not home_team or not away_team:
             return None
 
-        venue = _normalize_venue(venue_raw)
-
-        home_pp = _normalize_pitcher(home_raw.get("probablePitcher"))
-        away_pp = _normalize_pitcher(away_raw.get("probablePitcher"))
-
         return Game(
             game_pk=game_pk,
             game_date=game_date,
             status=status,
             home_team=home_team,
             away_team=away_team,
-            venue=venue,
-            home_probable_pitcher=home_pp,
-            away_probable_pitcher=away_pp,
+            venue=_normalize_venue(venue_raw),
+            home_probable_pitcher=_normalize_pitcher(home_raw.get("probablePitcher")),
+            away_probable_pitcher=_normalize_pitcher(away_raw.get("probablePitcher")),
             double_header=raw.get("doubleHeader", "N") != "N",
             series_description=raw.get("seriesDescription"),
             raw=raw,
         )
 
-
-# ------------------------------------------------------------------ #
-# Module-level helpers                                                 #
-# ------------------------------------------------------------------ #
 
 def _normalize_team(raw: dict[str, Any]) -> TeamInfo | None:
     team_id = raw.get("id")
