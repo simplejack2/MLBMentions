@@ -86,18 +86,19 @@ def main() -> None:
     json_path.write_text(json.dumps(board_data, indent=2), encoding="utf-8")
     print(f"  Wrote {json_path}")
 
-    # ------------------------------------------------------------------ #
-    # Diagnostics: fetch raw markets and analyze why 0 MLB candidates     #
-    # are being found.  Written to debug_titles.json so we can inspect    #
-    # the actual Kalshi payload and tune the classifier.                  #
-    # ------------------------------------------------------------------ #
     _write_diagnostics()
-
     print("Done.")
 
 
 def _write_diagnostics() -> None:
-    """Fetch all open markets and emit a diagnostic report."""
+    """Fetch open markets and emit a full diagnostic report.
+
+    Key questions this answers:
+    - Are there ANY priced markets? If not, are prices under unexpected field names?
+    - What is the complete raw JSON schema for these market objects?
+    - Do any markets have 'mlb' in their structural fields?
+    - What are the top series/event ticker patterns?
+    """
     try:
         kalshi = KalshiClient(base_url=SETTINGS.kalshi_base_url, timeout=20)
         raw_markets = kalshi.get_open_markets(limit=200, max_pages=5)
@@ -111,76 +112,77 @@ def _write_diagnostics() -> None:
     keyword_mlb = 0
     series_counter: Counter[str] = Counter()
     event_prefix_counter: Counter[str] = Counter()
-    sample_all: list[dict] = []
     sample_mlb: list[dict] = []
 
-    for m in raw_markets:
+    # All unique top-level field names seen across first 20 markets
+    all_field_names: set[str] = set()
+
+    for i, m in enumerate(raw_markets):
         title = m.get("title") or m.get("subtitle") or ""
         series = m.get("series_ticker") or ""
         event = m.get("event_ticker") or ""
         ticker = m.get("ticker") or ""
         rules = m.get("rules_primary") or m.get("rules") or m.get("description") or ""
 
-        # Price presence check
-        has_ask = m.get("yes_ask") or m.get("ask") or m.get("yes_ask_price")
-        has_bid = m.get("yes_bid") or m.get("bid") or m.get("yes_bid_price")
-        has_last = m.get("last_price") or m.get("yes_price")
-        priced = bool(has_ask or has_bid or has_last)
+        if i < 20:
+            all_field_names.update(m.keys())
+
+        # Check every value for a non-null number — finds price regardless of field name
+        numeric_fields = {
+            k: v for k, v in m.items()
+            if isinstance(v, (int, float)) and v != 0
+        }
+        priced = bool(numeric_fields)
         if priced:
             has_price += 1
         else:
             no_price += 1
 
-        # Series / event counters
         if series:
             series_counter[series] += 1
-        event_prefix = event[:12] if event else "(none)"
+        event_prefix = event[:16] if event else "(none)"
         event_prefix_counter[event_prefix] += 1
 
-        entry = {
-            "title": title,
-            "series_ticker": series,
-            "event_ticker": event,
-            "ticker": ticker,
-            "priced": priced,
-            "yes_ask": m.get("yes_ask"),
-            "yes_bid": m.get("yes_bid"),
-            "last_price": m.get("last_price"),
-        }
-        sample_all.append(entry)
-
-        # Ticker-based MLB check
         is_ticker_mlb = any("mlb" in (f or "").lower() for f in (series, event, ticker))
         if is_ticker_mlb:
             ticker_mlb += 1
-            sample_mlb.append({**entry, "detected_by": "ticker"})
+            sample_mlb.append({"title": title, "series_ticker": series,
+                                "event_ticker": event, "ticker": ticker,
+                                "numeric_fields": numeric_fields,
+                                "detected_by": "ticker"})
             continue
 
-        # Keyword-based MLB check
         clf = classify_market_family(title, rules)
         if clf.family:
             keyword_mlb += 1
-            sample_mlb.append({**entry, "detected_by": f"keyword:{clf.family}"})
+            sample_mlb.append({"title": title, "series_ticker": series,
+                                "event_ticker": event, "ticker": ticker,
+                                "numeric_fields": numeric_fields,
+                                "detected_by": f"keyword:{clf.family}"})
+
+    # Full schema dump: first 3 raw market objects (untruncated)
+    raw_schema_sample = raw_markets[:3]
 
     diag = {
         "generated_at": datetime.datetime.now().isoformat(),
         "total_raw": len(raw_markets),
-        "priced": has_price,
+        "priced_any_numeric": has_price,
         "no_price": no_price,
         "ticker_mlb": ticker_mlb,
         "keyword_mlb": keyword_mlb,
+        "all_field_names_first_20": sorted(all_field_names),
         "top_series_tickers": series_counter.most_common(30),
         "top_event_prefixes": event_prefix_counter.most_common(30),
         "mlb_candidates": sample_mlb,
-        "first_50_markets": sample_all[:50],
+        # Complete raw JSON for first 3 markets — shows every field Kalshi returns
+        "raw_schema_sample": raw_schema_sample,
     }
 
     debug_path = DOCS_DIR / "debug_titles.json"
     debug_path.write_text(json.dumps(diag, indent=2), encoding="utf-8")
     print(
-        f"  Diagnostics: {has_price} priced, {no_price} unpriced, "
-        f"{ticker_mlb} ticker-MLB, {keyword_mlb} keyword-MLB "
-        f"→ {debug_path}"
+        f"  Diagnostics: {has_price} have any numeric field, {no_price} have none, "
+        f"{ticker_mlb} ticker-MLB, {keyword_mlb} keyword-MLB → {debug_path}"
     )
 
 
