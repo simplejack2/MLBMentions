@@ -1,11 +1,15 @@
 """Run-total model for KXMLBTOTAL markets (Over N runs in a game).
 
-Base rate of 0.50 — the market line is set near 50% so our prior is neutral.
-Features shift probability based on the run-scoring environment.
+Market-relative design
+----------------------
+The model's BASE_RATE is 0.50 but in live use the market's own implied
+probability is used as the prior (see FamilyModel.predict()).  The market
+already incorporates park factors when it sets the run-total line, so we use
+small feature weights to capture residual game-context signals rather than
+re-applying park factors at full strength.
 
-Positive score → more likely to go OVER (high-scoring park, weak pitching,
-                 strong offense).
-Negative score → more likely to go UNDER.
+Positive score → lean OVER (above-average offense, weaker pitching).
+Negative score → lean UNDER (elite pitching, pitcher's park residual).
 """
 
 from __future__ import annotations
@@ -16,18 +20,17 @@ from app.models.base import FamilyModel
 
 class RunTotalModel(FamilyModel):
     BASE_RATE = 0.50
-    DESCRIPTION = "P(over N runs | game) — run-scoring environment"
+    DESCRIPTION = "P(over N runs | game) — residual context signal"
 
     def _feature_score(self, ctx: GameContext) -> float:
         score = 0.0
-        # Park run environment is the strongest signal
-        score += (ctx.run_factor - 1.0) * 2.00
-        # Both offenses' overall quality
-        score += ctx.home_offense.ops_delta * 0.80
-        score += ctx.away_offense.ops_delta * 0.80
-        # Pitcher quality suppresses scoring
-        score += ctx.home_pitcher.era_delta * 0.60   # era_delta positive = better pitcher = fewer runs
-        score += ctx.away_pitcher.era_delta * 0.60
-        # HR park factor loosely correlates with high-scoring games
-        score += (ctx.hr_factor - 1.0) * 0.50
+        # Both offenses' power/quality above league average
+        score += ctx.home_offense.ops_delta * 0.40
+        score += ctx.away_offense.ops_delta * 0.40
+        # Pitcher quality — better pitching suppresses scoring
+        score += ctx.home_pitcher.era_delta * 0.30   # positive = better pitcher = fewer runs
+        score += ctx.away_pitcher.era_delta * 0.30
+        # Residual park signal (small — market already prices most of this)
+        score += (ctx.run_factor - 1.0) * 0.50
+        score += (ctx.hr_factor - 1.0) * 0.20
         return score

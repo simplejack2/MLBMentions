@@ -49,7 +49,11 @@ def build_ranked_board(
         if model is None:
             continue
 
-        model_prob = model.predict(ctx) if ctx is not None else model.BASE_RATE
+        model_prob = (
+            model.predict(ctx, market_prob=market.implied_probability)
+            if ctx is not None
+            else model.BASE_RATE
+        )
         edge = compute_edge(model_prob, market.implied_probability)
 
         if abs(edge) < MIN_ABS_EDGE:
