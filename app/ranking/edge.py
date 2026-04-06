@@ -22,7 +22,7 @@ def implied_prob_to_american(probability: float) -> int:
 
     This is mainly for display and sanity checks.
     """
-    probability = clamp_probability(probability)
+    probability = max(0.001, min(0.999, float(probability)))
     if probability == 0.5:
         return 100
     if probability > 0.5:
