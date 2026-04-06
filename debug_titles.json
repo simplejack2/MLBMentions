@@ -1,522 +1,371 @@
 {
-  "generated_at": "2026-04-06T20:43:48.514200",
+  "generated_at": "2026-04-06T20:51:50.351678",
   "total_raw": 1000,
-  "priced": 0,
-  "no_price": 1000,
+  "priced_any_numeric": 1000,
+  "no_price": 0,
   "ticker_mlb": 0,
-  "keyword_mlb": 0,
+  "keyword_mlb": 3,
+  "all_field_names_first_20": [
+    "can_close_early",
+    "close_time",
+    "created_time",
+    "custom_strike",
+    "event_ticker",
+    "expected_expiration_time",
+    "expiration_time",
+    "expiration_value",
+    "fractional_trading_enabled",
+    "is_provisional",
+    "last_price_dollars",
+    "latest_expiration_time",
+    "liquidity_dollars",
+    "market_type",
+    "mve_collection_ticker",
+    "mve_selected_legs",
+    "no_ask_dollars",
+    "no_bid_dollars",
+    "no_sub_title",
+    "notional_value_dollars",
+    "open_interest_fp",
+    "open_time",
+    "previous_price_dollars",
+    "previous_yes_ask_dollars",
+    "previous_yes_bid_dollars",
+    "price_level_structure",
+    "price_ranges",
+    "response_price_units",
+    "result",
+    "rules_primary",
+    "rules_secondary",
+    "settlement_timer_seconds",
+    "status",
+    "strike_type",
+    "tick_size",
+    "ticker",
+    "title",
+    "updated_time",
+    "volume_24h_fp",
+    "volume_fp",
+    "yes_ask_dollars",
+    "yes_ask_size_fp",
+    "yes_bid_dollars",
+    "yes_bid_size_fp",
+    "yes_sub_title"
+  ],
   "top_series_tickers": [],
   "top_event_prefixes": [
     [
-      "KXMVESPORTSM",
-      599
+      "KXMVESPORTSMULTI",
+      652
     ],
     [
-      "KXMVECROSSCA",
-      401
+      "KXMVECROSSCATEGO",
+      348
     ]
   ],
-  "mlb_candidates": [],
-  "first_50_markets": [
+  "mlb_candidates": [
     {
-      "title": "yes Joe Ryan: 4+,yes Jacob deGrom: 4+,yes Chris Sale: 5+,yes Andrew Painter: 3+,yes Over 2.5 runs scored,yes Jalen Suggs: 1+,yes CJ McCollum: 1+,yes Nickeil Alexander-Walker: 1+,yes Tyrese Maxey: 1+,yes Jalen Suggs: 2+,yes Paolo Banchero: 2+,yes Josh Hart: 2+,yes De'Aaron Fox: 2+,yes Jarrett Allen: 10+,yes Tyrese Maxey: 15+,yes De'Aaron Fox: 10+,yes Jamal Murray: 15+,yes Evan Mobley: 6+,yes Jalen Suggs: 2+,yes Paolo Banchero: 4+,yes Jalen Johnson: 6+,yes Onyeka Okongwu: 4+,yes Josh Hart: 4+,yes OG Anunoby: 2+,yes Paul George: 2+,yes Stephon Castle: 2+,yes Aaron Gordon: 2+,no Detroit wins by over 15.5 Points,no Atlanta wins by over 14.5 Points,no Michigan wins by over 19.5 Points,yes Over 2.5 goals scored",
+      "title": "yes UConn,yes Boston,yes Caleb Durbin: 2+,yes Brayan Bello: 4+",
       "series_ticker": "",
-      "event_ticker": "KXMVESPORTSMULTIGAMEEXTENDED-S202671FA20F80EC",
-      "ticker": "KXMVESPORTSMULTIGAMEEXTENDED-S202671FA20F80EC-D12A4070635",
-      "priced": false,
-      "yes_ask": null,
-      "yes_bid": null,
-      "last_price": null
+      "event_ticker": "KXMVESPORTSMULTIGAMEEXTENDED-S2026DD1722FC362",
+      "ticker": "KXMVESPORTSMULTIGAMEEXTENDED-S2026DD1722FC362-8B9342EC2CA",
+      "numeric_fields": {
+        "can_close_early": true,
+        "is_provisional": true,
+        "settlement_timer_seconds": 5,
+        "tick_size": 1
+      },
+      "detected_by": "keyword:generic_mlb"
     },
     {
-      "title": "yes Jalen Johnson: 4+,yes Dyson Daniels: 10+,yes Nickeil Alexander-Walker: 15+,yes Onyeka Okongwu: 10+,yes Josh Hart: 10+,yes OG Anunoby: 10+,yes Josh Hart: 4+,yes Karl-Anthony Towns: 8+,yes Mikal Bridges: 2+,yes OG Anunoby: 2+,yes Dyson Daniels: 1+",
+      "title": "yes UConn,yes Boston,yes Caleb Durbin: 2+,yes Brayan Bello: 4+",
       "series_ticker": "",
-      "event_ticker": "KXMVESPORTSMULTIGAMEEXTENDED-S2026E4121127988",
-      "ticker": "KXMVESPORTSMULTIGAMEEXTENDED-S2026E4121127988-1D3063AC968",
-      "priced": false,
-      "yes_ask": null,
-      "yes_bid": null,
-      "last_price": null
+      "event_ticker": "KXMVESPORTSMULTIGAMEEXTENDED-S202699B96CCC975",
+      "ticker": "KXMVESPORTSMULTIGAMEEXTENDED-S202699B96CCC975-BFE0997C39D",
+      "numeric_fields": {
+        "can_close_early": true,
+        "is_provisional": true,
+        "settlement_timer_seconds": 5,
+        "tick_size": 1
+      },
+      "detected_by": "keyword:generic_mlb"
     },
     {
-      "title": "yes Detroit,yes Franz Wagner: 15+,yes Paolo Banchero: 20+,yes Jalen Brunson: 20+,yes Over 222.5 points scored",
+      "title": "yes UConn,yes Boston,yes Caleb Durbin: 2+",
       "series_ticker": "",
-      "event_ticker": "KXMVECROSSCATEGORY-S2026CE0118328FD",
-      "ticker": "KXMVECROSSCATEGORY-S2026CE0118328FD-DF759526B5E",
-      "priced": false,
-      "yes_ask": null,
-      "yes_bid": null,
-      "last_price": null
+      "event_ticker": "KXMVESPORTSMULTIGAMEEXTENDED-S202627C8CDC83B7",
+      "ticker": "KXMVESPORTSMULTIGAMEEXTENDED-S202627C8CDC83B7-7B78EC9DD3A",
+      "numeric_fields": {
+        "can_close_early": true,
+        "is_provisional": true,
+        "settlement_timer_seconds": 5,
+        "tick_size": 1
+      },
+      "detected_by": "keyword:generic_mlb"
+    }
+  ],
+  "raw_schema_sample": [
+    {
+      "can_close_early": true,
+      "close_time": "2026-04-09T14:00:00Z",
+      "created_time": "2026-04-06T20:51:22.892313Z",
+      "custom_strike": {
+        "Associated Events": "KXMLBSPREAD-26APR061907LADTOR,KXMLBTOTAL-26APR061907LADTOR,KXMLBTOTAL-26APR062040HOUCOL,KXMLBTOTAL-26APR062138ATLLAA,KXMLBTOTAL-26APR062145PHISF",
+        "Associated Market Sides": "yes,yes,yes,yes,yes",
+        "Associated Markets": "KXMLBSPREAD-26APR061907LADTOR-LAD2,KXMLBTOTAL-26APR061907LADTOR-10,KXMLBTOTAL-26APR062040HOUCOL-9,KXMLBTOTAL-26APR062138ATLLAA-6,KXMLBTOTAL-26APR062145PHISF-6",
+        "Multivariate Event Ticker": "KXMVESPORTSMULTIGAMEEXTENDED-S2026B1E569C0ECF"
+      },
+      "event_ticker": "KXMVESPORTSMULTIGAMEEXTENDED-S2026B1E569C0ECF",
+      "expected_expiration_time": "2026-04-07T04:45:00Z",
+      "expiration_time": "2026-04-09T14:00:00Z",
+      "expiration_value": "",
+      "fractional_trading_enabled": false,
+      "is_provisional": true,
+      "last_price_dollars": "0.0000",
+      "latest_expiration_time": "2026-04-09T14:00:00Z",
+      "liquidity_dollars": "0.0000",
+      "market_type": "binary",
+      "mve_collection_ticker": "KXMVESPORTSMULTIGAMEEXTENDED-R",
+      "mve_selected_legs": [
+        {
+          "event_ticker": "KXMLBSPREAD-26APR061907LADTOR",
+          "market_ticker": "KXMLBSPREAD-26APR061907LADTOR-LAD2",
+          "side": "yes"
+        },
+        {
+          "event_ticker": "KXMLBTOTAL-26APR061907LADTOR",
+          "market_ticker": "KXMLBTOTAL-26APR061907LADTOR-10",
+          "side": "yes"
+        },
+        {
+          "event_ticker": "KXMLBTOTAL-26APR062040HOUCOL",
+          "market_ticker": "KXMLBTOTAL-26APR062040HOUCOL-9",
+          "side": "yes"
+        },
+        {
+          "event_ticker": "KXMLBTOTAL-26APR062138ATLLAA",
+          "market_ticker": "KXMLBTOTAL-26APR062138ATLLAA-6",
+          "side": "yes"
+        },
+        {
+          "event_ticker": "KXMLBTOTAL-26APR062145PHISF",
+          "market_ticker": "KXMLBTOTAL-26APR062145PHISF-6",
+          "side": "yes"
+        }
+      ],
+      "no_ask_dollars": "1.0000",
+      "no_bid_dollars": "1.0000",
+      "no_sub_title": "yes Los Angeles D wins by over 1.5 runs,yes Over 9.5 runs scored,yes Over 8.5 runs scored,yes Over 5.5 runs scored,yes Over 5.5 runs scored",
+      "notional_value_dollars": "1.0000",
+      "open_interest_fp": "0.00",
+      "open_time": "2026-04-06T20:51:22.86213Z",
+      "previous_price_dollars": "0.0000",
+      "previous_yes_ask_dollars": "0.0000",
+      "previous_yes_bid_dollars": "0.0000",
+      "price_level_structure": "deci_cent",
+      "price_ranges": [
+        {
+          "end": "1.0000",
+          "start": "0.0000",
+          "step": "0.0010"
+        }
+      ],
+      "response_price_units": "usd_cent",
+      "result": "",
+      "rules_primary": "",
+      "rules_secondary": "",
+      "settlement_timer_seconds": 5,
+      "status": "active",
+      "strike_type": "custom",
+      "tick_size": 1,
+      "ticker": "KXMVESPORTSMULTIGAMEEXTENDED-S2026B1E569C0ECF-58CCF054EB6",
+      "title": "yes Los Angeles D wins by over 1.5 runs,yes Over 9.5 runs scored,yes Over 8.5 runs scored,yes Over 5.5 runs scored,yes Over 5.5 runs scored",
+      "updated_time": "2026-04-06T20:51:22.972391Z",
+      "volume_24h_fp": "0.00",
+      "volume_fp": "0.00",
+      "yes_ask_dollars": "0.0000",
+      "yes_ask_size_fp": "0.00",
+      "yes_bid_dollars": "0.0000",
+      "yes_bid_size_fp": "0.00",
+      "yes_sub_title": "yes Los Angeles D wins by over 1.5 runs,yes Over 9.5 runs scored,yes Over 8.5 runs scored,yes Over 5.5 runs scored,yes Over 5.5 runs scored"
     },
     {
-      "title": "yes Donovan Mitchell: 2+,yes James Harden: 4+,yes Jalen Suggs: 2+,yes Donovan Mitchell: 20+,yes James Harden: 10+,yes Desmond Bane: 15+,yes Franz Wagner: 10+,yes Paolo Banchero: 15+,yes Nickeil Alexander-Walker: 15+,yes Onyeka Okongwu: 10+,yes Joel Embiid: 25+,yes Tyrese Maxey: 15+,yes De'Aaron Fox: 10+,yes Jamal Murray: 15+,yes Nikola Joki\u0107: 25+,yes Donovan Mitchell: 2+,yes Franz Wagner: 2+,yes Paolo Banchero: 4+,yes Jalen Johnson: 6+,yes Jonathan Kuminga: 2+,yes Onyeka Okongwu: 4+,yes Joel Embiid: 4+,yes Paul George: 2+",
-      "series_ticker": "",
-      "event_ticker": "KXMVESPORTSMULTIGAMEEXTENDED-S2026EB274878889",
-      "ticker": "KXMVESPORTSMULTIGAMEEXTENDED-S2026EB274878889-DFE862868EE",
-      "priced": false,
-      "yes_ask": null,
-      "yes_bid": null,
-      "last_price": null
+      "can_close_early": true,
+      "close_time": "2026-04-20T23:00:00Z",
+      "created_time": "2026-04-06T20:51:22.856012Z",
+      "custom_strike": {
+        "Associated Events": "KXNBAAST-26APR06DETORL,KXNBAAST-26APR06DETORL,KXNBAAST-26APR06PHISAS,KXNBAGAME-26APR06NYKATL,KXNBAPTS-26APR06PHISAS,KXNBAPTS-26APR06PHISAS",
+        "Associated Market Sides": "yes,yes,yes,yes,yes,yes",
+        "Associated Markets": "KXNBAAST-26APR06DETORL-DETATHOMPSON9-2,KXNBAAST-26APR06DETORL-ORLJSUGGS4-2,KXNBAAST-26APR06PHISAS-PHIVEDGECOMBE77-2,KXNBAGAME-26APR06NYKATL-ATL,KXNBAPTS-26APR06PHISAS-PHITMAXEY0-15,KXNBAPTS-26APR06PHISAS-PHIVEDGECOMBE77-10",
+        "Multivariate Event Ticker": "KXMVECROSSCATEGORY-S2026496AFD203DA"
+      },
+      "event_ticker": "KXMVECROSSCATEGORY-S2026496AFD203DA",
+      "expected_expiration_time": "2026-04-07T03:00:00Z",
+      "expiration_time": "2026-04-20T23:00:00Z",
+      "expiration_value": "",
+      "fractional_trading_enabled": false,
+      "is_provisional": true,
+      "last_price_dollars": "0.0000",
+      "latest_expiration_time": "2026-04-20T23:00:00Z",
+      "liquidity_dollars": "0.0000",
+      "market_type": "binary",
+      "mve_collection_ticker": "KXMVECROSSCATEGORY-R",
+      "mve_selected_legs": [
+        {
+          "event_ticker": "KXNBAAST-26APR06DETORL",
+          "market_ticker": "KXNBAAST-26APR06DETORL-DETATHOMPSON9-2",
+          "side": "yes"
+        },
+        {
+          "event_ticker": "KXNBAAST-26APR06DETORL",
+          "market_ticker": "KXNBAAST-26APR06DETORL-ORLJSUGGS4-2",
+          "side": "yes"
+        },
+        {
+          "event_ticker": "KXNBAAST-26APR06PHISAS",
+          "market_ticker": "KXNBAAST-26APR06PHISAS-PHIVEDGECOMBE77-2",
+          "side": "yes"
+        },
+        {
+          "event_ticker": "KXNBAGAME-26APR06NYKATL",
+          "market_ticker": "KXNBAGAME-26APR06NYKATL-ATL",
+          "side": "yes"
+        },
+        {
+          "event_ticker": "KXNBAPTS-26APR06PHISAS",
+          "market_ticker": "KXNBAPTS-26APR06PHISAS-PHITMAXEY0-15",
+          "side": "yes"
+        },
+        {
+          "event_ticker": "KXNBAPTS-26APR06PHISAS",
+          "market_ticker": "KXNBAPTS-26APR06PHISAS-PHIVEDGECOMBE77-10",
+          "side": "yes"
+        }
+      ],
+      "no_ask_dollars": "1.0000",
+      "no_bid_dollars": "1.0000",
+      "no_sub_title": "yes Ausar Thompson: 2+,yes Jalen Suggs: 2+,yes VJ Edgecombe: 2+,yes Atlanta,yes Tyrese Maxey: 15+,yes VJ Edgecombe: 10+",
+      "notional_value_dollars": "1.0000",
+      "open_interest_fp": "0.00",
+      "open_time": "2026-04-06T20:51:22.823589Z",
+      "previous_price_dollars": "0.0000",
+      "previous_yes_ask_dollars": "0.0000",
+      "previous_yes_bid_dollars": "0.0000",
+      "price_level_structure": "deci_cent",
+      "price_ranges": [
+        {
+          "end": "1.0000",
+          "start": "0.0000",
+          "step": "0.0010"
+        }
+      ],
+      "response_price_units": "usd_cent",
+      "result": "",
+      "rules_primary": "",
+      "rules_secondary": "",
+      "settlement_timer_seconds": 5,
+      "status": "active",
+      "strike_type": "custom",
+      "tick_size": 1,
+      "ticker": "KXMVECROSSCATEGORY-S2026496AFD203DA-71335E70F55",
+      "title": "yes Ausar Thompson: 2+,yes Jalen Suggs: 2+,yes VJ Edgecombe: 2+,yes Atlanta,yes Tyrese Maxey: 15+,yes VJ Edgecombe: 10+",
+      "updated_time": "2026-04-06T20:51:22.972391Z",
+      "volume_24h_fp": "0.00",
+      "volume_fp": "0.00",
+      "yes_ask_dollars": "0.0000",
+      "yes_ask_size_fp": "0.00",
+      "yes_bid_dollars": "0.0000",
+      "yes_bid_size_fp": "0.00",
+      "yes_sub_title": "yes Ausar Thompson: 2+,yes Jalen Suggs: 2+,yes VJ Edgecombe: 2+,yes Atlanta,yes Tyrese Maxey: 15+,yes VJ Edgecombe: 10+"
     },
     {
-      "title": "yes Michigan,yes Over 3.5 runs scored,yes Over 4.5 runs scored,yes Over 4.5 runs scored,yes Over 5.5 runs scored,yes Over 5.5 runs scored,yes Over 5.5 runs scored,yes Over 4.5 runs scored,yes Over 4.5 runs scored,yes Over 3.5 runs scored,yes Over 4.5 runs scored,yes Over 4.5 runs scored,yes Mikal Bridges: 10+",
-      "series_ticker": "",
-      "event_ticker": "KXMVESPORTSMULTIGAMEEXTENDED-S2026D47D8591D54",
-      "ticker": "KXMVESPORTSMULTIGAMEEXTENDED-S2026D47D8591D54-31D0170B2AE",
-      "priced": false,
-      "yes_ask": null,
-      "yes_bid": null,
-      "last_price": null
-    },
-    {
-      "title": "yes CJ McCollum: 1+,yes Cleveland,yes Atlanta,yes San Antonio,yes Denver",
-      "series_ticker": "",
-      "event_ticker": "KXMVESPORTSMULTIGAMEEXTENDED-S2026FABE92E6305",
-      "ticker": "KXMVESPORTSMULTIGAMEEXTENDED-S2026FABE92E6305-D9E2AFE6444",
-      "priced": false,
-      "yes_ask": null,
-      "yes_bid": null,
-      "last_price": null
-    },
-    {
-      "title": "yes Jarrett Allen: 15+,yes Jarrett Allen: 6+",
-      "series_ticker": "",
-      "event_ticker": "KXMVECROSSCATEGORY-S20264B4F33790F5",
-      "ticker": "KXMVECROSSCATEGORY-S20264B4F33790F5-600441CE6DB",
-      "priced": false,
-      "yes_ask": null,
-      "yes_bid": null,
-      "last_price": null
-    },
-    {
-      "title": "yes Jalen Brunson: 4+,yes Donovan Mitchell: 20+,yes James Harden: 10+,yes Cedric Coward: 10+,yes Desmond Bane: 15+,yes Franz Wagner: 10+,yes Jalen Suggs: 10+,yes Paolo Banchero: 15+,yes CJ McCollum: 15+,yes Onyeka Okongwu: 10+,yes Jalen Brunson: 20+,yes Mikal Bridges: 10+,yes OG Anunoby: 10+,yes Paul George: 15+,yes VJ Edgecombe: 10+,yes De'Aaron Fox: 10+,yes Aaron Gordon: 10+,yes Jamal Murray: 15+,yes Nikola Joki\u0107: 25+,yes Donovan Mitchell: 2+,yes James Harden: 2+,yes Franz Wagner: 2+,yes Jalen Suggs: 2+,yes Paolo Banchero: 4+,yes Jalen Johnson: 6+,yes Onyeka Okongwu: 4+,yes Jalen Brunson: 2+,yes Mikal Bridges: 2+,yes Joel Embiid: 4+,yes Paul George: 2+,yes Aaron Gordon: 2+",
-      "series_ticker": "",
-      "event_ticker": "KXMVESPORTSMULTIGAMEEXTENDED-S20261F1126B03F8",
-      "ticker": "KXMVESPORTSMULTIGAMEEXTENDED-S20261F1126B03F8-57424026658",
-      "priced": false,
-      "yes_ask": null,
-      "yes_bid": null,
-      "last_price": null
-    },
-    {
-      "title": "yes Toronto,yes Over 8.5 runs scored,yes Desmond Bane: 20+,yes Over 213.5 points scored",
-      "series_ticker": "",
-      "event_ticker": "KXMVECROSSCATEGORY-S20260A1188970D0",
-      "ticker": "KXMVECROSSCATEGORY-S20260A1188970D0-00342BC9B55",
-      "priced": false,
-      "yes_ask": null,
-      "yes_bid": null,
-      "last_price": null
-    },
-    {
-      "title": "yes CJ McCollum: 2+,yes Nickeil Alexander-Walker: 2+,yes Paul George: 2+,yes Nikola Joki\u0107: 10+,yes San Antonio,yes Denver,yes Dennis Schr\u00f6der: 10+,yes Evan Mobley: 15+,yes Jarrett Allen: 10+,yes Cedric Coward: 10+,yes Desmond Bane: 15+,yes Paolo Banchero: 15+,yes Nickeil Alexander-Walker: 15+,yes Paul George: 15+,yes Tyrese Maxey: 15+,yes De'Aaron Fox: 10+,yes Stephon Castle: 15+,yes Aaron Gordon: 10+,yes Jamal Murray: 15+,yes Evan Mobley: 6+,yes Jarrett Allen: 6+,yes Nickeil Alexander-Walker: 2+,yes Onyeka Okongwu: 4+,yes Mikal Bridges: 2+,yes Paul George: 2+,yes De'Aaron Fox: 2+,yes Stephon Castle: 2+",
-      "series_ticker": "",
-      "event_ticker": "KXMVESPORTSMULTIGAMEEXTENDED-S20265F208EA42C6",
-      "ticker": "KXMVESPORTSMULTIGAMEEXTENDED-S20265F208EA42C6-63FAE0EF9F6",
-      "priced": false,
-      "yes_ask": null,
-      "yes_bid": null,
-      "last_price": null
-    },
-    {
-      "title": "yes Chicago C wins by over 1.5 runs,no Kansas City wins by over 1.5 runs,yes Miami wins by over 1.5 runs,yes Pittsburgh wins by over 1.5 runs",
-      "series_ticker": "",
-      "event_ticker": "KXMVESPORTSMULTIGAMEEXTENDED-S2026722FF3E8163",
-      "ticker": "KXMVESPORTSMULTIGAMEEXTENDED-S2026722FF3E8163-B8BDC6C5BB3",
-      "priced": false,
-      "yes_ask": null,
-      "yes_bid": null,
-      "last_price": null
-    },
-    {
-      "title": "yes Miami,yes Texas,yes Atlanta,yes Milwaukee",
-      "series_ticker": "",
-      "event_ticker": "KXMVECROSSCATEGORY-S2026F162C64789C",
-      "ticker": "KXMVECROSSCATEGORY-S2026F162C64789C-07B71E67386",
-      "priced": false,
-      "yes_ask": null,
-      "yes_bid": null,
-      "last_price": null
-    },
-    {
-      "title": "yes San Antonio,yes Denver,yes Jalen Johnson: 6+,yes Over 210.5 points scored,yes Over 215.5 points scored,yes Over 224.5 points scored",
-      "series_ticker": "",
-      "event_ticker": "KXMVECROSSCATEGORY-S2026F392CC45DA0",
-      "ticker": "KXMVECROSSCATEGORY-S2026F392CC45DA0-929AB439EE0",
-      "priced": false,
-      "yes_ask": null,
-      "yes_bid": null,
-      "last_price": null
-    },
-    {
-      "title": "yes Chase DeLauter: 1+,yes Otto Lopez: 1+,yes Fernando Tatis Jr.: 1+,yes Brice Turang: 1+,yes Jordan Walker: 1+,yes Kyle Tucker: 1+,yes Ernie Clement: 1+,yes Munetaka Murakami: 1+,yes Riley Greene: 1+,yes Jose Altuve: 1+",
-      "series_ticker": "",
-      "event_ticker": "KXMVESPORTSMULTIGAMEEXTENDED-S2026FF6420B13AD",
-      "ticker": "KXMVESPORTSMULTIGAMEEXTENDED-S2026FF6420B13AD-AF009ED5461",
-      "priced": false,
-      "yes_ask": null,
-      "yes_bid": null,
-      "last_price": null
-    },
-    {
-      "title": "yes Chicago C,yes Jameson Taillon: 2+,yes Tanner Bibee: 3+,yes Brandon Williamson: 3+,yes Bubba Chandler: 4+,yes Brandon Woodruff: 5+,yes Zack Littell: 2+,yes Justin Wrobleski: 3+,yes Max Scherzer: 3+,yes Casey Mize: 4+,yes Joe Ryan: 4+,yes Ryan Feltner: 4+",
-      "series_ticker": "",
-      "event_ticker": "KXMVESPORTSMULTIGAMEEXTENDED-S2026E2822E8C5D9",
-      "ticker": "KXMVESPORTSMULTIGAMEEXTENDED-S2026E2822E8C5D9-D16CE2DFA1E",
-      "priced": false,
-      "yes_ask": null,
-      "yes_bid": null,
-      "last_price": null
-    },
-    {
-      "title": "yes Jalen Johnson: 6+,yes Stephon Castle: 6+,yes Deni Avdija: 6+,yes Orlando,yes Atlanta,yes San Antonio,yes Denver,yes Evan Mobley: 15+,yes Desmond Bane: 20+,yes Paolo Banchero: 20+,yes Jalen Johnson: 20+,yes Nickeil Alexander-Walker: 15+,yes Jalen Brunson: 20+,yes Joel Embiid: 25+,yes Paul George: 15+,yes Tyrese Maxey: 20+,yes Jamal Murray: 20+,yes Jarrett Allen: 8+,yes Paolo Banchero: 6+,yes Jalen Johnson: 8+,yes Karl-Anthony Towns: 10+",
-      "series_ticker": "",
-      "event_ticker": "KXMVESPORTSMULTIGAMEEXTENDED-S20264DC2C71787E",
-      "ticker": "KXMVESPORTSMULTIGAMEEXTENDED-S20264DC2C71787E-503B2622A04",
-      "priced": false,
-      "yes_ask": null,
-      "yes_bid": null,
-      "last_price": null
-    },
-    {
-      "title": "yes Paul George: 4+,yes Paul George: 1+",
-      "series_ticker": "",
-      "event_ticker": "KXMVECROSSCATEGORY-S2026E4473CDB148",
-      "ticker": "KXMVECROSSCATEGORY-S2026E4473CDB148-688893F35D5",
-      "priced": false,
-      "yes_ask": null,
-      "yes_bid": null,
-      "last_price": null
-    },
-    {
-      "title": "yes Jos\u00e9 Soriano: 4+,yes Andrew Painter: 5+,yes Jalen Brunson: 6+,yes Jarrett Allen: 10+",
-      "series_ticker": "",
-      "event_ticker": "KXMVESPORTSMULTIGAMEEXTENDED-S20263A66A8CB495",
-      "ticker": "KXMVESPORTSMULTIGAMEEXTENDED-S20263A66A8CB495-66BFD724783",
-      "priced": false,
-      "yes_ask": null,
-      "yes_bid": null,
-      "last_price": null
-    },
-    {
-      "title": "yes Desmond Bane: 2+,yes Orlando,yes Desmond Bane: 20+,yes Paolo Banchero: 6+",
-      "series_ticker": "",
-      "event_ticker": "KXMVECROSSCATEGORY-S202649459A19366",
-      "ticker": "KXMVECROSSCATEGORY-S202649459A19366-91AB79E38CE",
-      "priced": false,
-      "yes_ask": null,
-      "yes_bid": null,
-      "last_price": null
-    },
-    {
-      "title": "yes Michigan,yes Detroit,yes Atlanta,yes Over 210.5 points scored,yes Over 215.5 points scored,yes Over 224.5 points scored",
-      "series_ticker": "",
-      "event_ticker": "KXMVECROSSCATEGORY-S2026C74C18064AA",
-      "ticker": "KXMVECROSSCATEGORY-S2026C74C18064AA-F581E1F85CD",
-      "priced": false,
-      "yes_ask": null,
-      "yes_bid": null,
-      "last_price": null
-    },
-    {
-      "title": "yes Cleveland,yes Orlando,yes New York,yes San Antonio,yes Denver,yes Donovan Mitchell: 20+,yes James Harden: 10+,yes Desmond Bane: 15+,yes Franz Wagner: 10+,yes Paolo Banchero: 15+,yes Dyson Daniels: 10+,yes Onyeka Okongwu: 10+,yes VJ Edgecombe: 10+,yes De'Aaron Fox: 10+,yes Stephon Castle: 15+,yes Cameron Johnson: 10+,yes Jamal Murray: 15+,yes Shai Gilgeous-Alexander: 30+",
-      "series_ticker": "",
-      "event_ticker": "KXMVESPORTSMULTIGAMEEXTENDED-S202683413584F96",
-      "ticker": "KXMVESPORTSMULTIGAMEEXTENDED-S202683413584F96-CBF80A8AD68",
-      "priced": false,
-      "yes_ask": null,
-      "yes_bid": null,
-      "last_price": null
-    },
-    {
-      "title": "yes Michigan,yes Cleveland wins by over 7.5 Points,no Atlanta wins by over 2.5 Points,yes Denver wins by over 1.5 Points",
-      "series_ticker": "",
-      "event_ticker": "KXMVESPORTSMULTIGAMEEXTENDED-S2026883BC1C81ED",
-      "ticker": "KXMVESPORTSMULTIGAMEEXTENDED-S2026883BC1C81ED-BDFDADB5F7D",
-      "priced": false,
-      "yes_ask": null,
-      "yes_bid": null,
-      "last_price": null
-    },
-    {
-      "title": "yes Casper Ruud,yes Corentin Moutet,yes Alexander Zverev,yes Alexander Bublik,yes Andrey Rublev,yes Sorana Cirstea",
-      "series_ticker": "",
-      "event_ticker": "KXMVECROSSCATEGORY-S20264F52B78CC8B",
-      "ticker": "KXMVECROSSCATEGORY-S20264F52B78CC8B-5D670DDD533",
-      "priced": false,
-      "yes_ask": null,
-      "yes_bid": null,
-      "last_price": null
-    },
-    {
-      "title": "yes Chicago C wins by over 1.5 runs,no Kansas City wins by over 1.5 runs,yes Miami wins by over 1.5 runs,yes Pittsburgh wins by over 1.5 runs,yes Milwaukee wins by over 1.5 runs,no Over 9.5 runs scored,yes Over 7.5 runs scored,yes Over 7.5 runs scored,yes Over 8.5 runs scored,yes Over 8.5 runs scored",
-      "series_ticker": "",
-      "event_ticker": "KXMVESPORTSMULTIGAMEEXTENDED-S20260B42B03EC33",
-      "ticker": "KXMVESPORTSMULTIGAMEEXTENDED-S20260B42B03EC33-482C3B03398",
-      "priced": false,
-      "yes_ask": null,
-      "yes_bid": null,
-      "last_price": null
-    },
-    {
-      "title": "yes Chicago C,yes Miami,yes Milwaukee,yes St. Louis,yes Baltimore,yes Minnesota,yes Texas,yes Atlanta",
-      "series_ticker": "",
-      "event_ticker": "KXMVECROSSCATEGORY-S2026DE72C47D362",
-      "ticker": "KXMVECROSSCATEGORY-S2026DE72C47D362-D507D2A1DFE",
-      "priced": false,
-      "yes_ask": null,
-      "yes_bid": null,
-      "last_price": null
-    },
-    {
-      "title": "yes Donovan Mitchell: 2+,yes James Harden: 4+,yes Jalen Suggs: 2+,yes Donovan Mitchell: 20+,yes James Harden: 10+,yes Desmond Bane: 15+,yes Franz Wagner: 10+,yes Paolo Banchero: 15+,yes Nickeil Alexander-Walker: 15+,yes Onyeka Okongwu: 10+,yes Joel Embiid: 25+,yes Tyrese Maxey: 15+,yes De'Aaron Fox: 10+,yes Nikola Joki\u0107: 25+,yes Donovan Mitchell: 2+,yes Franz Wagner: 2+,yes Paolo Banchero: 4+,yes Jalen Johnson: 6+,yes Jonathan Kuminga: 2+,yes Onyeka Okongwu: 4+,yes Joel Embiid: 4+,yes Paul George: 2+",
-      "series_ticker": "",
-      "event_ticker": "KXMVESPORTSMULTIGAMEEXTENDED-S202661EEA02D052",
-      "ticker": "KXMVESPORTSMULTIGAMEEXTENDED-S202661EEA02D052-B1C13AFD302",
-      "priced": false,
-      "yes_ask": null,
-      "yes_bid": null,
-      "last_price": null
-    },
-    {
-      "title": "yes CJ McCollum: 2+,yes Nickeil Alexander-Walker: 2+,yes Paul George: 2+,yes Nikola Joki\u0107: 10+,yes San Antonio,yes Denver,yes Dennis Schr\u00f6der: 10+,yes Evan Mobley: 15+,yes Jarrett Allen: 10+,yes Cedric Coward: 10+,yes Desmond Bane: 15+,yes Paolo Banchero: 15+,yes Nickeil Alexander-Walker: 15+,yes Paul George: 15+,yes Tyrese Maxey: 15+,yes De'Aaron Fox: 10+,yes Stephon Castle: 15+,yes Aaron Gordon: 10+,yes Jamal Murray: 15+,yes Jarrett Allen: 6+,yes Nickeil Alexander-Walker: 2+,yes Onyeka Okongwu: 4+,yes Mikal Bridges: 2+,yes Paul George: 2+,yes De'Aaron Fox: 2+,yes Stephon Castle: 2+",
-      "series_ticker": "",
-      "event_ticker": "KXMVESPORTSMULTIGAMEEXTENDED-S2026EA16E629705",
-      "ticker": "KXMVESPORTSMULTIGAMEEXTENDED-S2026EA16E629705-CE2FAF5CCC4",
-      "priced": false,
-      "yes_ask": null,
-      "yes_bid": null,
-      "last_price": null
-    },
-    {
-      "title": "yes Donovan Mitchell: 20+,yes Jarrett Allen: 10+,yes James Harden: 15+,yes Desmond Bane: 15+,yes Franz Wagner: 10+,yes Paolo Banchero: 15+,yes Wendell Carter Jr.: 10+,yes CJ McCollum: 15+,yes Nickeil Alexander-Walker: 15+,yes Jalen Brunson: 20+,yes Karl-Anthony Towns: 15+,yes Mikal Bridges: 10+,yes OG Anunoby: 10+,yes Paul George: 15+,yes Tyrese Maxey: 20+,yes VJ Edgecombe: 10+,yes De'Aaron Fox: 10+,yes Aaron Gordon: 10+,yes Jamal Murray: 15+,yes Jonathan Kuminga: 2+,yes Onyeka Okongwu: 4+",
-      "series_ticker": "",
-      "event_ticker": "KXMVECROSSCATEGORY-S2026AB03DE266C3",
-      "ticker": "KXMVECROSSCATEGORY-S2026AB03DE266C3-CAA0FC08313",
-      "priced": false,
-      "yes_ask": null,
-      "yes_bid": null,
-      "last_price": null
-    },
-    {
-      "title": "yes Michigan,yes Cleveland,yes Detroit,yes Atlanta,yes San Antonio,yes Over 147.5 points scored",
-      "series_ticker": "",
-      "event_ticker": "KXMVECROSSCATEGORY-S202659AFEEAC02D",
-      "ticker": "KXMVECROSSCATEGORY-S202659AFEEAC02D-F2692251D0A",
-      "priced": false,
-      "yes_ask": null,
-      "yes_bid": null,
-      "last_price": null
-    },
-    {
-      "title": "yes Cleveland wins by over 7.5 Points,yes Detroit wins by over 3.5 Points,yes New York wins by over 1.5 Points,yes San Antonio wins by over 6.5 Points,yes Denver wins by over 7.5 Points",
-      "series_ticker": "",
-      "event_ticker": "KXMVESPORTSMULTIGAMEEXTENDED-S2026EB9517EADE0",
-      "ticker": "KXMVESPORTSMULTIGAMEEXTENDED-S2026EB9517EADE0-8A71FCDE848",
-      "priced": false,
-      "yes_ask": null,
-      "yes_bid": null,
-      "last_price": null
-    },
-    {
-      "title": "yes Bobby Witt Jr.: 1+,yes Elly De La Cruz: 1+,yes Fernando Tatis Jr.: 1+,yes CJ Abrams: 1+,yes Freddie Freeman: 1+,yes Kyle Schwarber: 1+",
-      "series_ticker": "",
-      "event_ticker": "KXMVESPORTSMULTIGAMEEXTENDED-S202623B78E0CE32",
-      "ticker": "KXMVESPORTSMULTIGAMEEXTENDED-S202623B78E0CE32-CD2833F88EB",
-      "priced": false,
-      "yes_ask": null,
-      "yes_bid": null,
-      "last_price": null
-    },
-    {
-      "title": "yes De'Aaron Fox: 4+,yes Cleveland,yes Detroit,yes New York,yes San Antonio,yes Denver,yes VJ Edgecombe: 10+,yes Aaron Gordon: 10+,yes Christian Braun: 10+,yes Cameron Johnson: 10+,yes Donovan Clingan: 10+,yes Toumani Camara: 10+,yes Evan Mobley: 6+,yes Jarrett Allen: 6+,yes Joel Embiid: 4+,yes Paul George: 4+,yes Aaron Gordon: 2+,yes Nikola Joki\u0107: 10+,yes Deni Avdija: 6+,yes Donovan Clingan: 8+",
-      "series_ticker": "",
-      "event_ticker": "KXMVESPORTSMULTIGAMEEXTENDED-S2026556B9E84854",
-      "ticker": "KXMVESPORTSMULTIGAMEEXTENDED-S2026556B9E84854-98DA59FD6EB",
-      "priced": false,
-      "yes_ask": null,
-      "yes_bid": null,
-      "last_price": null
-    },
-    {
-      "title": "yes Michigan,yes James Harden: 2+,yes Nickeil Alexander-Walker: 1+,yes Tyrese Maxey: 1+,yes Paolo Banchero: 2+,yes Cleveland,yes Orlando,yes San Antonio,yes James Harden: 10+,yes Paolo Banchero: 4+,yes Jalen Johnson: 6+,yes Onyeka Okongwu: 4+,yes Over 210.5 points scored,yes Over 215.5 points scored,no Over 162.5 points scored",
-      "series_ticker": "",
-      "event_ticker": "KXMVECROSSCATEGORY-S2026E1CDE2E5695",
-      "ticker": "KXMVECROSSCATEGORY-S2026E1CDE2E5695-DC97FE523A6",
-      "priced": false,
-      "yes_ask": null,
-      "yes_bid": null,
-      "last_price": null
-    },
-    {
-      "title": "yes Denver,yes Paul George: 15+,yes Dylan Harper: 10+,yes Devin Vassell: 10+",
-      "series_ticker": "",
-      "event_ticker": "KXMVESPORTSMULTIGAMEEXTENDED-S20266F7168381EE",
-      "ticker": "KXMVESPORTSMULTIGAMEEXTENDED-S20266F7168381EE-FD917A36CD4",
-      "priced": false,
-      "yes_ask": null,
-      "yes_bid": null,
-      "last_price": null
-    },
-    {
-      "title": "yes Boston,yes Miami,yes Oklahoma City,yes Over 220.5 points scored,no Over 238.5 points scored",
-      "series_ticker": "",
-      "event_ticker": "KXMVESPORTSMULTIGAMEEXTENDED-S2026909894DB444",
-      "ticker": "KXMVESPORTSMULTIGAMEEXTENDED-S2026909894DB444-C719998A881",
-      "priced": false,
-      "yes_ask": null,
-      "yes_bid": null,
-      "last_price": null
-    },
-    {
-      "title": "yes Boston,yes Washington,yes Los Angeles D,yes Baltimore,yes Minnesota,yes Texas,yes Houston,yes Atlanta,yes Philadelphia",
-      "series_ticker": "",
-      "event_ticker": "KXMVECROSSCATEGORY-S2026DFC7428A69C",
-      "ticker": "KXMVECROSSCATEGORY-S2026DFC7428A69C-362DF2EE48F",
-      "priced": false,
-      "yes_ask": null,
-      "yes_bid": null,
-      "last_price": null
-    },
-    {
-      "title": "yes Nikola Joki\u0107: 10+,yes Denver,yes Jalen Johnson: 20+,no Philadelphia wins by over 3.5 Points,no Michigan wins by over 10.5 Points",
-      "series_ticker": "",
-      "event_ticker": "KXMVECROSSCATEGORY-S2026BFA1540CD76",
-      "ticker": "KXMVECROSSCATEGORY-S2026BFA1540CD76-7C369D86015",
-      "priced": false,
-      "yes_ask": null,
-      "yes_bid": null,
-      "last_price": null
-    },
-    {
-      "title": "yes Chicago C wins by over 1.5 runs,no Kansas City wins by over 1.5 runs,yes Pittsburgh wins by over 1.5 runs",
-      "series_ticker": "",
-      "event_ticker": "KXMVESPORTSMULTIGAMEEXTENDED-S2026FBE236BF6D6",
-      "ticker": "KXMVESPORTSMULTIGAMEEXTENDED-S2026FBE236BF6D6-6EDC8A64B3A",
-      "priced": false,
-      "yes_ask": null,
-      "yes_bid": null,
-      "last_price": null
-    },
-    {
-      "title": "yes CJ McCollum: 2+,yes Mikal Bridges: 10+,yes Paolo Banchero: 8+",
-      "series_ticker": "",
-      "event_ticker": "KXMVESPORTSMULTIGAMEEXTENDED-S2026F17C2F8C86B",
-      "ticker": "KXMVESPORTSMULTIGAMEEXTENDED-S2026F17C2F8C86B-F7BE2213300",
-      "priced": false,
-      "yes_ask": null,
-      "yes_bid": null,
-      "last_price": null
-    },
-    {
-      "title": "yes CJ McCollum: 2+,yes Cleveland,yes Denver,yes Oklahoma City,yes James Harden: 15+,yes Onyeka Okongwu: 10+,yes Aaron Gordon: 10+",
-      "series_ticker": "",
-      "event_ticker": "KXMVESPORTSMULTIGAMEEXTENDED-S20263BEAE9232A1",
-      "ticker": "KXMVESPORTSMULTIGAMEEXTENDED-S20263BEAE9232A1-F752BBF8DC1",
-      "priced": false,
-      "yes_ask": null,
-      "yes_bid": null,
-      "last_price": null
-    },
-    {
-      "title": "yes Michigan,yes Stephon Castle: 6+,yes Nikola Joki\u0107: 10+,yes Deni Avdija: 6+,yes Joel Embiid: 25+,no Over 162.5 points scored",
-      "series_ticker": "",
-      "event_ticker": "KXMVESPORTSMULTIGAMEEXTENDED-S2026F6F3808F8D6",
-      "ticker": "KXMVESPORTSMULTIGAMEEXTENDED-S2026F6F3808F8D6-35C71C32552",
-      "priced": false,
-      "yes_ask": null,
-      "yes_bid": null,
-      "last_price": null
-    },
-    {
-      "title": "yes Jarrett Allen: 15+,yes Evan Mobley: 6+,yes Jarrett Allen: 6+",
-      "series_ticker": "",
-      "event_ticker": "KXMVECROSSCATEGORY-S20264445674664F",
-      "ticker": "KXMVECROSSCATEGORY-S20264445674664F-F4821243FE3",
-      "priced": false,
-      "yes_ask": null,
-      "yes_bid": null,
-      "last_price": null
-    },
-    {
-      "title": "yes Chase DeLauter: 1+,yes Jos\u00e9 Ram\u00edrez: 1+,yes Rhys Hoskins: 1+,yes Jonathan India: 1+,yes Jackson Merrill: 1+,yes Manny Machado: 1+,yes Ram\u00f3n Laureano: 1+",
-      "series_ticker": "",
-      "event_ticker": "KXMVESPORTSMULTIGAMEEXTENDED-S20264C4517356CA",
-      "ticker": "KXMVESPORTSMULTIGAMEEXTENDED-S20264C4517356CA-930B0A0F2A2",
-      "priced": false,
-      "yes_ask": null,
-      "yes_bid": null,
-      "last_price": null
-    },
-    {
-      "title": "yes Los Angeles D,yes Shohei Ohtani: 1+,yes Andy Pages: 2+,yes Freddie Freeman: 2+",
-      "series_ticker": "",
-      "event_ticker": "KXMVECROSSCATEGORY-S2026EAC47C76E6A",
-      "ticker": "KXMVECROSSCATEGORY-S2026EAC47C76E6A-D1545E9E1E4",
-      "priced": false,
-      "yes_ask": null,
-      "yes_bid": null,
-      "last_price": null
-    },
-    {
-      "title": "yes Michigan,yes Detroit,yes Atlanta,yes San Antonio,yes Over 147.5 points scored",
-      "series_ticker": "",
-      "event_ticker": "KXMVECROSSCATEGORY-S202681680D15077",
-      "ticker": "KXMVECROSSCATEGORY-S202681680D15077-760BC38D14C",
-      "priced": false,
-      "yes_ask": null,
-      "yes_bid": null,
-      "last_price": null
-    },
-    {
-      "title": "yes Michigan,yes Chicago C,yes Houston",
-      "series_ticker": "",
-      "event_ticker": "KXMVECROSSCATEGORY-S20262868F317B2E",
-      "ticker": "KXMVECROSSCATEGORY-S20262868F317B2E-2A854F148D8",
-      "priced": false,
-      "yes_ask": null,
-      "yes_bid": null,
-      "last_price": null
-    },
-    {
-      "title": "yes Nico Hoerner: 2+,yes Nico Hoerner: 5+",
-      "series_ticker": "",
-      "event_ticker": "KXMVECROSSCATEGORY-S20264C827A15DC5",
-      "ticker": "KXMVECROSSCATEGORY-S20264C827A15DC5-3990CD78F8A",
-      "priced": false,
-      "yes_ask": null,
-      "yes_bid": null,
-      "last_price": null
-    },
-    {
-      "title": "yes James Harden: 2+,yes Cleveland,yes San Antonio,yes Denver,yes Donovan Mitchell: 20+,yes James Harden: 15+,yes Joel Embiid: 25+,yes Tyrese Maxey: 15+,yes Christian Braun: 10+,yes Jamal Murray: 15+,yes Nikola Joki\u0107: 25+",
-      "series_ticker": "",
-      "event_ticker": "KXMVESPORTSMULTIGAMEEXTENDED-S2026D4B9C9DF7A5",
-      "ticker": "KXMVESPORTSMULTIGAMEEXTENDED-S2026D4B9C9DF7A5-4E1EC138EF6",
-      "priced": false,
-      "yes_ask": null,
-      "yes_bid": null,
-      "last_price": null
-    },
-    {
-      "title": "yes Shohei Ohtani: 1+,yes Vinnie Pasquantino: 2+",
-      "series_ticker": "",
-      "event_ticker": "KXMVESPORTSMULTIGAMEEXTENDED-S20262738769E22A",
-      "ticker": "KXMVESPORTSMULTIGAMEEXTENDED-S20262738769E22A-3ECB4F67FF5",
-      "priced": false,
-      "yes_ask": null,
-      "yes_bid": null,
-      "last_price": null
-    },
-    {
-      "title": "no Over 6.5 goals scored,no Over 6.5 goals scored",
-      "series_ticker": "",
-      "event_ticker": "KXMVESPORTSMULTIGAMEEXTENDED-S2026F93184E368A",
-      "ticker": "KXMVESPORTSMULTIGAMEEXTENDED-S2026F93184E368A-ED6984F365B",
-      "priced": false,
-      "yes_ask": null,
-      "yes_bid": null,
-      "last_price": null
+      "can_close_early": true,
+      "close_time": "2026-04-20T23:00:00Z",
+      "created_time": "2026-04-06T20:51:22.799142Z",
+      "custom_strike": {
+        "Associated Events": "KXNBAGAME-26APR06DETORL,KXNBAGAME-26APR06NYKATL,KXNBAGAME-26APR06PHISAS,KXNBASPREAD-26APR06CLEMEM,KXNBASPREAD-26APR06NYKATL,KXNBASPREAD-26APR06PORDEN",
+        "Associated Market Sides": "yes,yes,yes,yes,no,yes",
+        "Associated Markets": "KXNBAGAME-26APR06DETORL-ORL,KXNBAGAME-26APR06NYKATL-ATL,KXNBAGAME-26APR06PHISAS-SAS,KXNBASPREAD-26APR06CLEMEM-CLE10,KXNBASPREAD-26APR06NYKATL-ATL14,KXNBASPREAD-26APR06PORDEN-DEN4",
+        "Multivariate Event Ticker": "KXMVECROSSCATEGORY-S202642BA25BC8F6"
+      },
+      "event_ticker": "KXMVECROSSCATEGORY-S202642BA25BC8F6",
+      "expected_expiration_time": "2026-04-07T04:00:00Z",
+      "expiration_time": "2026-04-20T23:00:00Z",
+      "expiration_value": "",
+      "fractional_trading_enabled": false,
+      "is_provisional": true,
+      "last_price_dollars": "0.0000",
+      "latest_expiration_time": "2026-04-20T23:00:00Z",
+      "liquidity_dollars": "0.0000",
+      "market_type": "binary",
+      "mve_collection_ticker": "KXMVECROSSCATEGORY-R",
+      "mve_selected_legs": [
+        {
+          "event_ticker": "KXNBAGAME-26APR06DETORL",
+          "market_ticker": "KXNBAGAME-26APR06DETORL-ORL",
+          "side": "yes"
+        },
+        {
+          "event_ticker": "KXNBAGAME-26APR06NYKATL",
+          "market_ticker": "KXNBAGAME-26APR06NYKATL-ATL",
+          "side": "yes"
+        },
+        {
+          "event_ticker": "KXNBAGAME-26APR06PHISAS",
+          "market_ticker": "KXNBAGAME-26APR06PHISAS-SAS",
+          "side": "yes"
+        },
+        {
+          "event_ticker": "KXNBASPREAD-26APR06CLEMEM",
+          "market_ticker": "KXNBASPREAD-26APR06CLEMEM-CLE10",
+          "side": "yes"
+        },
+        {
+          "event_ticker": "KXNBASPREAD-26APR06NYKATL",
+          "market_ticker": "KXNBASPREAD-26APR06NYKATL-ATL14",
+          "side": "no"
+        },
+        {
+          "event_ticker": "KXNBASPREAD-26APR06PORDEN",
+          "market_ticker": "KXNBASPREAD-26APR06PORDEN-DEN4",
+          "side": "yes"
+        }
+      ],
+      "no_ask_dollars": "1.0000",
+      "no_bid_dollars": "0.9200",
+      "no_sub_title": "yes Orlando,yes Atlanta,yes San Antonio,yes Cleveland wins by over 10.5 Points,no Atlanta wins by over 14.5 Points,yes Denver wins by over 4.5 Points",
+      "notional_value_dollars": "1.0000",
+      "open_interest_fp": "0.00",
+      "open_time": "2026-04-06T20:51:22.781279Z",
+      "previous_price_dollars": "0.0000",
+      "previous_yes_ask_dollars": "0.0000",
+      "previous_yes_bid_dollars": "0.0000",
+      "price_level_structure": "deci_cent",
+      "price_ranges": [
+        {
+          "end": "1.0000",
+          "start": "0.0000",
+          "step": "0.0010"
+        }
+      ],
+      "response_price_units": "usd_cent",
+      "result": "",
+      "rules_primary": "",
+      "rules_secondary": "",
+      "settlement_timer_seconds": 5,
+      "status": "active",
+      "strike_type": "custom",
+      "tick_size": 1,
+      "ticker": "KXMVECROSSCATEGORY-S202642BA25BC8F6-69AFFB54911",
+      "title": "yes Orlando,yes Atlanta,yes San Antonio,yes Cleveland wins by over 10.5 Points,no Atlanta wins by over 14.5 Points,yes Denver wins by over 4.5 Points",
+      "updated_time": "2026-04-06T20:51:22.972391Z",
+      "volume_24h_fp": "0.00",
+      "volume_fp": "0.00",
+      "yes_ask_dollars": "0.0800",
+      "yes_ask_size_fp": "7550.00",
+      "yes_bid_dollars": "0.0000",
+      "yes_bid_size_fp": "0.00",
+      "yes_sub_title": "yes Orlando,yes Atlanta,yes San Antonio,yes Cleveland wins by over 10.5 Points,no Atlanta wins by over 14.5 Points,yes Denver wins by over 4.5 Points"
     }
   ]
 }
