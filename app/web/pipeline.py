@@ -62,12 +62,15 @@ def _run_pipeline() -> PipelineResult:
     log.info("Running full pipeline …")
 
     # --- Kalshi ---
+    # Individual MLB markets (KXMLB*) live as parlay legs in the open-market
+    # feed, not as top-level markets.  get_normalized_mlb_markets() extracts
+    # their event tickers from the parlay mve_selected_legs and fetches them.
     kalshi = KalshiClient(
         base_url=SETTINGS.kalshi_base_url,
         timeout=SETTINGS.kalshi_request_timeout,
     )
     try:
-        all_markets = kalshi.get_normalized_open_markets()
+        all_markets = kalshi.get_normalized_mlb_markets()
     except Exception as exc:
         log.error("Kalshi fetch failed: %s", exc)
         return PipelineResult(rows=[], games=[], total_markets_fetched=0,
@@ -133,45 +136,49 @@ def _run_pipeline() -> PipelineResult:
 
 
 def _filter_markets(markets: list[Market]) -> list[tuple[Market, str]]:
-    """Keep any MLB-like market with a valid price and a recognised family.
+    """Filter individual KXMLB markets to those with a price and a family.
 
-    Two-pass detection:
-    1. Structural: Kalshi sets series_ticker / event_ticker to an MLB-specific
-       value (e.g. "MLB", "KXMLB-...") even when the market title doesn't
-       contain explicit baseball keywords.
-    2. Keyword: title/rules contain baseball-specific terminology.
-
-    Edge filter (≥3 pp) in the ranker handles value selection; we don't apply
-    a probability-band filter here.
+    Since get_normalized_mlb_markets() already restricts to KXMLB event
+    tickers, every market here is an MLB game market.  We just need:
+    1. A valid implied probability (price > 0).
+    2. A family classification (keyword match or fallback to generic_mlb
+       for run-total / run-line markets whose titles may not have keywords).
     """
     result: list[tuple[Market, str]] = []
     for market in markets:
         if market.implied_probability is None:
             continue
 
-        # Structural detection: treat any market whose Kalshi series/event
-        # ticker explicitly contains "mlb" as baseball-related, then classify
-        # by title keywords (fallback to generic_mlb).
-        if _ticker_is_mlb(market):
-            classification = classify_market_family(market.title, market.rules_primary)
-            family = classification.family or "generic_mlb"
-            result.append((market, family))
-            continue
-
-        # Keyword detection (title + rules text).
+        # Prefer keyword-based family; fall back to structural detection.
         classification = classify_market_family(market.title, market.rules_primary)
-        if classification.family:
-            result.append((market, classification.family))
+        family = classification.family
+
+        # KXMLB event ticker encodes market type: KXMLBTOTAL → run_total,
+        # KXMLBSPREAD → run_line, others → generic_mlb.
+        if not family:
+            family = _family_from_event_ticker(market.event_ticker or market.ticker)
+
+        result.append((market, family))
 
     return result
 
 
-def _ticker_is_mlb(market: Market) -> bool:
-    """Return True if Kalshi's structural fields mark this market as MLB."""
-    for field_value in (market.series_ticker, market.event_ticker, market.ticker):
-        if field_value and "mlb" in field_value.lower():
-            return True
-    return False
+def _family_from_event_ticker(ticker: str) -> str:
+    """Derive a market family from a KXMLB event ticker prefix."""
+    t = ticker.upper()
+    if "KXMLBTOTAL" in t:
+        return "run_total"
+    if "KXMLBSPREAD" in t:
+        return "run_line"
+    if "KXMLBHR" in t:
+        return "home_run"
+    if "KXMLBSO" in t or "KXMLBK" in t:
+        return "strikeout"
+    if "KXMLBHIT" in t:
+        return "hit"
+    if "KXMLBSB" in t:
+        return "stolen_base"
+    return "generic_mlb"
 
 
 def _enrich_all(

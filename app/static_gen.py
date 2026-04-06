@@ -101,7 +101,9 @@ def _write_diagnostics() -> None:
     """
     try:
         kalshi = KalshiClient(base_url=SETTINGS.kalshi_base_url, timeout=20)
-        raw_markets = kalshi.get_open_markets(limit=200, max_pages=5)
+        raw_parlays = kalshi.get_open_markets(limit=200, max_pages=5)
+        raw_markets = kalshi.get_mlb_markets(parlay_pages=5)
+        print(f"  Diagnostics: {len(raw_parlays)} parlays → {len(raw_markets)} individual MLB markets")
     except Exception as exc:
         print(f"  Diagnostics skipped (fetch failed): {exc}")
         return

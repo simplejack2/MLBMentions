@@ -17,6 +17,9 @@ SUPPORTED_FAMILIES = {
     "stolen_base",
     "hit",
     "generic_mlb",
+    # Kalshi KXMLB individual game markets
+    "run_total",   # KXMLBTOTAL-* — over/under N runs in a game
+    "run_line",    # KXMLBSPREAD-* — team wins by N+ runs
 }
 
 # Terms that are unambiguously baseball — used to gate MLB detection.

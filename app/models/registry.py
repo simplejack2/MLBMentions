@@ -16,6 +16,8 @@ from app.models.hit_model import HitModel
 from app.models.home_run_model import HomeRunModel
 from app.models.narrative_model import NarrativeModel
 from app.models.no_hitter_model import NoHitterModel
+from app.models.run_line_model import RunLineModel
+from app.models.run_total_model import RunTotalModel
 from app.models.stolen_base_model import StolenBaseModel
 from app.models.strikeout_model import StrikeoutModel
 from app.models.subjective_highlight_model import SubjectiveHighlightModel
@@ -23,7 +25,6 @@ from app.models.triple_model import TripleModel
 from app.models.venue_model import VenueModel
 
 _REGISTRY: dict[str, FamilyModel] = {
-    # Original families
     "bunt": BuntModel(),
     "bases_loaded": BasesLoadedModel(),
     "grand_slam": GrandSlamModel(),
@@ -32,13 +33,15 @@ _REGISTRY: dict[str, FamilyModel] = {
     "venue": VenueModel(),
     "narrative": NarrativeModel(),
     "subjective_highlight": SubjectiveHighlightModel(),
-    # Extended families matching real Kalshi market titles
     "home_run": HomeRunModel(),
     "strikeout": StrikeoutModel(),
     "no_hitter": NoHitterModel(),
     "stolen_base": StolenBaseModel(),
     "hit": HitModel(),
     "generic_mlb": GenericMLBModel(),
+    # Kalshi KXMLB individual game markets
+    "run_total": RunTotalModel(),
+    "run_line": RunLineModel(),
 }
 
 
