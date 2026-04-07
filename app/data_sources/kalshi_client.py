@@ -190,6 +190,10 @@ def _extract_first_number(raw: dict[str, Any], *keys: str) -> float | None:
             value = float(value)
         except (TypeError, ValueError):
             continue
+        # 0 means "not set / no market maker" for Kalshi price fields — skip it
+        # so a zero bid doesn't corrupt the yes_mid midpoint calculation
+        if value <= 0:
+            continue
         # Kalshi dollar-format: "0.4500" → 0.45 (already a probability)
         # Cent-format: 45.0 → 0.45
         if value > 1:
