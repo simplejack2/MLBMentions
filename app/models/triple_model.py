@@ -22,20 +22,20 @@ class TripleModel(FamilyModel):
     def _feature_score(self, ctx: GameContext) -> float:
         score = 0.0
 
-        # Park triple factor is the single strongest signal
-        score += (ctx.triple_factor - 1.0) * 3.50
+        # Park triple factor — market prices most of this; use residual weight
+        score += (ctx.triple_factor - 1.0) * 1.20
 
         # Fast teams hit more triples
-        score += ctx.home_offense.speed_score * 0.65
-        score += ctx.away_offense.speed_score * 0.65
+        score += ctx.home_offense.speed_score * 0.60
+        score += ctx.away_offense.speed_score * 0.60
 
-        # Team's historical triple rate (if available via triple_rate_delta)
-        score += ctx.home_offense.triple_rate_delta * 1.20
-        score += ctx.away_offense.triple_rate_delta * 1.20
+        # Team's historical triple rate
+        score += ctx.home_offense.triple_rate_delta * 1.00
+        score += ctx.away_offense.triple_rate_delta * 1.00
 
         # Fly-ball pitchers give up more deep drives (potential triples)
         # GB rate below average (negative delta) → more fly balls
-        score -= (ctx.home_pitcher.gb_rate - 0.44) * 0.80
-        score -= (ctx.away_pitcher.gb_rate - 0.44) * 0.80
+        score -= (ctx.home_pitcher.gb_rate - 0.44) * 0.60
+        score -= (ctx.away_pitcher.gb_rate - 0.44) * 0.60
 
         return score

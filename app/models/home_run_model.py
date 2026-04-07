@@ -17,10 +17,12 @@ class HomeRunModel(FamilyModel):
 
     def _feature_score(self, ctx: GameContext) -> float:
         score = 0.0
-        score += (ctx.hr_factor - 1.0) * 2.50
-        score += ctx.home_offense.iso_delta * 0.70
-        score += ctx.away_offense.iso_delta * 0.70
-        score += ctx.home_pitcher.hr9_delta * 0.55
-        score += ctx.away_pitcher.hr9_delta * 0.55
-        score += (ctx.run_factor - 1.0) * 1.00
+        # Market prices park factors heavily — use small residual weight
+        score += (ctx.hr_factor - 1.0) * 0.80
+        score += ctx.home_offense.iso_delta * 0.60
+        score += ctx.away_offense.iso_delta * 0.60
+        # Pitcher HR/9: positive = more HRs allowed → more likely a HR occurs
+        score += ctx.home_pitcher.hr9_delta * 0.50
+        score += ctx.away_pitcher.hr9_delta * 0.50
+        score += (ctx.run_factor - 1.0) * 0.30
         return score

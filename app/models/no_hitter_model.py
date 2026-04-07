@@ -18,11 +18,12 @@ class NoHitterModel(FamilyModel):
     def _feature_score(self, ctx: GameContext) -> float:
         score = 0.0
         # Elite starters with high K rates have the best shot
-        score += ctx.home_pitcher.era_delta * 1.20
-        score += ctx.away_pitcher.era_delta * 1.20
-        score += ctx.home_pitcher.k9_delta * 0.90
-        score += ctx.away_pitcher.k9_delta * 0.90
-        # Pitcher parks suppress hits
-        score -= (ctx.hr_factor - 1.0) * 1.50
-        score -= (ctx.run_factor - 1.0) * 1.50
+        # Market prices starter quality — capture residual signal
+        score += ctx.home_pitcher.era_delta * 0.80
+        score += ctx.away_pitcher.era_delta * 0.80
+        score += ctx.home_pitcher.k9_delta * 0.70
+        score += ctx.away_pitcher.k9_delta * 0.70
+        # Pitcher parks suppress hits — market prices park; use residual weight
+        score -= (ctx.hr_factor - 1.0) * 0.80
+        score -= (ctx.run_factor - 1.0) * 0.80
         return score

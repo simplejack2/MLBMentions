@@ -22,22 +22,22 @@ class GrandSlamModel(FamilyModel):
     def _feature_score(self, ctx: GameContext) -> float:
         score = 0.0
 
-        # Park HR factor: each 10% above neutral adds ~+0.30 log-odds
-        score += (ctx.hr_factor - 1.0) * 3.0
+        # Park HR factor — market prices most of this; use residual weight
+        score += (ctx.hr_factor - 1.0) * 1.00
 
         # Offensive power: ISO delta > 0 = above-average power lineup
         score += ctx.home_offense.iso_delta * 0.60
         score += ctx.away_offense.iso_delta * 0.60
 
         # Pitcher HR/9: positive delta means more HR allowed → more slams
-        score += ctx.home_pitcher.hr9_delta * 0.50   # away team faces home pitcher
+        score += ctx.home_pitcher.hr9_delta * 0.50
         score += ctx.away_pitcher.hr9_delta * 0.50
 
         # Walk-prone starters put more runners on base → bases loaded more often
-        score += ctx.home_pitcher.bb9_delta * 0.35
-        score += ctx.away_pitcher.bb9_delta * 0.35
+        score += ctx.home_pitcher.bb9_delta * 0.30
+        score += ctx.away_pitcher.bb9_delta * 0.30
 
-        # General run environment
-        score += (ctx.run_factor - 1.0) * 1.50
+        # General run environment — residual only
+        score += (ctx.run_factor - 1.0) * 0.50
 
         return score

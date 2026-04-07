@@ -24,13 +24,19 @@ class RunTotalModel(FamilyModel):
 
     def _feature_score(self, ctx: GameContext) -> float:
         score = 0.0
-        # Both offenses' power/quality above league average
+        # More offense → more runs → OVER
         score += ctx.home_offense.ops_delta * 0.40
         score += ctx.away_offense.ops_delta * 0.40
-        # Pitcher quality — better pitching suppresses scoring
-        score += ctx.home_pitcher.era_delta * 0.30   # positive = better pitcher = fewer runs
-        score += ctx.away_pitcher.era_delta * 0.30
-        # Residual park signal (small — market already prices most of this)
-        score += (ctx.run_factor - 1.0) * 0.50
-        score += (ctx.hr_factor - 1.0) * 0.20
+        # Better pitching → fewer runs → UNDER (era_delta positive = better pitcher)
+        score -= ctx.home_pitcher.era_delta * 0.25
+        score -= ctx.away_pitcher.era_delta * 0.25
+        # High K/9 → fewer baserunners → lean UNDER
+        score -= ctx.home_pitcher.k9_delta * 0.15
+        score -= ctx.away_pitcher.k9_delta * 0.15
+        # Walk-prone pitchers → more baserunners → lean OVER
+        score += ctx.home_pitcher.bb9_delta * 0.15
+        score += ctx.away_pitcher.bb9_delta * 0.15
+        # Residual park signal (market prices most of this already — keep weights small)
+        score += (ctx.run_factor - 1.0) * 0.30
+        score += (ctx.hr_factor - 1.0) * 0.15
         return score
