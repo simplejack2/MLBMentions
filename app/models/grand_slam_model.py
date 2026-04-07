@@ -36,6 +36,9 @@ class GrandSlamModel(FamilyModel):
         # Walk-prone starters put more runners on base → bases loaded more often
         score += ctx.home_pitcher.bb9_delta * 0.30
         score += ctx.away_pitcher.bb9_delta * 0.30
+        # Patient offenses draw more walks → more baserunners → more bases-loaded chances
+        score += ctx.home_offense.walk_rate_delta * 0.25
+        score += ctx.away_offense.walk_rate_delta * 0.25
 
         # General run environment — residual only
         score += (ctx.run_factor - 1.0) * 0.50

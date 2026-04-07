@@ -19,7 +19,10 @@ class StolenBaseModel(FamilyModel):
         score = 0.0
         score += ctx.home_offense.speed_score * 1.00
         score += ctx.away_offense.speed_score * 1.00
-        # High BB9 pitchers give more baserunners → more steal opportunities
+        # Walk-prone pitchers give more baserunners → more steal opportunities
         score += ctx.home_pitcher.bb9_delta * 0.30
         score += ctx.away_pitcher.bb9_delta * 0.30
+        # Patient offenses draw more walks = more first-base opportunities to run
+        score += ctx.home_offense.walk_rate_delta * 0.20
+        score += ctx.away_offense.walk_rate_delta * 0.20
         return score

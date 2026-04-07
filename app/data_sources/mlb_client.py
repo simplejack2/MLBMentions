@@ -79,16 +79,38 @@ class MLBClient:
         if not splits:
             return None
         s = splits.get("stat", {})
-        return PitchingStats(
-            games=_int(s, "gamesPitched"),
-            games_started=_int(s, "gamesStarted"),
-            innings_pitched=_float(s, "inningsPitched"),
-            era=_float(s, "era"),
-            whip=_float(s, "whip"),
-            k_per_9=_float(s, "strikeoutsPer9Inn"),
-            bb_per_9=_float(s, "walksPer9Inn"),
-            hr_per_9=_float(s, "homeRunsPer9"),
-        )
+        return _parse_pitching_stats(s)
+
+    def get_pitching_stats_recent(self, player_id: int, games: int = 15) -> PitchingStats | None:
+        """Fetch last-N-games pitching stats for a player."""
+        try:
+            data = self._get(
+                f"people/{player_id}/stats",
+                params={"stats": "lastXGames", "group": "pitching", "gamesPeriod": games},
+            )
+        except MLBAPIError:
+            return None
+
+        splits = _first_splits(data)
+        if not splits:
+            return None
+        return _parse_pitching_stats(splits.get("stat", {}))
+
+    def get_pitching_stats_blended(self, player_id: int) -> PitchingStats | None:
+        """Season stats (70%) blended with last-15-game form (30%).
+
+        Falls back to season-only if recent stats are unavailable or if the
+        pitcher has fewer than 20 IP (too early for meaningful blending).
+        """
+        season = self.get_pitching_stats(player_id)
+        if season is None:
+            return None
+        if (season.innings_pitched or 0.0) < 20.0:
+            return season
+        recent = self.get_pitching_stats_recent(player_id)
+        if recent is None or (recent.innings_pitched or 0.0) < 3.0:
+            return season
+        return _blend_pitching(season, recent, recent_weight=0.30)
 
     def get_team_hitting_stats(self, team_id: int, season: int | None = None) -> HittingStats | None:
         """Fetch aggregate season hitting stats for a team."""
@@ -190,6 +212,53 @@ def _normalize_pitcher(raw: dict[str, Any] | None) -> ProbablePitcher | None:
     return ProbablePitcher(
         player_id=player_id,
         full_name=raw.get("fullName", ""),
+    )
+
+
+def _parse_pitching_stats(s: dict[str, Any]) -> PitchingStats:
+    """Build a PitchingStats from a raw MLB Stats API stat dict."""
+    go = _int(s, "groundOuts") or 0
+    ao = _int(s, "airOuts") or 0
+    gb_rate = round(go / (go + ao), 4) if (go + ao) > 0 else None
+    return PitchingStats(
+        games=_int(s, "gamesPitched"),
+        games_started=_int(s, "gamesStarted"),
+        innings_pitched=_float(s, "inningsPitched"),
+        era=_float(s, "era"),
+        whip=_float(s, "whip"),
+        k_per_9=_float(s, "strikeoutsPer9Inn"),
+        bb_per_9=_float(s, "walksPer9Inn"),
+        hr_per_9=_float(s, "homeRunsPer9"),
+        ground_ball_rate=gb_rate,
+    )
+
+
+def _blend_pitching(
+    season: PitchingStats, recent: PitchingStats, recent_weight: float
+) -> PitchingStats:
+    """Weighted blend of two PitchingStats (e.g. 70% season, 30% recent form)."""
+    w_r = recent_weight
+    w_s = 1.0 - recent_weight
+
+    def _b(a: float | None, b: float | None) -> float | None:
+        if a is None and b is None:
+            return None
+        if b is None:
+            return a
+        if a is None:
+            return b
+        return round(w_s * a + w_r * b, 4)
+
+    return PitchingStats(
+        games=season.games,
+        games_started=season.games_started,
+        innings_pitched=season.innings_pitched,  # keep season IP for reliability scaling
+        era=_b(season.era, recent.era),
+        whip=_b(season.whip, recent.whip),
+        k_per_9=_b(season.k_per_9, recent.k_per_9),
+        bb_per_9=_b(season.bb_per_9, recent.bb_per_9),
+        hr_per_9=_b(season.hr_per_9, recent.hr_per_9),
+        ground_ball_rate=_b(season.ground_ball_rate, recent.ground_ball_rate),
     )
 
 

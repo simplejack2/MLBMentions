@@ -17,9 +17,12 @@ class StrikeoutModel(FamilyModel):
 
     def _feature_score(self, ctx: GameContext) -> float:
         score = 0.0
-        score += ctx.home_pitcher.k9_delta * 0.80
-        score += ctx.away_pitcher.k9_delta * 0.80
-        # High-K offenses (paradoxically) make high-K totals more likely
-        score += ctx.home_offense.strikeout_rate * 0.50 if hasattr(ctx.home_offense, "strikeout_rate") else 0.0
-        score -= (ctx.run_factor - 1.0) * 0.40  # hitter parks suppress K totals slightly
+        # Pitcher K/9: each starter's strikeout rate above average
+        score += ctx.home_pitcher.k9_delta * 0.70
+        score += ctx.away_pitcher.k9_delta * 0.70
+        # High-K offenses make high-K totals more likely (K-prone hitters vs. any starter)
+        score += ctx.home_offense.strikeout_rate_delta * 0.40
+        score += ctx.away_offense.strikeout_rate_delta * 0.40
+        # Hitter parks suppress K totals slightly (batters are more aggressive)
+        score -= (ctx.run_factor - 1.0) * 0.30
         return score

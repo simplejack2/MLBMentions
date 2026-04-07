@@ -193,7 +193,7 @@ def _enrich_all(
         for pp in (game.home_probable_pitcher, game.away_probable_pitcher):
             if pp and pp.player_id not in seen_pitchers:
                 seen_pitchers.add(pp.player_id)
-                pitcher_stats[pp.player_id] = mlb.get_pitching_stats(pp.player_id)
+                pitcher_stats[pp.player_id] = mlb.get_pitching_stats_blended(pp.player_id)
         for team in (game.home_team, game.away_team):
             if team.team_id not in seen_teams:
                 seen_teams.add(team.team_id)
