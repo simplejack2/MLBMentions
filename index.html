@@ -116,7 +116,7 @@
   <div class="topbar-brand">⚾ MLB Mentions Model</div>
   <div class="topbar-right">
     
-      <span>Updated Jun 4 · 07:23 UTC</span>
+      <span>Updated Jun 4 · 18:13 UTC</span>
     
     
       <span>· auto-refreshes every 15 min</span>
@@ -126,56 +126,1009 @@
 
 <!-- ================================================================ ERROR -->
 
-<div style="background:#4a1f1f;border-bottom:1px solid #f85149;padding:.6rem 1.5rem;
-            font-size:.82rem;color:#f85149;">
-  ⚠ Pipeline error — 503 Server Error: Service Unavailable for url: https://api.elections.kalshi.com/trade-api/v2/markets?limit=200&amp;status=open&amp;cursor=CgwItMWE0QYQuKbcsAESOUtYTVZFU1BPUlRTTVVMVElHQU1FRVhURU5ERUQtUzIwMjZEM0RDNjU5MjMyNS1FOEM4NEExMTA0Mw
-</div>
-
 
 <!-- ================================================================ STAT CARDS -->
 <div class="cards">
   <div class="card">
     <div class="card-label">Markets Scanned</div>
-    <div class="card-value">0</div>
+    <div class="card-value">228</div>
   </div>
   <div class="card">
     <div class="card-label">In Price Band</div>
-    <div class="card-value">0</div>
+    <div class="card-value">228</div>
   </div>
   <div class="card">
     <div class="card-label">Games Today</div>
-    <div class="card-value">0</div>
+    <div class="card-value">9</div>
   </div>
   <div class="card">
     <div class="card-label">Ranked Picks</div>
     <div class="card-value"
-         style="color:var(--muted)">
-      0
+         style="color:var(--green)">
+      11
     </div>
   </div>
 </div>
 
 <!-- ================================================================ DEBUG BAR -->
 <div style="padding:.4rem 1.5rem;font-size:.72rem;color:var(--muted);border-bottom:1px solid var(--border);background:var(--surface);">
-  0 Kalshi markets scanned
-  &nbsp;·&nbsp; 0 matched MLB families
-  &nbsp;·&nbsp; 0 picks with edge ≥ 3 pp
-  &nbsp;·&nbsp; <span style="color:var(--red)">⚠ 503 Server Error: Service Unavailable for url: https://api.elections.kalshi.com/</span>
+  228 Kalshi markets scanned
+  &nbsp;·&nbsp; 228 matched MLB families
+  &nbsp;·&nbsp; 11 picks with edge ≥ 3 pp
+  
 </div>
 
 <!-- ================================================================ SLATE -->
+
+<div class="slate">
+  
+  <div class="game-chip">
+    <strong>SD</strong>
+    &nbsp;@&nbsp;
+    <strong>PHI</strong>
+    <span>&nbsp;· Citizens Bank Park</span>
+  </div>
+  
+  <div class="game-chip">
+    <strong>BAL</strong>
+    &nbsp;@&nbsp;
+    <strong>BOS</strong>
+    <span>&nbsp;· Fenway Park</span>
+  </div>
+  
+  <div class="game-chip">
+    <strong>CLE</strong>
+    &nbsp;@&nbsp;
+    <strong>NYY</strong>
+    <span>&nbsp;· Yankee Stadium</span>
+  </div>
+  
+  <div class="game-chip">
+    <strong>SF</strong>
+    &nbsp;@&nbsp;
+    <strong>MIL</strong>
+    <span>&nbsp;· American Family Field</span>
+  </div>
+  
+  <div class="game-chip">
+    <strong>TOR</strong>
+    &nbsp;@&nbsp;
+    <strong>ATL</strong>
+    <span>&nbsp;· Truist Park</span>
+  </div>
+  
+  <div class="game-chip">
+    <strong>KC</strong>
+    &nbsp;@&nbsp;
+    <strong>MIN</strong>
+    <span>&nbsp;· Target Field</span>
+  </div>
+  
+  <div class="game-chip">
+    <strong>ATH</strong>
+    &nbsp;@&nbsp;
+    <strong>CHC</strong>
+    <span>&nbsp;· Wrigley Field</span>
+  </div>
+  
+  <div class="game-chip">
+    <strong>PIT</strong>
+    &nbsp;@&nbsp;
+    <strong>HOU</strong>
+    <span>&nbsp;· Daikin Park</span>
+  </div>
+  
+  <div class="game-chip">
+    <strong>LAD</strong>
+    &nbsp;@&nbsp;
+    <strong>AZ</strong>
+    <span>&nbsp;· Chase Field</span>
+  </div>
+  
+</div>
 
 
 <!-- ================================================================ BOARD -->
 <div class="board-wrap" style="margin-top:.75rem;">
 
-  <div class="empty-box">
-    
-      <div style="font-size:2rem">⚠️</div>
-      <div style="margin-top:.5rem">Pipeline failed — check logs.</div>
-    
-    
+  <table>
+    <thead>
+      <tr>
+        <th>Bet</th>
+        <th>Edge ▾</th>
+        <th>Family</th>
+        <th>Market</th>
+        <th>Model</th>
+        <th>Odds</th>
+        <th>Matchup</th>
+        <th>Market Title</th>
+        <th>Spread</th>
+        <th>Vol</th>
+      </tr>
+    </thead>
+    <tbody>
+      
+      
+      
+      
+      
+      <tr class="r-warm">
+
+        <!-- Bet direction -->
+        <td>
+          
+            <span style="color:var(--green);font-weight:700;font-size:.8rem">YES</span>
+          
+        </td>
+
+        <!-- Edge -->
+        <td><span class="ev-warm">+7.1%</span></td>
+
+        <!-- Family -->
+        <td>
+          <span class="fam fam-home_run">
+            home run
+          </span>
+        </td>
+
+        <!-- Market prob -->
+        <td>
+          <div class="bar-wrap">
+            <div class="bar-bg">
+              <div class="bar-fill bar-mkt"
+                   style="width:31.0%"></div>
+            </div>
+            31.0%
+          </div>
+        </td>
+
+        <!-- Model prob -->
+        <td>
+          <div class="bar-wrap">
+            <div class="bar-bg">
+              <div class="bar-fill bar-mdl"
+                   style="width:38.0%"></div>
+            </div>
+            <span style="color:var(--blue)">
+              38.1%
+            </span>
+          </div>
+        </td>
+
+        <!-- American odds -->
+        <td>
+          
+            <span class="odds-pos">+223</span>
+          
+        </td>
+
+        <!-- Matchup -->
+        <td><span class="matchup">BAL @ BOS</span></td>
+
+        <!-- Title + ticker -->
+        <td class="title-cell">
+          <div>Isiah Kiner-Falefa: 1+ home runs?</div>
+          <div class="ticker">KXMLBHR-26JUN041335BALBOS-BOSIKINERFALEFA2-1</div>
+        </td>
+
+        <!-- Spread -->
+        <td style="color:var(--muted); white-space:nowrap;">
+          56.0¢
+        </td>
+
+        <!-- Volume -->
+        <td style="color:var(--muted); font-size:.78rem; white-space:nowrap;">
+          
+            
+            612
+          
+        </td>
+
+      </tr>
+      
+      
+      
+      
+      
+      <tr class="r-warm">
+
+        <!-- Bet direction -->
+        <td>
+          
+            <span style="color:var(--green);font-weight:700;font-size:.8rem">YES</span>
+          
+        </td>
+
+        <!-- Edge -->
+        <td><span class="ev-warm">+6.1%</span></td>
+
+        <!-- Family -->
+        <td>
+          <span class="fam fam-home_run">
+            home run
+          </span>
+        </td>
+
+        <!-- Market prob -->
+        <td>
+          <div class="bar-wrap">
+            <div class="bar-bg">
+              <div class="bar-fill bar-mkt"
+                   style="width:24.0%"></div>
+            </div>
+            23.5%
+          </div>
+        </td>
+
+        <!-- Model prob -->
+        <td>
+          <div class="bar-wrap">
+            <div class="bar-bg">
+              <div class="bar-fill bar-mdl"
+                   style="width:30.0%"></div>
+            </div>
+            <span style="color:var(--blue)">
+              29.6%
+            </span>
+          </div>
+        </td>
+
+        <!-- American odds -->
+        <td>
+          
+            <span class="odds-pos">+326</span>
+          
+        </td>
+
+        <!-- Matchup -->
+        <td><span class="matchup">BAL @ BOS</span></td>
+
+        <!-- Title + ticker -->
+        <td class="title-cell">
+          <div>Nick Kurtz: 1+ home runs?</div>
+          <div class="ticker">KXMLBHR-26JUN042005ATHCHC-ATHNKURTZ16-1</div>
+        </td>
+
+        <!-- Spread -->
+        <td style="color:var(--muted); white-space:nowrap;">
+          1.0¢
+        </td>
+
+        <!-- Volume -->
+        <td style="color:var(--muted); font-size:.78rem; white-space:nowrap;">
+          
+            
+            2K
+            
+          
+        </td>
+
+      </tr>
+      
+      
+      
+      
+      
+      <tr class="r-warm">
+
+        <!-- Bet direction -->
+        <td>
+          
+            <span style="color:var(--green);font-weight:700;font-size:.8rem">YES</span>
+          
+        </td>
+
+        <!-- Edge -->
+        <td><span class="ev-warm">+5.4%</span></td>
+
+        <!-- Family -->
+        <td>
+          <span class="fam fam-home_run">
+            home run
+          </span>
+        </td>
+
+        <!-- Market prob -->
+        <td>
+          <div class="bar-wrap">
+            <div class="bar-bg">
+              <div class="bar-fill bar-mkt"
+                   style="width:20.0%"></div>
+            </div>
+            19.5%
+          </div>
+        </td>
+
+        <!-- Model prob -->
+        <td>
+          <div class="bar-wrap">
+            <div class="bar-bg">
+              <div class="bar-fill bar-mdl"
+                   style="width:25.0%"></div>
+            </div>
+            <span style="color:var(--blue)">
+              24.9%
+            </span>
+          </div>
+        </td>
+
+        <!-- American odds -->
+        <td>
+          
+            <span class="odds-pos">+413</span>
+          
+        </td>
+
+        <!-- Matchup -->
+        <td><span class="matchup">BAL @ BOS</span></td>
+
+        <!-- Title + ticker -->
+        <td class="title-cell">
+          <div>Pete Crow-Armstrong: 1+ home runs?</div>
+          <div class="ticker">KXMLBHR-26JUN042005ATHCHC-CHCPCROWARMSTRONG4-1</div>
+        </td>
+
+        <!-- Spread -->
+        <td style="color:var(--muted); white-space:nowrap;">
+          1.0¢
+        </td>
+
+        <!-- Volume -->
+        <td style="color:var(--muted); font-size:.78rem; white-space:nowrap;">
+          
+            
+            11K
+            
+          
+        </td>
+
+      </tr>
+      
+      
+      
+      
+      
+      <tr class="">
+
+        <!-- Bet direction -->
+        <td>
+          
+            <span style="color:var(--green);font-weight:700;font-size:.8rem">YES</span>
+          
+        </td>
+
+        <!-- Edge -->
+        <td><span class="ev-cool">+4.7%</span></td>
+
+        <!-- Family -->
+        <td>
+          <span class="fam fam-home_run">
+            home run
+          </span>
+        </td>
+
+        <!-- Market prob -->
+        <td>
+          <div class="bar-wrap">
+            <div class="bar-bg">
+              <div class="bar-fill bar-mkt"
+                   style="width:16.0%"></div>
+            </div>
+            16.0%
+          </div>
+        </td>
+
+        <!-- Model prob -->
+        <td>
+          <div class="bar-wrap">
+            <div class="bar-bg">
+              <div class="bar-fill bar-mdl"
+                   style="width:21.0%"></div>
+            </div>
+            <span style="color:var(--blue)">
+              20.7%
+            </span>
+          </div>
+        </td>
+
+        <!-- American odds -->
+        <td>
+          
+            <span class="odds-pos">+525</span>
+          
+        </td>
+
+        <!-- Matchup -->
+        <td><span class="matchup">BAL @ BOS</span></td>
+
+        <!-- Title + ticker -->
+        <td class="title-cell">
+          <div>Pete Alonso: 1+ home runs?</div>
+          <div class="ticker">KXMLBHR-26JUN041335BALBOS-BALPALONSO25-1</div>
+        </td>
+
+        <!-- Spread -->
+        <td style="color:var(--muted); white-space:nowrap;">
+          2.0¢
+        </td>
+
+        <!-- Volume -->
+        <td style="color:var(--muted); font-size:.78rem; white-space:nowrap;">
+          
+            
+            10K
+            
+          
+        </td>
+
+      </tr>
+      
+      
+      
+      
+      
+      <tr class="">
+
+        <!-- Bet direction -->
+        <td>
+          
+            <span style="color:var(--green);font-weight:700;font-size:.8rem">YES</span>
+          
+        </td>
+
+        <!-- Edge -->
+        <td><span class="ev-cool">+4.1%</span></td>
+
+        <!-- Family -->
+        <td>
+          <span class="fam fam-home_run">
+            home run
+          </span>
+        </td>
+
+        <!-- Market prob -->
+        <td>
+          <div class="bar-wrap">
+            <div class="bar-bg">
+              <div class="bar-fill bar-mkt"
+                   style="width:14.0%"></div>
+            </div>
+            13.5%
+          </div>
+        </td>
+
+        <!-- Model prob -->
+        <td>
+          <div class="bar-wrap">
+            <div class="bar-bg">
+              <div class="bar-fill bar-mdl"
+                   style="width:18.0%"></div>
+            </div>
+            <span style="color:var(--blue)">
+              17.6%
+            </span>
+          </div>
+        </td>
+
+        <!-- American odds -->
+        <td>
+          
+            <span class="odds-pos">+641</span>
+          
+        </td>
+
+        <!-- Matchup -->
+        <td><span class="matchup">BAL @ BOS</span></td>
+
+        <!-- Title + ticker -->
+        <td class="title-cell">
+          <div>Wilyer Abreu: 1+ home runs?</div>
+          <div class="ticker">KXMLBHR-26JUN041335BALBOS-BOSWABREU52-1</div>
+        </td>
+
+        <!-- Spread -->
+        <td style="color:var(--muted); white-space:nowrap;">
+          1.0¢
+        </td>
+
+        <!-- Volume -->
+        <td style="color:var(--muted); font-size:.78rem; white-space:nowrap;">
+          
+            
+            1K
+            
+          
+        </td>
+
+      </tr>
+      
+      
+      
+      
+      
+      <tr class="">
+
+        <!-- Bet direction -->
+        <td>
+          
+            <span style="color:var(--green);font-weight:700;font-size:.8rem">YES</span>
+          
+        </td>
+
+        <!-- Edge -->
+        <td><span class="ev-cool">+4.1%</span></td>
+
+        <!-- Family -->
+        <td>
+          <span class="fam fam-home_run">
+            home run
+          </span>
+        </td>
+
+        <!-- Market prob -->
+        <td>
+          <div class="bar-wrap">
+            <div class="bar-bg">
+              <div class="bar-fill bar-mkt"
+                   style="width:14.0%"></div>
+            </div>
+            13.5%
+          </div>
+        </td>
+
+        <!-- Model prob -->
+        <td>
+          <div class="bar-wrap">
+            <div class="bar-bg">
+              <div class="bar-fill bar-mdl"
+                   style="width:18.0%"></div>
+            </div>
+            <span style="color:var(--blue)">
+              17.6%
+            </span>
+          </div>
+        </td>
+
+        <!-- American odds -->
+        <td>
+          
+            <span class="odds-pos">+641</span>
+          
+        </td>
+
+        <!-- Matchup -->
+        <td><span class="matchup">BAL @ BOS</span></td>
+
+        <!-- Title + ticker -->
+        <td class="title-cell">
+          <div>Alex Bregman: 1+ home runs?</div>
+          <div class="ticker">KXMLBHR-26JUN042005ATHCHC-CHCABREGMAN3-1</div>
+        </td>
+
+        <!-- Spread -->
+        <td style="color:var(--muted); white-space:nowrap;">
+          1.0¢
+        </td>
+
+        <!-- Volume -->
+        <td style="color:var(--muted); font-size:.78rem; white-space:nowrap;">
+          
+            
+            4K
+            
+          
+        </td>
+
+      </tr>
+      
+      
+      
+      
+      
+      <tr class="">
+
+        <!-- Bet direction -->
+        <td>
+          
+            <span style="color:var(--green);font-weight:700;font-size:.8rem">YES</span>
+          
+        </td>
+
+        <!-- Edge -->
+        <td><span class="ev-cool">+3.9%</span></td>
+
+        <!-- Family -->
+        <td>
+          <span class="fam fam-home_run">
+            home run
+          </span>
+        </td>
+
+        <!-- Market prob -->
+        <td>
+          <div class="bar-wrap">
+            <div class="bar-bg">
+              <div class="bar-fill bar-mkt"
+                   style="width:12.0%"></div>
+            </div>
+            12.5%
+          </div>
+        </td>
+
+        <!-- Model prob -->
+        <td>
+          <div class="bar-wrap">
+            <div class="bar-bg">
+              <div class="bar-fill bar-mdl"
+                   style="width:16.0%"></div>
+            </div>
+            <span style="color:var(--blue)">
+              16.4%
+            </span>
+          </div>
+        </td>
+
+        <!-- American odds -->
+        <td>
+          
+            <span class="odds-pos">+700</span>
+          
+        </td>
+
+        <!-- Matchup -->
+        <td><span class="matchup">BAL @ BOS</span></td>
+
+        <!-- Title + ticker -->
+        <td class="title-cell">
+          <div>Gunnar Henderson: 1+ home runs?</div>
+          <div class="ticker">KXMLBHR-26JUN041335BALBOS-BALGHENDERSON2-1</div>
+        </td>
+
+        <!-- Spread -->
+        <td style="color:var(--muted); white-space:nowrap;">
+          1.0¢
+        </td>
+
+        <!-- Volume -->
+        <td style="color:var(--muted); font-size:.78rem; white-space:nowrap;">
+          
+            
+            17K
+            
+          
+        </td>
+
+      </tr>
+      
+      
+      
+      
+      
+      <tr class="">
+
+        <!-- Bet direction -->
+        <td>
+          
+            <span style="color:var(--green);font-weight:700;font-size:.8rem">YES</span>
+          
+        </td>
+
+        <!-- Edge -->
+        <td><span class="ev-cool">+3.6%</span></td>
+
+        <!-- Family -->
+        <td>
+          <span class="fam fam-home_run">
+            home run
+          </span>
+        </td>
+
+        <!-- Market prob -->
+        <td>
+          <div class="bar-wrap">
+            <div class="bar-bg">
+              <div class="bar-fill bar-mkt"
+                   style="width:12.0%"></div>
+            </div>
+            11.5%
+          </div>
+        </td>
+
+        <!-- Model prob -->
+        <td>
+          <div class="bar-wrap">
+            <div class="bar-bg">
+              <div class="bar-fill bar-mdl"
+                   style="width:15.0%"></div>
+            </div>
+            <span style="color:var(--blue)">
+              15.1%
+            </span>
+          </div>
+        </td>
+
+        <!-- American odds -->
+        <td>
+          
+            <span class="odds-pos">+770</span>
+          
+        </td>
+
+        <!-- Matchup -->
+        <td><span class="matchup">BAL @ BOS</span></td>
+
+        <!-- Title + ticker -->
+        <td class="title-cell">
+          <div>Jarren Duran: 1+ home runs?</div>
+          <div class="ticker">KXMLBHR-26JUN041335BALBOS-BOSJDURAN16-1</div>
+        </td>
+
+        <!-- Spread -->
+        <td style="color:var(--muted); white-space:nowrap;">
+          1.0¢
+        </td>
+
+        <!-- Volume -->
+        <td style="color:var(--muted); font-size:.78rem; white-space:nowrap;">
+          
+            
+            4K
+            
+          
+        </td>
+
+      </tr>
+      
+      
+      
+      
+      
+      <tr class="">
+
+        <!-- Bet direction -->
+        <td>
+          
+            <span style="color:var(--green);font-weight:700;font-size:.8rem">YES</span>
+          
+        </td>
+
+        <!-- Edge -->
+        <td><span class="ev-cool">+3.5%</span></td>
+
+        <!-- Family -->
+        <td>
+          <span class="fam fam-home_run">
+            home run
+          </span>
+        </td>
+
+        <!-- Market prob -->
+        <td>
+          <div class="bar-wrap">
+            <div class="bar-bg">
+              <div class="bar-fill bar-mkt"
+                   style="width:11.0%"></div>
+            </div>
+            11.0%
+          </div>
+        </td>
+
+        <!-- Model prob -->
+        <td>
+          <div class="bar-wrap">
+            <div class="bar-bg">
+              <div class="bar-fill bar-mdl"
+                   style="width:14.0%"></div>
+            </div>
+            <span style="color:var(--blue)">
+              14.5%
+            </span>
+          </div>
+        </td>
+
+        <!-- American odds -->
+        <td>
+          
+            <span class="odds-pos">+809</span>
+          
+        </td>
+
+        <!-- Matchup -->
+        <td><span class="matchup">BAL @ BOS</span></td>
+
+        <!-- Title + ticker -->
+        <td class="title-cell">
+          <div>Carlos Narváez: 1+ home runs?</div>
+          <div class="ticker">KXMLBHR-26JUN041335BALBOS-BOSCNARVEZ75-1</div>
+        </td>
+
+        <!-- Spread -->
+        <td style="color:var(--muted); white-space:nowrap;">
+          6.0¢
+        </td>
+
+        <!-- Volume -->
+        <td style="color:var(--muted); font-size:.78rem; white-space:nowrap;">
+          
+            
+            1K
+            
+          
+        </td>
+
+      </tr>
+      
+      
+      
+      
+      
+      <tr class="">
+
+        <!-- Bet direction -->
+        <td>
+          
+            <span style="color:var(--green);font-weight:700;font-size:.8rem">YES</span>
+          
+        </td>
+
+        <!-- Edge -->
+        <td><span class="ev-cool">+3.3%</span></td>
+
+        <!-- Family -->
+        <td>
+          <span class="fam fam-home_run">
+            home run
+          </span>
+        </td>
+
+        <!-- Market prob -->
+        <td>
+          <div class="bar-wrap">
+            <div class="bar-bg">
+              <div class="bar-fill bar-mkt"
+                   style="width:10.0%"></div>
+            </div>
+            10.5%
+          </div>
+        </td>
+
+        <!-- Model prob -->
+        <td>
+          <div class="bar-wrap">
+            <div class="bar-bg">
+              <div class="bar-fill bar-mdl"
+                   style="width:14.0%"></div>
+            </div>
+            <span style="color:var(--blue)">
+              13.8%
+            </span>
+          </div>
+        </td>
+
+        <!-- American odds -->
+        <td>
+          
+            <span class="odds-pos">+852</span>
+          
+        </td>
+
+        <!-- Matchup -->
+        <td><span class="matchup">BAL @ BOS</span></td>
+
+        <!-- Title + ticker -->
+        <td class="title-cell">
+          <div>Andruw Monasterio: 1+ home runs?</div>
+          <div class="ticker">KXMLBHR-26JUN041335BALBOS-BOSAMONASTERIO32-1</div>
+        </td>
+
+        <!-- Spread -->
+        <td style="color:var(--muted); white-space:nowrap;">
+          3.0¢
+        </td>
+
+        <!-- Volume -->
+        <td style="color:var(--muted); font-size:.78rem; white-space:nowrap;">
+          
+            
+            893
+          
+        </td>
+
+      </tr>
+      
+      
+      
+      
+      
+      <tr class="">
+
+        <!-- Bet direction -->
+        <td>
+          
+            <span style="color:var(--green);font-weight:700;font-size:.8rem">YES</span>
+          
+        </td>
+
+        <!-- Edge -->
+        <td><span class="ev-cool">+3.1%</span></td>
+
+        <!-- Family -->
+        <td>
+          <span class="fam fam-home_run">
+            home run
+          </span>
+        </td>
+
+        <!-- Market prob -->
+        <td>
+          <div class="bar-wrap">
+            <div class="bar-bg">
+              <div class="bar-fill bar-mkt"
+                   style="width:10.0%"></div>
+            </div>
+            9.5%
+          </div>
+        </td>
+
+        <!-- Model prob -->
+        <td>
+          <div class="bar-wrap">
+            <div class="bar-bg">
+              <div class="bar-fill bar-mdl"
+                   style="width:13.0%"></div>
+            </div>
+            <span style="color:var(--blue)">
+              12.6%
+            </span>
+          </div>
+        </td>
+
+        <!-- American odds -->
+        <td>
+          
+            <span class="odds-pos">+953</span>
+          
+        </td>
+
+        <!-- Matchup -->
+        <td><span class="matchup">BAL @ BOS</span></td>
+
+        <!-- Title + ticker -->
+        <td class="title-cell">
+          <div>Willson Contreras: 1+ home runs?</div>
+          <div class="ticker">KXMLBHR-26JUN041335BALBOS-BOSWCONTRERAS40-1</div>
+        </td>
+
+        <!-- Spread -->
+        <td style="color:var(--muted); white-space:nowrap;">
+          13.0¢
+        </td>
+
+        <!-- Volume -->
+        <td style="color:var(--muted); font-size:.78rem; white-space:nowrap;">
+          
+            
+            4K
+            
+          
+        </td>
+
+      </tr>
+      
+    </tbody>
+  </table>
+
+  <!-- Legend -->
+  <div class="legend">
+    <span><span class="legend-dot" style="background:rgba(35,134,54,.5)"></span>Edge ≥ 10%</span>
+    <span><span class="legend-dot" style="background:rgba(187,128,9,.5)"></span>Edge 5–10%</span>
+    <span><span class="legend-dot" style="background:var(--border)"></span>Edge 2–5%</span>
+    <span style="margin-left:auto">
+      <span class="legend-dot" style="background:var(--muted)"></span>Market prob &nbsp;
+      <span class="legend-dot" style="background:var(--blue)"></span>Model prob
+    </span>
   </div>
+
 
 </div>
 
