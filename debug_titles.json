@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-06-29T02:48:01.925585",
-  "total_raw": 292,
-  "priced_any_numeric": 292,
+  "generated_at": "2026-06-29T07:24:05.783668",
+  "total_raw": 555,
+  "priced_any_numeric": 555,
   "no_price": 0,
-  "ticker_mlb": 292,
+  "ticker_mlb": 555,
   "keyword_mlb": 0,
   "all_field_names_first_20": [
     "can_close_early",
@@ -53,40 +53,44 @@
   "top_series_tickers": [],
   "top_event_prefixes": [
     [
-      "KXMLBTOTAL-26JUN",
-      77
-    ],
-    [
-      "KXMLBKS-26JUN291",
-      46
+      "KXMLBHRR-26JUN29",
+      125
     ],
     [
       "KXMLBHIT-26JUN29",
-      44
+      90
+    ],
+    [
+      "KXMLBTOTAL-26JUN",
+      88
+    ],
+    [
+      "KXMLBKS-26JUN291",
+      53
     ],
     [
       "KXMLBSPREAD-26JU",
-      30
+      42
+    ],
+    [
+      "KXMLBHR-26JUN292",
+      41
+    ],
+    [
+      "KXMLBKS-26JUN292",
+      36
+    ],
+    [
+      "KXMLBTB-26JUN292",
+      29
     ],
     [
       "KXMLBGAME-26JUN2",
       26
     ],
     [
-      "KXMLBHR-26JUN292",
-      23
-    ],
-    [
-      "KXMLBHRR-26JUN29",
-      15
-    ],
-    [
-      "KXMLBKS-26JUN292",
-      14
-    ],
-    [
       "KXMLBHR-26JUN291",
-      7
+      18
     ],
     [
       "KXMLBGAME-26JUN3",
@@ -94,7 +98,7 @@
     ],
     [
       "KXMLBRFI-26JUN29",
-      4
+      1
     ]
   ],
   "mlb_candidates": [
@@ -411,10 +415,10 @@
       "detected_by": "ticker"
     },
     {
-      "title": "Pittsburgh vs Philadelphia Winner?",
+      "title": "Chicago WS vs Baltimore Winner?",
       "series_ticker": "",
-      "event_ticker": "KXMLBGAME-26JUN301840PITPHI",
-      "ticker": "KXMLBGAME-26JUN301840PITPHI-PIT",
+      "event_ticker": "KXMLBGAME-26JUN301835CWSBAL",
+      "ticker": "KXMLBGAME-26JUN301835CWSBAL-CWS",
       "numeric_fields": {
         "can_close_early": true,
         "fractional_trading_enabled": true,
@@ -423,10 +427,34 @@
       "detected_by": "ticker"
     },
     {
-      "title": "Pittsburgh vs Philadelphia Winner?",
+      "title": "Chicago WS vs Baltimore Winner?",
       "series_ticker": "",
-      "event_ticker": "KXMLBGAME-26JUN301840PITPHI",
-      "ticker": "KXMLBGAME-26JUN301840PITPHI-PHI",
+      "event_ticker": "KXMLBGAME-26JUN301835CWSBAL",
+      "ticker": "KXMLBGAME-26JUN301835CWSBAL-BAL",
+      "numeric_fields": {
+        "can_close_early": true,
+        "fractional_trading_enabled": true,
+        "settlement_timer_seconds": 120
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Detroit vs New York Y Winner?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBGAME-26JUN301905DETNYY",
+      "ticker": "KXMLBGAME-26JUN301905DETNYY-NYY",
+      "numeric_fields": {
+        "can_close_early": true,
+        "fractional_trading_enabled": true,
+        "settlement_timer_seconds": 120
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Detroit vs New York Y Winner?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBGAME-26JUN301905DETNYY",
+      "ticker": "KXMLBGAME-26JUN301905DETNYY-DET",
       "numeric_fields": {
         "can_close_early": true,
         "fractional_trading_enabled": true,
@@ -451,30 +479,6 @@
       "series_ticker": "",
       "event_ticker": "KXMLBGAME-26JUN301910WSHBOS",
       "ticker": "KXMLBGAME-26JUN301910WSHBOS-BOS",
-      "numeric_fields": {
-        "can_close_early": true,
-        "fractional_trading_enabled": true,
-        "settlement_timer_seconds": 120
-      },
-      "detected_by": "ticker"
-    },
-    {
-      "title": "Tampa Bay vs Kansas City Winner?",
-      "series_ticker": "",
-      "event_ticker": "KXMLBGAME-26JUN301940TBKC",
-      "ticker": "KXMLBGAME-26JUN301940TBKC-TB",
-      "numeric_fields": {
-        "can_close_early": true,
-        "fractional_trading_enabled": true,
-        "settlement_timer_seconds": 120
-      },
-      "detected_by": "ticker"
-    },
-    {
-      "title": "Tampa Bay vs Kansas City Winner?",
-      "series_ticker": "",
-      "event_ticker": "KXMLBGAME-26JUN301940TBKC",
-      "ticker": "KXMLBGAME-26JUN301940TBKC-KC",
       "numeric_fields": {
         "can_close_early": true,
         "fractional_trading_enabled": true,
@@ -604,6 +608,136 @@
       "series_ticker": "",
       "event_ticker": "KXMLBHIT-26JUN291840PITPHI",
       "ticker": "KXMLBHIT-26JUN291840PITPHI-PHIBHARPER3-1",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 0.5,
+        "fractional_trading_enabled": true,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Vladimir Guerrero Jr.: 4+ hits?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHIT-26JUN291907NYMTOR",
+      "ticker": "KXMLBHIT-26JUN291907NYMTOR-TORVGUERRERO27-4",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 3.5,
+        "fractional_trading_enabled": true,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Vladimir Guerrero Jr.: 3+ hits?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHIT-26JUN291907NYMTOR",
+      "ticker": "KXMLBHIT-26JUN291907NYMTOR-TORVGUERRERO27-3",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 2.5,
+        "fractional_trading_enabled": true,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Vladimir Guerrero Jr.: 2+ hits?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHIT-26JUN291907NYMTOR",
+      "ticker": "KXMLBHIT-26JUN291907NYMTOR-TORVGUERRERO27-2",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 1.5,
+        "fractional_trading_enabled": true,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Vladimir Guerrero Jr.: 1+ hits?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHIT-26JUN291907NYMTOR",
+      "ticker": "KXMLBHIT-26JUN291907NYMTOR-TORVGUERRERO27-1",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 0.5,
+        "fractional_trading_enabled": true,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Juan Soto: 3+ hits?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHIT-26JUN291907NYMTOR",
+      "ticker": "KXMLBHIT-26JUN291907NYMTOR-NYMJSOTO22-3",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 2.5,
+        "fractional_trading_enabled": true,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Juan Soto: 2+ hits?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHIT-26JUN291907NYMTOR",
+      "ticker": "KXMLBHIT-26JUN291907NYMTOR-NYMJSOTO22-2",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 1.5,
+        "fractional_trading_enabled": true,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Juan Soto: 1+ hits?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHIT-26JUN291907NYMTOR",
+      "ticker": "KXMLBHIT-26JUN291907NYMTOR-NYMJSOTO22-1",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 0.5,
+        "fractional_trading_enabled": true,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Francisco Lindor: 3+ hits?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHIT-26JUN291907NYMTOR",
+      "ticker": "KXMLBHIT-26JUN291907NYMTOR-NYMFLINDOR12-3",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 2.5,
+        "fractional_trading_enabled": true,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Francisco Lindor: 2+ hits?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHIT-26JUN291907NYMTOR",
+      "ticker": "KXMLBHIT-26JUN291907NYMTOR-NYMFLINDOR12-2",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 1.5,
+        "fractional_trading_enabled": true,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Francisco Lindor: 1+ hits?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHIT-26JUN291907NYMTOR",
+      "ticker": "KXMLBHIT-26JUN291907NYMTOR-NYMFLINDOR12-1",
       "numeric_fields": {
         "can_close_early": true,
         "floor_strike": 0.5,
@@ -747,6 +881,474 @@
       "series_ticker": "",
       "event_ticker": "KXMLBHIT-26JUN291910TEXCLE",
       "ticker": "KXMLBHIT-26JUN291910TEXCLE-CLESKWAN38-1",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 0.5,
+        "fractional_trading_enabled": true,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Sal Frelick: 3+ hits?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHIT-26JUN291940CINMIL",
+      "ticker": "KXMLBHIT-26JUN291940CINMIL-MILSFRELICK10-3",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 2.5,
+        "fractional_trading_enabled": true,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Sal Frelick: 2+ hits?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHIT-26JUN291940CINMIL",
+      "ticker": "KXMLBHIT-26JUN291940CINMIL-MILSFRELICK10-2",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 1.5,
+        "fractional_trading_enabled": true,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Sal Frelick: 1+ hits?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHIT-26JUN291940CINMIL",
+      "ticker": "KXMLBHIT-26JUN291940CINMIL-MILSFRELICK10-1",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 0.5,
+        "fractional_trading_enabled": true,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Christian Yelich: 4+ hits?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHIT-26JUN291940CINMIL",
+      "ticker": "KXMLBHIT-26JUN291940CINMIL-MILCYELICH22-4",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 3.5,
+        "fractional_trading_enabled": true,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Christian Yelich: 3+ hits?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHIT-26JUN291940CINMIL",
+      "ticker": "KXMLBHIT-26JUN291940CINMIL-MILCYELICH22-3",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 2.5,
+        "fractional_trading_enabled": true,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Christian Yelich: 2+ hits?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHIT-26JUN291940CINMIL",
+      "ticker": "KXMLBHIT-26JUN291940CINMIL-MILCYELICH22-2",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 1.5,
+        "fractional_trading_enabled": true,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Christian Yelich: 1+ hits?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHIT-26JUN291940CINMIL",
+      "ticker": "KXMLBHIT-26JUN291940CINMIL-MILCYELICH22-1",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 0.5,
+        "fractional_trading_enabled": true,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Elly De La Cruz: 3+ hits?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHIT-26JUN291940CINMIL",
+      "ticker": "KXMLBHIT-26JUN291940CINMIL-CINEDELACRUZ44-3",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 2.5,
+        "fractional_trading_enabled": true,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Elly De La Cruz: 2+ hits?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHIT-26JUN291940CINMIL",
+      "ticker": "KXMLBHIT-26JUN291940CINMIL-CINEDELACRUZ44-2",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 1.5,
+        "fractional_trading_enabled": true,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Elly De La Cruz: 1+ hits?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHIT-26JUN291940CINMIL",
+      "ticker": "KXMLBHIT-26JUN291940CINMIL-CINEDELACRUZ44-1",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 0.5,
+        "fractional_trading_enabled": true,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Yordan Alvarez: 4+ hits?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHIT-26JUN292010MINHOU",
+      "ticker": "KXMLBHIT-26JUN292010MINHOU-HOUYALVAREZ44-4",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 3.5,
+        "fractional_trading_enabled": true,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Yordan Alvarez: 3+ hits?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHIT-26JUN292010MINHOU",
+      "ticker": "KXMLBHIT-26JUN292010MINHOU-HOUYALVAREZ44-3",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 2.5,
+        "fractional_trading_enabled": true,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Yordan Alvarez: 2+ hits?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHIT-26JUN292010MINHOU",
+      "ticker": "KXMLBHIT-26JUN292010MINHOU-HOUYALVAREZ44-2",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 1.5,
+        "fractional_trading_enabled": true,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Yordan Alvarez: 1+ hits?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHIT-26JUN292010MINHOU",
+      "ticker": "KXMLBHIT-26JUN292010MINHOU-HOUYALVAREZ44-1",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 0.5,
+        "fractional_trading_enabled": true,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Jose Altuve: 3+ hits?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHIT-26JUN292010MINHOU",
+      "ticker": "KXMLBHIT-26JUN292010MINHOU-HOUJALTUVE27-3",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 2.5,
+        "fractional_trading_enabled": true,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Jose Altuve: 2+ hits?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHIT-26JUN292010MINHOU",
+      "ticker": "KXMLBHIT-26JUN292010MINHOU-HOUJALTUVE27-2",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 1.5,
+        "fractional_trading_enabled": true,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Jose Altuve: 1+ hits?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHIT-26JUN292010MINHOU",
+      "ticker": "KXMLBHIT-26JUN292010MINHOU-HOUJALTUVE27-1",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 0.5,
+        "fractional_trading_enabled": true,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Christian Walker: 3+ hits?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHIT-26JUN292010MINHOU",
+      "ticker": "KXMLBHIT-26JUN292010MINHOU-HOUCWALKER8-3",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 2.5,
+        "fractional_trading_enabled": true,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Christian Walker: 2+ hits?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHIT-26JUN292010MINHOU",
+      "ticker": "KXMLBHIT-26JUN292010MINHOU-HOUCWALKER8-2",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 1.5,
+        "fractional_trading_enabled": true,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Christian Walker: 1+ hits?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHIT-26JUN292010MINHOU",
+      "ticker": "KXMLBHIT-26JUN292010MINHOU-HOUCWALKER8-1",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 0.5,
+        "fractional_trading_enabled": true,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Byron Buxton: 4+ hits?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHIT-26JUN292010MINHOU",
+      "ticker": "KXMLBHIT-26JUN292010MINHOU-MINBBUXTON25-4",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 3.5,
+        "fractional_trading_enabled": true,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Byron Buxton: 3+ hits?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHIT-26JUN292010MINHOU",
+      "ticker": "KXMLBHIT-26JUN292010MINHOU-MINBBUXTON25-3",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 2.5,
+        "fractional_trading_enabled": true,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Byron Buxton: 2+ hits?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHIT-26JUN292010MINHOU",
+      "ticker": "KXMLBHIT-26JUN292010MINHOU-MINBBUXTON25-2",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 1.5,
+        "fractional_trading_enabled": true,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Byron Buxton: 1+ hits?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHIT-26JUN292010MINHOU",
+      "ticker": "KXMLBHIT-26JUN292010MINHOU-MINBBUXTON25-1",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 0.5,
+        "fractional_trading_enabled": true,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Randy Arozarena: 3+ hits?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHIT-26JUN292140LAASEA",
+      "ticker": "KXMLBHIT-26JUN292140LAASEA-SEARAROZARENA56-3",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 2.5,
+        "fractional_trading_enabled": true,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Randy Arozarena: 2+ hits?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHIT-26JUN292140LAASEA",
+      "ticker": "KXMLBHIT-26JUN292140LAASEA-SEARAROZARENA56-2",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 1.5,
+        "fractional_trading_enabled": true,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Randy Arozarena: 1+ hits?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHIT-26JUN292140LAASEA",
+      "ticker": "KXMLBHIT-26JUN292140LAASEA-SEARAROZARENA56-1",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 0.5,
+        "fractional_trading_enabled": true,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Julio Rodr\u00edguez: 3+ hits?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHIT-26JUN292140LAASEA",
+      "ticker": "KXMLBHIT-26JUN292140LAASEA-SEAJRODRGUEZ44-3",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 2.5,
+        "fractional_trading_enabled": true,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Julio Rodr\u00edguez: 2+ hits?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHIT-26JUN292140LAASEA",
+      "ticker": "KXMLBHIT-26JUN292140LAASEA-SEAJRODRGUEZ44-2",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 1.5,
+        "fractional_trading_enabled": true,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Julio Rodr\u00edguez: 1+ hits?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHIT-26JUN292140LAASEA",
+      "ticker": "KXMLBHIT-26JUN292140LAASEA-SEAJRODRGUEZ44-1",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 0.5,
+        "fractional_trading_enabled": true,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Cal Raleigh: 3+ hits?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHIT-26JUN292140LAASEA",
+      "ticker": "KXMLBHIT-26JUN292140LAASEA-SEACRALEIGH29-3",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 2.5,
+        "fractional_trading_enabled": true,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Cal Raleigh: 2+ hits?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHIT-26JUN292140LAASEA",
+      "ticker": "KXMLBHIT-26JUN292140LAASEA-SEACRALEIGH29-2",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 1.5,
+        "fractional_trading_enabled": true,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Cal Raleigh: 1+ hits?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHIT-26JUN292140LAASEA",
+      "ticker": "KXMLBHIT-26JUN292140LAASEA-SEACRALEIGH29-1",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 0.5,
+        "fractional_trading_enabled": true,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Jo Adell: 3+ hits?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHIT-26JUN292140LAASEA",
+      "ticker": "KXMLBHIT-26JUN292140LAASEA-LAAJADELL7-3",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 2.5,
+        "fractional_trading_enabled": true,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Jo Adell: 2+ hits?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHIT-26JUN292140LAASEA",
+      "ticker": "KXMLBHIT-26JUN292140LAASEA-LAAJADELL7-2",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 1.5,
+        "fractional_trading_enabled": true,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Jo Adell: 1+ hits?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHIT-26JUN292140LAASEA",
+      "ticker": "KXMLBHIT-26JUN292140LAASEA-LAAJADELL7-1",
       "numeric_fields": {
         "can_close_early": true,
         "floor_strike": 0.5,
@@ -1055,6 +1657,32 @@
       "detected_by": "ticker"
     },
     {
+      "title": "Cody Bellinger: 2+ home runs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHR-26JUN291905DETNYY",
+      "ticker": "KXMLBHR-26JUN291905DETNYY-NYYCBELLINGER35-2",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 1.5,
+        "fractional_trading_enabled": true,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Cody Bellinger: 1+ home runs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHR-26JUN291905DETNYY",
+      "ticker": "KXMLBHR-26JUN291905DETNYY-NYYCBELLINGER35-1",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 0.5,
+        "fractional_trading_enabled": true,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
       "title": "Vladimir Guerrero Jr.: 2+ home runs?",
       "series_ticker": "",
       "event_ticker": "KXMLBHR-26JUN291907NYMTOR",
@@ -1137,6 +1765,253 @@
       "series_ticker": "",
       "event_ticker": "KXMLBHR-26JUN291907NYMTOR",
       "ticker": "KXMLBHR-26JUN291907NYMTOR-NYMFLINDOR12-1",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 0.5,
+        "fractional_trading_enabled": true,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Corey Seager: 2+ home runs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHR-26JUN291910TEXCLE",
+      "ticker": "KXMLBHR-26JUN291910TEXCLE-TEXCSEAGER5-2",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 1.5,
+        "fractional_trading_enabled": true,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Corey Seager: 1+ home runs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHR-26JUN291910TEXCLE",
+      "ticker": "KXMLBHR-26JUN291910TEXCLE-TEXCSEAGER5-1",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 0.5,
+        "fractional_trading_enabled": true,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Brandon Nimmo: 2+ home runs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHR-26JUN291910TEXCLE",
+      "ticker": "KXMLBHR-26JUN291910TEXCLE-TEXBNIMMO24-2",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 1.5,
+        "fractional_trading_enabled": true,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Brandon Nimmo: 1+ home runs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHR-26JUN291910TEXCLE",
+      "ticker": "KXMLBHR-26JUN291910TEXCLE-TEXBNIMMO24-1",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 0.5,
+        "fractional_trading_enabled": true,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Steven Kwan: 1+ home runs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHR-26JUN291910TEXCLE",
+      "ticker": "KXMLBHR-26JUN291910TEXCLE-CLESKWAN38-1",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 0.5,
+        "fractional_trading_enabled": true,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "CJ Abrams: 2+ home runs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHR-26JUN291910WSHBOS",
+      "ticker": "KXMLBHR-26JUN291910WSHBOS-WSHCABRAMS5-2",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 1.5,
+        "fractional_trading_enabled": true,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "CJ Abrams: 1+ home runs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHR-26JUN291910WSHBOS",
+      "ticker": "KXMLBHR-26JUN291910WSHBOS-WSHCABRAMS5-1",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 0.5,
+        "fractional_trading_enabled": true,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "James Wood: 2+ home runs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHR-26JUN291910WSHBOS",
+      "ticker": "KXMLBHR-26JUN291910WSHBOS-WSHJWOOD29-2",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 1.5,
+        "fractional_trading_enabled": true,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "James Wood: 1+ home runs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHR-26JUN291910WSHBOS",
+      "ticker": "KXMLBHR-26JUN291910WSHBOS-WSHJWOOD29-1",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 0.5,
+        "fractional_trading_enabled": true,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Manny Machado: 2+ home runs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHR-26JUN292005SDCHC",
+      "ticker": "KXMLBHR-26JUN292005SDCHC-SDMMACHADO13-2",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 1.5,
+        "fractional_trading_enabled": true,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Manny Machado: 1+ home runs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHR-26JUN292005SDCHC",
+      "ticker": "KXMLBHR-26JUN292005SDCHC-SDMMACHADO13-1",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 0.5,
+        "fractional_trading_enabled": true,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Jackson Merrill: 2+ home runs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHR-26JUN292005SDCHC",
+      "ticker": "KXMLBHR-26JUN292005SDCHC-SDJMERRILL3-2",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 1.5,
+        "fractional_trading_enabled": true,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Jackson Merrill: 1+ home runs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHR-26JUN292005SDCHC",
+      "ticker": "KXMLBHR-26JUN292005SDCHC-SDJMERRILL3-1",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 0.5,
+        "fractional_trading_enabled": true,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Fernando Tatis Jr.: 2+ home runs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHR-26JUN292005SDCHC",
+      "ticker": "KXMLBHR-26JUN292005SDCHC-SDFTATIS23-2",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 1.5,
+        "fractional_trading_enabled": true,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Fernando Tatis Jr.: 1+ home runs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHR-26JUN292005SDCHC",
+      "ticker": "KXMLBHR-26JUN292005SDCHC-SDFTATIS23-1",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 0.5,
+        "fractional_trading_enabled": true,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Pete Crow-Armstrong: 2+ home runs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHR-26JUN292005SDCHC",
+      "ticker": "KXMLBHR-26JUN292005SDCHC-CHCPCROWARMSTRONG4-2",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 1.5,
+        "fractional_trading_enabled": true,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Pete Crow-Armstrong: 1+ home runs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHR-26JUN292005SDCHC",
+      "ticker": "KXMLBHR-26JUN292005SDCHC-CHCPCROWARMSTRONG4-1",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 0.5,
+        "fractional_trading_enabled": true,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Alex Bregman: 2+ home runs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHR-26JUN292005SDCHC",
+      "ticker": "KXMLBHR-26JUN292005SDCHC-CHCABREGMAN3-2",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 1.5,
+        "fractional_trading_enabled": true,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Alex Bregman: 1+ home runs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHR-26JUN292005SDCHC",
+      "ticker": "KXMLBHR-26JUN292005SDCHC-CHCABREGMAN3-1",
       "numeric_fields": {
         "can_close_early": true,
         "floor_strike": 0.5,
@@ -1267,6 +2142,110 @@
       "series_ticker": "",
       "event_ticker": "KXMLBHR-26JUN292010MINHOU",
       "ticker": "KXMLBHR-26JUN292010MINHOU-MINBBUXTON25-1",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 0.5,
+        "fractional_trading_enabled": true,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Randy Arozarena: 2+ home runs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHR-26JUN292140LAASEA",
+      "ticker": "KXMLBHR-26JUN292140LAASEA-SEARAROZARENA56-2",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 1.5,
+        "fractional_trading_enabled": true,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Randy Arozarena: 1+ home runs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHR-26JUN292140LAASEA",
+      "ticker": "KXMLBHR-26JUN292140LAASEA-SEARAROZARENA56-1",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 0.5,
+        "fractional_trading_enabled": true,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Julio Rodr\u00edguez: 2+ home runs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHR-26JUN292140LAASEA",
+      "ticker": "KXMLBHR-26JUN292140LAASEA-SEAJRODRGUEZ44-2",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 1.5,
+        "fractional_trading_enabled": true,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Julio Rodr\u00edguez: 1+ home runs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHR-26JUN292140LAASEA",
+      "ticker": "KXMLBHR-26JUN292140LAASEA-SEAJRODRGUEZ44-1",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 0.5,
+        "fractional_trading_enabled": true,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Cal Raleigh: 2+ home runs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHR-26JUN292140LAASEA",
+      "ticker": "KXMLBHR-26JUN292140LAASEA-SEACRALEIGH29-2",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 1.5,
+        "fractional_trading_enabled": true,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Cal Raleigh: 1+ home runs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHR-26JUN292140LAASEA",
+      "ticker": "KXMLBHR-26JUN292140LAASEA-SEACRALEIGH29-1",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 0.5,
+        "fractional_trading_enabled": true,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Jo Adell: 2+ home runs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHR-26JUN292140LAASEA",
+      "ticker": "KXMLBHR-26JUN292140LAASEA-LAAJADELL7-2",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 1.5,
+        "fractional_trading_enabled": true,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Jo Adell: 1+ home runs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHR-26JUN292140LAASEA",
+      "ticker": "KXMLBHR-26JUN292140LAASEA-LAAJADELL7-1",
       "numeric_fields": {
         "can_close_early": true,
         "floor_strike": 0.5,
@@ -1436,6 +2415,201 @@
       "series_ticker": "",
       "event_ticker": "KXMLBHR-26JUN292140LADATH",
       "ticker": "KXMLBHR-26JUN292140LADATH-ATHJWILSON5-1",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 0.5,
+        "fractional_trading_enabled": true,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Trea Turner: 5+ hits + runs + RBIs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHRR-26JUN291840PITPHI",
+      "ticker": "KXMLBHRR-26JUN291840PITPHI-PHITTURNER7-5",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 4.5,
+        "fractional_trading_enabled": true,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Trea Turner: 4+ hits + runs + RBIs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHRR-26JUN291840PITPHI",
+      "ticker": "KXMLBHRR-26JUN291840PITPHI-PHITTURNER7-4",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 3.5,
+        "fractional_trading_enabled": true,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Trea Turner: 3+ hits + runs + RBIs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHRR-26JUN291840PITPHI",
+      "ticker": "KXMLBHRR-26JUN291840PITPHI-PHITTURNER7-3",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 2.5,
+        "fractional_trading_enabled": true,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Trea Turner: 2+ hits + runs + RBIs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHRR-26JUN291840PITPHI",
+      "ticker": "KXMLBHRR-26JUN291840PITPHI-PHITTURNER7-2",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 1.5,
+        "fractional_trading_enabled": true,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Trea Turner: 1+ hits + runs + RBIs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHRR-26JUN291840PITPHI",
+      "ticker": "KXMLBHRR-26JUN291840PITPHI-PHITTURNER7-1",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 0.5,
+        "fractional_trading_enabled": true,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Kyle Schwarber: 5+ hits + runs + RBIs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHRR-26JUN291840PITPHI",
+      "ticker": "KXMLBHRR-26JUN291840PITPHI-PHIKSCHWARBER12-5",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 4.5,
+        "fractional_trading_enabled": true,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Kyle Schwarber: 4+ hits + runs + RBIs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHRR-26JUN291840PITPHI",
+      "ticker": "KXMLBHRR-26JUN291840PITPHI-PHIKSCHWARBER12-4",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 3.5,
+        "fractional_trading_enabled": true,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Kyle Schwarber: 3+ hits + runs + RBIs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHRR-26JUN291840PITPHI",
+      "ticker": "KXMLBHRR-26JUN291840PITPHI-PHIKSCHWARBER12-3",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 2.5,
+        "fractional_trading_enabled": true,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Kyle Schwarber: 2+ hits + runs + RBIs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHRR-26JUN291840PITPHI",
+      "ticker": "KXMLBHRR-26JUN291840PITPHI-PHIKSCHWARBER12-2",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 1.5,
+        "fractional_trading_enabled": true,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Kyle Schwarber: 1+ hits + runs + RBIs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHRR-26JUN291840PITPHI",
+      "ticker": "KXMLBHRR-26JUN291840PITPHI-PHIKSCHWARBER12-1",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 0.5,
+        "fractional_trading_enabled": true,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Bryce Harper: 5+ hits + runs + RBIs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHRR-26JUN291840PITPHI",
+      "ticker": "KXMLBHRR-26JUN291840PITPHI-PHIBHARPER3-5",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 4.5,
+        "fractional_trading_enabled": true,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Bryce Harper: 4+ hits + runs + RBIs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHRR-26JUN291840PITPHI",
+      "ticker": "KXMLBHRR-26JUN291840PITPHI-PHIBHARPER3-4",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 3.5,
+        "fractional_trading_enabled": true,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Bryce Harper: 3+ hits + runs + RBIs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHRR-26JUN291840PITPHI",
+      "ticker": "KXMLBHRR-26JUN291840PITPHI-PHIBHARPER3-3",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 2.5,
+        "fractional_trading_enabled": true,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Bryce Harper: 2+ hits + runs + RBIs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHRR-26JUN291840PITPHI",
+      "ticker": "KXMLBHRR-26JUN291840PITPHI-PHIBHARPER3-2",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 1.5,
+        "fractional_trading_enabled": true,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Bryce Harper: 1+ hits + runs + RBIs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHRR-26JUN291840PITPHI",
+      "ticker": "KXMLBHRR-26JUN291840PITPHI-PHIBHARPER3-1",
       "numeric_fields": {
         "can_close_early": true,
         "floor_strike": 0.5,
@@ -1631,6 +2805,1241 @@
       "series_ticker": "",
       "event_ticker": "KXMLBHRR-26JUN291907NYMTOR",
       "ticker": "KXMLBHRR-26JUN291907NYMTOR-NYMFLINDOR12-1",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 0.5,
+        "fractional_trading_enabled": true,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "James Wood: 5+ hits + runs + RBIs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHRR-26JUN291910WSHBOS",
+      "ticker": "KXMLBHRR-26JUN291910WSHBOS-WSHJWOOD29-5",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 4.5,
+        "fractional_trading_enabled": true,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "James Wood: 4+ hits + runs + RBIs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHRR-26JUN291910WSHBOS",
+      "ticker": "KXMLBHRR-26JUN291910WSHBOS-WSHJWOOD29-4",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 3.5,
+        "fractional_trading_enabled": true,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "James Wood: 3+ hits + runs + RBIs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHRR-26JUN291910WSHBOS",
+      "ticker": "KXMLBHRR-26JUN291910WSHBOS-WSHJWOOD29-3",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 2.5,
+        "fractional_trading_enabled": true,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "James Wood: 2+ hits + runs + RBIs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHRR-26JUN291910WSHBOS",
+      "ticker": "KXMLBHRR-26JUN291910WSHBOS-WSHJWOOD29-2",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 1.5,
+        "fractional_trading_enabled": true,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "James Wood: 1+ hits + runs + RBIs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHRR-26JUN291910WSHBOS",
+      "ticker": "KXMLBHRR-26JUN291910WSHBOS-WSHJWOOD29-1",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 0.5,
+        "fractional_trading_enabled": true,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "CJ Abrams: 5+ hits + runs + RBIs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHRR-26JUN291910WSHBOS",
+      "ticker": "KXMLBHRR-26JUN291910WSHBOS-WSHCABRAMS5-5",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 4.5,
+        "fractional_trading_enabled": true,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "CJ Abrams: 4+ hits + runs + RBIs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHRR-26JUN291910WSHBOS",
+      "ticker": "KXMLBHRR-26JUN291910WSHBOS-WSHCABRAMS5-4",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 3.5,
+        "fractional_trading_enabled": true,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "CJ Abrams: 3+ hits + runs + RBIs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHRR-26JUN291910WSHBOS",
+      "ticker": "KXMLBHRR-26JUN291910WSHBOS-WSHCABRAMS5-3",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 2.5,
+        "fractional_trading_enabled": true,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "CJ Abrams: 2+ hits + runs + RBIs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHRR-26JUN291910WSHBOS",
+      "ticker": "KXMLBHRR-26JUN291910WSHBOS-WSHCABRAMS5-2",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 1.5,
+        "fractional_trading_enabled": true,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "CJ Abrams: 1+ hits + runs + RBIs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHRR-26JUN291910WSHBOS",
+      "ticker": "KXMLBHRR-26JUN291910WSHBOS-WSHCABRAMS5-1",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 0.5,
+        "fractional_trading_enabled": true,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Sal Frelick: 5+ hits + runs + RBIs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHRR-26JUN291940CINMIL",
+      "ticker": "KXMLBHRR-26JUN291940CINMIL-MILSFRELICK10-5",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 4.5,
+        "fractional_trading_enabled": true,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Sal Frelick: 4+ hits + runs + RBIs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHRR-26JUN291940CINMIL",
+      "ticker": "KXMLBHRR-26JUN291940CINMIL-MILSFRELICK10-4",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 3.5,
+        "fractional_trading_enabled": true,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Sal Frelick: 3+ hits + runs + RBIs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHRR-26JUN291940CINMIL",
+      "ticker": "KXMLBHRR-26JUN291940CINMIL-MILSFRELICK10-3",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 2.5,
+        "fractional_trading_enabled": true,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Sal Frelick: 2+ hits + runs + RBIs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHRR-26JUN291940CINMIL",
+      "ticker": "KXMLBHRR-26JUN291940CINMIL-MILSFRELICK10-2",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 1.5,
+        "fractional_trading_enabled": true,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Sal Frelick: 1+ hits + runs + RBIs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHRR-26JUN291940CINMIL",
+      "ticker": "KXMLBHRR-26JUN291940CINMIL-MILSFRELICK10-1",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 0.5,
+        "fractional_trading_enabled": true,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Christian Yelich: 5+ hits + runs + RBIs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHRR-26JUN291940CINMIL",
+      "ticker": "KXMLBHRR-26JUN291940CINMIL-MILCYELICH22-5",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 4.5,
+        "fractional_trading_enabled": true,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Christian Yelich: 4+ hits + runs + RBIs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHRR-26JUN291940CINMIL",
+      "ticker": "KXMLBHRR-26JUN291940CINMIL-MILCYELICH22-4",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 3.5,
+        "fractional_trading_enabled": true,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Christian Yelich: 3+ hits + runs + RBIs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHRR-26JUN291940CINMIL",
+      "ticker": "KXMLBHRR-26JUN291940CINMIL-MILCYELICH22-3",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 2.5,
+        "fractional_trading_enabled": true,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Christian Yelich: 2+ hits + runs + RBIs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHRR-26JUN291940CINMIL",
+      "ticker": "KXMLBHRR-26JUN291940CINMIL-MILCYELICH22-2",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 1.5,
+        "fractional_trading_enabled": true,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Christian Yelich: 1+ hits + runs + RBIs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHRR-26JUN291940CINMIL",
+      "ticker": "KXMLBHRR-26JUN291940CINMIL-MILCYELICH22-1",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 0.5,
+        "fractional_trading_enabled": true,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Elly De La Cruz: 5+ hits + runs + RBIs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHRR-26JUN291940CINMIL",
+      "ticker": "KXMLBHRR-26JUN291940CINMIL-CINEDELACRUZ44-5",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 4.5,
+        "fractional_trading_enabled": true,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Elly De La Cruz: 4+ hits + runs + RBIs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHRR-26JUN291940CINMIL",
+      "ticker": "KXMLBHRR-26JUN291940CINMIL-CINEDELACRUZ44-4",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 3.5,
+        "fractional_trading_enabled": true,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Elly De La Cruz: 3+ hits + runs + RBIs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHRR-26JUN291940CINMIL",
+      "ticker": "KXMLBHRR-26JUN291940CINMIL-CINEDELACRUZ44-3",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 2.5,
+        "fractional_trading_enabled": true,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Elly De La Cruz: 2+ hits + runs + RBIs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHRR-26JUN291940CINMIL",
+      "ticker": "KXMLBHRR-26JUN291940CINMIL-CINEDELACRUZ44-2",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 1.5,
+        "fractional_trading_enabled": true,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Elly De La Cruz: 1+ hits + runs + RBIs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHRR-26JUN291940CINMIL",
+      "ticker": "KXMLBHRR-26JUN291940CINMIL-CINEDELACRUZ44-1",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 0.5,
+        "fractional_trading_enabled": true,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Randy Arozarena: 5+ hits + runs + RBIs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHRR-26JUN292140LAASEA",
+      "ticker": "KXMLBHRR-26JUN292140LAASEA-SEARAROZARENA56-5",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 4.5,
+        "fractional_trading_enabled": true,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Randy Arozarena: 4+ hits + runs + RBIs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHRR-26JUN292140LAASEA",
+      "ticker": "KXMLBHRR-26JUN292140LAASEA-SEARAROZARENA56-4",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 3.5,
+        "fractional_trading_enabled": true,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Randy Arozarena: 3+ hits + runs + RBIs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHRR-26JUN292140LAASEA",
+      "ticker": "KXMLBHRR-26JUN292140LAASEA-SEARAROZARENA56-3",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 2.5,
+        "fractional_trading_enabled": true,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Randy Arozarena: 2+ hits + runs + RBIs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHRR-26JUN292140LAASEA",
+      "ticker": "KXMLBHRR-26JUN292140LAASEA-SEARAROZARENA56-2",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 1.5,
+        "fractional_trading_enabled": true,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Randy Arozarena: 1+ hits + runs + RBIs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHRR-26JUN292140LAASEA",
+      "ticker": "KXMLBHRR-26JUN292140LAASEA-SEARAROZARENA56-1",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 0.5,
+        "fractional_trading_enabled": true,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Julio Rodr\u00edguez: 5+ hits + runs + RBIs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHRR-26JUN292140LAASEA",
+      "ticker": "KXMLBHRR-26JUN292140LAASEA-SEAJRODRGUEZ44-5",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 4.5,
+        "fractional_trading_enabled": true,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Julio Rodr\u00edguez: 4+ hits + runs + RBIs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHRR-26JUN292140LAASEA",
+      "ticker": "KXMLBHRR-26JUN292140LAASEA-SEAJRODRGUEZ44-4",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 3.5,
+        "fractional_trading_enabled": true,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Julio Rodr\u00edguez: 3+ hits + runs + RBIs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHRR-26JUN292140LAASEA",
+      "ticker": "KXMLBHRR-26JUN292140LAASEA-SEAJRODRGUEZ44-3",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 2.5,
+        "fractional_trading_enabled": true,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Julio Rodr\u00edguez: 2+ hits + runs + RBIs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHRR-26JUN292140LAASEA",
+      "ticker": "KXMLBHRR-26JUN292140LAASEA-SEAJRODRGUEZ44-2",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 1.5,
+        "fractional_trading_enabled": true,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Julio Rodr\u00edguez: 1+ hits + runs + RBIs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHRR-26JUN292140LAASEA",
+      "ticker": "KXMLBHRR-26JUN292140LAASEA-SEAJRODRGUEZ44-1",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 0.5,
+        "fractional_trading_enabled": true,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Cal Raleigh: 5+ hits + runs + RBIs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHRR-26JUN292140LAASEA",
+      "ticker": "KXMLBHRR-26JUN292140LAASEA-SEACRALEIGH29-5",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 4.5,
+        "fractional_trading_enabled": true,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Cal Raleigh: 4+ hits + runs + RBIs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHRR-26JUN292140LAASEA",
+      "ticker": "KXMLBHRR-26JUN292140LAASEA-SEACRALEIGH29-4",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 3.5,
+        "fractional_trading_enabled": true,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Cal Raleigh: 3+ hits + runs + RBIs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHRR-26JUN292140LAASEA",
+      "ticker": "KXMLBHRR-26JUN292140LAASEA-SEACRALEIGH29-3",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 2.5,
+        "fractional_trading_enabled": true,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Cal Raleigh: 2+ hits + runs + RBIs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHRR-26JUN292140LAASEA",
+      "ticker": "KXMLBHRR-26JUN292140LAASEA-SEACRALEIGH29-2",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 1.5,
+        "fractional_trading_enabled": true,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Cal Raleigh: 1+ hits + runs + RBIs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHRR-26JUN292140LAASEA",
+      "ticker": "KXMLBHRR-26JUN292140LAASEA-SEACRALEIGH29-1",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 0.5,
+        "fractional_trading_enabled": true,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Jo Adell: 5+ hits + runs + RBIs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHRR-26JUN292140LAASEA",
+      "ticker": "KXMLBHRR-26JUN292140LAASEA-LAAJADELL7-5",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 4.5,
+        "fractional_trading_enabled": true,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Jo Adell: 4+ hits + runs + RBIs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHRR-26JUN292140LAASEA",
+      "ticker": "KXMLBHRR-26JUN292140LAASEA-LAAJADELL7-4",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 3.5,
+        "fractional_trading_enabled": true,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Jo Adell: 3+ hits + runs + RBIs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHRR-26JUN292140LAASEA",
+      "ticker": "KXMLBHRR-26JUN292140LAASEA-LAAJADELL7-3",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 2.5,
+        "fractional_trading_enabled": true,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Jo Adell: 2+ hits + runs + RBIs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHRR-26JUN292140LAASEA",
+      "ticker": "KXMLBHRR-26JUN292140LAASEA-LAAJADELL7-2",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 1.5,
+        "fractional_trading_enabled": true,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Jo Adell: 1+ hits + runs + RBIs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHRR-26JUN292140LAASEA",
+      "ticker": "KXMLBHRR-26JUN292140LAASEA-LAAJADELL7-1",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 0.5,
+        "fractional_trading_enabled": true,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Shohei Ohtani: 5+ hits + runs + RBIs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHRR-26JUN292140LADATH",
+      "ticker": "KXMLBHRR-26JUN292140LADATH-LADSOHTANI17-5",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 4.5,
+        "fractional_trading_enabled": true,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Shohei Ohtani: 4+ hits + runs + RBIs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHRR-26JUN292140LADATH",
+      "ticker": "KXMLBHRR-26JUN292140LADATH-LADSOHTANI17-4",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 3.5,
+        "fractional_trading_enabled": true,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Shohei Ohtani: 3+ hits + runs + RBIs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHRR-26JUN292140LADATH",
+      "ticker": "KXMLBHRR-26JUN292140LADATH-LADSOHTANI17-3",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 2.5,
+        "fractional_trading_enabled": true,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Shohei Ohtani: 2+ hits + runs + RBIs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHRR-26JUN292140LADATH",
+      "ticker": "KXMLBHRR-26JUN292140LADATH-LADSOHTANI17-2",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 1.5,
+        "fractional_trading_enabled": true,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Shohei Ohtani: 1+ hits + runs + RBIs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHRR-26JUN292140LADATH",
+      "ticker": "KXMLBHRR-26JUN292140LADATH-LADSOHTANI17-1",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 0.5,
+        "fractional_trading_enabled": true,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Mookie Betts: 5+ hits + runs + RBIs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHRR-26JUN292140LADATH",
+      "ticker": "KXMLBHRR-26JUN292140LADATH-LADMBETTS50-5",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 4.5,
+        "fractional_trading_enabled": true,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Mookie Betts: 4+ hits + runs + RBIs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHRR-26JUN292140LADATH",
+      "ticker": "KXMLBHRR-26JUN292140LADATH-LADMBETTS50-4",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 3.5,
+        "fractional_trading_enabled": true,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Mookie Betts: 3+ hits + runs + RBIs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHRR-26JUN292140LADATH",
+      "ticker": "KXMLBHRR-26JUN292140LADATH-LADMBETTS50-3",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 2.5,
+        "fractional_trading_enabled": true,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Mookie Betts: 2+ hits + runs + RBIs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHRR-26JUN292140LADATH",
+      "ticker": "KXMLBHRR-26JUN292140LADATH-LADMBETTS50-2",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 1.5,
+        "fractional_trading_enabled": true,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Mookie Betts: 1+ hits + runs + RBIs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHRR-26JUN292140LADATH",
+      "ticker": "KXMLBHRR-26JUN292140LADATH-LADMBETTS50-1",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 0.5,
+        "fractional_trading_enabled": true,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Kyle Tucker: 5+ hits + runs + RBIs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHRR-26JUN292140LADATH",
+      "ticker": "KXMLBHRR-26JUN292140LADATH-LADKTUCKER23-5",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 4.5,
+        "fractional_trading_enabled": true,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Kyle Tucker: 4+ hits + runs + RBIs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHRR-26JUN292140LADATH",
+      "ticker": "KXMLBHRR-26JUN292140LADATH-LADKTUCKER23-4",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 3.5,
+        "fractional_trading_enabled": true,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Kyle Tucker: 3+ hits + runs + RBIs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHRR-26JUN292140LADATH",
+      "ticker": "KXMLBHRR-26JUN292140LADATH-LADKTUCKER23-3",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 2.5,
+        "fractional_trading_enabled": true,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Kyle Tucker: 2+ hits + runs + RBIs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHRR-26JUN292140LADATH",
+      "ticker": "KXMLBHRR-26JUN292140LADATH-LADKTUCKER23-2",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 1.5,
+        "fractional_trading_enabled": true,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Kyle Tucker: 1+ hits + runs + RBIs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHRR-26JUN292140LADATH",
+      "ticker": "KXMLBHRR-26JUN292140LADATH-LADKTUCKER23-1",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 0.5,
+        "fractional_trading_enabled": true,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Freddie Freeman: 5+ hits + runs + RBIs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHRR-26JUN292140LADATH",
+      "ticker": "KXMLBHRR-26JUN292140LADATH-LADFFREEMAN5-5",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 4.5,
+        "fractional_trading_enabled": true,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Freddie Freeman: 4+ hits + runs + RBIs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHRR-26JUN292140LADATH",
+      "ticker": "KXMLBHRR-26JUN292140LADATH-LADFFREEMAN5-4",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 3.5,
+        "fractional_trading_enabled": true,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Freddie Freeman: 3+ hits + runs + RBIs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHRR-26JUN292140LADATH",
+      "ticker": "KXMLBHRR-26JUN292140LADATH-LADFFREEMAN5-3",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 2.5,
+        "fractional_trading_enabled": true,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Freddie Freeman: 2+ hits + runs + RBIs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHRR-26JUN292140LADATH",
+      "ticker": "KXMLBHRR-26JUN292140LADATH-LADFFREEMAN5-2",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 1.5,
+        "fractional_trading_enabled": true,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Freddie Freeman: 1+ hits + runs + RBIs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHRR-26JUN292140LADATH",
+      "ticker": "KXMLBHRR-26JUN292140LADATH-LADFFREEMAN5-1",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 0.5,
+        "fractional_trading_enabled": true,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Nick Kurtz: 5+ hits + runs + RBIs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHRR-26JUN292140LADATH",
+      "ticker": "KXMLBHRR-26JUN292140LADATH-ATHNKURTZ16-5",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 4.5,
+        "fractional_trading_enabled": true,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Nick Kurtz: 4+ hits + runs + RBIs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHRR-26JUN292140LADATH",
+      "ticker": "KXMLBHRR-26JUN292140LADATH-ATHNKURTZ16-4",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 3.5,
+        "fractional_trading_enabled": true,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Nick Kurtz: 3+ hits + runs + RBIs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHRR-26JUN292140LADATH",
+      "ticker": "KXMLBHRR-26JUN292140LADATH-ATHNKURTZ16-3",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 2.5,
+        "fractional_trading_enabled": true,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Nick Kurtz: 2+ hits + runs + RBIs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHRR-26JUN292140LADATH",
+      "ticker": "KXMLBHRR-26JUN292140LADATH-ATHNKURTZ16-2",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 1.5,
+        "fractional_trading_enabled": true,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Nick Kurtz: 1+ hits + runs + RBIs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHRR-26JUN292140LADATH",
+      "ticker": "KXMLBHRR-26JUN292140LADATH-ATHNKURTZ16-1",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 0.5,
+        "fractional_trading_enabled": true,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Jacob Wilson: 5+ hits + runs + RBIs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHRR-26JUN292140LADATH",
+      "ticker": "KXMLBHRR-26JUN292140LADATH-ATHJWILSON5-5",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 4.5,
+        "fractional_trading_enabled": true,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Jacob Wilson: 4+ hits + runs + RBIs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHRR-26JUN292140LADATH",
+      "ticker": "KXMLBHRR-26JUN292140LADATH-ATHJWILSON5-4",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 3.5,
+        "fractional_trading_enabled": true,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Jacob Wilson: 3+ hits + runs + RBIs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHRR-26JUN292140LADATH",
+      "ticker": "KXMLBHRR-26JUN292140LADATH-ATHJWILSON5-3",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 2.5,
+        "fractional_trading_enabled": true,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Jacob Wilson: 2+ hits + runs + RBIs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHRR-26JUN292140LADATH",
+      "ticker": "KXMLBHRR-26JUN292140LADATH-ATHJWILSON5-2",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 1.5,
+        "fractional_trading_enabled": true,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Jacob Wilson: 1+ hits + runs + RBIs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHRR-26JUN292140LADATH",
+      "ticker": "KXMLBHRR-26JUN292140LADATH-ATHJWILSON5-1",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 0.5,
+        "fractional_trading_enabled": true,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Rafael Devers: 5+ hits + runs + RBIs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHRR-26JUN292140SFAZ",
+      "ticker": "KXMLBHRR-26JUN292140SFAZ-SFRDEVERS16-5",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 4.5,
+        "fractional_trading_enabled": true,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Rafael Devers: 4+ hits + runs + RBIs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHRR-26JUN292140SFAZ",
+      "ticker": "KXMLBHRR-26JUN292140SFAZ-SFRDEVERS16-4",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 3.5,
+        "fractional_trading_enabled": true,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Rafael Devers: 3+ hits + runs + RBIs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHRR-26JUN292140SFAZ",
+      "ticker": "KXMLBHRR-26JUN292140SFAZ-SFRDEVERS16-3",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 2.5,
+        "fractional_trading_enabled": true,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Rafael Devers: 2+ hits + runs + RBIs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHRR-26JUN292140SFAZ",
+      "ticker": "KXMLBHRR-26JUN292140SFAZ-SFRDEVERS16-2",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 1.5,
+        "fractional_trading_enabled": true,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Rafael Devers: 1+ hits + runs + RBIs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHRR-26JUN292140SFAZ",
+      "ticker": "KXMLBHRR-26JUN292140SFAZ-SFRDEVERS16-1",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 0.5,
+        "fractional_trading_enabled": true,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Ketel Marte: 5+ hits + runs + RBIs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHRR-26JUN292140SFAZ",
+      "ticker": "KXMLBHRR-26JUN292140SFAZ-AZKMARTE4-5",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 4.5,
+        "fractional_trading_enabled": true,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Ketel Marte: 4+ hits + runs + RBIs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHRR-26JUN292140SFAZ",
+      "ticker": "KXMLBHRR-26JUN292140SFAZ-AZKMARTE4-4",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 3.5,
+        "fractional_trading_enabled": true,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Ketel Marte: 3+ hits + runs + RBIs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHRR-26JUN292140SFAZ",
+      "ticker": "KXMLBHRR-26JUN292140SFAZ-AZKMARTE4-3",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 2.5,
+        "fractional_trading_enabled": true,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Ketel Marte: 2+ hits + runs + RBIs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHRR-26JUN292140SFAZ",
+      "ticker": "KXMLBHRR-26JUN292140SFAZ-AZKMARTE4-2",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 1.5,
+        "fractional_trading_enabled": true,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Ketel Marte: 1+ hits + runs + RBIs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHRR-26JUN292140SFAZ",
+      "ticker": "KXMLBHRR-26JUN292140SFAZ-AZKMARTE4-1",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 0.5,
+        "fractional_trading_enabled": true,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Geraldo Perdomo: 5+ hits + runs + RBIs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHRR-26JUN292140SFAZ",
+      "ticker": "KXMLBHRR-26JUN292140SFAZ-AZGPERDOMO2-5",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 4.5,
+        "fractional_trading_enabled": true,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Geraldo Perdomo: 4+ hits + runs + RBIs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHRR-26JUN292140SFAZ",
+      "ticker": "KXMLBHRR-26JUN292140SFAZ-AZGPERDOMO2-4",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 3.5,
+        "fractional_trading_enabled": true,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Geraldo Perdomo: 3+ hits + runs + RBIs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHRR-26JUN292140SFAZ",
+      "ticker": "KXMLBHRR-26JUN292140SFAZ-AZGPERDOMO2-3",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 2.5,
+        "fractional_trading_enabled": true,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Geraldo Perdomo: 2+ hits + runs + RBIs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHRR-26JUN292140SFAZ",
+      "ticker": "KXMLBHRR-26JUN292140SFAZ-AZGPERDOMO2-2",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 1.5,
+        "fractional_trading_enabled": true,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Geraldo Perdomo: 1+ hits + runs + RBIs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHRR-26JUN292140SFAZ",
+      "ticker": "KXMLBHRR-26JUN292140SFAZ-AZGPERDOMO2-1",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 0.5,
+        "fractional_trading_enabled": true,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Corbin Carroll: 5+ hits + runs + RBIs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHRR-26JUN292140SFAZ",
+      "ticker": "KXMLBHRR-26JUN292140SFAZ-AZCCARROLL7-5",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 4.5,
+        "fractional_trading_enabled": true,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Corbin Carroll: 4+ hits + runs + RBIs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHRR-26JUN292140SFAZ",
+      "ticker": "KXMLBHRR-26JUN292140SFAZ-AZCCARROLL7-4",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 3.5,
+        "fractional_trading_enabled": true,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Corbin Carroll: 3+ hits + runs + RBIs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHRR-26JUN292140SFAZ",
+      "ticker": "KXMLBHRR-26JUN292140SFAZ-AZCCARROLL7-3",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 2.5,
+        "fractional_trading_enabled": true,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Corbin Carroll: 2+ hits + runs + RBIs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHRR-26JUN292140SFAZ",
+      "ticker": "KXMLBHRR-26JUN292140SFAZ-AZCCARROLL7-2",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 1.5,
+        "fractional_trading_enabled": true,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Corbin Carroll: 1+ hits + runs + RBIs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHRR-26JUN292140SFAZ",
+      "ticker": "KXMLBHRR-26JUN292140SFAZ-AZCCARROLL7-1",
       "numeric_fields": {
         "can_close_early": true,
         "floor_strike": 0.5,
@@ -2043,6 +4452,97 @@
       "detected_by": "ticker"
     },
     {
+      "title": "Parker Messick: 9+ strikeouts?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBKS-26JUN291910TEXCLE",
+      "ticker": "KXMLBKS-26JUN291910TEXCLE-CLEPMESSICK77-9",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 8.5,
+        "fractional_trading_enabled": true,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Parker Messick: 8+ strikeouts?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBKS-26JUN291910TEXCLE",
+      "ticker": "KXMLBKS-26JUN291910TEXCLE-CLEPMESSICK77-8",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 7.5,
+        "fractional_trading_enabled": true,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Parker Messick: 7+ strikeouts?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBKS-26JUN291910TEXCLE",
+      "ticker": "KXMLBKS-26JUN291910TEXCLE-CLEPMESSICK77-7",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 6.5,
+        "fractional_trading_enabled": true,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Parker Messick: 6+ strikeouts?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBKS-26JUN291910TEXCLE",
+      "ticker": "KXMLBKS-26JUN291910TEXCLE-CLEPMESSICK77-6",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 5.5,
+        "fractional_trading_enabled": true,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Parker Messick: 5+ strikeouts?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBKS-26JUN291910TEXCLE",
+      "ticker": "KXMLBKS-26JUN291910TEXCLE-CLEPMESSICK77-5",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 4.5,
+        "fractional_trading_enabled": true,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Parker Messick: 4+ strikeouts?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBKS-26JUN291910TEXCLE",
+      "ticker": "KXMLBKS-26JUN291910TEXCLE-CLEPMESSICK77-4",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 3.5,
+        "fractional_trading_enabled": true,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Parker Messick: 10+ strikeouts?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBKS-26JUN291910TEXCLE",
+      "ticker": "KXMLBKS-26JUN291910TEXCLE-CLEPMESSICK77-10",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 9.5,
+        "fractional_trading_enabled": true,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
       "title": "Robert Gasser: 9+ strikeouts?",
       "series_ticker": "",
       "event_ticker": "KXMLBKS-26JUN291940CINMIL",
@@ -2238,6 +4738,292 @@
       "detected_by": "ticker"
     },
     {
+      "title": "Shota Imanaga: 9+ strikeouts?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBKS-26JUN292005SDCHC",
+      "ticker": "KXMLBKS-26JUN292005SDCHC-CHCSIMANAGA18-9",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 8.5,
+        "fractional_trading_enabled": true,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Shota Imanaga: 8+ strikeouts?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBKS-26JUN292005SDCHC",
+      "ticker": "KXMLBKS-26JUN292005SDCHC-CHCSIMANAGA18-8",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 7.5,
+        "fractional_trading_enabled": true,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Shota Imanaga: 7+ strikeouts?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBKS-26JUN292005SDCHC",
+      "ticker": "KXMLBKS-26JUN292005SDCHC-CHCSIMANAGA18-7",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 6.5,
+        "fractional_trading_enabled": true,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Shota Imanaga: 6+ strikeouts?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBKS-26JUN292005SDCHC",
+      "ticker": "KXMLBKS-26JUN292005SDCHC-CHCSIMANAGA18-6",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 5.5,
+        "fractional_trading_enabled": true,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Shota Imanaga: 5+ strikeouts?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBKS-26JUN292005SDCHC",
+      "ticker": "KXMLBKS-26JUN292005SDCHC-CHCSIMANAGA18-5",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 4.5,
+        "fractional_trading_enabled": true,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Shota Imanaga: 4+ strikeouts?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBKS-26JUN292005SDCHC",
+      "ticker": "KXMLBKS-26JUN292005SDCHC-CHCSIMANAGA18-4",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 3.5,
+        "fractional_trading_enabled": true,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Shota Imanaga: 3+ strikeouts?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBKS-26JUN292005SDCHC",
+      "ticker": "KXMLBKS-26JUN292005SDCHC-CHCSIMANAGA18-3",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 2.5,
+        "fractional_trading_enabled": true,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "George Kirby: 9+ strikeouts?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBKS-26JUN292140LAASEA",
+      "ticker": "KXMLBKS-26JUN292140LAASEA-SEAGKIRBY68-9",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 8.5,
+        "fractional_trading_enabled": true,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "George Kirby: 8+ strikeouts?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBKS-26JUN292140LAASEA",
+      "ticker": "KXMLBKS-26JUN292140LAASEA-SEAGKIRBY68-8",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 7.5,
+        "fractional_trading_enabled": true,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "George Kirby: 7+ strikeouts?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBKS-26JUN292140LAASEA",
+      "ticker": "KXMLBKS-26JUN292140LAASEA-SEAGKIRBY68-7",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 6.5,
+        "fractional_trading_enabled": true,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "George Kirby: 6+ strikeouts?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBKS-26JUN292140LAASEA",
+      "ticker": "KXMLBKS-26JUN292140LAASEA-SEAGKIRBY68-6",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 5.5,
+        "fractional_trading_enabled": true,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "George Kirby: 5+ strikeouts?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBKS-26JUN292140LAASEA",
+      "ticker": "KXMLBKS-26JUN292140LAASEA-SEAGKIRBY68-5",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 4.5,
+        "fractional_trading_enabled": true,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "George Kirby: 4+ strikeouts?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBKS-26JUN292140LAASEA",
+      "ticker": "KXMLBKS-26JUN292140LAASEA-SEAGKIRBY68-4",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 3.5,
+        "fractional_trading_enabled": true,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "George Kirby: 11+ strikeouts?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBKS-26JUN292140LAASEA",
+      "ticker": "KXMLBKS-26JUN292140LAASEA-SEAGKIRBY68-11",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 10.5,
+        "fractional_trading_enabled": true,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "George Kirby: 10+ strikeouts?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBKS-26JUN292140LAASEA",
+      "ticker": "KXMLBKS-26JUN292140LAASEA-SEAGKIRBY68-10",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 9.5,
+        "fractional_trading_enabled": true,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Ryan Johnson: 8+ strikeouts?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBKS-26JUN292140LAASEA",
+      "ticker": "KXMLBKS-26JUN292140LAASEA-LAARJOHNSON32-8",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 7.5,
+        "fractional_trading_enabled": true,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Ryan Johnson: 7+ strikeouts?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBKS-26JUN292140LAASEA",
+      "ticker": "KXMLBKS-26JUN292140LAASEA-LAARJOHNSON32-7",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 6.5,
+        "fractional_trading_enabled": true,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Ryan Johnson: 6+ strikeouts?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBKS-26JUN292140LAASEA",
+      "ticker": "KXMLBKS-26JUN292140LAASEA-LAARJOHNSON32-6",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 5.5,
+        "fractional_trading_enabled": true,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Ryan Johnson: 5+ strikeouts?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBKS-26JUN292140LAASEA",
+      "ticker": "KXMLBKS-26JUN292140LAASEA-LAARJOHNSON32-5",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 4.5,
+        "fractional_trading_enabled": true,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Ryan Johnson: 4+ strikeouts?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBKS-26JUN292140LAASEA",
+      "ticker": "KXMLBKS-26JUN292140LAASEA-LAARJOHNSON32-4",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 3.5,
+        "fractional_trading_enabled": true,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Ryan Johnson: 3+ strikeouts?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBKS-26JUN292140LAASEA",
+      "ticker": "KXMLBKS-26JUN292140LAASEA-LAARJOHNSON32-3",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 2.5,
+        "fractional_trading_enabled": true,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Ryan Johnson: 2+ strikeouts?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBKS-26JUN292140LAASEA",
+      "ticker": "KXMLBKS-26JUN292140LAASEA-LAARJOHNSON32-2",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 1.5,
+        "fractional_trading_enabled": true,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
       "title": "Eric Lauer: 8+ strikeouts?",
       "series_ticker": "",
       "event_ticker": "KXMLBKS-26JUN292140LADATH",
@@ -2420,32 +5206,6 @@
       "detected_by": "ticker"
     },
     {
-      "title": "Pittsburgh vs Philadelphia First Inning Run?",
-      "series_ticker": "",
-      "event_ticker": "KXMLBRFI-26JUN291840PITPHI",
-      "ticker": "KXMLBRFI-26JUN291840PITPHI",
-      "numeric_fields": {
-        "can_close_early": true,
-        "floor_strike": 1,
-        "fractional_trading_enabled": true,
-        "settlement_timer_seconds": 60
-      },
-      "detected_by": "ticker"
-    },
-    {
-      "title": "Texas vs Cleveland First Inning Run?",
-      "series_ticker": "",
-      "event_ticker": "KXMLBRFI-26JUN291910TEXCLE",
-      "ticker": "KXMLBRFI-26JUN291910TEXCLE",
-      "numeric_fields": {
-        "can_close_early": true,
-        "floor_strike": 1,
-        "fractional_trading_enabled": true,
-        "settlement_timer_seconds": 60
-      },
-      "detected_by": "ticker"
-    },
-    {
       "title": "Washington vs Boston First Inning Run?",
       "series_ticker": "",
       "event_ticker": "KXMLBRFI-26JUN291910WSHBOS",
@@ -2459,23 +5219,10 @@
       "detected_by": "ticker"
     },
     {
-      "title": "San Francisco vs Arizona First Inning Run?",
+      "title": "Chicago WS wins by over 3.5 runs?",
       "series_ticker": "",
-      "event_ticker": "KXMLBRFI-26JUN292140SFAZ",
-      "ticker": "KXMLBRFI-26JUN292140SFAZ",
-      "numeric_fields": {
-        "can_close_early": true,
-        "floor_strike": 1,
-        "fractional_trading_enabled": true,
-        "settlement_timer_seconds": 60
-      },
-      "detected_by": "ticker"
-    },
-    {
-      "title": "Pittsburgh wins by over 3.5 runs?",
-      "series_ticker": "",
-      "event_ticker": "KXMLBSPREAD-26JUN291840PITPHI",
-      "ticker": "KXMLBSPREAD-26JUN291840PITPHI-PIT4",
+      "event_ticker": "KXMLBSPREAD-26JUN291835CWSBAL",
+      "ticker": "KXMLBSPREAD-26JUN291835CWSBAL-CWS4",
       "numeric_fields": {
         "can_close_early": true,
         "floor_strike": 3.5,
@@ -2485,10 +5232,10 @@
       "detected_by": "ticker"
     },
     {
-      "title": "Pittsburgh wins by over 2.5 runs?",
+      "title": "Chicago WS wins by over 2.5 runs?",
       "series_ticker": "",
-      "event_ticker": "KXMLBSPREAD-26JUN291840PITPHI",
-      "ticker": "KXMLBSPREAD-26JUN291840PITPHI-PIT3",
+      "event_ticker": "KXMLBSPREAD-26JUN291835CWSBAL",
+      "ticker": "KXMLBSPREAD-26JUN291835CWSBAL-CWS3",
       "numeric_fields": {
         "can_close_early": true,
         "floor_strike": 2.5,
@@ -2498,10 +5245,10 @@
       "detected_by": "ticker"
     },
     {
-      "title": "Pittsburgh wins by over 1.5 runs?",
+      "title": "Chicago WS wins by over 1.5 runs?",
       "series_ticker": "",
-      "event_ticker": "KXMLBSPREAD-26JUN291840PITPHI",
-      "ticker": "KXMLBSPREAD-26JUN291840PITPHI-PIT2",
+      "event_ticker": "KXMLBSPREAD-26JUN291835CWSBAL",
+      "ticker": "KXMLBSPREAD-26JUN291835CWSBAL-CWS2",
       "numeric_fields": {
         "can_close_early": true,
         "floor_strike": 1.5,
@@ -2511,10 +5258,10 @@
       "detected_by": "ticker"
     },
     {
-      "title": "Philadelphia wins by over 3.5 runs?",
+      "title": "Baltimore wins by over 3.5 runs?",
       "series_ticker": "",
-      "event_ticker": "KXMLBSPREAD-26JUN291840PITPHI",
-      "ticker": "KXMLBSPREAD-26JUN291840PITPHI-PHI4",
+      "event_ticker": "KXMLBSPREAD-26JUN291835CWSBAL",
+      "ticker": "KXMLBSPREAD-26JUN291835CWSBAL-BAL4",
       "numeric_fields": {
         "can_close_early": true,
         "floor_strike": 3.5,
@@ -2524,10 +5271,10 @@
       "detected_by": "ticker"
     },
     {
-      "title": "Philadelphia wins by over 2.5 runs?",
+      "title": "Baltimore wins by over 2.5 runs?",
       "series_ticker": "",
-      "event_ticker": "KXMLBSPREAD-26JUN291840PITPHI",
-      "ticker": "KXMLBSPREAD-26JUN291840PITPHI-PHI3",
+      "event_ticker": "KXMLBSPREAD-26JUN291835CWSBAL",
+      "ticker": "KXMLBSPREAD-26JUN291835CWSBAL-BAL3",
       "numeric_fields": {
         "can_close_early": true,
         "floor_strike": 2.5,
@@ -2537,10 +5284,88 @@
       "detected_by": "ticker"
     },
     {
-      "title": "Philadelphia wins by over 1.5 runs?",
+      "title": "Baltimore wins by over 1.5 runs?",
       "series_ticker": "",
-      "event_ticker": "KXMLBSPREAD-26JUN291840PITPHI",
-      "ticker": "KXMLBSPREAD-26JUN291840PITPHI-PHI2",
+      "event_ticker": "KXMLBSPREAD-26JUN291835CWSBAL",
+      "ticker": "KXMLBSPREAD-26JUN291835CWSBAL-BAL2",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 1.5,
+        "fractional_trading_enabled": true,
+        "settlement_timer_seconds": 60
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "New York Y wins by over 3.5 runs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBSPREAD-26JUN291905DETNYY",
+      "ticker": "KXMLBSPREAD-26JUN291905DETNYY-NYY4",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 3.5,
+        "fractional_trading_enabled": true,
+        "settlement_timer_seconds": 60
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "New York Y wins by over 2.5 runs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBSPREAD-26JUN291905DETNYY",
+      "ticker": "KXMLBSPREAD-26JUN291905DETNYY-NYY3",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 2.5,
+        "fractional_trading_enabled": true,
+        "settlement_timer_seconds": 60
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "New York Y wins by over 1.5 runs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBSPREAD-26JUN291905DETNYY",
+      "ticker": "KXMLBSPREAD-26JUN291905DETNYY-NYY2",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 1.5,
+        "fractional_trading_enabled": true,
+        "settlement_timer_seconds": 60
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Detroit wins by over 3.5 runs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBSPREAD-26JUN291905DETNYY",
+      "ticker": "KXMLBSPREAD-26JUN291905DETNYY-DET4",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 3.5,
+        "fractional_trading_enabled": true,
+        "settlement_timer_seconds": 60
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Detroit wins by over 2.5 runs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBSPREAD-26JUN291905DETNYY",
+      "ticker": "KXMLBSPREAD-26JUN291905DETNYY-DET3",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 2.5,
+        "fractional_trading_enabled": true,
+        "settlement_timer_seconds": 60
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Detroit wins by over 1.5 runs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBSPREAD-26JUN291905DETNYY",
+      "ticker": "KXMLBSPREAD-26JUN291905DETNYY-DET2",
       "numeric_fields": {
         "can_close_early": true,
         "floor_strike": 1.5,
@@ -2706,10 +5531,10 @@
       "detected_by": "ticker"
     },
     {
-      "title": "Milwaukee wins by over 3.5 runs?",
+      "title": "San Diego wins by over 3.5 runs?",
       "series_ticker": "",
-      "event_ticker": "KXMLBSPREAD-26JUN291940CINMIL",
-      "ticker": "KXMLBSPREAD-26JUN291940CINMIL-MIL4",
+      "event_ticker": "KXMLBSPREAD-26JUN292005SDCHC",
+      "ticker": "KXMLBSPREAD-26JUN292005SDCHC-SD4",
       "numeric_fields": {
         "can_close_early": true,
         "floor_strike": 3.5,
@@ -2719,10 +5544,10 @@
       "detected_by": "ticker"
     },
     {
-      "title": "Milwaukee wins by over 2.5 runs?",
+      "title": "San Diego wins by over 2.5 runs?",
       "series_ticker": "",
-      "event_ticker": "KXMLBSPREAD-26JUN291940CINMIL",
-      "ticker": "KXMLBSPREAD-26JUN291940CINMIL-MIL3",
+      "event_ticker": "KXMLBSPREAD-26JUN292005SDCHC",
+      "ticker": "KXMLBSPREAD-26JUN292005SDCHC-SD3",
       "numeric_fields": {
         "can_close_early": true,
         "floor_strike": 2.5,
@@ -2732,10 +5557,10 @@
       "detected_by": "ticker"
     },
     {
-      "title": "Milwaukee wins by over 1.5 runs?",
+      "title": "San Diego wins by over 1.5 runs?",
       "series_ticker": "",
-      "event_ticker": "KXMLBSPREAD-26JUN291940CINMIL",
-      "ticker": "KXMLBSPREAD-26JUN291940CINMIL-MIL2",
+      "event_ticker": "KXMLBSPREAD-26JUN292005SDCHC",
+      "ticker": "KXMLBSPREAD-26JUN292005SDCHC-SD2",
       "numeric_fields": {
         "can_close_early": true,
         "floor_strike": 1.5,
@@ -2745,10 +5570,10 @@
       "detected_by": "ticker"
     },
     {
-      "title": "Cincinnati wins by over 3.5 runs?",
+      "title": "Chicago C wins by over 3.5 runs?",
       "series_ticker": "",
-      "event_ticker": "KXMLBSPREAD-26JUN291940CINMIL",
-      "ticker": "KXMLBSPREAD-26JUN291940CINMIL-CIN4",
+      "event_ticker": "KXMLBSPREAD-26JUN292005SDCHC",
+      "ticker": "KXMLBSPREAD-26JUN292005SDCHC-CHC4",
       "numeric_fields": {
         "can_close_early": true,
         "floor_strike": 3.5,
@@ -2758,10 +5583,10 @@
       "detected_by": "ticker"
     },
     {
-      "title": "Cincinnati wins by over 2.5 runs?",
+      "title": "Chicago C wins by over 2.5 runs?",
       "series_ticker": "",
-      "event_ticker": "KXMLBSPREAD-26JUN291940CINMIL",
-      "ticker": "KXMLBSPREAD-26JUN291940CINMIL-CIN3",
+      "event_ticker": "KXMLBSPREAD-26JUN292005SDCHC",
+      "ticker": "KXMLBSPREAD-26JUN292005SDCHC-CHC3",
       "numeric_fields": {
         "can_close_early": true,
         "floor_strike": 2.5,
@@ -2771,10 +5596,88 @@
       "detected_by": "ticker"
     },
     {
-      "title": "Cincinnati wins by over 1.5 runs?",
+      "title": "Chicago C wins by over 1.5 runs?",
       "series_ticker": "",
-      "event_ticker": "KXMLBSPREAD-26JUN291940CINMIL",
-      "ticker": "KXMLBSPREAD-26JUN291940CINMIL-CIN2",
+      "event_ticker": "KXMLBSPREAD-26JUN292005SDCHC",
+      "ticker": "KXMLBSPREAD-26JUN292005SDCHC-CHC2",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 1.5,
+        "fractional_trading_enabled": true,
+        "settlement_timer_seconds": 60
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Minnesota wins by over 3.5 runs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBSPREAD-26JUN292010MINHOU",
+      "ticker": "KXMLBSPREAD-26JUN292010MINHOU-MIN4",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 3.5,
+        "fractional_trading_enabled": true,
+        "settlement_timer_seconds": 60
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Minnesota wins by over 2.5 runs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBSPREAD-26JUN292010MINHOU",
+      "ticker": "KXMLBSPREAD-26JUN292010MINHOU-MIN3",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 2.5,
+        "fractional_trading_enabled": true,
+        "settlement_timer_seconds": 60
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Minnesota wins by over 1.5 runs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBSPREAD-26JUN292010MINHOU",
+      "ticker": "KXMLBSPREAD-26JUN292010MINHOU-MIN2",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 1.5,
+        "fractional_trading_enabled": true,
+        "settlement_timer_seconds": 60
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Houston wins by over 3.5 runs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBSPREAD-26JUN292010MINHOU",
+      "ticker": "KXMLBSPREAD-26JUN292010MINHOU-HOU4",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 3.5,
+        "fractional_trading_enabled": true,
+        "settlement_timer_seconds": 60
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Houston wins by over 2.5 runs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBSPREAD-26JUN292010MINHOU",
+      "ticker": "KXMLBSPREAD-26JUN292010MINHOU-HOU3",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 2.5,
+        "fractional_trading_enabled": true,
+        "settlement_timer_seconds": 60
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Houston wins by over 1.5 runs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBSPREAD-26JUN292010MINHOU",
+      "ticker": "KXMLBSPREAD-26JUN292010MINHOU-HOU2",
       "numeric_fields": {
         "can_close_early": true,
         "floor_strike": 1.5,
@@ -2862,10 +5765,387 @@
       "detected_by": "ticker"
     },
     {
-      "title": "Chicago WS vs Baltimore Total Runs?",
+      "title": "Shohei Ohtani: 7+ total bases?",
       "series_ticker": "",
-      "event_ticker": "KXMLBTOTAL-26JUN291835CWSBAL",
-      "ticker": "KXMLBTOTAL-26JUN291835CWSBAL-9",
+      "event_ticker": "KXMLBTB-26JUN292140LADATH",
+      "ticker": "KXMLBTB-26JUN292140LADATH-LADSOHTANI17-7",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 6.5,
+        "fractional_trading_enabled": true,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Shohei Ohtani: 6+ total bases?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBTB-26JUN292140LADATH",
+      "ticker": "KXMLBTB-26JUN292140LADATH-LADSOHTANI17-6",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 5.5,
+        "fractional_trading_enabled": true,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Shohei Ohtani: 5+ total bases?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBTB-26JUN292140LADATH",
+      "ticker": "KXMLBTB-26JUN292140LADATH-LADSOHTANI17-5",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 4.5,
+        "fractional_trading_enabled": true,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Shohei Ohtani: 4+ total bases?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBTB-26JUN292140LADATH",
+      "ticker": "KXMLBTB-26JUN292140LADATH-LADSOHTANI17-4",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 3.5,
+        "fractional_trading_enabled": true,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Shohei Ohtani: 3+ total bases?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBTB-26JUN292140LADATH",
+      "ticker": "KXMLBTB-26JUN292140LADATH-LADSOHTANI17-3",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 2.5,
+        "fractional_trading_enabled": true,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Shohei Ohtani: 2+ total bases?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBTB-26JUN292140LADATH",
+      "ticker": "KXMLBTB-26JUN292140LADATH-LADSOHTANI17-2",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 1.5,
+        "fractional_trading_enabled": true,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Mookie Betts: 6+ total bases?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBTB-26JUN292140LADATH",
+      "ticker": "KXMLBTB-26JUN292140LADATH-LADMBETTS50-6",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 5.5,
+        "fractional_trading_enabled": true,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Mookie Betts: 5+ total bases?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBTB-26JUN292140LADATH",
+      "ticker": "KXMLBTB-26JUN292140LADATH-LADMBETTS50-5",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 4.5,
+        "fractional_trading_enabled": true,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Mookie Betts: 4+ total bases?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBTB-26JUN292140LADATH",
+      "ticker": "KXMLBTB-26JUN292140LADATH-LADMBETTS50-4",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 3.5,
+        "fractional_trading_enabled": true,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Mookie Betts: 3+ total bases?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBTB-26JUN292140LADATH",
+      "ticker": "KXMLBTB-26JUN292140LADATH-LADMBETTS50-3",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 2.5,
+        "fractional_trading_enabled": true,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Mookie Betts: 2+ total bases?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBTB-26JUN292140LADATH",
+      "ticker": "KXMLBTB-26JUN292140LADATH-LADMBETTS50-2",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 1.5,
+        "fractional_trading_enabled": true,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Kyle Tucker: 5+ total bases?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBTB-26JUN292140LADATH",
+      "ticker": "KXMLBTB-26JUN292140LADATH-LADKTUCKER23-5",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 4.5,
+        "fractional_trading_enabled": true,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Kyle Tucker: 4+ total bases?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBTB-26JUN292140LADATH",
+      "ticker": "KXMLBTB-26JUN292140LADATH-LADKTUCKER23-4",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 3.5,
+        "fractional_trading_enabled": true,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Kyle Tucker: 3+ total bases?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBTB-26JUN292140LADATH",
+      "ticker": "KXMLBTB-26JUN292140LADATH-LADKTUCKER23-3",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 2.5,
+        "fractional_trading_enabled": true,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Kyle Tucker: 2+ total bases?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBTB-26JUN292140LADATH",
+      "ticker": "KXMLBTB-26JUN292140LADATH-LADKTUCKER23-2",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 1.5,
+        "fractional_trading_enabled": true,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Freddie Freeman: 6+ total bases?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBTB-26JUN292140LADATH",
+      "ticker": "KXMLBTB-26JUN292140LADATH-LADFFREEMAN5-6",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 5.5,
+        "fractional_trading_enabled": true,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Freddie Freeman: 5+ total bases?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBTB-26JUN292140LADATH",
+      "ticker": "KXMLBTB-26JUN292140LADATH-LADFFREEMAN5-5",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 4.5,
+        "fractional_trading_enabled": true,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Freddie Freeman: 4+ total bases?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBTB-26JUN292140LADATH",
+      "ticker": "KXMLBTB-26JUN292140LADATH-LADFFREEMAN5-4",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 3.5,
+        "fractional_trading_enabled": true,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Freddie Freeman: 3+ total bases?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBTB-26JUN292140LADATH",
+      "ticker": "KXMLBTB-26JUN292140LADATH-LADFFREEMAN5-3",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 2.5,
+        "fractional_trading_enabled": true,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Freddie Freeman: 2+ total bases?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBTB-26JUN292140LADATH",
+      "ticker": "KXMLBTB-26JUN292140LADATH-LADFFREEMAN5-2",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 1.5,
+        "fractional_trading_enabled": true,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Nick Kurtz: 6+ total bases?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBTB-26JUN292140LADATH",
+      "ticker": "KXMLBTB-26JUN292140LADATH-ATHNKURTZ16-6",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 5.5,
+        "fractional_trading_enabled": true,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Nick Kurtz: 5+ total bases?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBTB-26JUN292140LADATH",
+      "ticker": "KXMLBTB-26JUN292140LADATH-ATHNKURTZ16-5",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 4.5,
+        "fractional_trading_enabled": true,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Nick Kurtz: 4+ total bases?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBTB-26JUN292140LADATH",
+      "ticker": "KXMLBTB-26JUN292140LADATH-ATHNKURTZ16-4",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 3.5,
+        "fractional_trading_enabled": true,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Nick Kurtz: 3+ total bases?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBTB-26JUN292140LADATH",
+      "ticker": "KXMLBTB-26JUN292140LADATH-ATHNKURTZ16-3",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 2.5,
+        "fractional_trading_enabled": true,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Nick Kurtz: 2+ total bases?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBTB-26JUN292140LADATH",
+      "ticker": "KXMLBTB-26JUN292140LADATH-ATHNKURTZ16-2",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 1.5,
+        "fractional_trading_enabled": true,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Jacob Wilson: 5+ total bases?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBTB-26JUN292140LADATH",
+      "ticker": "KXMLBTB-26JUN292140LADATH-ATHJWILSON5-5",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 4.5,
+        "fractional_trading_enabled": true,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Jacob Wilson: 4+ total bases?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBTB-26JUN292140LADATH",
+      "ticker": "KXMLBTB-26JUN292140LADATH-ATHJWILSON5-4",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 3.5,
+        "fractional_trading_enabled": true,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Jacob Wilson: 3+ total bases?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBTB-26JUN292140LADATH",
+      "ticker": "KXMLBTB-26JUN292140LADATH-ATHJWILSON5-3",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 2.5,
+        "fractional_trading_enabled": true,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Jacob Wilson: 2+ total bases?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBTB-26JUN292140LADATH",
+      "ticker": "KXMLBTB-26JUN292140LADATH-ATHJWILSON5-2",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 1.5,
+        "fractional_trading_enabled": true,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Pittsburgh vs Philadelphia Total Runs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBTOTAL-26JUN291840PITPHI",
+      "ticker": "KXMLBTOTAL-26JUN291840PITPHI-9",
       "numeric_fields": {
         "can_close_early": true,
         "floor_strike": 8.5,
@@ -2875,10 +6155,10 @@
       "detected_by": "ticker"
     },
     {
-      "title": "Chicago WS vs Baltimore Total Runs?",
+      "title": "Pittsburgh vs Philadelphia Total Runs?",
       "series_ticker": "",
-      "event_ticker": "KXMLBTOTAL-26JUN291835CWSBAL",
-      "ticker": "KXMLBTOTAL-26JUN291835CWSBAL-8",
+      "event_ticker": "KXMLBTOTAL-26JUN291840PITPHI",
+      "ticker": "KXMLBTOTAL-26JUN291840PITPHI-8",
       "numeric_fields": {
         "can_close_early": true,
         "floor_strike": 7.5,
@@ -2888,10 +6168,10 @@
       "detected_by": "ticker"
     },
     {
-      "title": "Chicago WS vs Baltimore Total Runs?",
+      "title": "Pittsburgh vs Philadelphia Total Runs?",
       "series_ticker": "",
-      "event_ticker": "KXMLBTOTAL-26JUN291835CWSBAL",
-      "ticker": "KXMLBTOTAL-26JUN291835CWSBAL-7",
+      "event_ticker": "KXMLBTOTAL-26JUN291840PITPHI",
+      "ticker": "KXMLBTOTAL-26JUN291840PITPHI-7",
       "numeric_fields": {
         "can_close_early": true,
         "floor_strike": 6.5,
@@ -2901,10 +6181,10 @@
       "detected_by": "ticker"
     },
     {
-      "title": "Chicago WS vs Baltimore Total Runs?",
+      "title": "Pittsburgh vs Philadelphia Total Runs?",
       "series_ticker": "",
-      "event_ticker": "KXMLBTOTAL-26JUN291835CWSBAL",
-      "ticker": "KXMLBTOTAL-26JUN291835CWSBAL-6",
+      "event_ticker": "KXMLBTOTAL-26JUN291840PITPHI",
+      "ticker": "KXMLBTOTAL-26JUN291840PITPHI-6",
       "numeric_fields": {
         "can_close_early": true,
         "floor_strike": 5.5,
@@ -2914,10 +6194,10 @@
       "detected_by": "ticker"
     },
     {
-      "title": "Chicago WS vs Baltimore Total Runs?",
+      "title": "Pittsburgh vs Philadelphia Total Runs?",
       "series_ticker": "",
-      "event_ticker": "KXMLBTOTAL-26JUN291835CWSBAL",
-      "ticker": "KXMLBTOTAL-26JUN291835CWSBAL-5",
+      "event_ticker": "KXMLBTOTAL-26JUN291840PITPHI",
+      "ticker": "KXMLBTOTAL-26JUN291840PITPHI-5",
       "numeric_fields": {
         "can_close_early": true,
         "floor_strike": 4.5,
@@ -2927,10 +6207,10 @@
       "detected_by": "ticker"
     },
     {
-      "title": "Chicago WS vs Baltimore Total Runs?",
+      "title": "Pittsburgh vs Philadelphia Total Runs?",
       "series_ticker": "",
-      "event_ticker": "KXMLBTOTAL-26JUN291835CWSBAL",
-      "ticker": "KXMLBTOTAL-26JUN291835CWSBAL-4",
+      "event_ticker": "KXMLBTOTAL-26JUN291840PITPHI",
+      "ticker": "KXMLBTOTAL-26JUN291840PITPHI-4",
       "numeric_fields": {
         "can_close_early": true,
         "floor_strike": 3.5,
@@ -2940,153 +6220,10 @@
       "detected_by": "ticker"
     },
     {
-      "title": "Chicago WS vs Baltimore Total Runs?",
+      "title": "Pittsburgh vs Philadelphia Total Runs?",
       "series_ticker": "",
-      "event_ticker": "KXMLBTOTAL-26JUN291835CWSBAL",
-      "ticker": "KXMLBTOTAL-26JUN291835CWSBAL-14",
-      "numeric_fields": {
-        "can_close_early": true,
-        "floor_strike": 13.5,
-        "fractional_trading_enabled": true,
-        "settlement_timer_seconds": 60
-      },
-      "detected_by": "ticker"
-    },
-    {
-      "title": "Chicago WS vs Baltimore Total Runs?",
-      "series_ticker": "",
-      "event_ticker": "KXMLBTOTAL-26JUN291835CWSBAL",
-      "ticker": "KXMLBTOTAL-26JUN291835CWSBAL-13",
-      "numeric_fields": {
-        "can_close_early": true,
-        "floor_strike": 12.5,
-        "fractional_trading_enabled": true,
-        "settlement_timer_seconds": 60
-      },
-      "detected_by": "ticker"
-    },
-    {
-      "title": "Chicago WS vs Baltimore Total Runs?",
-      "series_ticker": "",
-      "event_ticker": "KXMLBTOTAL-26JUN291835CWSBAL",
-      "ticker": "KXMLBTOTAL-26JUN291835CWSBAL-12",
-      "numeric_fields": {
-        "can_close_early": true,
-        "floor_strike": 11.5,
-        "fractional_trading_enabled": true,
-        "settlement_timer_seconds": 60
-      },
-      "detected_by": "ticker"
-    },
-    {
-      "title": "Chicago WS vs Baltimore Total Runs?",
-      "series_ticker": "",
-      "event_ticker": "KXMLBTOTAL-26JUN291835CWSBAL",
-      "ticker": "KXMLBTOTAL-26JUN291835CWSBAL-11",
-      "numeric_fields": {
-        "can_close_early": true,
-        "floor_strike": 10.5,
-        "fractional_trading_enabled": true,
-        "settlement_timer_seconds": 60
-      },
-      "detected_by": "ticker"
-    },
-    {
-      "title": "Chicago WS vs Baltimore Total Runs?",
-      "series_ticker": "",
-      "event_ticker": "KXMLBTOTAL-26JUN291835CWSBAL",
-      "ticker": "KXMLBTOTAL-26JUN291835CWSBAL-10",
-      "numeric_fields": {
-        "can_close_early": true,
-        "floor_strike": 9.5,
-        "fractional_trading_enabled": true,
-        "settlement_timer_seconds": 60
-      },
-      "detected_by": "ticker"
-    },
-    {
-      "title": "New York M vs Toronto Total Runs?",
-      "series_ticker": "",
-      "event_ticker": "KXMLBTOTAL-26JUN291907NYMTOR",
-      "ticker": "KXMLBTOTAL-26JUN291907NYMTOR-9",
-      "numeric_fields": {
-        "can_close_early": true,
-        "floor_strike": 8.5,
-        "fractional_trading_enabled": true,
-        "settlement_timer_seconds": 60
-      },
-      "detected_by": "ticker"
-    },
-    {
-      "title": "New York M vs Toronto Total Runs?",
-      "series_ticker": "",
-      "event_ticker": "KXMLBTOTAL-26JUN291907NYMTOR",
-      "ticker": "KXMLBTOTAL-26JUN291907NYMTOR-8",
-      "numeric_fields": {
-        "can_close_early": true,
-        "floor_strike": 7.5,
-        "fractional_trading_enabled": true,
-        "settlement_timer_seconds": 60
-      },
-      "detected_by": "ticker"
-    },
-    {
-      "title": "New York M vs Toronto Total Runs?",
-      "series_ticker": "",
-      "event_ticker": "KXMLBTOTAL-26JUN291907NYMTOR",
-      "ticker": "KXMLBTOTAL-26JUN291907NYMTOR-7",
-      "numeric_fields": {
-        "can_close_early": true,
-        "floor_strike": 6.5,
-        "fractional_trading_enabled": true,
-        "settlement_timer_seconds": 60
-      },
-      "detected_by": "ticker"
-    },
-    {
-      "title": "New York M vs Toronto Total Runs?",
-      "series_ticker": "",
-      "event_ticker": "KXMLBTOTAL-26JUN291907NYMTOR",
-      "ticker": "KXMLBTOTAL-26JUN291907NYMTOR-6",
-      "numeric_fields": {
-        "can_close_early": true,
-        "floor_strike": 5.5,
-        "fractional_trading_enabled": true,
-        "settlement_timer_seconds": 60
-      },
-      "detected_by": "ticker"
-    },
-    {
-      "title": "New York M vs Toronto Total Runs?",
-      "series_ticker": "",
-      "event_ticker": "KXMLBTOTAL-26JUN291907NYMTOR",
-      "ticker": "KXMLBTOTAL-26JUN291907NYMTOR-5",
-      "numeric_fields": {
-        "can_close_early": true,
-        "floor_strike": 4.5,
-        "fractional_trading_enabled": true,
-        "settlement_timer_seconds": 60
-      },
-      "detected_by": "ticker"
-    },
-    {
-      "title": "New York M vs Toronto Total Runs?",
-      "series_ticker": "",
-      "event_ticker": "KXMLBTOTAL-26JUN291907NYMTOR",
-      "ticker": "KXMLBTOTAL-26JUN291907NYMTOR-4",
-      "numeric_fields": {
-        "can_close_early": true,
-        "floor_strike": 3.5,
-        "fractional_trading_enabled": true,
-        "settlement_timer_seconds": 60
-      },
-      "detected_by": "ticker"
-    },
-    {
-      "title": "New York M vs Toronto Total Runs?",
-      "series_ticker": "",
-      "event_ticker": "KXMLBTOTAL-26JUN291907NYMTOR",
-      "ticker": "KXMLBTOTAL-26JUN291907NYMTOR-3",
+      "event_ticker": "KXMLBTOTAL-26JUN291840PITPHI",
+      "ticker": "KXMLBTOTAL-26JUN291840PITPHI-3",
       "numeric_fields": {
         "can_close_early": true,
         "floor_strike": 2.5,
@@ -3096,10 +6233,10 @@
       "detected_by": "ticker"
     },
     {
-      "title": "New York M vs Toronto Total Runs?",
+      "title": "Pittsburgh vs Philadelphia Total Runs?",
       "series_ticker": "",
-      "event_ticker": "KXMLBTOTAL-26JUN291907NYMTOR",
-      "ticker": "KXMLBTOTAL-26JUN291907NYMTOR-13",
+      "event_ticker": "KXMLBTOTAL-26JUN291840PITPHI",
+      "ticker": "KXMLBTOTAL-26JUN291840PITPHI-13",
       "numeric_fields": {
         "can_close_early": true,
         "floor_strike": 12.5,
@@ -3109,10 +6246,10 @@
       "detected_by": "ticker"
     },
     {
-      "title": "New York M vs Toronto Total Runs?",
+      "title": "Pittsburgh vs Philadelphia Total Runs?",
       "series_ticker": "",
-      "event_ticker": "KXMLBTOTAL-26JUN291907NYMTOR",
-      "ticker": "KXMLBTOTAL-26JUN291907NYMTOR-12",
+      "event_ticker": "KXMLBTOTAL-26JUN291840PITPHI",
+      "ticker": "KXMLBTOTAL-26JUN291840PITPHI-12",
       "numeric_fields": {
         "can_close_early": true,
         "floor_strike": 11.5,
@@ -3122,10 +6259,10 @@
       "detected_by": "ticker"
     },
     {
-      "title": "New York M vs Toronto Total Runs?",
+      "title": "Pittsburgh vs Philadelphia Total Runs?",
       "series_ticker": "",
-      "event_ticker": "KXMLBTOTAL-26JUN291907NYMTOR",
-      "ticker": "KXMLBTOTAL-26JUN291907NYMTOR-11",
+      "event_ticker": "KXMLBTOTAL-26JUN291840PITPHI",
+      "ticker": "KXMLBTOTAL-26JUN291840PITPHI-11",
       "numeric_fields": {
         "can_close_early": true,
         "floor_strike": 10.5,
@@ -3135,10 +6272,10 @@
       "detected_by": "ticker"
     },
     {
-      "title": "New York M vs Toronto Total Runs?",
+      "title": "Pittsburgh vs Philadelphia Total Runs?",
       "series_ticker": "",
-      "event_ticker": "KXMLBTOTAL-26JUN291907NYMTOR",
-      "ticker": "KXMLBTOTAL-26JUN291907NYMTOR-10",
+      "event_ticker": "KXMLBTOTAL-26JUN291840PITPHI",
+      "ticker": "KXMLBTOTAL-26JUN291840PITPHI-10",
       "numeric_fields": {
         "can_close_early": true,
         "floor_strike": 9.5,
@@ -3148,10 +6285,10 @@
       "detected_by": "ticker"
     },
     {
-      "title": "Washington vs Boston Total Runs?",
+      "title": "Detroit vs New York Y Total Runs?",
       "series_ticker": "",
-      "event_ticker": "KXMLBTOTAL-26JUN291910WSHBOS",
-      "ticker": "KXMLBTOTAL-26JUN291910WSHBOS-9",
+      "event_ticker": "KXMLBTOTAL-26JUN291905DETNYY",
+      "ticker": "KXMLBTOTAL-26JUN291905DETNYY-9",
       "numeric_fields": {
         "can_close_early": true,
         "floor_strike": 8.5,
@@ -3161,10 +6298,10 @@
       "detected_by": "ticker"
     },
     {
-      "title": "Washington vs Boston Total Runs?",
+      "title": "Detroit vs New York Y Total Runs?",
       "series_ticker": "",
-      "event_ticker": "KXMLBTOTAL-26JUN291910WSHBOS",
-      "ticker": "KXMLBTOTAL-26JUN291910WSHBOS-8",
+      "event_ticker": "KXMLBTOTAL-26JUN291905DETNYY",
+      "ticker": "KXMLBTOTAL-26JUN291905DETNYY-8",
       "numeric_fields": {
         "can_close_early": true,
         "floor_strike": 7.5,
@@ -3174,10 +6311,10 @@
       "detected_by": "ticker"
     },
     {
-      "title": "Washington vs Boston Total Runs?",
+      "title": "Detroit vs New York Y Total Runs?",
       "series_ticker": "",
-      "event_ticker": "KXMLBTOTAL-26JUN291910WSHBOS",
-      "ticker": "KXMLBTOTAL-26JUN291910WSHBOS-7",
+      "event_ticker": "KXMLBTOTAL-26JUN291905DETNYY",
+      "ticker": "KXMLBTOTAL-26JUN291905DETNYY-7",
       "numeric_fields": {
         "can_close_early": true,
         "floor_strike": 6.5,
@@ -3187,10 +6324,10 @@
       "detected_by": "ticker"
     },
     {
-      "title": "Washington vs Boston Total Runs?",
+      "title": "Detroit vs New York Y Total Runs?",
       "series_ticker": "",
-      "event_ticker": "KXMLBTOTAL-26JUN291910WSHBOS",
-      "ticker": "KXMLBTOTAL-26JUN291910WSHBOS-6",
+      "event_ticker": "KXMLBTOTAL-26JUN291905DETNYY",
+      "ticker": "KXMLBTOTAL-26JUN291905DETNYY-6",
       "numeric_fields": {
         "can_close_early": true,
         "floor_strike": 5.5,
@@ -3200,10 +6337,10 @@
       "detected_by": "ticker"
     },
     {
-      "title": "Washington vs Boston Total Runs?",
+      "title": "Detroit vs New York Y Total Runs?",
       "series_ticker": "",
-      "event_ticker": "KXMLBTOTAL-26JUN291910WSHBOS",
-      "ticker": "KXMLBTOTAL-26JUN291910WSHBOS-5",
+      "event_ticker": "KXMLBTOTAL-26JUN291905DETNYY",
+      "ticker": "KXMLBTOTAL-26JUN291905DETNYY-5",
       "numeric_fields": {
         "can_close_early": true,
         "floor_strike": 4.5,
@@ -3213,10 +6350,10 @@
       "detected_by": "ticker"
     },
     {
-      "title": "Washington vs Boston Total Runs?",
+      "title": "Detroit vs New York Y Total Runs?",
       "series_ticker": "",
-      "event_ticker": "KXMLBTOTAL-26JUN291910WSHBOS",
-      "ticker": "KXMLBTOTAL-26JUN291910WSHBOS-4",
+      "event_ticker": "KXMLBTOTAL-26JUN291905DETNYY",
+      "ticker": "KXMLBTOTAL-26JUN291905DETNYY-4",
       "numeric_fields": {
         "can_close_early": true,
         "floor_strike": 3.5,
@@ -3226,10 +6363,10 @@
       "detected_by": "ticker"
     },
     {
-      "title": "Washington vs Boston Total Runs?",
+      "title": "Detroit vs New York Y Total Runs?",
       "series_ticker": "",
-      "event_ticker": "KXMLBTOTAL-26JUN291910WSHBOS",
-      "ticker": "KXMLBTOTAL-26JUN291910WSHBOS-3",
+      "event_ticker": "KXMLBTOTAL-26JUN291905DETNYY",
+      "ticker": "KXMLBTOTAL-26JUN291905DETNYY-3",
       "numeric_fields": {
         "can_close_early": true,
         "floor_strike": 2.5,
@@ -3239,10 +6376,10 @@
       "detected_by": "ticker"
     },
     {
-      "title": "Washington vs Boston Total Runs?",
+      "title": "Detroit vs New York Y Total Runs?",
       "series_ticker": "",
-      "event_ticker": "KXMLBTOTAL-26JUN291910WSHBOS",
-      "ticker": "KXMLBTOTAL-26JUN291910WSHBOS-13",
+      "event_ticker": "KXMLBTOTAL-26JUN291905DETNYY",
+      "ticker": "KXMLBTOTAL-26JUN291905DETNYY-13",
       "numeric_fields": {
         "can_close_early": true,
         "floor_strike": 12.5,
@@ -3252,10 +6389,10 @@
       "detected_by": "ticker"
     },
     {
-      "title": "Washington vs Boston Total Runs?",
+      "title": "Detroit vs New York Y Total Runs?",
       "series_ticker": "",
-      "event_ticker": "KXMLBTOTAL-26JUN291910WSHBOS",
-      "ticker": "KXMLBTOTAL-26JUN291910WSHBOS-12",
+      "event_ticker": "KXMLBTOTAL-26JUN291905DETNYY",
+      "ticker": "KXMLBTOTAL-26JUN291905DETNYY-12",
       "numeric_fields": {
         "can_close_early": true,
         "floor_strike": 11.5,
@@ -3265,10 +6402,10 @@
       "detected_by": "ticker"
     },
     {
-      "title": "Washington vs Boston Total Runs?",
+      "title": "Detroit vs New York Y Total Runs?",
       "series_ticker": "",
-      "event_ticker": "KXMLBTOTAL-26JUN291910WSHBOS",
-      "ticker": "KXMLBTOTAL-26JUN291910WSHBOS-11",
+      "event_ticker": "KXMLBTOTAL-26JUN291905DETNYY",
+      "ticker": "KXMLBTOTAL-26JUN291905DETNYY-11",
       "numeric_fields": {
         "can_close_early": true,
         "floor_strike": 10.5,
@@ -3278,10 +6415,153 @@
       "detected_by": "ticker"
     },
     {
-      "title": "Washington vs Boston Total Runs?",
+      "title": "Detroit vs New York Y Total Runs?",
       "series_ticker": "",
-      "event_ticker": "KXMLBTOTAL-26JUN291910WSHBOS",
-      "ticker": "KXMLBTOTAL-26JUN291910WSHBOS-10",
+      "event_ticker": "KXMLBTOTAL-26JUN291905DETNYY",
+      "ticker": "KXMLBTOTAL-26JUN291905DETNYY-10",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 9.5,
+        "fractional_trading_enabled": true,
+        "settlement_timer_seconds": 60
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Texas vs Cleveland Total Runs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBTOTAL-26JUN291910TEXCLE",
+      "ticker": "KXMLBTOTAL-26JUN291910TEXCLE-9",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 8.5,
+        "fractional_trading_enabled": true,
+        "settlement_timer_seconds": 60
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Texas vs Cleveland Total Runs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBTOTAL-26JUN291910TEXCLE",
+      "ticker": "KXMLBTOTAL-26JUN291910TEXCLE-8",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 7.5,
+        "fractional_trading_enabled": true,
+        "settlement_timer_seconds": 60
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Texas vs Cleveland Total Runs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBTOTAL-26JUN291910TEXCLE",
+      "ticker": "KXMLBTOTAL-26JUN291910TEXCLE-7",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 6.5,
+        "fractional_trading_enabled": true,
+        "settlement_timer_seconds": 60
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Texas vs Cleveland Total Runs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBTOTAL-26JUN291910TEXCLE",
+      "ticker": "KXMLBTOTAL-26JUN291910TEXCLE-6",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 5.5,
+        "fractional_trading_enabled": true,
+        "settlement_timer_seconds": 60
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Texas vs Cleveland Total Runs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBTOTAL-26JUN291910TEXCLE",
+      "ticker": "KXMLBTOTAL-26JUN291910TEXCLE-5",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 4.5,
+        "fractional_trading_enabled": true,
+        "settlement_timer_seconds": 60
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Texas vs Cleveland Total Runs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBTOTAL-26JUN291910TEXCLE",
+      "ticker": "KXMLBTOTAL-26JUN291910TEXCLE-4",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 3.5,
+        "fractional_trading_enabled": true,
+        "settlement_timer_seconds": 60
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Texas vs Cleveland Total Runs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBTOTAL-26JUN291910TEXCLE",
+      "ticker": "KXMLBTOTAL-26JUN291910TEXCLE-3",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 2.5,
+        "fractional_trading_enabled": true,
+        "settlement_timer_seconds": 60
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Texas vs Cleveland Total Runs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBTOTAL-26JUN291910TEXCLE",
+      "ticker": "KXMLBTOTAL-26JUN291910TEXCLE-2",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 1.5,
+        "fractional_trading_enabled": true,
+        "settlement_timer_seconds": 60
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Texas vs Cleveland Total Runs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBTOTAL-26JUN291910TEXCLE",
+      "ticker": "KXMLBTOTAL-26JUN291910TEXCLE-12",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 11.5,
+        "fractional_trading_enabled": true,
+        "settlement_timer_seconds": 60
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Texas vs Cleveland Total Runs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBTOTAL-26JUN291910TEXCLE",
+      "ticker": "KXMLBTOTAL-26JUN291910TEXCLE-11",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 10.5,
+        "fractional_trading_enabled": true,
+        "settlement_timer_seconds": 60
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Texas vs Cleveland Total Runs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBTOTAL-26JUN291910TEXCLE",
+      "ticker": "KXMLBTOTAL-26JUN291910TEXCLE-10",
       "numeric_fields": {
         "can_close_early": true,
         "floor_strike": 9.5,
@@ -3425,6 +6705,149 @@
       "series_ticker": "",
       "event_ticker": "KXMLBTOTAL-26JUN291940CINMIL",
       "ticker": "KXMLBTOTAL-26JUN291940CINMIL-10",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 9.5,
+        "fractional_trading_enabled": true,
+        "settlement_timer_seconds": 60
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "San Diego vs Chicago C Total Runs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBTOTAL-26JUN292005SDCHC",
+      "ticker": "KXMLBTOTAL-26JUN292005SDCHC-9",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 8.5,
+        "fractional_trading_enabled": true,
+        "settlement_timer_seconds": 60
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "San Diego vs Chicago C Total Runs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBTOTAL-26JUN292005SDCHC",
+      "ticker": "KXMLBTOTAL-26JUN292005SDCHC-8",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 7.5,
+        "fractional_trading_enabled": true,
+        "settlement_timer_seconds": 60
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "San Diego vs Chicago C Total Runs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBTOTAL-26JUN292005SDCHC",
+      "ticker": "KXMLBTOTAL-26JUN292005SDCHC-7",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 6.5,
+        "fractional_trading_enabled": true,
+        "settlement_timer_seconds": 60
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "San Diego vs Chicago C Total Runs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBTOTAL-26JUN292005SDCHC",
+      "ticker": "KXMLBTOTAL-26JUN292005SDCHC-17",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 16.5,
+        "fractional_trading_enabled": true,
+        "settlement_timer_seconds": 60
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "San Diego vs Chicago C Total Runs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBTOTAL-26JUN292005SDCHC",
+      "ticker": "KXMLBTOTAL-26JUN292005SDCHC-16",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 15.5,
+        "fractional_trading_enabled": true,
+        "settlement_timer_seconds": 60
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "San Diego vs Chicago C Total Runs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBTOTAL-26JUN292005SDCHC",
+      "ticker": "KXMLBTOTAL-26JUN292005SDCHC-15",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 14.5,
+        "fractional_trading_enabled": true,
+        "settlement_timer_seconds": 60
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "San Diego vs Chicago C Total Runs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBTOTAL-26JUN292005SDCHC",
+      "ticker": "KXMLBTOTAL-26JUN292005SDCHC-14",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 13.5,
+        "fractional_trading_enabled": true,
+        "settlement_timer_seconds": 60
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "San Diego vs Chicago C Total Runs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBTOTAL-26JUN292005SDCHC",
+      "ticker": "KXMLBTOTAL-26JUN292005SDCHC-13",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 12.5,
+        "fractional_trading_enabled": true,
+        "settlement_timer_seconds": 60
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "San Diego vs Chicago C Total Runs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBTOTAL-26JUN292005SDCHC",
+      "ticker": "KXMLBTOTAL-26JUN292005SDCHC-12",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 11.5,
+        "fractional_trading_enabled": true,
+        "settlement_timer_seconds": 60
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "San Diego vs Chicago C Total Runs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBTOTAL-26JUN292005SDCHC",
+      "ticker": "KXMLBTOTAL-26JUN292005SDCHC-11",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 10.5,
+        "fractional_trading_enabled": true,
+        "settlement_timer_seconds": 60
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "San Diego vs Chicago C Total Runs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBTOTAL-26JUN292005SDCHC",
+      "ticker": "KXMLBTOTAL-26JUN292005SDCHC-10",
       "numeric_fields": {
         "can_close_early": true,
         "floor_strike": 9.5,
@@ -3886,11 +7309,11 @@
       "no_sub_title": "Chicago WS",
       "notional_value_dollars": "1.0000",
       "occurrence_datetime": "2026-06-30T01:35:00Z",
-      "open_interest_fp": "30273.18",
+      "open_interest_fp": "46250.28",
       "open_time": "2026-06-26T22:55:00Z",
-      "previous_price_dollars": "0.4300",
-      "previous_yes_ask_dollars": "0.4300",
-      "previous_yes_bid_dollars": "0.4100",
+      "previous_price_dollars": "0.4500",
+      "previous_yes_ask_dollars": "0.4500",
+      "previous_yes_bid_dollars": "0.4200",
       "price_level_structure": "linear_cent",
       "price_ranges": [
         {
@@ -3909,12 +7332,12 @@
       "ticker": "KXMLBGAME-26JUN291835CWSBAL-CWS",
       "title": "Chicago WS vs Baltimore Winner?",
       "updated_time": "2026-06-26T22:55:00.785444Z",
-      "volume_24h_fp": "35060.19",
-      "volume_fp": "35845.41",
+      "volume_24h_fp": "53864.85",
+      "volume_fp": "54014.39",
       "yes_ask_dollars": "0.4500",
-      "yes_ask_size_fp": "241896.90",
+      "yes_ask_size_fp": "354051.32",
       "yes_bid_dollars": "0.4400",
-      "yes_bid_size_fp": "4877.60",
+      "yes_bid_size_fp": "77653.56",
       "yes_sub_title": "Chicago WS"
     },
     {
@@ -3939,11 +7362,11 @@
       "no_sub_title": "Baltimore",
       "notional_value_dollars": "1.0000",
       "occurrence_datetime": "2026-06-30T01:35:00Z",
-      "open_interest_fp": "13622.88",
+      "open_interest_fp": "23058.02",
       "open_time": "2026-06-26T22:55:00Z",
       "previous_price_dollars": "0.5600",
-      "previous_yes_ask_dollars": "0.5700",
-      "previous_yes_bid_dollars": "0.5400",
+      "previous_yes_ask_dollars": "0.5600",
+      "previous_yes_bid_dollars": "0.5500",
       "price_level_structure": "linear_cent",
       "price_ranges": [
         {
@@ -3962,12 +7385,12 @@
       "ticker": "KXMLBGAME-26JUN291835CWSBAL-BAL",
       "title": "Chicago WS vs Baltimore Winner?",
       "updated_time": "2026-06-26T22:55:00.785444Z",
-      "volume_24h_fp": "14682.61",
-      "volume_fp": "15607.71",
+      "volume_24h_fp": "26584.43",
+      "volume_fp": "27464.83",
       "yes_ask_dollars": "0.5600",
-      "yes_ask_size_fp": "5891.81",
+      "yes_ask_size_fp": "238663.34",
       "yes_bid_dollars": "0.5500",
-      "yes_bid_size_fp": "92718.34",
+      "yes_bid_size_fp": "108619.27",
       "yes_sub_title": "Baltimore"
     },
     {
@@ -3992,10 +7415,10 @@
       "no_sub_title": "Pittsburgh",
       "notional_value_dollars": "1.0000",
       "occurrence_datetime": "2026-06-30T01:40:00Z",
-      "open_interest_fp": "30273.83",
+      "open_interest_fp": "59071.62",
       "open_time": "2026-06-26T22:55:00Z",
-      "previous_price_dollars": "0.5200",
-      "previous_yes_ask_dollars": "0.5200",
+      "previous_price_dollars": "0.5100",
+      "previous_yes_ask_dollars": "0.5100",
       "previous_yes_bid_dollars": "0.4800",
       "price_level_structure": "linear_cent",
       "price_ranges": [
@@ -4015,12 +7438,12 @@
       "ticker": "KXMLBGAME-26JUN291840PITPHI-PIT",
       "title": "Pittsburgh vs Philadelphia Winner?",
       "updated_time": "2026-06-26T22:55:00.785444Z",
-      "volume_24h_fp": "30722.06",
-      "volume_fp": "30944.55",
+      "volume_24h_fp": "59696.99",
+      "volume_fp": "59759.58",
       "yes_ask_dollars": "0.5000",
-      "yes_ask_size_fp": "358429.00",
+      "yes_ask_size_fp": "195752.19",
       "yes_bid_dollars": "0.4900",
-      "yes_bid_size_fp": "1288.08",
+      "yes_bid_size_fp": "81095.15",
       "yes_sub_title": "Pittsburgh"
     }
   ]
