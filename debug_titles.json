@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-07-23T05:35:06.552315",
-  "total_raw": 282,
-  "priced_any_numeric": 282,
+  "generated_at": "2026-07-23T17:21:40.646420",
+  "total_raw": 589,
+  "priced_any_numeric": 589,
   "no_price": 0,
-  "ticker_mlb": 282,
+  "ticker_mlb": 589,
   "keyword_mlb": 0,
   "all_field_names_first_20": [
     "can_close_early",
@@ -12,6 +12,7 @@
     "custom_strike",
     "early_close_condition",
     "event_ticker",
+    "exchange_index",
     "expected_expiration_time",
     "expiration_time",
     "expiration_value",
@@ -51,47 +52,47 @@
   "top_series_tickers": [],
   "top_event_prefixes": [
     [
-      "KXMLBKS-26JUL231",
-      51
-    ],
-    [
-      "KXMLBGAME-26JUL2",
-      50
+      "KXMLBHIT-26JUL23",
+      135
     ],
     [
       "KXMLBHRR-26JUL23",
-      35
-    ],
-    [
-      "KXMLBHIT-26JUL23",
-      34
-    ],
-    [
-      "KXMLBTOTAL-26JUL",
-      33
-    ],
-    [
-      "KXMLBHR-26JUL231",
-      24
-    ],
-    [
-      "KXMLBSPREAD-26JU",
-      24
+      113
     ],
     [
       "KXMLBTB-26JUL231",
-      17
+      86
+    ],
+    [
+      "KXMLBHR-26JUL231",
+      73
+    ],
+    [
+      "KXMLBGAME-26JUL2",
+      54
+    ],
+    [
+      "KXMLBTOTAL-26JUL",
+      45
+    ],
+    [
+      "KXMLBKS-26JUL231",
+      44
+    ],
+    [
+      "KXMLBSPREAD-26JU",
+      26
     ],
     [
       "KXMLBRBI-26JUL23",
       7
     ],
     [
-      "KXMLBOUTS-26JUL2",
-      4
+      "KXMLBRFI-26JUL23",
+      3
     ],
     [
-      "KXMLBRFI-26JUL23",
+      "KXMLBOUTS-26JUL2",
       2
     ],
     [
@@ -563,6 +564,28 @@
       "detected_by": "ticker"
     },
     {
+      "title": "Arizona vs Washington Winner?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBGAME-26JUL251605AZWSH",
+      "ticker": "KXMLBGAME-26JUL251605AZWSH-WSH",
+      "numeric_fields": {
+        "can_close_early": true,
+        "settlement_timer_seconds": 120
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Arizona vs Washington Winner?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBGAME-26JUL251605AZWSH",
+      "ticker": "KXMLBGAME-26JUL251605AZWSH-AZ",
+      "numeric_fields": {
+        "can_close_early": true,
+        "settlement_timer_seconds": 120
+      },
+      "detected_by": "ticker"
+    },
+    {
       "title": "Los Angeles A vs San Francisco Winner?",
       "series_ticker": "",
       "event_ticker": "KXMLBGAME-26JUL251605LAASF",
@@ -607,10 +630,10 @@
       "detected_by": "ticker"
     },
     {
-      "title": "A's vs Minnesota Winner?",
+      "title": "Toronto vs Boston Winner?",
       "series_ticker": "",
-      "event_ticker": "KXMLBGAME-26JUL251910ATHMIN",
-      "ticker": "KXMLBGAME-26JUL251910ATHMIN-MIN",
+      "event_ticker": "KXMLBGAME-26JUL251610TORBOS",
+      "ticker": "KXMLBGAME-26JUL251610TORBOS-TOR",
       "numeric_fields": {
         "can_close_early": true,
         "settlement_timer_seconds": 120
@@ -618,10 +641,10 @@
       "detected_by": "ticker"
     },
     {
-      "title": "A's vs Minnesota Winner?",
+      "title": "Toronto vs Boston Winner?",
       "series_ticker": "",
-      "event_ticker": "KXMLBGAME-26JUL251910ATHMIN",
-      "ticker": "KXMLBGAME-26JUL251910ATHMIN-ATH",
+      "event_ticker": "KXMLBGAME-26JUL251610TORBOS",
+      "ticker": "KXMLBGAME-26JUL251610TORBOS-BOS",
       "numeric_fields": {
         "can_close_early": true,
         "settlement_timer_seconds": 120
@@ -629,10 +652,10 @@
       "detected_by": "ticker"
     },
     {
-      "title": "Colorado vs Milwaukee Winner?",
+      "title": "New York Y vs Philadelphia Winner?",
       "series_ticker": "",
-      "event_ticker": "KXMLBGAME-26JUL251910COLMIL",
-      "ticker": "KXMLBGAME-26JUL251910COLMIL-MIL",
+      "event_ticker": "KXMLBGAME-26JUL251805NYYPHI",
+      "ticker": "KXMLBGAME-26JUL251805NYYPHI-PHI",
       "numeric_fields": {
         "can_close_early": true,
         "settlement_timer_seconds": 120
@@ -640,13 +663,707 @@
       "detected_by": "ticker"
     },
     {
-      "title": "Colorado vs Milwaukee Winner?",
+      "title": "New York Y vs Philadelphia Winner?",
       "series_ticker": "",
-      "event_ticker": "KXMLBGAME-26JUL251910COLMIL",
-      "ticker": "KXMLBGAME-26JUL251910COLMIL-COL",
+      "event_ticker": "KXMLBGAME-26JUL251805NYYPHI",
+      "ticker": "KXMLBGAME-26JUL251805NYYPHI-NYY",
       "numeric_fields": {
         "can_close_early": true,
         "settlement_timer_seconds": 120
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Cleveland vs Tampa Bay Winner?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBGAME-26JUL251810CLETB",
+      "ticker": "KXMLBGAME-26JUL251810CLETB-TB",
+      "numeric_fields": {
+        "can_close_early": true,
+        "settlement_timer_seconds": 120
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Cleveland vs Tampa Bay Winner?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBGAME-26JUL251810CLETB",
+      "ticker": "KXMLBGAME-26JUL251810CLETB-CLE",
+      "numeric_fields": {
+        "can_close_early": true,
+        "settlement_timer_seconds": 120
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Xander Bogaerts: 3+ hits?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHIT-26JUL231215SDATL",
+      "ticker": "KXMLBHIT-26JUL231215SDATL-SDXBOGAERTS2-3",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 2.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Xander Bogaerts: 2+ hits?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHIT-26JUL231215SDATL",
+      "ticker": "KXMLBHIT-26JUL231215SDATL-SDXBOGAERTS2-2",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 1.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Xander Bogaerts: 1+ hits?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHIT-26JUL231215SDATL",
+      "ticker": "KXMLBHIT-26JUL231215SDATL-SDXBOGAERTS2-1",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 0.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Ty France: 3+ hits?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHIT-26JUL231215SDATL",
+      "ticker": "KXMLBHIT-26JUL231215SDATL-SDTFRANCE4-3",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 2.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Ty France: 2+ hits?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHIT-26JUL231215SDATL",
+      "ticker": "KXMLBHIT-26JUL231215SDATL-SDTFRANCE4-2",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 1.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Ty France: 1+ hits?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHIT-26JUL231215SDATL",
+      "ticker": "KXMLBHIT-26JUL231215SDATL-SDTFRANCE4-1",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 0.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Ozzie Albies: 4+ hits?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHIT-26JUL231215SDATL",
+      "ticker": "KXMLBHIT-26JUL231215SDATL-ATLOALBIES1-4",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 3.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Ozzie Albies: 3+ hits?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHIT-26JUL231215SDATL",
+      "ticker": "KXMLBHIT-26JUL231215SDATL-ATLOALBIES1-3",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 2.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Ozzie Albies: 2+ hits?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHIT-26JUL231215SDATL",
+      "ticker": "KXMLBHIT-26JUL231215SDATL-ATLOALBIES1-2",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 1.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Ozzie Albies: 1+ hits?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHIT-26JUL231215SDATL",
+      "ticker": "KXMLBHIT-26JUL231215SDATL-ATLOALBIES1-1",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 0.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Mike Yastrzemski: 3+ hits?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHIT-26JUL231215SDATL",
+      "ticker": "KXMLBHIT-26JUL231215SDATL-ATLMYASTRZEMSKI18-3",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 2.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Mike Yastrzemski: 2+ hits?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHIT-26JUL231215SDATL",
+      "ticker": "KXMLBHIT-26JUL231215SDATL-ATLMYASTRZEMSKI18-2",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 1.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Mike Yastrzemski: 1+ hits?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHIT-26JUL231215SDATL",
+      "ticker": "KXMLBHIT-26JUL231215SDATL-ATLMYASTRZEMSKI18-1",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 0.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Michael Harris: 4+ hits?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHIT-26JUL231215SDATL",
+      "ticker": "KXMLBHIT-26JUL231215SDATL-ATLMHARRIS23-4",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 3.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Michael Harris: 3+ hits?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHIT-26JUL231215SDATL",
+      "ticker": "KXMLBHIT-26JUL231215SDATL-ATLMHARRIS23-3",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 2.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Michael Harris: 2+ hits?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHIT-26JUL231215SDATL",
+      "ticker": "KXMLBHIT-26JUL231215SDATL-ATLMHARRIS23-2",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 1.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Michael Harris: 1+ hits?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHIT-26JUL231215SDATL",
+      "ticker": "KXMLBHIT-26JUL231215SDATL-ATLMHARRIS23-1",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 0.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Mauricio Dub\u00f3n: 4+ hits?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHIT-26JUL231215SDATL",
+      "ticker": "KXMLBHIT-26JUL231215SDATL-ATLMDUBN14-4",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 3.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Mauricio Dub\u00f3n: 3+ hits?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHIT-26JUL231215SDATL",
+      "ticker": "KXMLBHIT-26JUL231215SDATL-ATLMDUBN14-3",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 2.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Mauricio Dub\u00f3n: 2+ hits?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHIT-26JUL231215SDATL",
+      "ticker": "KXMLBHIT-26JUL231215SDATL-ATLMDUBN14-2",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 1.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Mauricio Dub\u00f3n: 1+ hits?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHIT-26JUL231215SDATL",
+      "ticker": "KXMLBHIT-26JUL231215SDATL-ATLMDUBN14-1",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 0.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Luis Rengifo: 3+ hits?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHIT-26JUL231215SDATL",
+      "ticker": "KXMLBHIT-26JUL231215SDATL-SDLRENGIFO13-3",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 2.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Luis Rengifo: 2+ hits?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHIT-26JUL231215SDATL",
+      "ticker": "KXMLBHIT-26JUL231215SDATL-SDLRENGIFO13-2",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 1.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Luis Rengifo: 1+ hits?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHIT-26JUL231215SDATL",
+      "ticker": "KXMLBHIT-26JUL231215SDATL-SDLRENGIFO13-1",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 0.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Jim Jarvis: 3+ hits?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHIT-26JUL231215SDATL",
+      "ticker": "KXMLBHIT-26JUL231215SDATL-ATLJJARVIS74-3",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 2.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Jim Jarvis: 2+ hits?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHIT-26JUL231215SDATL",
+      "ticker": "KXMLBHIT-26JUL231215SDATL-ATLJJARVIS74-2",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 1.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Jim Jarvis: 1+ hits?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHIT-26JUL231215SDATL",
+      "ticker": "KXMLBHIT-26JUL231215SDATL-ATLJJARVIS74-1",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 0.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Jase Bowen: 3+ hits?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHIT-26JUL231215SDATL",
+      "ticker": "KXMLBHIT-26JUL231215SDATL-SDJBOWEN4-3",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 2.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Jase Bowen: 2+ hits?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHIT-26JUL231215SDATL",
+      "ticker": "KXMLBHIT-26JUL231215SDATL-SDJBOWEN4-2",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 1.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Jase Bowen: 1+ hits?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHIT-26JUL231215SDATL",
+      "ticker": "KXMLBHIT-26JUL231215SDATL-SDJBOWEN4-1",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 0.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Jake Cronenworth: 3+ hits?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHIT-26JUL231215SDATL",
+      "ticker": "KXMLBHIT-26JUL231215SDATL-SDJCRONENWORTH9-3",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 2.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Jake Cronenworth: 2+ hits?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHIT-26JUL231215SDATL",
+      "ticker": "KXMLBHIT-26JUL231215SDATL-SDJCRONENWORTH9-2",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 1.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Jake Cronenworth: 1+ hits?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHIT-26JUL231215SDATL",
+      "ticker": "KXMLBHIT-26JUL231215SDATL-SDJCRONENWORTH9-1",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 0.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Gavin Sheets: 3+ hits?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHIT-26JUL231215SDATL",
+      "ticker": "KXMLBHIT-26JUL231215SDATL-SDGSHEETS30-3",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 2.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Gavin Sheets: 2+ hits?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHIT-26JUL231215SDATL",
+      "ticker": "KXMLBHIT-26JUL231215SDATL-SDGSHEETS30-2",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 1.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Gavin Sheets: 1+ hits?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHIT-26JUL231215SDATL",
+      "ticker": "KXMLBHIT-26JUL231215SDATL-SDGSHEETS30-1",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 0.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Freddy Fermin: 3+ hits?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHIT-26JUL231215SDATL",
+      "ticker": "KXMLBHIT-26JUL231215SDATL-SDFFERMIN54-3",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 2.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Freddy Fermin: 2+ hits?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHIT-26JUL231215SDATL",
+      "ticker": "KXMLBHIT-26JUL231215SDATL-SDFFERMIN54-2",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 1.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Freddy Fermin: 1+ hits?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHIT-26JUL231215SDATL",
+      "ticker": "KXMLBHIT-26JUL231215SDATL-SDFFERMIN54-1",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 0.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Drake Baldwin: 4+ hits?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHIT-26JUL231215SDATL",
+      "ticker": "KXMLBHIT-26JUL231215SDATL-ATLDBALDWIN30-4",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 3.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Drake Baldwin: 3+ hits?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHIT-26JUL231215SDATL",
+      "ticker": "KXMLBHIT-26JUL231215SDATL-ATLDBALDWIN30-3",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 2.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Drake Baldwin: 2+ hits?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHIT-26JUL231215SDATL",
+      "ticker": "KXMLBHIT-26JUL231215SDATL-ATLDBALDWIN30-2",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 1.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Drake Baldwin: 1+ hits?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHIT-26JUL231215SDATL",
+      "ticker": "KXMLBHIT-26JUL231215SDATL-ATLDBALDWIN30-1",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 0.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Dominic Smith: 3+ hits?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHIT-26JUL231215SDATL",
+      "ticker": "KXMLBHIT-26JUL231215SDATL-ATLDSMITH8-3",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 2.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Dominic Smith: 2+ hits?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHIT-26JUL231215SDATL",
+      "ticker": "KXMLBHIT-26JUL231215SDATL-ATLDSMITH8-2",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 1.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Dominic Smith: 1+ hits?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHIT-26JUL231215SDATL",
+      "ticker": "KXMLBHIT-26JUL231215SDATL-ATLDSMITH8-1",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 0.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Austin Riley: 3+ hits?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHIT-26JUL231215SDATL",
+      "ticker": "KXMLBHIT-26JUL231215SDATL-ATLARILEY27-3",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 2.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Austin Riley: 2+ hits?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHIT-26JUL231215SDATL",
+      "ticker": "KXMLBHIT-26JUL231215SDATL-ATLARILEY27-2",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 1.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Austin Riley: 1+ hits?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHIT-26JUL231215SDATL",
+      "ticker": "KXMLBHIT-26JUL231215SDATL-ATLARILEY27-1",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 0.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Manny Machado: 3+ hits?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHIT-26JUL231215SDATL",
+      "ticker": "KXMLBHIT-26JUL231215SDATL-SDMMACHADO13-3",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 2.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Manny Machado: 2+ hits?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHIT-26JUL231215SDATL",
+      "ticker": "KXMLBHIT-26JUL231215SDATL-SDMMACHADO13-2",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 1.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Manny Machado: 1+ hits?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHIT-26JUL231215SDATL",
+      "ticker": "KXMLBHIT-26JUL231215SDATL-SDMMACHADO13-1",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 0.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Fernando Tatis Jr.: 4+ hits?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHIT-26JUL231215SDATL",
+      "ticker": "KXMLBHIT-26JUL231215SDATL-SDFTATIS23-4",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 3.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Fernando Tatis Jr.: 3+ hits?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHIT-26JUL231215SDATL",
+      "ticker": "KXMLBHIT-26JUL231215SDATL-SDFTATIS23-3",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 2.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Fernando Tatis Jr.: 2+ hits?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHIT-26JUL231215SDATL",
+      "ticker": "KXMLBHIT-26JUL231215SDATL-SDFTATIS23-2",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 1.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Fernando Tatis Jr.: 1+ hits?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHIT-26JUL231215SDATL",
+      "ticker": "KXMLBHIT-26JUL231215SDATL-SDFTATIS23-1",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 0.5,
+        "settlement_timer_seconds": 300
       },
       "detected_by": "ticker"
     },
@@ -691,6 +1408,546 @@
       "series_ticker": "",
       "event_ticker": "KXMLBHIT-26JUL231215SDATL",
       "ticker": "KXMLBHIT-26JUL231215SDATL-ATLMOLSON28-1",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 0.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Travis Bazzana: 3+ hits?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHIT-26JUL231310MINCLE",
+      "ticker": "KXMLBHIT-26JUL231310MINCLE-CLETBAZZANA37-3",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 2.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Travis Bazzana: 2+ hits?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHIT-26JUL231310MINCLE",
+      "ticker": "KXMLBHIT-26JUL231310MINCLE-CLETBAZZANA37-2",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 1.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Travis Bazzana: 1+ hits?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHIT-26JUL231310MINCLE",
+      "ticker": "KXMLBHIT-26JUL231310MINCLE-CLETBAZZANA37-1",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 0.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Ryan Kreidler: 3+ hits?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHIT-26JUL231310MINCLE",
+      "ticker": "KXMLBHIT-26JUL231310MINCLE-MINRKREIDLER5-3",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 2.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Ryan Kreidler: 2+ hits?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHIT-26JUL231310MINCLE",
+      "ticker": "KXMLBHIT-26JUL231310MINCLE-MINRKREIDLER5-2",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 1.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Ryan Kreidler: 1+ hits?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHIT-26JUL231310MINCLE",
+      "ticker": "KXMLBHIT-26JUL231310MINCLE-MINRKREIDLER5-1",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 0.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Ryan Jeffers: 3+ hits?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHIT-26JUL231310MINCLE",
+      "ticker": "KXMLBHIT-26JUL231310MINCLE-MINRJEFFERS27-3",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 2.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Ryan Jeffers: 2+ hits?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHIT-26JUL231310MINCLE",
+      "ticker": "KXMLBHIT-26JUL231310MINCLE-MINRJEFFERS27-2",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 1.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Ryan Jeffers: 1+ hits?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHIT-26JUL231310MINCLE",
+      "ticker": "KXMLBHIT-26JUL231310MINCLE-MINRJEFFERS27-1",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 0.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Royce Lewis: 3+ hits?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHIT-26JUL231310MINCLE",
+      "ticker": "KXMLBHIT-26JUL231310MINCLE-MINRLEWIS23-3",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 2.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Royce Lewis: 2+ hits?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHIT-26JUL231310MINCLE",
+      "ticker": "KXMLBHIT-26JUL231310MINCLE-MINRLEWIS23-2",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 1.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Royce Lewis: 1+ hits?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHIT-26JUL231310MINCLE",
+      "ticker": "KXMLBHIT-26JUL231310MINCLE-MINRLEWIS23-1",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 0.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Rhys Hoskins: 3+ hits?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHIT-26JUL231310MINCLE",
+      "ticker": "KXMLBHIT-26JUL231310MINCLE-CLERHOSKINS8-3",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 2.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Rhys Hoskins: 2+ hits?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHIT-26JUL231310MINCLE",
+      "ticker": "KXMLBHIT-26JUL231310MINCLE-CLERHOSKINS8-2",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 1.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Rhys Hoskins: 1+ hits?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHIT-26JUL231310MINCLE",
+      "ticker": "KXMLBHIT-26JUL231310MINCLE-CLERHOSKINS8-1",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 0.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Petey Halpin: 3+ hits?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHIT-26JUL231310MINCLE",
+      "ticker": "KXMLBHIT-26JUL231310MINCLE-CLEPHALPIN0-3",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 2.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Petey Halpin: 2+ hits?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHIT-26JUL231310MINCLE",
+      "ticker": "KXMLBHIT-26JUL231310MINCLE-CLEPHALPIN0-2",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 1.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Petey Halpin: 1+ hits?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHIT-26JUL231310MINCLE",
+      "ticker": "KXMLBHIT-26JUL231310MINCLE-CLEPHALPIN0-1",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 0.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Patrick Bailey: 3+ hits?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHIT-26JUL231310MINCLE",
+      "ticker": "KXMLBHIT-26JUL231310MINCLE-CLEPBAILEY16-3",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 2.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Patrick Bailey: 2+ hits?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHIT-26JUL231310MINCLE",
+      "ticker": "KXMLBHIT-26JUL231310MINCLE-CLEPBAILEY16-2",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 1.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Patrick Bailey: 1+ hits?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHIT-26JUL231310MINCLE",
+      "ticker": "KXMLBHIT-26JUL231310MINCLE-CLEPBAILEY16-1",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 0.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Luke Keaschall: 3+ hits?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHIT-26JUL231310MINCLE",
+      "ticker": "KXMLBHIT-26JUL231310MINCLE-MINLKEASCHALL15-3",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 2.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Luke Keaschall: 2+ hits?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHIT-26JUL231310MINCLE",
+      "ticker": "KXMLBHIT-26JUL231310MINCLE-MINLKEASCHALL15-2",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 1.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Luke Keaschall: 1+ hits?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHIT-26JUL231310MINCLE",
+      "ticker": "KXMLBHIT-26JUL231310MINCLE-MINLKEASCHALL15-1",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 0.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Kyle Manzardo: 3+ hits?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHIT-26JUL231310MINCLE",
+      "ticker": "KXMLBHIT-26JUL231310MINCLE-CLEKMANZARDO9-3",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 2.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Kyle Manzardo: 2+ hits?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHIT-26JUL231310MINCLE",
+      "ticker": "KXMLBHIT-26JUL231310MINCLE-CLEKMANZARDO9-2",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 1.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Kyle Manzardo: 1+ hits?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHIT-26JUL231310MINCLE",
+      "ticker": "KXMLBHIT-26JUL231310MINCLE-CLEKMANZARDO9-1",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 0.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Kody Clemens: 3+ hits?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHIT-26JUL231310MINCLE",
+      "ticker": "KXMLBHIT-26JUL231310MINCLE-MINKCLEMENS2-3",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 2.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Kody Clemens: 2+ hits?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHIT-26JUL231310MINCLE",
+      "ticker": "KXMLBHIT-26JUL231310MINCLE-MINKCLEMENS2-2",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 1.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Kody Clemens: 1+ hits?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHIT-26JUL231310MINCLE",
+      "ticker": "KXMLBHIT-26JUL231310MINCLE-MINKCLEMENS2-1",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 0.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Josh Bell: 3+ hits?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHIT-26JUL231310MINCLE",
+      "ticker": "KXMLBHIT-26JUL231310MINCLE-MINJBELL56-3",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 2.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Josh Bell: 2+ hits?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHIT-26JUL231310MINCLE",
+      "ticker": "KXMLBHIT-26JUL231310MINCLE-MINJBELL56-2",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 1.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Josh Bell: 1+ hits?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHIT-26JUL231310MINCLE",
+      "ticker": "KXMLBHIT-26JUL231310MINCLE-MINJBELL56-1",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 0.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Chase DeLauter: 3+ hits?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHIT-26JUL231310MINCLE",
+      "ticker": "KXMLBHIT-26JUL231310MINCLE-CLECDELAUTER24-3",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 2.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Chase DeLauter: 2+ hits?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHIT-26JUL231310MINCLE",
+      "ticker": "KXMLBHIT-26JUL231310MINCLE-CLECDELAUTER24-2",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 1.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Chase DeLauter: 1+ hits?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHIT-26JUL231310MINCLE",
+      "ticker": "KXMLBHIT-26JUL231310MINCLE-CLECDELAUTER24-1",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 0.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Brooks Lee: 3+ hits?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHIT-26JUL231310MINCLE",
+      "ticker": "KXMLBHIT-26JUL231310MINCLE-MINBLEE22-3",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 2.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Brooks Lee: 2+ hits?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHIT-26JUL231310MINCLE",
+      "ticker": "KXMLBHIT-26JUL231310MINCLE-MINBLEE22-2",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 1.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Brooks Lee: 1+ hits?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHIT-26JUL231310MINCLE",
+      "ticker": "KXMLBHIT-26JUL231310MINCLE-MINBLEE22-1",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 0.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Brayan Rocchio: 3+ hits?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHIT-26JUL231310MINCLE",
+      "ticker": "KXMLBHIT-26JUL231310MINCLE-CLEBROCCHIO4-3",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 2.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Brayan Rocchio: 2+ hits?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHIT-26JUL231310MINCLE",
+      "ticker": "KXMLBHIT-26JUL231310MINCLE-CLEBROCCHIO4-2",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 1.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Brayan Rocchio: 1+ hits?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHIT-26JUL231310MINCLE",
+      "ticker": "KXMLBHIT-26JUL231310MINCLE-CLEBROCCHIO4-1",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 0.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Austin Martin: 3+ hits?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHIT-26JUL231310MINCLE",
+      "ticker": "KXMLBHIT-26JUL231310MINCLE-MINAMARTIN16-3",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 2.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Austin Martin: 2+ hits?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHIT-26JUL231310MINCLE",
+      "ticker": "KXMLBHIT-26JUL231310MINCLE-MINAMARTIN16-2",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 1.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Austin Martin: 1+ hits?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHIT-26JUL231310MINCLE",
+      "ticker": "KXMLBHIT-26JUL231310MINCLE-MINAMARTIN16-1",
       "numeric_fields": {
         "can_close_early": true,
         "floor_strike": 0.5,
@@ -1059,6 +2316,342 @@
       "detected_by": "ticker"
     },
     {
+      "title": "Xander Bogaerts: 2+ home runs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHR-26JUL231215SDATL",
+      "ticker": "KXMLBHR-26JUL231215SDATL-SDXBOGAERTS2-2",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 1.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Xander Bogaerts: 1+ home runs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHR-26JUL231215SDATL",
+      "ticker": "KXMLBHR-26JUL231215SDATL-SDXBOGAERTS2-1",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 0.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Ty France: 2+ home runs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHR-26JUL231215SDATL",
+      "ticker": "KXMLBHR-26JUL231215SDATL-SDTFRANCE4-2",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 1.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Ty France: 1+ home runs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHR-26JUL231215SDATL",
+      "ticker": "KXMLBHR-26JUL231215SDATL-SDTFRANCE4-1",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 0.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Ozzie Albies: 2+ home runs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHR-26JUL231215SDATL",
+      "ticker": "KXMLBHR-26JUL231215SDATL-ATLOALBIES1-2",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 1.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Ozzie Albies: 1+ home runs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHR-26JUL231215SDATL",
+      "ticker": "KXMLBHR-26JUL231215SDATL-ATLOALBIES1-1",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 0.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Mike Yastrzemski: 2+ home runs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHR-26JUL231215SDATL",
+      "ticker": "KXMLBHR-26JUL231215SDATL-ATLMYASTRZEMSKI18-2",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 1.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Mike Yastrzemski: 1+ home runs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHR-26JUL231215SDATL",
+      "ticker": "KXMLBHR-26JUL231215SDATL-ATLMYASTRZEMSKI18-1",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 0.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Michael Harris: 2+ home runs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHR-26JUL231215SDATL",
+      "ticker": "KXMLBHR-26JUL231215SDATL-ATLMHARRIS23-2",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 1.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Michael Harris: 1+ home runs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHR-26JUL231215SDATL",
+      "ticker": "KXMLBHR-26JUL231215SDATL-ATLMHARRIS23-1",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 0.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Mauricio Dub\u00f3n: 2+ home runs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHR-26JUL231215SDATL",
+      "ticker": "KXMLBHR-26JUL231215SDATL-ATLMDUBN14-2",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 1.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Mauricio Dub\u00f3n: 1+ home runs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHR-26JUL231215SDATL",
+      "ticker": "KXMLBHR-26JUL231215SDATL-ATLMDUBN14-1",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 0.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Luis Rengifo: 2+ home runs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHR-26JUL231215SDATL",
+      "ticker": "KXMLBHR-26JUL231215SDATL-SDLRENGIFO13-2",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 1.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Luis Rengifo: 1+ home runs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHR-26JUL231215SDATL",
+      "ticker": "KXMLBHR-26JUL231215SDATL-SDLRENGIFO13-1",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 0.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Jim Jarvis: 1+ home runs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHR-26JUL231215SDATL",
+      "ticker": "KXMLBHR-26JUL231215SDATL-ATLJJARVIS74-1",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 0.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Jase Bowen: 2+ home runs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHR-26JUL231215SDATL",
+      "ticker": "KXMLBHR-26JUL231215SDATL-SDJBOWEN4-2",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 1.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Jase Bowen: 1+ home runs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHR-26JUL231215SDATL",
+      "ticker": "KXMLBHR-26JUL231215SDATL-SDJBOWEN4-1",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 0.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Jake Cronenworth: 1+ home runs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHR-26JUL231215SDATL",
+      "ticker": "KXMLBHR-26JUL231215SDATL-SDJCRONENWORTH9-1",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 0.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Gavin Sheets: 2+ home runs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHR-26JUL231215SDATL",
+      "ticker": "KXMLBHR-26JUL231215SDATL-SDGSHEETS30-2",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 1.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Gavin Sheets: 1+ home runs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHR-26JUL231215SDATL",
+      "ticker": "KXMLBHR-26JUL231215SDATL-SDGSHEETS30-1",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 0.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Freddy Fermin: 2+ home runs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHR-26JUL231215SDATL",
+      "ticker": "KXMLBHR-26JUL231215SDATL-SDFFERMIN54-2",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 1.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Freddy Fermin: 1+ home runs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHR-26JUL231215SDATL",
+      "ticker": "KXMLBHR-26JUL231215SDATL-SDFFERMIN54-1",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 0.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Drake Baldwin: 2+ home runs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHR-26JUL231215SDATL",
+      "ticker": "KXMLBHR-26JUL231215SDATL-ATLDBALDWIN30-2",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 1.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Drake Baldwin: 1+ home runs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHR-26JUL231215SDATL",
+      "ticker": "KXMLBHR-26JUL231215SDATL-ATLDBALDWIN30-1",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 0.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Dominic Smith: 2+ home runs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHR-26JUL231215SDATL",
+      "ticker": "KXMLBHR-26JUL231215SDATL-ATLDSMITH8-2",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 1.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Dominic Smith: 1+ home runs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHR-26JUL231215SDATL",
+      "ticker": "KXMLBHR-26JUL231215SDATL-ATLDSMITH8-1",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 0.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Austin Riley: 2+ home runs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHR-26JUL231215SDATL",
+      "ticker": "KXMLBHR-26JUL231215SDATL-ATLARILEY27-2",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 1.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Austin Riley: 1+ home runs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHR-26JUL231215SDATL",
+      "ticker": "KXMLBHR-26JUL231215SDATL-ATLARILEY27-1",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 0.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
       "title": "Manny Machado: 2+ home runs?",
       "series_ticker": "",
       "event_ticker": "KXMLBHR-26JUL231215SDATL",
@@ -1075,30 +2668,6 @@
       "series_ticker": "",
       "event_ticker": "KXMLBHR-26JUL231215SDATL",
       "ticker": "KXMLBHR-26JUL231215SDATL-SDMMACHADO13-1",
-      "numeric_fields": {
-        "can_close_early": true,
-        "floor_strike": 0.5,
-        "settlement_timer_seconds": 300
-      },
-      "detected_by": "ticker"
-    },
-    {
-      "title": "Jackson Merrill: 2+ home runs?",
-      "series_ticker": "",
-      "event_ticker": "KXMLBHR-26JUL231215SDATL",
-      "ticker": "KXMLBHR-26JUL231215SDATL-SDJMERRILL3-2",
-      "numeric_fields": {
-        "can_close_early": true,
-        "floor_strike": 1.5,
-        "settlement_timer_seconds": 300
-      },
-      "detected_by": "ticker"
-    },
-    {
-      "title": "Jackson Merrill: 1+ home runs?",
-      "series_ticker": "",
-      "event_ticker": "KXMLBHR-26JUL231215SDATL",
-      "ticker": "KXMLBHR-26JUL231215SDATL-SDJMERRILL3-1",
       "numeric_fields": {
         "can_close_early": true,
         "floor_strike": 0.5,
@@ -1147,6 +2716,330 @@
       "series_ticker": "",
       "event_ticker": "KXMLBHR-26JUL231215SDATL",
       "ticker": "KXMLBHR-26JUL231215SDATL-ATLMOLSON28-1",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 0.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Travis Bazzana: 2+ home runs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHR-26JUL231310MINCLE",
+      "ticker": "KXMLBHR-26JUL231310MINCLE-CLETBAZZANA37-2",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 1.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Travis Bazzana: 1+ home runs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHR-26JUL231310MINCLE",
+      "ticker": "KXMLBHR-26JUL231310MINCLE-CLETBAZZANA37-1",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 0.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Ryan Kreidler: 1+ home runs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHR-26JUL231310MINCLE",
+      "ticker": "KXMLBHR-26JUL231310MINCLE-MINRKREIDLER5-1",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 0.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Ryan Jeffers: 2+ home runs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHR-26JUL231310MINCLE",
+      "ticker": "KXMLBHR-26JUL231310MINCLE-MINRJEFFERS27-2",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 1.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Ryan Jeffers: 1+ home runs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHR-26JUL231310MINCLE",
+      "ticker": "KXMLBHR-26JUL231310MINCLE-MINRJEFFERS27-1",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 0.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Royce Lewis: 2+ home runs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHR-26JUL231310MINCLE",
+      "ticker": "KXMLBHR-26JUL231310MINCLE-MINRLEWIS23-2",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 1.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Royce Lewis: 1+ home runs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHR-26JUL231310MINCLE",
+      "ticker": "KXMLBHR-26JUL231310MINCLE-MINRLEWIS23-1",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 0.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Rhys Hoskins: 2+ home runs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHR-26JUL231310MINCLE",
+      "ticker": "KXMLBHR-26JUL231310MINCLE-CLERHOSKINS8-2",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 1.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Rhys Hoskins: 1+ home runs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHR-26JUL231310MINCLE",
+      "ticker": "KXMLBHR-26JUL231310MINCLE-CLERHOSKINS8-1",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 0.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Petey Halpin: 2+ home runs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHR-26JUL231310MINCLE",
+      "ticker": "KXMLBHR-26JUL231310MINCLE-CLEPHALPIN0-2",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 1.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Petey Halpin: 1+ home runs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHR-26JUL231310MINCLE",
+      "ticker": "KXMLBHR-26JUL231310MINCLE-CLEPHALPIN0-1",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 0.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Patrick Bailey: 2+ home runs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHR-26JUL231310MINCLE",
+      "ticker": "KXMLBHR-26JUL231310MINCLE-CLEPBAILEY16-2",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 1.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Patrick Bailey: 1+ home runs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHR-26JUL231310MINCLE",
+      "ticker": "KXMLBHR-26JUL231310MINCLE-CLEPBAILEY16-1",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 0.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Luke Keaschall: 1+ home runs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHR-26JUL231310MINCLE",
+      "ticker": "KXMLBHR-26JUL231310MINCLE-MINLKEASCHALL15-1",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 0.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Kyle Manzardo: 2+ home runs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHR-26JUL231310MINCLE",
+      "ticker": "KXMLBHR-26JUL231310MINCLE-CLEKMANZARDO9-2",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 1.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Kyle Manzardo: 1+ home runs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHR-26JUL231310MINCLE",
+      "ticker": "KXMLBHR-26JUL231310MINCLE-CLEKMANZARDO9-1",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 0.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Kody Clemens: 2+ home runs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHR-26JUL231310MINCLE",
+      "ticker": "KXMLBHR-26JUL231310MINCLE-MINKCLEMENS2-2",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 1.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Kody Clemens: 1+ home runs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHR-26JUL231310MINCLE",
+      "ticker": "KXMLBHR-26JUL231310MINCLE-MINKCLEMENS2-1",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 0.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Josh Bell: 2+ home runs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHR-26JUL231310MINCLE",
+      "ticker": "KXMLBHR-26JUL231310MINCLE-MINJBELL56-2",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 1.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Josh Bell: 1+ home runs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHR-26JUL231310MINCLE",
+      "ticker": "KXMLBHR-26JUL231310MINCLE-MINJBELL56-1",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 0.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Chase DeLauter: 2+ home runs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHR-26JUL231310MINCLE",
+      "ticker": "KXMLBHR-26JUL231310MINCLE-CLECDELAUTER24-2",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 1.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Chase DeLauter: 1+ home runs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHR-26JUL231310MINCLE",
+      "ticker": "KXMLBHR-26JUL231310MINCLE-CLECDELAUTER24-1",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 0.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Brooks Lee: 2+ home runs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHR-26JUL231310MINCLE",
+      "ticker": "KXMLBHR-26JUL231310MINCLE-MINBLEE22-2",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 1.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Brooks Lee: 1+ home runs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHR-26JUL231310MINCLE",
+      "ticker": "KXMLBHR-26JUL231310MINCLE-MINBLEE22-1",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 0.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Brayan Rocchio: 2+ home runs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHR-26JUL231310MINCLE",
+      "ticker": "KXMLBHR-26JUL231310MINCLE-CLEBROCCHIO4-2",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 1.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Brayan Rocchio: 1+ home runs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHR-26JUL231310MINCLE",
+      "ticker": "KXMLBHR-26JUL231310MINCLE-CLEBROCCHIO4-1",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 0.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Austin Martin: 1+ home runs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHR-26JUL231310MINCLE",
+      "ticker": "KXMLBHR-26JUL231310MINCLE-MINAMARTIN16-1",
       "numeric_fields": {
         "can_close_early": true,
         "floor_strike": 0.5,
@@ -1227,78 +3120,6 @@
       "detected_by": "ticker"
     },
     {
-      "title": "Vladimir Guerrero Jr.: 2+ home runs?",
-      "series_ticker": "",
-      "event_ticker": "KXMLBHR-26JUL231507TBTOR",
-      "ticker": "KXMLBHR-26JUL231507TBTOR-TORVGUERRERO27-2",
-      "numeric_fields": {
-        "can_close_early": true,
-        "floor_strike": 1.5,
-        "settlement_timer_seconds": 300
-      },
-      "detected_by": "ticker"
-    },
-    {
-      "title": "Vladimir Guerrero Jr.: 1+ home runs?",
-      "series_ticker": "",
-      "event_ticker": "KXMLBHR-26JUL231507TBTOR",
-      "ticker": "KXMLBHR-26JUL231507TBTOR-TORVGUERRERO27-1",
-      "numeric_fields": {
-        "can_close_early": true,
-        "floor_strike": 0.5,
-        "settlement_timer_seconds": 300
-      },
-      "detected_by": "ticker"
-    },
-    {
-      "title": "Junior Caminero: 2+ home runs?",
-      "series_ticker": "",
-      "event_ticker": "KXMLBHR-26JUL231507TBTOR",
-      "ticker": "KXMLBHR-26JUL231507TBTOR-TBJCAMINERO13-2",
-      "numeric_fields": {
-        "can_close_early": true,
-        "floor_strike": 1.5,
-        "settlement_timer_seconds": 300
-      },
-      "detected_by": "ticker"
-    },
-    {
-      "title": "Junior Caminero: 1+ home runs?",
-      "series_ticker": "",
-      "event_ticker": "KXMLBHR-26JUL231507TBTOR",
-      "ticker": "KXMLBHR-26JUL231507TBTOR-TBJCAMINERO13-1",
-      "numeric_fields": {
-        "can_close_early": true,
-        "floor_strike": 0.5,
-        "settlement_timer_seconds": 300
-      },
-      "detected_by": "ticker"
-    },
-    {
-      "title": "Jonathan Aranda: 2+ home runs?",
-      "series_ticker": "",
-      "event_ticker": "KXMLBHR-26JUL231507TBTOR",
-      "ticker": "KXMLBHR-26JUL231507TBTOR-TBJARANDA8-2",
-      "numeric_fields": {
-        "can_close_early": true,
-        "floor_strike": 1.5,
-        "settlement_timer_seconds": 300
-      },
-      "detected_by": "ticker"
-    },
-    {
-      "title": "Jonathan Aranda: 1+ home runs?",
-      "series_ticker": "",
-      "event_ticker": "KXMLBHR-26JUL231507TBTOR",
-      "ticker": "KXMLBHR-26JUL231507TBTOR-TBJARANDA8-1",
-      "numeric_fields": {
-        "can_close_early": true,
-        "floor_strike": 0.5,
-        "settlement_timer_seconds": 300
-      },
-      "detected_by": "ticker"
-    },
-    {
       "title": "Ketel Marte: 2+ home runs?",
       "series_ticker": "",
       "event_ticker": "KXMLBHR-26JUL231715AZSTL",
@@ -1347,46 +3168,10 @@
       "detected_by": "ticker"
     },
     {
-      "title": "Matt Olson: 5+ hits + runs + RBIs?",
+      "title": "Vinnie Pasquantino: 2+ home runs?",
       "series_ticker": "",
-      "event_ticker": "KXMLBHRR-26JUL231215SDATL",
-      "ticker": "KXMLBHRR-26JUL231215SDATL-ATLMOLSON28-5",
-      "numeric_fields": {
-        "can_close_early": true,
-        "floor_strike": 4.5,
-        "settlement_timer_seconds": 300
-      },
-      "detected_by": "ticker"
-    },
-    {
-      "title": "Matt Olson: 4+ hits + runs + RBIs?",
-      "series_ticker": "",
-      "event_ticker": "KXMLBHRR-26JUL231215SDATL",
-      "ticker": "KXMLBHRR-26JUL231215SDATL-ATLMOLSON28-4",
-      "numeric_fields": {
-        "can_close_early": true,
-        "floor_strike": 3.5,
-        "settlement_timer_seconds": 300
-      },
-      "detected_by": "ticker"
-    },
-    {
-      "title": "Matt Olson: 3+ hits + runs + RBIs?",
-      "series_ticker": "",
-      "event_ticker": "KXMLBHRR-26JUL231215SDATL",
-      "ticker": "KXMLBHRR-26JUL231215SDATL-ATLMOLSON28-3",
-      "numeric_fields": {
-        "can_close_early": true,
-        "floor_strike": 2.5,
-        "settlement_timer_seconds": 300
-      },
-      "detected_by": "ticker"
-    },
-    {
-      "title": "Matt Olson: 2+ hits + runs + RBIs?",
-      "series_ticker": "",
-      "event_ticker": "KXMLBHRR-26JUL231215SDATL",
-      "ticker": "KXMLBHRR-26JUL231215SDATL-ATLMOLSON28-2",
+      "event_ticker": "KXMLBHR-26JUL231840KCDET",
+      "ticker": "KXMLBHR-26JUL231840KCDET-KCVPASQUANTINO9-2",
       "numeric_fields": {
         "can_close_early": true,
         "floor_strike": 1.5,
@@ -1395,10 +3180,1066 @@
       "detected_by": "ticker"
     },
     {
-      "title": "Matt Olson: 1+ hits + runs + RBIs?",
+      "title": "Vinnie Pasquantino: 1+ home runs?",
       "series_ticker": "",
-      "event_ticker": "KXMLBHRR-26JUL231215SDATL",
-      "ticker": "KXMLBHRR-26JUL231215SDATL-ATLMOLSON28-1",
+      "event_ticker": "KXMLBHR-26JUL231840KCDET",
+      "ticker": "KXMLBHR-26JUL231840KCDET-KCVPASQUANTINO9-1",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 0.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Travis Bazzana: 5+ hits + runs + RBIs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHRR-26JUL231310MINCLE",
+      "ticker": "KXMLBHRR-26JUL231310MINCLE-CLETBAZZANA37-5",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 4.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Travis Bazzana: 4+ hits + runs + RBIs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHRR-26JUL231310MINCLE",
+      "ticker": "KXMLBHRR-26JUL231310MINCLE-CLETBAZZANA37-4",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 3.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Travis Bazzana: 3+ hits + runs + RBIs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHRR-26JUL231310MINCLE",
+      "ticker": "KXMLBHRR-26JUL231310MINCLE-CLETBAZZANA37-3",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 2.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Travis Bazzana: 2+ hits + runs + RBIs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHRR-26JUL231310MINCLE",
+      "ticker": "KXMLBHRR-26JUL231310MINCLE-CLETBAZZANA37-2",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 1.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Travis Bazzana: 1+ hits + runs + RBIs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHRR-26JUL231310MINCLE",
+      "ticker": "KXMLBHRR-26JUL231310MINCLE-CLETBAZZANA37-1",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 0.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Ryan Kreidler: 4+ hits + runs + RBIs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHRR-26JUL231310MINCLE",
+      "ticker": "KXMLBHRR-26JUL231310MINCLE-MINRKREIDLER5-4",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 3.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Ryan Kreidler: 3+ hits + runs + RBIs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHRR-26JUL231310MINCLE",
+      "ticker": "KXMLBHRR-26JUL231310MINCLE-MINRKREIDLER5-3",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 2.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Ryan Kreidler: 2+ hits + runs + RBIs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHRR-26JUL231310MINCLE",
+      "ticker": "KXMLBHRR-26JUL231310MINCLE-MINRKREIDLER5-2",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 1.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Ryan Kreidler: 1+ hits + runs + RBIs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHRR-26JUL231310MINCLE",
+      "ticker": "KXMLBHRR-26JUL231310MINCLE-MINRKREIDLER5-1",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 0.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Ryan Jeffers: 5+ hits + runs + RBIs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHRR-26JUL231310MINCLE",
+      "ticker": "KXMLBHRR-26JUL231310MINCLE-MINRJEFFERS27-5",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 4.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Ryan Jeffers: 4+ hits + runs + RBIs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHRR-26JUL231310MINCLE",
+      "ticker": "KXMLBHRR-26JUL231310MINCLE-MINRJEFFERS27-4",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 3.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Ryan Jeffers: 3+ hits + runs + RBIs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHRR-26JUL231310MINCLE",
+      "ticker": "KXMLBHRR-26JUL231310MINCLE-MINRJEFFERS27-3",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 2.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Ryan Jeffers: 2+ hits + runs + RBIs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHRR-26JUL231310MINCLE",
+      "ticker": "KXMLBHRR-26JUL231310MINCLE-MINRJEFFERS27-2",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 1.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Ryan Jeffers: 1+ hits + runs + RBIs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHRR-26JUL231310MINCLE",
+      "ticker": "KXMLBHRR-26JUL231310MINCLE-MINRJEFFERS27-1",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 0.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Royce Lewis: 5+ hits + runs + RBIs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHRR-26JUL231310MINCLE",
+      "ticker": "KXMLBHRR-26JUL231310MINCLE-MINRLEWIS23-5",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 4.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Royce Lewis: 4+ hits + runs + RBIs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHRR-26JUL231310MINCLE",
+      "ticker": "KXMLBHRR-26JUL231310MINCLE-MINRLEWIS23-4",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 3.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Royce Lewis: 3+ hits + runs + RBIs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHRR-26JUL231310MINCLE",
+      "ticker": "KXMLBHRR-26JUL231310MINCLE-MINRLEWIS23-3",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 2.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Royce Lewis: 2+ hits + runs + RBIs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHRR-26JUL231310MINCLE",
+      "ticker": "KXMLBHRR-26JUL231310MINCLE-MINRLEWIS23-2",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 1.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Royce Lewis: 1+ hits + runs + RBIs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHRR-26JUL231310MINCLE",
+      "ticker": "KXMLBHRR-26JUL231310MINCLE-MINRLEWIS23-1",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 0.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Rhys Hoskins: 5+ hits + runs + RBIs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHRR-26JUL231310MINCLE",
+      "ticker": "KXMLBHRR-26JUL231310MINCLE-CLERHOSKINS8-5",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 4.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Rhys Hoskins: 4+ hits + runs + RBIs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHRR-26JUL231310MINCLE",
+      "ticker": "KXMLBHRR-26JUL231310MINCLE-CLERHOSKINS8-4",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 3.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Rhys Hoskins: 3+ hits + runs + RBIs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHRR-26JUL231310MINCLE",
+      "ticker": "KXMLBHRR-26JUL231310MINCLE-CLERHOSKINS8-3",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 2.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Rhys Hoskins: 2+ hits + runs + RBIs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHRR-26JUL231310MINCLE",
+      "ticker": "KXMLBHRR-26JUL231310MINCLE-CLERHOSKINS8-2",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 1.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Rhys Hoskins: 1+ hits + runs + RBIs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHRR-26JUL231310MINCLE",
+      "ticker": "KXMLBHRR-26JUL231310MINCLE-CLERHOSKINS8-1",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 0.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Petey Halpin: 5+ hits + runs + RBIs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHRR-26JUL231310MINCLE",
+      "ticker": "KXMLBHRR-26JUL231310MINCLE-CLEPHALPIN0-5",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 4.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Petey Halpin: 4+ hits + runs + RBIs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHRR-26JUL231310MINCLE",
+      "ticker": "KXMLBHRR-26JUL231310MINCLE-CLEPHALPIN0-4",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 3.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Petey Halpin: 3+ hits + runs + RBIs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHRR-26JUL231310MINCLE",
+      "ticker": "KXMLBHRR-26JUL231310MINCLE-CLEPHALPIN0-3",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 2.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Petey Halpin: 2+ hits + runs + RBIs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHRR-26JUL231310MINCLE",
+      "ticker": "KXMLBHRR-26JUL231310MINCLE-CLEPHALPIN0-2",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 1.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Petey Halpin: 1+ hits + runs + RBIs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHRR-26JUL231310MINCLE",
+      "ticker": "KXMLBHRR-26JUL231310MINCLE-CLEPHALPIN0-1",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 0.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Patrick Bailey: 5+ hits + runs + RBIs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHRR-26JUL231310MINCLE",
+      "ticker": "KXMLBHRR-26JUL231310MINCLE-CLEPBAILEY16-5",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 4.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Patrick Bailey: 4+ hits + runs + RBIs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHRR-26JUL231310MINCLE",
+      "ticker": "KXMLBHRR-26JUL231310MINCLE-CLEPBAILEY16-4",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 3.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Patrick Bailey: 3+ hits + runs + RBIs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHRR-26JUL231310MINCLE",
+      "ticker": "KXMLBHRR-26JUL231310MINCLE-CLEPBAILEY16-3",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 2.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Patrick Bailey: 2+ hits + runs + RBIs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHRR-26JUL231310MINCLE",
+      "ticker": "KXMLBHRR-26JUL231310MINCLE-CLEPBAILEY16-2",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 1.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Patrick Bailey: 1+ hits + runs + RBIs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHRR-26JUL231310MINCLE",
+      "ticker": "KXMLBHRR-26JUL231310MINCLE-CLEPBAILEY16-1",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 0.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Luke Keaschall: 5+ hits + runs + RBIs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHRR-26JUL231310MINCLE",
+      "ticker": "KXMLBHRR-26JUL231310MINCLE-MINLKEASCHALL15-5",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 4.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Luke Keaschall: 4+ hits + runs + RBIs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHRR-26JUL231310MINCLE",
+      "ticker": "KXMLBHRR-26JUL231310MINCLE-MINLKEASCHALL15-4",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 3.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Luke Keaschall: 3+ hits + runs + RBIs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHRR-26JUL231310MINCLE",
+      "ticker": "KXMLBHRR-26JUL231310MINCLE-MINLKEASCHALL15-3",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 2.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Luke Keaschall: 2+ hits + runs + RBIs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHRR-26JUL231310MINCLE",
+      "ticker": "KXMLBHRR-26JUL231310MINCLE-MINLKEASCHALL15-2",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 1.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Luke Keaschall: 1+ hits + runs + RBIs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHRR-26JUL231310MINCLE",
+      "ticker": "KXMLBHRR-26JUL231310MINCLE-MINLKEASCHALL15-1",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 0.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Kyle Manzardo: 5+ hits + runs + RBIs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHRR-26JUL231310MINCLE",
+      "ticker": "KXMLBHRR-26JUL231310MINCLE-CLEKMANZARDO9-5",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 4.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Kyle Manzardo: 4+ hits + runs + RBIs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHRR-26JUL231310MINCLE",
+      "ticker": "KXMLBHRR-26JUL231310MINCLE-CLEKMANZARDO9-4",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 3.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Kyle Manzardo: 3+ hits + runs + RBIs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHRR-26JUL231310MINCLE",
+      "ticker": "KXMLBHRR-26JUL231310MINCLE-CLEKMANZARDO9-3",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 2.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Kyle Manzardo: 2+ hits + runs + RBIs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHRR-26JUL231310MINCLE",
+      "ticker": "KXMLBHRR-26JUL231310MINCLE-CLEKMANZARDO9-2",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 1.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Kyle Manzardo: 1+ hits + runs + RBIs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHRR-26JUL231310MINCLE",
+      "ticker": "KXMLBHRR-26JUL231310MINCLE-CLEKMANZARDO9-1",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 0.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Kody Clemens: 5+ hits + runs + RBIs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHRR-26JUL231310MINCLE",
+      "ticker": "KXMLBHRR-26JUL231310MINCLE-MINKCLEMENS2-5",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 4.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Kody Clemens: 4+ hits + runs + RBIs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHRR-26JUL231310MINCLE",
+      "ticker": "KXMLBHRR-26JUL231310MINCLE-MINKCLEMENS2-4",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 3.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Kody Clemens: 3+ hits + runs + RBIs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHRR-26JUL231310MINCLE",
+      "ticker": "KXMLBHRR-26JUL231310MINCLE-MINKCLEMENS2-3",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 2.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Kody Clemens: 2+ hits + runs + RBIs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHRR-26JUL231310MINCLE",
+      "ticker": "KXMLBHRR-26JUL231310MINCLE-MINKCLEMENS2-2",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 1.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Kody Clemens: 1+ hits + runs + RBIs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHRR-26JUL231310MINCLE",
+      "ticker": "KXMLBHRR-26JUL231310MINCLE-MINKCLEMENS2-1",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 0.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Josh Bell: 5+ hits + runs + RBIs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHRR-26JUL231310MINCLE",
+      "ticker": "KXMLBHRR-26JUL231310MINCLE-MINJBELL56-5",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 4.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Josh Bell: 4+ hits + runs + RBIs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHRR-26JUL231310MINCLE",
+      "ticker": "KXMLBHRR-26JUL231310MINCLE-MINJBELL56-4",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 3.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Josh Bell: 3+ hits + runs + RBIs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHRR-26JUL231310MINCLE",
+      "ticker": "KXMLBHRR-26JUL231310MINCLE-MINJBELL56-3",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 2.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Josh Bell: 2+ hits + runs + RBIs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHRR-26JUL231310MINCLE",
+      "ticker": "KXMLBHRR-26JUL231310MINCLE-MINJBELL56-2",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 1.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Josh Bell: 1+ hits + runs + RBIs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHRR-26JUL231310MINCLE",
+      "ticker": "KXMLBHRR-26JUL231310MINCLE-MINJBELL56-1",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 0.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Chase DeLauter: 5+ hits + runs + RBIs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHRR-26JUL231310MINCLE",
+      "ticker": "KXMLBHRR-26JUL231310MINCLE-CLECDELAUTER24-5",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 4.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Chase DeLauter: 4+ hits + runs + RBIs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHRR-26JUL231310MINCLE",
+      "ticker": "KXMLBHRR-26JUL231310MINCLE-CLECDELAUTER24-4",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 3.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Chase DeLauter: 3+ hits + runs + RBIs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHRR-26JUL231310MINCLE",
+      "ticker": "KXMLBHRR-26JUL231310MINCLE-CLECDELAUTER24-3",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 2.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Chase DeLauter: 2+ hits + runs + RBIs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHRR-26JUL231310MINCLE",
+      "ticker": "KXMLBHRR-26JUL231310MINCLE-CLECDELAUTER24-2",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 1.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Chase DeLauter: 1+ hits + runs + RBIs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHRR-26JUL231310MINCLE",
+      "ticker": "KXMLBHRR-26JUL231310MINCLE-CLECDELAUTER24-1",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 0.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Brooks Lee: 5+ hits + runs + RBIs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHRR-26JUL231310MINCLE",
+      "ticker": "KXMLBHRR-26JUL231310MINCLE-MINBLEE22-5",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 4.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Brooks Lee: 4+ hits + runs + RBIs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHRR-26JUL231310MINCLE",
+      "ticker": "KXMLBHRR-26JUL231310MINCLE-MINBLEE22-4",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 3.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Brooks Lee: 3+ hits + runs + RBIs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHRR-26JUL231310MINCLE",
+      "ticker": "KXMLBHRR-26JUL231310MINCLE-MINBLEE22-3",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 2.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Brooks Lee: 2+ hits + runs + RBIs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHRR-26JUL231310MINCLE",
+      "ticker": "KXMLBHRR-26JUL231310MINCLE-MINBLEE22-2",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 1.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Brooks Lee: 1+ hits + runs + RBIs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHRR-26JUL231310MINCLE",
+      "ticker": "KXMLBHRR-26JUL231310MINCLE-MINBLEE22-1",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 0.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Brayan Rocchio: 5+ hits + runs + RBIs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHRR-26JUL231310MINCLE",
+      "ticker": "KXMLBHRR-26JUL231310MINCLE-CLEBROCCHIO4-5",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 4.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Brayan Rocchio: 4+ hits + runs + RBIs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHRR-26JUL231310MINCLE",
+      "ticker": "KXMLBHRR-26JUL231310MINCLE-CLEBROCCHIO4-4",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 3.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Brayan Rocchio: 3+ hits + runs + RBIs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHRR-26JUL231310MINCLE",
+      "ticker": "KXMLBHRR-26JUL231310MINCLE-CLEBROCCHIO4-3",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 2.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Brayan Rocchio: 2+ hits + runs + RBIs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHRR-26JUL231310MINCLE",
+      "ticker": "KXMLBHRR-26JUL231310MINCLE-CLEBROCCHIO4-2",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 1.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Brayan Rocchio: 1+ hits + runs + RBIs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHRR-26JUL231310MINCLE",
+      "ticker": "KXMLBHRR-26JUL231310MINCLE-CLEBROCCHIO4-1",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 0.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Austin Martin: 4+ hits + runs + RBIs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHRR-26JUL231310MINCLE",
+      "ticker": "KXMLBHRR-26JUL231310MINCLE-MINAMARTIN16-4",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 3.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Austin Martin: 3+ hits + runs + RBIs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHRR-26JUL231310MINCLE",
+      "ticker": "KXMLBHRR-26JUL231310MINCLE-MINAMARTIN16-3",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 2.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Austin Martin: 2+ hits + runs + RBIs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHRR-26JUL231310MINCLE",
+      "ticker": "KXMLBHRR-26JUL231310MINCLE-MINAMARTIN16-2",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 1.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Austin Martin: 1+ hits + runs + RBIs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHRR-26JUL231310MINCLE",
+      "ticker": "KXMLBHRR-26JUL231310MINCLE-MINAMARTIN16-1",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 0.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Byron Buxton: 5+ hits + runs + RBIs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHRR-26JUL231310MINCLE",
+      "ticker": "KXMLBHRR-26JUL231310MINCLE-MINBBUXTON25-5",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 4.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Byron Buxton: 4+ hits + runs + RBIs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHRR-26JUL231310MINCLE",
+      "ticker": "KXMLBHRR-26JUL231310MINCLE-MINBBUXTON25-4",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 3.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Byron Buxton: 3+ hits + runs + RBIs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHRR-26JUL231310MINCLE",
+      "ticker": "KXMLBHRR-26JUL231310MINCLE-MINBBUXTON25-3",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 2.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Byron Buxton: 2+ hits + runs + RBIs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHRR-26JUL231310MINCLE",
+      "ticker": "KXMLBHRR-26JUL231310MINCLE-MINBBUXTON25-2",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 1.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Byron Buxton: 1+ hits + runs + RBIs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHRR-26JUL231310MINCLE",
+      "ticker": "KXMLBHRR-26JUL231310MINCLE-MINBBUXTON25-1",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 0.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Steven Kwan: 5+ hits + runs + RBIs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHRR-26JUL231310MINCLE",
+      "ticker": "KXMLBHRR-26JUL231310MINCLE-CLESKWAN38-5",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 4.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Steven Kwan: 4+ hits + runs + RBIs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHRR-26JUL231310MINCLE",
+      "ticker": "KXMLBHRR-26JUL231310MINCLE-CLESKWAN38-4",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 3.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Steven Kwan: 3+ hits + runs + RBIs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHRR-26JUL231310MINCLE",
+      "ticker": "KXMLBHRR-26JUL231310MINCLE-CLESKWAN38-3",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 2.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Steven Kwan: 2+ hits + runs + RBIs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHRR-26JUL231310MINCLE",
+      "ticker": "KXMLBHRR-26JUL231310MINCLE-CLESKWAN38-2",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 1.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Steven Kwan: 1+ hits + runs + RBIs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHRR-26JUL231310MINCLE",
+      "ticker": "KXMLBHRR-26JUL231310MINCLE-CLESKWAN38-1",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 0.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Jos\u00e9 Ram\u00edrez: 5+ hits + runs + RBIs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHRR-26JUL231310MINCLE",
+      "ticker": "KXMLBHRR-26JUL231310MINCLE-CLEJRAMREZ11-5",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 4.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Jos\u00e9 Ram\u00edrez: 4+ hits + runs + RBIs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHRR-26JUL231310MINCLE",
+      "ticker": "KXMLBHRR-26JUL231310MINCLE-CLEJRAMREZ11-4",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 3.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Jos\u00e9 Ram\u00edrez: 3+ hits + runs + RBIs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHRR-26JUL231310MINCLE",
+      "ticker": "KXMLBHRR-26JUL231310MINCLE-CLEJRAMREZ11-3",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 2.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Jos\u00e9 Ram\u00edrez: 2+ hits + runs + RBIs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHRR-26JUL231310MINCLE",
+      "ticker": "KXMLBHRR-26JUL231310MINCLE-CLEJRAMREZ11-2",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 1.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Jos\u00e9 Ram\u00edrez: 1+ hits + runs + RBIs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHRR-26JUL231310MINCLE",
+      "ticker": "KXMLBHRR-26JUL231310MINCLE-CLEJRAMREZ11-1",
       "numeric_fields": {
         "can_close_early": true,
         "floor_strike": 0.5,
@@ -1702,150 +4543,6 @@
       "numeric_fields": {
         "can_close_early": true,
         "floor_strike": 0.5,
-        "settlement_timer_seconds": 300
-      },
-      "detected_by": "ticker"
-    },
-    {
-      "title": "Vinnie Pasquantino: 5+ hits + runs + RBIs?",
-      "series_ticker": "",
-      "event_ticker": "KXMLBHRR-26JUL231840KCDET",
-      "ticker": "KXMLBHRR-26JUL231840KCDET-KCVPASQUANTINO9-5",
-      "numeric_fields": {
-        "can_close_early": true,
-        "floor_strike": 4.5,
-        "settlement_timer_seconds": 300
-      },
-      "detected_by": "ticker"
-    },
-    {
-      "title": "Vinnie Pasquantino: 4+ hits + runs + RBIs?",
-      "series_ticker": "",
-      "event_ticker": "KXMLBHRR-26JUL231840KCDET",
-      "ticker": "KXMLBHRR-26JUL231840KCDET-KCVPASQUANTINO9-4",
-      "numeric_fields": {
-        "can_close_early": true,
-        "floor_strike": 3.5,
-        "settlement_timer_seconds": 300
-      },
-      "detected_by": "ticker"
-    },
-    {
-      "title": "Vinnie Pasquantino: 3+ hits + runs + RBIs?",
-      "series_ticker": "",
-      "event_ticker": "KXMLBHRR-26JUL231840KCDET",
-      "ticker": "KXMLBHRR-26JUL231840KCDET-KCVPASQUANTINO9-3",
-      "numeric_fields": {
-        "can_close_early": true,
-        "floor_strike": 2.5,
-        "settlement_timer_seconds": 300
-      },
-      "detected_by": "ticker"
-    },
-    {
-      "title": "Vinnie Pasquantino: 2+ hits + runs + RBIs?",
-      "series_ticker": "",
-      "event_ticker": "KXMLBHRR-26JUL231840KCDET",
-      "ticker": "KXMLBHRR-26JUL231840KCDET-KCVPASQUANTINO9-2",
-      "numeric_fields": {
-        "can_close_early": true,
-        "floor_strike": 1.5,
-        "settlement_timer_seconds": 300
-      },
-      "detected_by": "ticker"
-    },
-    {
-      "title": "Vinnie Pasquantino: 1+ hits + runs + RBIs?",
-      "series_ticker": "",
-      "event_ticker": "KXMLBHRR-26JUL231840KCDET",
-      "ticker": "KXMLBHRR-26JUL231840KCDET-KCVPASQUANTINO9-1",
-      "numeric_fields": {
-        "can_close_early": true,
-        "floor_strike": 0.5,
-        "settlement_timer_seconds": 300
-      },
-      "detected_by": "ticker"
-    },
-    {
-      "title": "Griffin Canning: 8+ strikeouts?",
-      "series_ticker": "",
-      "event_ticker": "KXMLBKS-26JUL231215SDATL",
-      "ticker": "KXMLBKS-26JUL231215SDATL-SDGCANNING17-8",
-      "numeric_fields": {
-        "can_close_early": true,
-        "floor_strike": 7.5,
-        "settlement_timer_seconds": 300
-      },
-      "detected_by": "ticker"
-    },
-    {
-      "title": "Griffin Canning: 7+ strikeouts?",
-      "series_ticker": "",
-      "event_ticker": "KXMLBKS-26JUL231215SDATL",
-      "ticker": "KXMLBKS-26JUL231215SDATL-SDGCANNING17-7",
-      "numeric_fields": {
-        "can_close_early": true,
-        "floor_strike": 6.5,
-        "settlement_timer_seconds": 300
-      },
-      "detected_by": "ticker"
-    },
-    {
-      "title": "Griffin Canning: 6+ strikeouts?",
-      "series_ticker": "",
-      "event_ticker": "KXMLBKS-26JUL231215SDATL",
-      "ticker": "KXMLBKS-26JUL231215SDATL-SDGCANNING17-6",
-      "numeric_fields": {
-        "can_close_early": true,
-        "floor_strike": 5.5,
-        "settlement_timer_seconds": 300
-      },
-      "detected_by": "ticker"
-    },
-    {
-      "title": "Griffin Canning: 5+ strikeouts?",
-      "series_ticker": "",
-      "event_ticker": "KXMLBKS-26JUL231215SDATL",
-      "ticker": "KXMLBKS-26JUL231215SDATL-SDGCANNING17-5",
-      "numeric_fields": {
-        "can_close_early": true,
-        "floor_strike": 4.5,
-        "settlement_timer_seconds": 300
-      },
-      "detected_by": "ticker"
-    },
-    {
-      "title": "Griffin Canning: 4+ strikeouts?",
-      "series_ticker": "",
-      "event_ticker": "KXMLBKS-26JUL231215SDATL",
-      "ticker": "KXMLBKS-26JUL231215SDATL-SDGCANNING17-4",
-      "numeric_fields": {
-        "can_close_early": true,
-        "floor_strike": 3.5,
-        "settlement_timer_seconds": 300
-      },
-      "detected_by": "ticker"
-    },
-    {
-      "title": "Griffin Canning: 3+ strikeouts?",
-      "series_ticker": "",
-      "event_ticker": "KXMLBKS-26JUL231215SDATL",
-      "ticker": "KXMLBKS-26JUL231215SDATL-SDGCANNING17-3",
-      "numeric_fields": {
-        "can_close_early": true,
-        "floor_strike": 2.5,
-        "settlement_timer_seconds": 300
-      },
-      "detected_by": "ticker"
-    },
-    {
-      "title": "Griffin Canning: 2+ strikeouts?",
-      "series_ticker": "",
-      "event_ticker": "KXMLBKS-26JUL231215SDATL",
-      "ticker": "KXMLBKS-26JUL231215SDATL-SDGCANNING17-2",
-      "numeric_fields": {
-        "can_close_early": true,
-        "floor_strike": 1.5,
         "settlement_timer_seconds": 300
       },
       "detected_by": "ticker"
@@ -2379,18 +5076,6 @@
       "detected_by": "ticker"
     },
     {
-      "title": "Chris Sale: 19+ Outs Recorded?",
-      "series_ticker": "",
-      "event_ticker": "KXMLBOUTS-26JUL231215SDATL",
-      "ticker": "KXMLBOUTS-26JUL231215SDATL-ATLCSALE51-19",
-      "numeric_fields": {
-        "can_close_early": true,
-        "floor_strike": 18.5,
-        "settlement_timer_seconds": 300
-      },
-      "detected_by": "ticker"
-    },
-    {
       "title": "Taj Bradley: 18+ Outs Recorded?",
       "series_ticker": "",
       "event_ticker": "KXMLBOUTS-26JUL231310MINCLE",
@@ -2410,18 +5095,6 @@
       "numeric_fields": {
         "can_close_early": true,
         "floor_strike": 17.5,
-        "settlement_timer_seconds": 300
-      },
-      "detected_by": "ticker"
-    },
-    {
-      "title": "Troy Melton: 17+ Outs Recorded?",
-      "series_ticker": "",
-      "event_ticker": "KXMLBOUTS-26JUL231840KCDET",
-      "ticker": "KXMLBOUTS-26JUL231840KCDET-DETTMELTON52-17",
-      "numeric_fields": {
-        "can_close_early": true,
-        "floor_strike": 16.5,
         "settlement_timer_seconds": 300
       },
       "detected_by": "ticker"
@@ -2511,18 +5184,6 @@
       "detected_by": "ticker"
     },
     {
-      "title": "San Diego vs Atlanta First Inning Run?",
-      "series_ticker": "",
-      "event_ticker": "KXMLBRFI-26JUL231215SDATL",
-      "ticker": "KXMLBRFI-26JUL231215SDATL",
-      "numeric_fields": {
-        "can_close_early": true,
-        "floor_strike": 1,
-        "settlement_timer_seconds": 60
-      },
-      "detected_by": "ticker"
-    },
-    {
       "title": "Minnesota vs Cleveland First Inning Run?",
       "series_ticker": "",
       "event_ticker": "KXMLBRFI-26JUL231310MINCLE",
@@ -2535,13 +5196,61 @@
       "detected_by": "ticker"
     },
     {
-      "title": "Los Angeles A vs San Francisco First Inning Run?",
+      "title": "Tampa Bay vs Toronto First Inning Run?",
       "series_ticker": "",
-      "event_ticker": "KXMLBRFI-26JUL242215LAASF",
-      "ticker": "KXMLBRFI-26JUL242215LAASF",
+      "event_ticker": "KXMLBRFI-26JUL231507TBTOR",
+      "ticker": "KXMLBRFI-26JUL231507TBTOR",
       "numeric_fields": {
         "can_close_early": true,
         "floor_strike": 1,
+        "settlement_timer_seconds": 60
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Arizona vs St. Louis First Inning Run?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBRFI-26JUL231715AZSTL",
+      "ticker": "KXMLBRFI-26JUL231715AZSTL",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 1,
+        "settlement_timer_seconds": 60
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "New York Y vs Philadelphia First Inning Run?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBRFI-26JUL241845NYYPHI",
+      "ticker": "KXMLBRFI-26JUL241845NYYPHI",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 1,
+        "settlement_timer_seconds": 60
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "San Diego wins by over 5.5 runs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBSPREAD-26JUL231215SDATL",
+      "ticker": "KXMLBSPREAD-26JUL231215SDATL-SD6",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 5.5,
+        "settlement_timer_seconds": 60
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "San Diego wins by over 4.5 runs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBSPREAD-26JUL231215SDATL",
+      "ticker": "KXMLBSPREAD-26JUL231215SDATL-SD5",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 4.5,
         "settlement_timer_seconds": 60
       },
       "detected_by": "ticker"
@@ -2619,10 +5328,10 @@
       "detected_by": "ticker"
     },
     {
-      "title": "Minnesota wins by over 3.5 runs?",
+      "title": "Toronto wins by over 3.5 runs?",
       "series_ticker": "",
-      "event_ticker": "KXMLBSPREAD-26JUL231310MINCLE",
-      "ticker": "KXMLBSPREAD-26JUL231310MINCLE-MIN4",
+      "event_ticker": "KXMLBSPREAD-26JUL231507TBTOR",
+      "ticker": "KXMLBSPREAD-26JUL231507TBTOR-TOR4",
       "numeric_fields": {
         "can_close_early": true,
         "floor_strike": 3.5,
@@ -2631,10 +5340,10 @@
       "detected_by": "ticker"
     },
     {
-      "title": "Minnesota wins by over 2.5 runs?",
+      "title": "Toronto wins by over 2.5 runs?",
       "series_ticker": "",
-      "event_ticker": "KXMLBSPREAD-26JUL231310MINCLE",
-      "ticker": "KXMLBSPREAD-26JUL231310MINCLE-MIN3",
+      "event_ticker": "KXMLBSPREAD-26JUL231507TBTOR",
+      "ticker": "KXMLBSPREAD-26JUL231507TBTOR-TOR3",
       "numeric_fields": {
         "can_close_early": true,
         "floor_strike": 2.5,
@@ -2643,10 +5352,10 @@
       "detected_by": "ticker"
     },
     {
-      "title": "Minnesota wins by over 1.5 runs?",
+      "title": "Toronto wins by over 1.5 runs?",
       "series_ticker": "",
-      "event_ticker": "KXMLBSPREAD-26JUL231310MINCLE",
-      "ticker": "KXMLBSPREAD-26JUL231310MINCLE-MIN2",
+      "event_ticker": "KXMLBSPREAD-26JUL231507TBTOR",
+      "ticker": "KXMLBSPREAD-26JUL231507TBTOR-TOR2",
       "numeric_fields": {
         "can_close_early": true,
         "floor_strike": 1.5,
@@ -2655,10 +5364,10 @@
       "detected_by": "ticker"
     },
     {
-      "title": "Cleveland wins by over 3.5 runs?",
+      "title": "Tampa Bay wins by over 3.5 runs?",
       "series_ticker": "",
-      "event_ticker": "KXMLBSPREAD-26JUL231310MINCLE",
-      "ticker": "KXMLBSPREAD-26JUL231310MINCLE-CLE4",
+      "event_ticker": "KXMLBSPREAD-26JUL231507TBTOR",
+      "ticker": "KXMLBSPREAD-26JUL231507TBTOR-TB4",
       "numeric_fields": {
         "can_close_early": true,
         "floor_strike": 3.5,
@@ -2667,10 +5376,10 @@
       "detected_by": "ticker"
     },
     {
-      "title": "Cleveland wins by over 2.5 runs?",
+      "title": "Tampa Bay wins by over 2.5 runs?",
       "series_ticker": "",
-      "event_ticker": "KXMLBSPREAD-26JUL231310MINCLE",
-      "ticker": "KXMLBSPREAD-26JUL231310MINCLE-CLE3",
+      "event_ticker": "KXMLBSPREAD-26JUL231507TBTOR",
+      "ticker": "KXMLBSPREAD-26JUL231507TBTOR-TB3",
       "numeric_fields": {
         "can_close_early": true,
         "floor_strike": 2.5,
@@ -2679,10 +5388,10 @@
       "detected_by": "ticker"
     },
     {
-      "title": "Cleveland wins by over 1.5 runs?",
+      "title": "Tampa Bay wins by over 1.5 runs?",
       "series_ticker": "",
-      "event_ticker": "KXMLBSPREAD-26JUL231310MINCLE",
-      "ticker": "KXMLBSPREAD-26JUL231310MINCLE-CLE2",
+      "event_ticker": "KXMLBSPREAD-26JUL231507TBTOR",
+      "ticker": "KXMLBSPREAD-26JUL231507TBTOR-TB2",
       "numeric_fields": {
         "can_close_early": true,
         "floor_strike": 1.5,
@@ -2835,22 +5544,10 @@
       "detected_by": "ticker"
     },
     {
-      "title": "Matt Olson: 6+ total bases?",
+      "title": "Travis Bazzana: 5+ total bases?",
       "series_ticker": "",
-      "event_ticker": "KXMLBTB-26JUL231215SDATL",
-      "ticker": "KXMLBTB-26JUL231215SDATL-ATLMOLSON28-6",
-      "numeric_fields": {
-        "can_close_early": true,
-        "floor_strike": 5.5,
-        "settlement_timer_seconds": 300
-      },
-      "detected_by": "ticker"
-    },
-    {
-      "title": "Matt Olson: 5+ total bases?",
-      "series_ticker": "",
-      "event_ticker": "KXMLBTB-26JUL231215SDATL",
-      "ticker": "KXMLBTB-26JUL231215SDATL-ATLMOLSON28-5",
+      "event_ticker": "KXMLBTB-26JUL231310MINCLE",
+      "ticker": "KXMLBTB-26JUL231310MINCLE-CLETBAZZANA37-5",
       "numeric_fields": {
         "can_close_early": true,
         "floor_strike": 4.5,
@@ -2859,10 +5556,10 @@
       "detected_by": "ticker"
     },
     {
-      "title": "Matt Olson: 4+ total bases?",
+      "title": "Travis Bazzana: 4+ total bases?",
       "series_ticker": "",
-      "event_ticker": "KXMLBTB-26JUL231215SDATL",
-      "ticker": "KXMLBTB-26JUL231215SDATL-ATLMOLSON28-4",
+      "event_ticker": "KXMLBTB-26JUL231310MINCLE",
+      "ticker": "KXMLBTB-26JUL231310MINCLE-CLETBAZZANA37-4",
       "numeric_fields": {
         "can_close_early": true,
         "floor_strike": 3.5,
@@ -2871,10 +5568,10 @@
       "detected_by": "ticker"
     },
     {
-      "title": "Matt Olson: 3+ total bases?",
+      "title": "Travis Bazzana: 3+ total bases?",
       "series_ticker": "",
-      "event_ticker": "KXMLBTB-26JUL231215SDATL",
-      "ticker": "KXMLBTB-26JUL231215SDATL-ATLMOLSON28-3",
+      "event_ticker": "KXMLBTB-26JUL231310MINCLE",
+      "ticker": "KXMLBTB-26JUL231310MINCLE-CLETBAZZANA37-3",
       "numeric_fields": {
         "can_close_early": true,
         "floor_strike": 2.5,
@@ -2883,10 +5580,622 @@
       "detected_by": "ticker"
     },
     {
-      "title": "Matt Olson: 2+ total bases?",
+      "title": "Travis Bazzana: 2+ total bases?",
       "series_ticker": "",
-      "event_ticker": "KXMLBTB-26JUL231215SDATL",
-      "ticker": "KXMLBTB-26JUL231215SDATL-ATLMOLSON28-2",
+      "event_ticker": "KXMLBTB-26JUL231310MINCLE",
+      "ticker": "KXMLBTB-26JUL231310MINCLE-CLETBAZZANA37-2",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 1.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Ryan Kreidler: 4+ total bases?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBTB-26JUL231310MINCLE",
+      "ticker": "KXMLBTB-26JUL231310MINCLE-MINRKREIDLER5-4",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 3.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Ryan Kreidler: 3+ total bases?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBTB-26JUL231310MINCLE",
+      "ticker": "KXMLBTB-26JUL231310MINCLE-MINRKREIDLER5-3",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 2.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Ryan Kreidler: 2+ total bases?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBTB-26JUL231310MINCLE",
+      "ticker": "KXMLBTB-26JUL231310MINCLE-MINRKREIDLER5-2",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 1.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Ryan Jeffers: 5+ total bases?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBTB-26JUL231310MINCLE",
+      "ticker": "KXMLBTB-26JUL231310MINCLE-MINRJEFFERS27-5",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 4.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Ryan Jeffers: 4+ total bases?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBTB-26JUL231310MINCLE",
+      "ticker": "KXMLBTB-26JUL231310MINCLE-MINRJEFFERS27-4",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 3.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Ryan Jeffers: 3+ total bases?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBTB-26JUL231310MINCLE",
+      "ticker": "KXMLBTB-26JUL231310MINCLE-MINRJEFFERS27-3",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 2.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Ryan Jeffers: 2+ total bases?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBTB-26JUL231310MINCLE",
+      "ticker": "KXMLBTB-26JUL231310MINCLE-MINRJEFFERS27-2",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 1.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Royce Lewis: 5+ total bases?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBTB-26JUL231310MINCLE",
+      "ticker": "KXMLBTB-26JUL231310MINCLE-MINRLEWIS23-5",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 4.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Royce Lewis: 4+ total bases?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBTB-26JUL231310MINCLE",
+      "ticker": "KXMLBTB-26JUL231310MINCLE-MINRLEWIS23-4",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 3.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Royce Lewis: 3+ total bases?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBTB-26JUL231310MINCLE",
+      "ticker": "KXMLBTB-26JUL231310MINCLE-MINRLEWIS23-3",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 2.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Royce Lewis: 2+ total bases?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBTB-26JUL231310MINCLE",
+      "ticker": "KXMLBTB-26JUL231310MINCLE-MINRLEWIS23-2",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 1.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Rhys Hoskins: 5+ total bases?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBTB-26JUL231310MINCLE",
+      "ticker": "KXMLBTB-26JUL231310MINCLE-CLERHOSKINS8-5",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 4.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Rhys Hoskins: 4+ total bases?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBTB-26JUL231310MINCLE",
+      "ticker": "KXMLBTB-26JUL231310MINCLE-CLERHOSKINS8-4",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 3.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Rhys Hoskins: 3+ total bases?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBTB-26JUL231310MINCLE",
+      "ticker": "KXMLBTB-26JUL231310MINCLE-CLERHOSKINS8-3",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 2.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Rhys Hoskins: 2+ total bases?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBTB-26JUL231310MINCLE",
+      "ticker": "KXMLBTB-26JUL231310MINCLE-CLERHOSKINS8-2",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 1.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Petey Halpin: 4+ total bases?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBTB-26JUL231310MINCLE",
+      "ticker": "KXMLBTB-26JUL231310MINCLE-CLEPHALPIN0-4",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 3.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Petey Halpin: 3+ total bases?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBTB-26JUL231310MINCLE",
+      "ticker": "KXMLBTB-26JUL231310MINCLE-CLEPHALPIN0-3",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 2.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Petey Halpin: 2+ total bases?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBTB-26JUL231310MINCLE",
+      "ticker": "KXMLBTB-26JUL231310MINCLE-CLEPHALPIN0-2",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 1.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Patrick Bailey: 4+ total bases?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBTB-26JUL231310MINCLE",
+      "ticker": "KXMLBTB-26JUL231310MINCLE-CLEPBAILEY16-4",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 3.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Patrick Bailey: 3+ total bases?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBTB-26JUL231310MINCLE",
+      "ticker": "KXMLBTB-26JUL231310MINCLE-CLEPBAILEY16-3",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 2.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Patrick Bailey: 2+ total bases?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBTB-26JUL231310MINCLE",
+      "ticker": "KXMLBTB-26JUL231310MINCLE-CLEPBAILEY16-2",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 1.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Luke Keaschall: 4+ total bases?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBTB-26JUL231310MINCLE",
+      "ticker": "KXMLBTB-26JUL231310MINCLE-MINLKEASCHALL15-4",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 3.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Luke Keaschall: 3+ total bases?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBTB-26JUL231310MINCLE",
+      "ticker": "KXMLBTB-26JUL231310MINCLE-MINLKEASCHALL15-3",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 2.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Luke Keaschall: 2+ total bases?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBTB-26JUL231310MINCLE",
+      "ticker": "KXMLBTB-26JUL231310MINCLE-MINLKEASCHALL15-2",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 1.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Kyle Manzardo: 5+ total bases?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBTB-26JUL231310MINCLE",
+      "ticker": "KXMLBTB-26JUL231310MINCLE-CLEKMANZARDO9-5",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 4.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Kyle Manzardo: 4+ total bases?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBTB-26JUL231310MINCLE",
+      "ticker": "KXMLBTB-26JUL231310MINCLE-CLEKMANZARDO9-4",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 3.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Kyle Manzardo: 3+ total bases?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBTB-26JUL231310MINCLE",
+      "ticker": "KXMLBTB-26JUL231310MINCLE-CLEKMANZARDO9-3",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 2.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Kyle Manzardo: 2+ total bases?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBTB-26JUL231310MINCLE",
+      "ticker": "KXMLBTB-26JUL231310MINCLE-CLEKMANZARDO9-2",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 1.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Kody Clemens: 5+ total bases?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBTB-26JUL231310MINCLE",
+      "ticker": "KXMLBTB-26JUL231310MINCLE-MINKCLEMENS2-5",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 4.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Kody Clemens: 4+ total bases?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBTB-26JUL231310MINCLE",
+      "ticker": "KXMLBTB-26JUL231310MINCLE-MINKCLEMENS2-4",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 3.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Kody Clemens: 3+ total bases?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBTB-26JUL231310MINCLE",
+      "ticker": "KXMLBTB-26JUL231310MINCLE-MINKCLEMENS2-3",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 2.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Kody Clemens: 2+ total bases?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBTB-26JUL231310MINCLE",
+      "ticker": "KXMLBTB-26JUL231310MINCLE-MINKCLEMENS2-2",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 1.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Josh Bell: 5+ total bases?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBTB-26JUL231310MINCLE",
+      "ticker": "KXMLBTB-26JUL231310MINCLE-MINJBELL56-5",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 4.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Josh Bell: 4+ total bases?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBTB-26JUL231310MINCLE",
+      "ticker": "KXMLBTB-26JUL231310MINCLE-MINJBELL56-4",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 3.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Josh Bell: 3+ total bases?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBTB-26JUL231310MINCLE",
+      "ticker": "KXMLBTB-26JUL231310MINCLE-MINJBELL56-3",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 2.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Josh Bell: 2+ total bases?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBTB-26JUL231310MINCLE",
+      "ticker": "KXMLBTB-26JUL231310MINCLE-MINJBELL56-2",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 1.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Chase DeLauter: 5+ total bases?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBTB-26JUL231310MINCLE",
+      "ticker": "KXMLBTB-26JUL231310MINCLE-CLECDELAUTER24-5",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 4.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Chase DeLauter: 4+ total bases?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBTB-26JUL231310MINCLE",
+      "ticker": "KXMLBTB-26JUL231310MINCLE-CLECDELAUTER24-4",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 3.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Chase DeLauter: 3+ total bases?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBTB-26JUL231310MINCLE",
+      "ticker": "KXMLBTB-26JUL231310MINCLE-CLECDELAUTER24-3",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 2.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Chase DeLauter: 2+ total bases?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBTB-26JUL231310MINCLE",
+      "ticker": "KXMLBTB-26JUL231310MINCLE-CLECDELAUTER24-2",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 1.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Brooks Lee: 5+ total bases?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBTB-26JUL231310MINCLE",
+      "ticker": "KXMLBTB-26JUL231310MINCLE-MINBLEE22-5",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 4.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Brooks Lee: 4+ total bases?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBTB-26JUL231310MINCLE",
+      "ticker": "KXMLBTB-26JUL231310MINCLE-MINBLEE22-4",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 3.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Brooks Lee: 3+ total bases?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBTB-26JUL231310MINCLE",
+      "ticker": "KXMLBTB-26JUL231310MINCLE-MINBLEE22-3",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 2.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Brooks Lee: 2+ total bases?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBTB-26JUL231310MINCLE",
+      "ticker": "KXMLBTB-26JUL231310MINCLE-MINBLEE22-2",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 1.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Brayan Rocchio: 5+ total bases?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBTB-26JUL231310MINCLE",
+      "ticker": "KXMLBTB-26JUL231310MINCLE-CLEBROCCHIO4-5",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 4.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Brayan Rocchio: 4+ total bases?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBTB-26JUL231310MINCLE",
+      "ticker": "KXMLBTB-26JUL231310MINCLE-CLEBROCCHIO4-4",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 3.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Brayan Rocchio: 3+ total bases?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBTB-26JUL231310MINCLE",
+      "ticker": "KXMLBTB-26JUL231310MINCLE-CLEBROCCHIO4-3",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 2.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Brayan Rocchio: 2+ total bases?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBTB-26JUL231310MINCLE",
+      "ticker": "KXMLBTB-26JUL231310MINCLE-CLEBROCCHIO4-2",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 1.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Austin Martin: 4+ total bases?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBTB-26JUL231310MINCLE",
+      "ticker": "KXMLBTB-26JUL231310MINCLE-MINAMARTIN16-4",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 3.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Austin Martin: 3+ total bases?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBTB-26JUL231310MINCLE",
+      "ticker": "KXMLBTB-26JUL231310MINCLE-MINAMARTIN16-3",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 2.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Austin Martin: 2+ total bases?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBTB-26JUL231310MINCLE",
+      "ticker": "KXMLBTB-26JUL231310MINCLE-MINAMARTIN16-2",
       "numeric_fields": {
         "can_close_early": true,
         "floor_strike": 1.5,
@@ -3039,6 +6348,246 @@
       "detected_by": "ticker"
     },
     {
+      "title": "Vladimir Guerrero Jr.: 6+ total bases?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBTB-26JUL231507TBTOR",
+      "ticker": "KXMLBTB-26JUL231507TBTOR-TORVGUERRERO27-6",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 5.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Vladimir Guerrero Jr.: 5+ total bases?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBTB-26JUL231507TBTOR",
+      "ticker": "KXMLBTB-26JUL231507TBTOR-TORVGUERRERO27-5",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 4.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Vladimir Guerrero Jr.: 4+ total bases?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBTB-26JUL231507TBTOR",
+      "ticker": "KXMLBTB-26JUL231507TBTOR-TORVGUERRERO27-4",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 3.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Vladimir Guerrero Jr.: 3+ total bases?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBTB-26JUL231507TBTOR",
+      "ticker": "KXMLBTB-26JUL231507TBTOR-TORVGUERRERO27-3",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 2.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Vladimir Guerrero Jr.: 2+ total bases?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBTB-26JUL231507TBTOR",
+      "ticker": "KXMLBTB-26JUL231507TBTOR-TORVGUERRERO27-2",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 1.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Junior Caminero: 7+ total bases?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBTB-26JUL231507TBTOR",
+      "ticker": "KXMLBTB-26JUL231507TBTOR-TBJCAMINERO13-7",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 6.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Junior Caminero: 6+ total bases?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBTB-26JUL231507TBTOR",
+      "ticker": "KXMLBTB-26JUL231507TBTOR-TBJCAMINERO13-6",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 5.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Junior Caminero: 5+ total bases?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBTB-26JUL231507TBTOR",
+      "ticker": "KXMLBTB-26JUL231507TBTOR-TBJCAMINERO13-5",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 4.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Junior Caminero: 4+ total bases?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBTB-26JUL231507TBTOR",
+      "ticker": "KXMLBTB-26JUL231507TBTOR-TBJCAMINERO13-4",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 3.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Junior Caminero: 3+ total bases?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBTB-26JUL231507TBTOR",
+      "ticker": "KXMLBTB-26JUL231507TBTOR-TBJCAMINERO13-3",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 2.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Junior Caminero: 2+ total bases?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBTB-26JUL231507TBTOR",
+      "ticker": "KXMLBTB-26JUL231507TBTOR-TBJCAMINERO13-2",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 1.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Jonathan Aranda: 5+ total bases?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBTB-26JUL231507TBTOR",
+      "ticker": "KXMLBTB-26JUL231507TBTOR-TBJARANDA8-5",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 4.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Jonathan Aranda: 4+ total bases?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBTB-26JUL231507TBTOR",
+      "ticker": "KXMLBTB-26JUL231507TBTOR-TBJARANDA8-4",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 3.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Jonathan Aranda: 3+ total bases?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBTB-26JUL231507TBTOR",
+      "ticker": "KXMLBTB-26JUL231507TBTOR-TBJARANDA8-3",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 2.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Jonathan Aranda: 2+ total bases?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBTB-26JUL231507TBTOR",
+      "ticker": "KXMLBTB-26JUL231507TBTOR-TBJARANDA8-2",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 1.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Vinnie Pasquantino: 5+ total bases?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBTB-26JUL231840KCDET",
+      "ticker": "KXMLBTB-26JUL231840KCDET-KCVPASQUANTINO9-5",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 4.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Vinnie Pasquantino: 4+ total bases?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBTB-26JUL231840KCDET",
+      "ticker": "KXMLBTB-26JUL231840KCDET-KCVPASQUANTINO9-4",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 3.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Vinnie Pasquantino: 3+ total bases?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBTB-26JUL231840KCDET",
+      "ticker": "KXMLBTB-26JUL231840KCDET-KCVPASQUANTINO9-3",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 2.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Vinnie Pasquantino: 2+ total bases?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBTB-26JUL231840KCDET",
+      "ticker": "KXMLBTB-26JUL231840KCDET-KCVPASQUANTINO9-2",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 1.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "San Diego vs Atlanta Total Runs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBTOTAL-26JUL231215SDATL",
+      "ticker": "KXMLBTOTAL-26JUL231215SDATL-14",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 13.5,
+        "settlement_timer_seconds": 60
+      },
+      "detected_by": "ticker"
+    },
+    {
       "title": "San Diego vs Atlanta Total Runs?",
       "series_ticker": "",
       "event_ticker": "KXMLBTOTAL-26JUL231215SDATL",
@@ -3171,10 +6720,10 @@
       "detected_by": "ticker"
     },
     {
-      "title": "Tampa Bay vs Toronto Total Runs?",
+      "title": "Minnesota vs Cleveland Total Runs?",
       "series_ticker": "",
-      "event_ticker": "KXMLBTOTAL-26JUL231507TBTOR",
-      "ticker": "KXMLBTOTAL-26JUL231507TBTOR-9",
+      "event_ticker": "KXMLBTOTAL-26JUL231310MINCLE",
+      "ticker": "KXMLBTOTAL-26JUL231310MINCLE-9",
       "numeric_fields": {
         "can_close_early": true,
         "floor_strike": 8.5,
@@ -3183,10 +6732,10 @@
       "detected_by": "ticker"
     },
     {
-      "title": "Tampa Bay vs Toronto Total Runs?",
+      "title": "Minnesota vs Cleveland Total Runs?",
       "series_ticker": "",
-      "event_ticker": "KXMLBTOTAL-26JUL231507TBTOR",
-      "ticker": "KXMLBTOTAL-26JUL231507TBTOR-8",
+      "event_ticker": "KXMLBTOTAL-26JUL231310MINCLE",
+      "ticker": "KXMLBTOTAL-26JUL231310MINCLE-8",
       "numeric_fields": {
         "can_close_early": true,
         "floor_strike": 7.5,
@@ -3195,10 +6744,10 @@
       "detected_by": "ticker"
     },
     {
-      "title": "Tampa Bay vs Toronto Total Runs?",
+      "title": "Minnesota vs Cleveland Total Runs?",
       "series_ticker": "",
-      "event_ticker": "KXMLBTOTAL-26JUL231507TBTOR",
-      "ticker": "KXMLBTOTAL-26JUL231507TBTOR-7",
+      "event_ticker": "KXMLBTOTAL-26JUL231310MINCLE",
+      "ticker": "KXMLBTOTAL-26JUL231310MINCLE-7",
       "numeric_fields": {
         "can_close_early": true,
         "floor_strike": 6.5,
@@ -3207,10 +6756,10 @@
       "detected_by": "ticker"
     },
     {
-      "title": "Tampa Bay vs Toronto Total Runs?",
+      "title": "Minnesota vs Cleveland Total Runs?",
       "series_ticker": "",
-      "event_ticker": "KXMLBTOTAL-26JUL231507TBTOR",
-      "ticker": "KXMLBTOTAL-26JUL231507TBTOR-6",
+      "event_ticker": "KXMLBTOTAL-26JUL231310MINCLE",
+      "ticker": "KXMLBTOTAL-26JUL231310MINCLE-6",
       "numeric_fields": {
         "can_close_early": true,
         "floor_strike": 5.5,
@@ -3219,10 +6768,10 @@
       "detected_by": "ticker"
     },
     {
-      "title": "Tampa Bay vs Toronto Total Runs?",
+      "title": "Minnesota vs Cleveland Total Runs?",
       "series_ticker": "",
-      "event_ticker": "KXMLBTOTAL-26JUL231507TBTOR",
-      "ticker": "KXMLBTOTAL-26JUL231507TBTOR-5",
+      "event_ticker": "KXMLBTOTAL-26JUL231310MINCLE",
+      "ticker": "KXMLBTOTAL-26JUL231310MINCLE-5",
       "numeric_fields": {
         "can_close_early": true,
         "floor_strike": 4.5,
@@ -3231,10 +6780,10 @@
       "detected_by": "ticker"
     },
     {
-      "title": "Tampa Bay vs Toronto Total Runs?",
+      "title": "Minnesota vs Cleveland Total Runs?",
       "series_ticker": "",
-      "event_ticker": "KXMLBTOTAL-26JUL231507TBTOR",
-      "ticker": "KXMLBTOTAL-26JUL231507TBTOR-4",
+      "event_ticker": "KXMLBTOTAL-26JUL231310MINCLE",
+      "ticker": "KXMLBTOTAL-26JUL231310MINCLE-4",
       "numeric_fields": {
         "can_close_early": true,
         "floor_strike": 3.5,
@@ -3243,10 +6792,10 @@
       "detected_by": "ticker"
     },
     {
-      "title": "Tampa Bay vs Toronto Total Runs?",
+      "title": "Minnesota vs Cleveland Total Runs?",
       "series_ticker": "",
-      "event_ticker": "KXMLBTOTAL-26JUL231507TBTOR",
-      "ticker": "KXMLBTOTAL-26JUL231507TBTOR-3",
+      "event_ticker": "KXMLBTOTAL-26JUL231310MINCLE",
+      "ticker": "KXMLBTOTAL-26JUL231310MINCLE-3",
       "numeric_fields": {
         "can_close_early": true,
         "floor_strike": 2.5,
@@ -3255,22 +6804,22 @@
       "detected_by": "ticker"
     },
     {
-      "title": "Tampa Bay vs Toronto Total Runs?",
+      "title": "Minnesota vs Cleveland Total Runs?",
       "series_ticker": "",
-      "event_ticker": "KXMLBTOTAL-26JUL231507TBTOR",
-      "ticker": "KXMLBTOTAL-26JUL231507TBTOR-13",
+      "event_ticker": "KXMLBTOTAL-26JUL231310MINCLE",
+      "ticker": "KXMLBTOTAL-26JUL231310MINCLE-2",
       "numeric_fields": {
         "can_close_early": true,
-        "floor_strike": 12.5,
+        "floor_strike": 1.5,
         "settlement_timer_seconds": 60
       },
       "detected_by": "ticker"
     },
     {
-      "title": "Tampa Bay vs Toronto Total Runs?",
+      "title": "Minnesota vs Cleveland Total Runs?",
       "series_ticker": "",
-      "event_ticker": "KXMLBTOTAL-26JUL231507TBTOR",
-      "ticker": "KXMLBTOTAL-26JUL231507TBTOR-12",
+      "event_ticker": "KXMLBTOTAL-26JUL231310MINCLE",
+      "ticker": "KXMLBTOTAL-26JUL231310MINCLE-12",
       "numeric_fields": {
         "can_close_early": true,
         "floor_strike": 11.5,
@@ -3279,10 +6828,10 @@
       "detected_by": "ticker"
     },
     {
-      "title": "Tampa Bay vs Toronto Total Runs?",
+      "title": "Minnesota vs Cleveland Total Runs?",
       "series_ticker": "",
-      "event_ticker": "KXMLBTOTAL-26JUL231507TBTOR",
-      "ticker": "KXMLBTOTAL-26JUL231507TBTOR-11",
+      "event_ticker": "KXMLBTOTAL-26JUL231310MINCLE",
+      "ticker": "KXMLBTOTAL-26JUL231310MINCLE-11",
       "numeric_fields": {
         "can_close_early": true,
         "floor_strike": 10.5,
@@ -3291,10 +6840,142 @@
       "detected_by": "ticker"
     },
     {
-      "title": "Tampa Bay vs Toronto Total Runs?",
+      "title": "Minnesota vs Cleveland Total Runs?",
       "series_ticker": "",
-      "event_ticker": "KXMLBTOTAL-26JUL231507TBTOR",
-      "ticker": "KXMLBTOTAL-26JUL231507TBTOR-10",
+      "event_ticker": "KXMLBTOTAL-26JUL231310MINCLE",
+      "ticker": "KXMLBTOTAL-26JUL231310MINCLE-10",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 9.5,
+        "settlement_timer_seconds": 60
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Arizona vs St. Louis Total Runs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBTOTAL-26JUL231715AZSTL",
+      "ticker": "KXMLBTOTAL-26JUL231715AZSTL-9",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 8.5,
+        "settlement_timer_seconds": 60
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Arizona vs St. Louis Total Runs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBTOTAL-26JUL231715AZSTL",
+      "ticker": "KXMLBTOTAL-26JUL231715AZSTL-8",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 7.5,
+        "settlement_timer_seconds": 60
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Arizona vs St. Louis Total Runs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBTOTAL-26JUL231715AZSTL",
+      "ticker": "KXMLBTOTAL-26JUL231715AZSTL-7",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 6.5,
+        "settlement_timer_seconds": 60
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Arizona vs St. Louis Total Runs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBTOTAL-26JUL231715AZSTL",
+      "ticker": "KXMLBTOTAL-26JUL231715AZSTL-6",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 5.5,
+        "settlement_timer_seconds": 60
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Arizona vs St. Louis Total Runs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBTOTAL-26JUL231715AZSTL",
+      "ticker": "KXMLBTOTAL-26JUL231715AZSTL-5",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 4.5,
+        "settlement_timer_seconds": 60
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Arizona vs St. Louis Total Runs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBTOTAL-26JUL231715AZSTL",
+      "ticker": "KXMLBTOTAL-26JUL231715AZSTL-4",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 3.5,
+        "settlement_timer_seconds": 60
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Arizona vs St. Louis Total Runs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBTOTAL-26JUL231715AZSTL",
+      "ticker": "KXMLBTOTAL-26JUL231715AZSTL-3",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 2.5,
+        "settlement_timer_seconds": 60
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Arizona vs St. Louis Total Runs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBTOTAL-26JUL231715AZSTL",
+      "ticker": "KXMLBTOTAL-26JUL231715AZSTL-13",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 12.5,
+        "settlement_timer_seconds": 60
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Arizona vs St. Louis Total Runs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBTOTAL-26JUL231715AZSTL",
+      "ticker": "KXMLBTOTAL-26JUL231715AZSTL-12",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 11.5,
+        "settlement_timer_seconds": 60
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Arizona vs St. Louis Total Runs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBTOTAL-26JUL231715AZSTL",
+      "ticker": "KXMLBTOTAL-26JUL231715AZSTL-11",
+      "numeric_fields": {
+        "can_close_early": true,
+        "floor_strike": 10.5,
+        "settlement_timer_seconds": 60
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Arizona vs St. Louis Total Runs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBTOTAL-26JUL231715AZSTL",
+      "ticker": "KXMLBTOTAL-26JUL231715AZSTL-10",
       "numeric_fields": {
         "can_close_early": true,
         "floor_strike": 9.5,
@@ -3445,23 +7126,24 @@
       },
       "early_close_condition": "This market will close and expire after a winner is declared.",
       "event_ticker": "KXMLBGAME-26JUL231215SDATL",
+      "exchange_index": 0,
       "expected_expiration_time": "2026-07-23T19:15:00Z",
       "expiration_time": "2026-07-26T16:15:00Z",
       "expiration_value": "",
-      "last_price_dollars": "0.3300",
+      "last_price_dollars": "0.4200",
       "latest_expiration_time": "2026-07-26T16:15:00Z",
       "liquidity_dollars": "0.0000",
       "market_type": "binary",
-      "no_ask_dollars": "0.6800",
-      "no_bid_dollars": "0.6700",
+      "no_ask_dollars": "0.5900",
+      "no_bid_dollars": "0.5800",
       "no_sub_title": "San Diego",
       "notional_value_dollars": "1.0000",
       "occurrence_datetime": "2026-07-23T19:15:00Z",
-      "open_interest_fp": "183901.17",
+      "open_interest_fp": "1575875.83",
       "open_time": "2026-07-20T16:25:00Z",
       "previous_price_dollars": "0.3500",
       "previous_yes_ask_dollars": "0.3500",
-      "previous_yes_bid_dollars": "0.3300",
+      "previous_yes_bid_dollars": "0.3400",
       "price_level_structure": "linear_cent",
       "price_ranges": [
         {
@@ -3478,13 +7160,13 @@
       "strike_type": "structured",
       "ticker": "KXMLBGAME-26JUL231215SDATL-SD",
       "title": "San Diego vs Atlanta Winner?",
-      "updated_time": "2026-07-20T16:25:00.011598Z",
-      "volume_24h_fp": "223928.04",
-      "volume_fp": "226798.32",
-      "yes_ask_dollars": "0.3300",
-      "yes_ask_size_fp": "571640.48",
-      "yes_bid_dollars": "0.3200",
-      "yes_bid_size_fp": "50708.83",
+      "updated_time": "2026-07-23T07:35:53.431839Z",
+      "volume_24h_fp": "2121073.22",
+      "volume_fp": "2332204.18",
+      "yes_ask_dollars": "0.4200",
+      "yes_ask_size_fp": "28917.11",
+      "yes_bid_dollars": "0.4100",
+      "yes_bid_size_fp": "15128.98",
       "yes_sub_title": "San Diego"
     },
     {
@@ -3496,23 +7178,24 @@
       },
       "early_close_condition": "This market will close and expire after a winner is declared.",
       "event_ticker": "KXMLBGAME-26JUL231215SDATL",
+      "exchange_index": 0,
       "expected_expiration_time": "2026-07-23T19:15:00Z",
       "expiration_time": "2026-07-26T16:15:00Z",
       "expiration_value": "",
-      "last_price_dollars": "0.6900",
+      "last_price_dollars": "0.5900",
       "latest_expiration_time": "2026-07-26T16:15:00Z",
       "liquidity_dollars": "0.0000",
       "market_type": "binary",
-      "no_ask_dollars": "0.3200",
-      "no_bid_dollars": "0.3100",
+      "no_ask_dollars": "0.4200",
+      "no_bid_dollars": "0.4100",
       "no_sub_title": "Atlanta",
       "notional_value_dollars": "1.0000",
       "occurrence_datetime": "2026-07-23T19:15:00Z",
-      "open_interest_fp": "307525.37",
+      "open_interest_fp": "2001651.89",
       "open_time": "2026-07-20T16:25:00Z",
-      "previous_price_dollars": "0.6700",
-      "previous_yes_ask_dollars": "0.6800",
-      "previous_yes_bid_dollars": "0.6700",
+      "previous_price_dollars": "0.6400",
+      "previous_yes_ask_dollars": "0.6600",
+      "previous_yes_bid_dollars": "0.6400",
       "price_level_structure": "linear_cent",
       "price_ranges": [
         {
@@ -3529,13 +7212,13 @@
       "strike_type": "structured",
       "ticker": "KXMLBGAME-26JUL231215SDATL-ATL",
       "title": "San Diego vs Atlanta Winner?",
-      "updated_time": "2026-07-20T16:25:00.011598Z",
-      "volume_24h_fp": "326517.47",
-      "volume_fp": "336609.13",
-      "yes_ask_dollars": "0.6900",
-      "yes_ask_size_fp": "1968.70",
-      "yes_bid_dollars": "0.6800",
-      "yes_bid_size_fp": "57462.67",
+      "updated_time": "2026-07-23T07:35:53.431839Z",
+      "volume_24h_fp": "2269358.42",
+      "volume_fp": "2481735.76",
+      "yes_ask_dollars": "0.5900",
+      "yes_ask_size_fp": "31803.61",
+      "yes_bid_dollars": "0.5800",
+      "yes_bid_size_fp": "17605.96",
       "yes_sub_title": "Atlanta"
     },
     {
@@ -3547,21 +7230,22 @@
       },
       "early_close_condition": "This market will close and expire after a winner is declared.",
       "event_ticker": "KXMLBGAME-26JUL231310MINCLE",
+      "exchange_index": 0,
       "expected_expiration_time": "2026-07-23T20:10:00Z",
       "expiration_time": "2026-07-26T17:10:00Z",
       "expiration_value": "",
-      "last_price_dollars": "0.4500",
+      "last_price_dollars": "0.3500",
       "latest_expiration_time": "2026-07-26T17:10:00Z",
       "liquidity_dollars": "0.0000",
       "market_type": "binary",
-      "no_ask_dollars": "0.5600",
-      "no_bid_dollars": "0.5500",
+      "no_ask_dollars": "0.6600",
+      "no_bid_dollars": "0.6500",
       "no_sub_title": "Minnesota",
       "notional_value_dollars": "1.0000",
       "occurrence_datetime": "2026-07-23T20:10:00Z",
-      "open_interest_fp": "21463.28",
+      "open_interest_fp": "404325.40",
       "open_time": "2026-07-20T17:25:00Z",
-      "previous_price_dollars": "0.4400",
+      "previous_price_dollars": "0.4300",
       "previous_yes_ask_dollars": "0.4400",
       "previous_yes_bid_dollars": "0.4300",
       "price_level_structure": "linear_cent",
@@ -3580,13 +7264,13 @@
       "strike_type": "structured",
       "ticker": "KXMLBGAME-26JUL231310MINCLE-MIN",
       "title": "Minnesota vs Cleveland Winner?",
-      "updated_time": "2026-07-20T17:25:00.00748Z",
-      "volume_24h_fp": "21985.13",
-      "volume_fp": "22236.58",
-      "yes_ask_dollars": "0.4500",
-      "yes_ask_size_fp": "638172.65",
-      "yes_bid_dollars": "0.4400",
-      "yes_bid_size_fp": "218.55",
+      "updated_time": "2026-07-23T07:26:02.048649Z",
+      "volume_24h_fp": "306802.71",
+      "volume_fp": "420413.08",
+      "yes_ask_dollars": "0.3500",
+      "yes_ask_size_fp": "106920.71",
+      "yes_bid_dollars": "0.3400",
+      "yes_bid_size_fp": "3849.27",
       "yes_sub_title": "Minnesota"
     }
   ]
