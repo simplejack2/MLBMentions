@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-10-11T10:06:45.203183",
-  "total_raw": 168,
-  "priced_any_numeric": 168,
+  "generated_at": "2026-10-11T19:55:08.844268",
+  "total_raw": 156,
+  "priced_any_numeric": 156,
   "no_price": 0,
-  "ticker_mlb": 168,
+  "ticker_mlb": 156,
   "keyword_mlb": 0,
   "all_field_names_first_20": [
     "can_close_early",
@@ -58,15 +58,7 @@
       34
     ],
     [
-      "KXMLBTB-26OCT112",
-      25
-    ],
-    [
       "KXMLBHIT-26OCT11",
-      21
-    ],
-    [
-      "KXMLBTOTAL-26OCT",
       21
     ],
     [
@@ -78,32 +70,36 @@
       14
     ],
     [
+      "KXMLBRBI-26OCT11",
+      14
+    ],
+    [
       "KXMLBTEAMTOTAL-2",
       14
+    ],
+    [
+      "KXMLBTOTAL-26OCT",
+      10
+    ],
+    [
+      "KXMLBKS-26OCT122",
+      8
+    ],
+    [
+      "KXMLBF5TOTAL-26O",
+      7
     ],
     [
       "KXMLBSPREAD-26OC",
       6
     ],
     [
-      "KXMLBF3-26OCT112",
-      3
-    ],
-    [
-      "KXMLBF5-26OCT112",
-      3
-    ],
-    [
-      "KXMLBF5-26OCT122",
-      3
+      "KXMLBF5SPREAD-26",
+      4
     ],
     [
       "KXMLBGAME-26OCT1",
-      2
-    ],
-    [
-      "KXMLBOUTS-26OCT1",
-      2
+      4
     ],
     [
       "KXMLBRFI-26OCT11",
@@ -112,110 +108,145 @@
   ],
   "mlb_candidates": [
     {
-      "title": "first 3 innings tie",
+      "title": "Milwaukee wins first 5 innings by over 2.5 runs?",
       "series_ticker": "",
-      "event_ticker": "KXMLBF3-26OCT112000LADMIL",
-      "ticker": "KXMLBF3-26OCT112000LADMIL-TIE",
+      "event_ticker": "KXMLBF5SPREAD-26OCT112000LADMIL",
+      "ticker": "KXMLBF5SPREAD-26OCT112000LADMIL-MIL3",
       "numeric_fields": {
         "can_close_early": true,
         "exchange_index": 3,
-        "settlement_timer_seconds": 300
+        "floor_strike": 2.5,
+        "settlement_timer_seconds": 60
       },
       "detected_by": "ticker"
     },
     {
-      "title": "Milwaukee first 3 innings winner",
+      "title": "Milwaukee wins first 5 innings by over 1.5 runs?",
       "series_ticker": "",
-      "event_ticker": "KXMLBF3-26OCT112000LADMIL",
-      "ticker": "KXMLBF3-26OCT112000LADMIL-MIL",
+      "event_ticker": "KXMLBF5SPREAD-26OCT112000LADMIL",
+      "ticker": "KXMLBF5SPREAD-26OCT112000LADMIL-MIL2",
       "numeric_fields": {
         "can_close_early": true,
         "exchange_index": 3,
-        "settlement_timer_seconds": 300
+        "floor_strike": 1.5,
+        "settlement_timer_seconds": 60
       },
       "detected_by": "ticker"
     },
     {
-      "title": "Los Angeles D first 3 innings winner",
+      "title": "Los Angeles D wins first 5 innings by over 2.5 runs?",
       "series_ticker": "",
-      "event_ticker": "KXMLBF3-26OCT112000LADMIL",
-      "ticker": "KXMLBF3-26OCT112000LADMIL-LAD",
+      "event_ticker": "KXMLBF5SPREAD-26OCT112000LADMIL",
+      "ticker": "KXMLBF5SPREAD-26OCT112000LADMIL-LAD3",
       "numeric_fields": {
         "can_close_early": true,
         "exchange_index": 3,
-        "settlement_timer_seconds": 300
+        "floor_strike": 2.5,
+        "settlement_timer_seconds": 60
       },
       "detected_by": "ticker"
     },
     {
-      "title": "first 5 innings tie",
+      "title": "Los Angeles D wins first 5 innings by over 1.5 runs?",
       "series_ticker": "",
-      "event_ticker": "KXMLBF5-26OCT112000LADMIL",
-      "ticker": "KXMLBF5-26OCT112000LADMIL-TIE",
+      "event_ticker": "KXMLBF5SPREAD-26OCT112000LADMIL",
+      "ticker": "KXMLBF5SPREAD-26OCT112000LADMIL-LAD2",
       "numeric_fields": {
         "can_close_early": true,
         "exchange_index": 3,
-        "settlement_timer_seconds": 300
+        "floor_strike": 1.5,
+        "settlement_timer_seconds": 60
       },
       "detected_by": "ticker"
     },
     {
-      "title": "Milwaukee first 5 innings winner",
+      "title": "First 5 innings: Over 6.5 runs",
       "series_ticker": "",
-      "event_ticker": "KXMLBF5-26OCT112000LADMIL",
-      "ticker": "KXMLBF5-26OCT112000LADMIL-MIL",
+      "event_ticker": "KXMLBF5TOTAL-26OCT112000LADMIL",
+      "ticker": "KXMLBF5TOTAL-26OCT112000LADMIL-7",
       "numeric_fields": {
         "can_close_early": true,
         "exchange_index": 3,
-        "settlement_timer_seconds": 300
+        "floor_strike": 6.5,
+        "settlement_timer_seconds": 180
       },
       "detected_by": "ticker"
     },
     {
-      "title": "Los Angeles D first 5 innings winner",
+      "title": "First 5 innings: Over 5.5 runs",
       "series_ticker": "",
-      "event_ticker": "KXMLBF5-26OCT112000LADMIL",
-      "ticker": "KXMLBF5-26OCT112000LADMIL-LAD",
+      "event_ticker": "KXMLBF5TOTAL-26OCT112000LADMIL",
+      "ticker": "KXMLBF5TOTAL-26OCT112000LADMIL-6",
       "numeric_fields": {
         "can_close_early": true,
         "exchange_index": 3,
-        "settlement_timer_seconds": 300
+        "floor_strike": 5.5,
+        "settlement_timer_seconds": 180
       },
       "detected_by": "ticker"
     },
     {
-      "title": "first 5 innings tie",
+      "title": "First 5 innings: Over 4.5 runs",
       "series_ticker": "",
-      "event_ticker": "KXMLBF5-26OCT122000CLETB",
-      "ticker": "KXMLBF5-26OCT122000CLETB-TIE",
+      "event_ticker": "KXMLBF5TOTAL-26OCT112000LADMIL",
+      "ticker": "KXMLBF5TOTAL-26OCT112000LADMIL-5",
       "numeric_fields": {
         "can_close_early": true,
         "exchange_index": 3,
-        "settlement_timer_seconds": 300
+        "floor_strike": 4.5,
+        "settlement_timer_seconds": 180
       },
       "detected_by": "ticker"
     },
     {
-      "title": "Tampa Bay first 5 innings winner",
+      "title": "First 5 innings: Over 3.5 runs",
       "series_ticker": "",
-      "event_ticker": "KXMLBF5-26OCT122000CLETB",
-      "ticker": "KXMLBF5-26OCT122000CLETB-TB",
+      "event_ticker": "KXMLBF5TOTAL-26OCT112000LADMIL",
+      "ticker": "KXMLBF5TOTAL-26OCT112000LADMIL-4",
       "numeric_fields": {
         "can_close_early": true,
         "exchange_index": 3,
-        "settlement_timer_seconds": 300
+        "floor_strike": 3.5,
+        "settlement_timer_seconds": 180
       },
       "detected_by": "ticker"
     },
     {
-      "title": "Cleveland first 5 innings winner",
+      "title": "First 5 innings: Over 2.5 runs",
       "series_ticker": "",
-      "event_ticker": "KXMLBF5-26OCT122000CLETB",
-      "ticker": "KXMLBF5-26OCT122000CLETB-CLE",
+      "event_ticker": "KXMLBF5TOTAL-26OCT112000LADMIL",
+      "ticker": "KXMLBF5TOTAL-26OCT112000LADMIL-3",
       "numeric_fields": {
         "can_close_early": true,
         "exchange_index": 3,
-        "settlement_timer_seconds": 300
+        "floor_strike": 2.5,
+        "settlement_timer_seconds": 180
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "First 5 innings: Over 1.5 runs",
+      "series_ticker": "",
+      "event_ticker": "KXMLBF5TOTAL-26OCT112000LADMIL",
+      "ticker": "KXMLBF5TOTAL-26OCT112000LADMIL-2",
+      "numeric_fields": {
+        "can_close_early": true,
+        "exchange_index": 3,
+        "floor_strike": 1.5,
+        "settlement_timer_seconds": 180
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "First 5 innings: Over 0.5 runs",
+      "series_ticker": "",
+      "event_ticker": "KXMLBF5TOTAL-26OCT112000LADMIL",
+      "ticker": "KXMLBF5TOTAL-26OCT112000LADMIL-1",
+      "numeric_fields": {
+        "can_close_early": true,
+        "exchange_index": 3,
+        "floor_strike": 0.5,
+        "settlement_timer_seconds": 180
       },
       "detected_by": "ticker"
     },
@@ -236,6 +267,30 @@
       "series_ticker": "",
       "event_ticker": "KXMLBGAME-26OCT112000LADMIL",
       "ticker": "KXMLBGAME-26OCT112000LADMIL-LAD",
+      "numeric_fields": {
+        "can_close_early": true,
+        "exchange_index": 3,
+        "settlement_timer_seconds": 120
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Tampa Bay wins",
+      "series_ticker": "",
+      "event_ticker": "KXMLBGAME-26OCT122000CLETB",
+      "ticker": "KXMLBGAME-26OCT122000CLETB-TB",
+      "numeric_fields": {
+        "can_close_early": true,
+        "exchange_index": 3,
+        "settlement_timer_seconds": 120
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Cleveland wins",
+      "series_ticker": "",
+      "event_ticker": "KXMLBGAME-26OCT122000CLETB",
+      "ticker": "KXMLBGAME-26OCT122000CLETB-CLE",
       "numeric_fields": {
         "can_close_early": true,
         "exchange_index": 3,
@@ -1388,27 +1443,287 @@
       "detected_by": "ticker"
     },
     {
-      "title": "Jacob Misiorowski: 17+ Outs Recorded?",
+      "title": "Drew Rasmussen: 9+ strikeouts?",
       "series_ticker": "",
-      "event_ticker": "KXMLBOUTS-26OCT112000LADMIL",
-      "ticker": "KXMLBOUTS-26OCT112000LADMIL-MILJMISIOROWSKI32-17",
+      "event_ticker": "KXMLBKS-26OCT122000CLETB",
+      "ticker": "KXMLBKS-26OCT122000CLETB-TBDRASMUSSEN57-9",
       "numeric_fields": {
         "can_close_early": true,
         "exchange_index": 3,
-        "floor_strike": 16.5,
+        "floor_strike": 8.5,
         "settlement_timer_seconds": 300
       },
       "detected_by": "ticker"
     },
     {
-      "title": "Tarik Skubal: 18+ Outs Recorded?",
+      "title": "Drew Rasmussen: 8+ strikeouts?",
       "series_ticker": "",
-      "event_ticker": "KXMLBOUTS-26OCT112000LADMIL",
-      "ticker": "KXMLBOUTS-26OCT112000LADMIL-LADTSKUBAL29-18",
+      "event_ticker": "KXMLBKS-26OCT122000CLETB",
+      "ticker": "KXMLBKS-26OCT122000CLETB-TBDRASMUSSEN57-8",
       "numeric_fields": {
         "can_close_early": true,
         "exchange_index": 3,
-        "floor_strike": 17.5,
+        "floor_strike": 7.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Drew Rasmussen: 7+ strikeouts?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBKS-26OCT122000CLETB",
+      "ticker": "KXMLBKS-26OCT122000CLETB-TBDRASMUSSEN57-7",
+      "numeric_fields": {
+        "can_close_early": true,
+        "exchange_index": 3,
+        "floor_strike": 6.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Drew Rasmussen: 6+ strikeouts?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBKS-26OCT122000CLETB",
+      "ticker": "KXMLBKS-26OCT122000CLETB-TBDRASMUSSEN57-6",
+      "numeric_fields": {
+        "can_close_early": true,
+        "exchange_index": 3,
+        "floor_strike": 5.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Drew Rasmussen: 5+ strikeouts?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBKS-26OCT122000CLETB",
+      "ticker": "KXMLBKS-26OCT122000CLETB-TBDRASMUSSEN57-5",
+      "numeric_fields": {
+        "can_close_early": true,
+        "exchange_index": 3,
+        "floor_strike": 4.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Drew Rasmussen: 4+ strikeouts?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBKS-26OCT122000CLETB",
+      "ticker": "KXMLBKS-26OCT122000CLETB-TBDRASMUSSEN57-4",
+      "numeric_fields": {
+        "can_close_early": true,
+        "exchange_index": 3,
+        "floor_strike": 3.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Drew Rasmussen: 3+ strikeouts?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBKS-26OCT122000CLETB",
+      "ticker": "KXMLBKS-26OCT122000CLETB-TBDRASMUSSEN57-3",
+      "numeric_fields": {
+        "can_close_early": true,
+        "exchange_index": 3,
+        "floor_strike": 2.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Drew Rasmussen: 10+ strikeouts?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBKS-26OCT122000CLETB",
+      "ticker": "KXMLBKS-26OCT122000CLETB-TBDRASMUSSEN57-10",
+      "numeric_fields": {
+        "can_close_early": true,
+        "exchange_index": 3,
+        "floor_strike": 9.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "William Contreras: 2+ RBIs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBRBI-26OCT112000LADMIL",
+      "ticker": "KXMLBRBI-26OCT112000LADMIL-MILWCONTRERAS24-2",
+      "numeric_fields": {
+        "can_close_early": true,
+        "exchange_index": 3,
+        "floor_strike": 1.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "William Contreras: 1+ RBIs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBRBI-26OCT112000LADMIL",
+      "ticker": "KXMLBRBI-26OCT112000LADMIL-MILWCONTRERAS24-1",
+      "numeric_fields": {
+        "can_close_early": true,
+        "exchange_index": 3,
+        "floor_strike": 0.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Jackson Chourio: 2+ RBIs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBRBI-26OCT112000LADMIL",
+      "ticker": "KXMLBRBI-26OCT112000LADMIL-MILJCHOURIO11-2",
+      "numeric_fields": {
+        "can_close_early": true,
+        "exchange_index": 3,
+        "floor_strike": 1.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Jackson Chourio: 1+ RBIs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBRBI-26OCT112000LADMIL",
+      "ticker": "KXMLBRBI-26OCT112000LADMIL-MILJCHOURIO11-1",
+      "numeric_fields": {
+        "can_close_early": true,
+        "exchange_index": 3,
+        "floor_strike": 0.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Brice Turang: 2+ RBIs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBRBI-26OCT112000LADMIL",
+      "ticker": "KXMLBRBI-26OCT112000LADMIL-MILBTURANG2-2",
+      "numeric_fields": {
+        "can_close_early": true,
+        "exchange_index": 3,
+        "floor_strike": 1.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Brice Turang: 1+ RBIs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBRBI-26OCT112000LADMIL",
+      "ticker": "KXMLBRBI-26OCT112000LADMIL-MILBTURANG2-1",
+      "numeric_fields": {
+        "can_close_early": true,
+        "exchange_index": 3,
+        "floor_strike": 0.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Shohei Ohtani: 2+ RBIs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBRBI-26OCT112000LADMIL",
+      "ticker": "KXMLBRBI-26OCT112000LADMIL-LADSOHTANI17-2",
+      "numeric_fields": {
+        "can_close_early": true,
+        "exchange_index": 3,
+        "floor_strike": 1.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Shohei Ohtani: 1+ RBIs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBRBI-26OCT112000LADMIL",
+      "ticker": "KXMLBRBI-26OCT112000LADMIL-LADSOHTANI17-1",
+      "numeric_fields": {
+        "can_close_early": true,
+        "exchange_index": 3,
+        "floor_strike": 0.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Mookie Betts: 2+ RBIs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBRBI-26OCT112000LADMIL",
+      "ticker": "KXMLBRBI-26OCT112000LADMIL-LADMBETTS50-2",
+      "numeric_fields": {
+        "can_close_early": true,
+        "exchange_index": 3,
+        "floor_strike": 1.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Mookie Betts: 1+ RBIs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBRBI-26OCT112000LADMIL",
+      "ticker": "KXMLBRBI-26OCT112000LADMIL-LADMBETTS50-1",
+      "numeric_fields": {
+        "can_close_early": true,
+        "exchange_index": 3,
+        "floor_strike": 0.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Freddie Freeman: 2+ RBIs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBRBI-26OCT112000LADMIL",
+      "ticker": "KXMLBRBI-26OCT112000LADMIL-LADFFREEMAN5-2",
+      "numeric_fields": {
+        "can_close_early": true,
+        "exchange_index": 3,
+        "floor_strike": 1.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Freddie Freeman: 1+ RBIs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBRBI-26OCT112000LADMIL",
+      "ticker": "KXMLBRBI-26OCT112000LADMIL-LADFFREEMAN5-1",
+      "numeric_fields": {
+        "can_close_early": true,
+        "exchange_index": 3,
+        "floor_strike": 0.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Andy Pages: 2+ RBIs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBRBI-26OCT112000LADMIL",
+      "ticker": "KXMLBRBI-26OCT112000LADMIL-LADAPAGES44-2",
+      "numeric_fields": {
+        "can_close_early": true,
+        "exchange_index": 3,
+        "floor_strike": 1.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Andy Pages: 1+ RBIs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBRBI-26OCT112000LADMIL",
+      "ticker": "KXMLBRBI-26OCT112000LADMIL-LADAPAGES44-1",
+      "numeric_fields": {
+        "can_close_early": true,
+        "exchange_index": 3,
+        "floor_strike": 0.5,
         "settlement_timer_seconds": 300
       },
       "detected_by": "ticker"
@@ -1501,331 +1816,6 @@
         "exchange_index": 3,
         "floor_strike": 1.5,
         "settlement_timer_seconds": 60
-      },
-      "detected_by": "ticker"
-    },
-    {
-      "title": "William Contreras: 5+ total bases?",
-      "series_ticker": "",
-      "event_ticker": "KXMLBTB-26OCT112000LADMIL",
-      "ticker": "KXMLBTB-26OCT112000LADMIL-MILWCONTRERAS24-5",
-      "numeric_fields": {
-        "can_close_early": true,
-        "exchange_index": 3,
-        "floor_strike": 4.5,
-        "settlement_timer_seconds": 300
-      },
-      "detected_by": "ticker"
-    },
-    {
-      "title": "William Contreras: 4+ total bases?",
-      "series_ticker": "",
-      "event_ticker": "KXMLBTB-26OCT112000LADMIL",
-      "ticker": "KXMLBTB-26OCT112000LADMIL-MILWCONTRERAS24-4",
-      "numeric_fields": {
-        "can_close_early": true,
-        "exchange_index": 3,
-        "floor_strike": 3.5,
-        "settlement_timer_seconds": 300
-      },
-      "detected_by": "ticker"
-    },
-    {
-      "title": "William Contreras: 3+ total bases?",
-      "series_ticker": "",
-      "event_ticker": "KXMLBTB-26OCT112000LADMIL",
-      "ticker": "KXMLBTB-26OCT112000LADMIL-MILWCONTRERAS24-3",
-      "numeric_fields": {
-        "can_close_early": true,
-        "exchange_index": 3,
-        "floor_strike": 2.5,
-        "settlement_timer_seconds": 300
-      },
-      "detected_by": "ticker"
-    },
-    {
-      "title": "William Contreras: 2+ total bases?",
-      "series_ticker": "",
-      "event_ticker": "KXMLBTB-26OCT112000LADMIL",
-      "ticker": "KXMLBTB-26OCT112000LADMIL-MILWCONTRERAS24-2",
-      "numeric_fields": {
-        "can_close_early": true,
-        "exchange_index": 3,
-        "floor_strike": 1.5,
-        "settlement_timer_seconds": 300
-      },
-      "detected_by": "ticker"
-    },
-    {
-      "title": "Jackson Chourio: 5+ total bases?",
-      "series_ticker": "",
-      "event_ticker": "KXMLBTB-26OCT112000LADMIL",
-      "ticker": "KXMLBTB-26OCT112000LADMIL-MILJCHOURIO11-5",
-      "numeric_fields": {
-        "can_close_early": true,
-        "exchange_index": 3,
-        "floor_strike": 4.5,
-        "settlement_timer_seconds": 300
-      },
-      "detected_by": "ticker"
-    },
-    {
-      "title": "Jackson Chourio: 4+ total bases?",
-      "series_ticker": "",
-      "event_ticker": "KXMLBTB-26OCT112000LADMIL",
-      "ticker": "KXMLBTB-26OCT112000LADMIL-MILJCHOURIO11-4",
-      "numeric_fields": {
-        "can_close_early": true,
-        "exchange_index": 3,
-        "floor_strike": 3.5,
-        "settlement_timer_seconds": 300
-      },
-      "detected_by": "ticker"
-    },
-    {
-      "title": "Jackson Chourio: 3+ total bases?",
-      "series_ticker": "",
-      "event_ticker": "KXMLBTB-26OCT112000LADMIL",
-      "ticker": "KXMLBTB-26OCT112000LADMIL-MILJCHOURIO11-3",
-      "numeric_fields": {
-        "can_close_early": true,
-        "exchange_index": 3,
-        "floor_strike": 2.5,
-        "settlement_timer_seconds": 300
-      },
-      "detected_by": "ticker"
-    },
-    {
-      "title": "Jackson Chourio: 2+ total bases?",
-      "series_ticker": "",
-      "event_ticker": "KXMLBTB-26OCT112000LADMIL",
-      "ticker": "KXMLBTB-26OCT112000LADMIL-MILJCHOURIO11-2",
-      "numeric_fields": {
-        "can_close_early": true,
-        "exchange_index": 3,
-        "floor_strike": 1.5,
-        "settlement_timer_seconds": 300
-      },
-      "detected_by": "ticker"
-    },
-    {
-      "title": "Brice Turang: 4+ total bases?",
-      "series_ticker": "",
-      "event_ticker": "KXMLBTB-26OCT112000LADMIL",
-      "ticker": "KXMLBTB-26OCT112000LADMIL-MILBTURANG2-4",
-      "numeric_fields": {
-        "can_close_early": true,
-        "exchange_index": 3,
-        "floor_strike": 3.5,
-        "settlement_timer_seconds": 300
-      },
-      "detected_by": "ticker"
-    },
-    {
-      "title": "Brice Turang: 3+ total bases?",
-      "series_ticker": "",
-      "event_ticker": "KXMLBTB-26OCT112000LADMIL",
-      "ticker": "KXMLBTB-26OCT112000LADMIL-MILBTURANG2-3",
-      "numeric_fields": {
-        "can_close_early": true,
-        "exchange_index": 3,
-        "floor_strike": 2.5,
-        "settlement_timer_seconds": 300
-      },
-      "detected_by": "ticker"
-    },
-    {
-      "title": "Brice Turang: 2+ total bases?",
-      "series_ticker": "",
-      "event_ticker": "KXMLBTB-26OCT112000LADMIL",
-      "ticker": "KXMLBTB-26OCT112000LADMIL-MILBTURANG2-2",
-      "numeric_fields": {
-        "can_close_early": true,
-        "exchange_index": 3,
-        "floor_strike": 1.5,
-        "settlement_timer_seconds": 300
-      },
-      "detected_by": "ticker"
-    },
-    {
-      "title": "Shohei Ohtani: 5+ total bases?",
-      "series_ticker": "",
-      "event_ticker": "KXMLBTB-26OCT112000LADMIL",
-      "ticker": "KXMLBTB-26OCT112000LADMIL-LADSOHTANI17-5",
-      "numeric_fields": {
-        "can_close_early": true,
-        "exchange_index": 3,
-        "floor_strike": 4.5,
-        "settlement_timer_seconds": 300
-      },
-      "detected_by": "ticker"
-    },
-    {
-      "title": "Shohei Ohtani: 4+ total bases?",
-      "series_ticker": "",
-      "event_ticker": "KXMLBTB-26OCT112000LADMIL",
-      "ticker": "KXMLBTB-26OCT112000LADMIL-LADSOHTANI17-4",
-      "numeric_fields": {
-        "can_close_early": true,
-        "exchange_index": 3,
-        "floor_strike": 3.5,
-        "settlement_timer_seconds": 300
-      },
-      "detected_by": "ticker"
-    },
-    {
-      "title": "Shohei Ohtani: 3+ total bases?",
-      "series_ticker": "",
-      "event_ticker": "KXMLBTB-26OCT112000LADMIL",
-      "ticker": "KXMLBTB-26OCT112000LADMIL-LADSOHTANI17-3",
-      "numeric_fields": {
-        "can_close_early": true,
-        "exchange_index": 3,
-        "floor_strike": 2.5,
-        "settlement_timer_seconds": 300
-      },
-      "detected_by": "ticker"
-    },
-    {
-      "title": "Shohei Ohtani: 2+ total bases?",
-      "series_ticker": "",
-      "event_ticker": "KXMLBTB-26OCT112000LADMIL",
-      "ticker": "KXMLBTB-26OCT112000LADMIL-LADSOHTANI17-2",
-      "numeric_fields": {
-        "can_close_early": true,
-        "exchange_index": 3,
-        "floor_strike": 1.5,
-        "settlement_timer_seconds": 300
-      },
-      "detected_by": "ticker"
-    },
-    {
-      "title": "Mookie Betts: 5+ total bases?",
-      "series_ticker": "",
-      "event_ticker": "KXMLBTB-26OCT112000LADMIL",
-      "ticker": "KXMLBTB-26OCT112000LADMIL-LADMBETTS50-5",
-      "numeric_fields": {
-        "can_close_early": true,
-        "exchange_index": 3,
-        "floor_strike": 4.5,
-        "settlement_timer_seconds": 300
-      },
-      "detected_by": "ticker"
-    },
-    {
-      "title": "Mookie Betts: 4+ total bases?",
-      "series_ticker": "",
-      "event_ticker": "KXMLBTB-26OCT112000LADMIL",
-      "ticker": "KXMLBTB-26OCT112000LADMIL-LADMBETTS50-4",
-      "numeric_fields": {
-        "can_close_early": true,
-        "exchange_index": 3,
-        "floor_strike": 3.5,
-        "settlement_timer_seconds": 300
-      },
-      "detected_by": "ticker"
-    },
-    {
-      "title": "Mookie Betts: 3+ total bases?",
-      "series_ticker": "",
-      "event_ticker": "KXMLBTB-26OCT112000LADMIL",
-      "ticker": "KXMLBTB-26OCT112000LADMIL-LADMBETTS50-3",
-      "numeric_fields": {
-        "can_close_early": true,
-        "exchange_index": 3,
-        "floor_strike": 2.5,
-        "settlement_timer_seconds": 300
-      },
-      "detected_by": "ticker"
-    },
-    {
-      "title": "Mookie Betts: 2+ total bases?",
-      "series_ticker": "",
-      "event_ticker": "KXMLBTB-26OCT112000LADMIL",
-      "ticker": "KXMLBTB-26OCT112000LADMIL-LADMBETTS50-2",
-      "numeric_fields": {
-        "can_close_early": true,
-        "exchange_index": 3,
-        "floor_strike": 1.5,
-        "settlement_timer_seconds": 300
-      },
-      "detected_by": "ticker"
-    },
-    {
-      "title": "Freddie Freeman: 4+ total bases?",
-      "series_ticker": "",
-      "event_ticker": "KXMLBTB-26OCT112000LADMIL",
-      "ticker": "KXMLBTB-26OCT112000LADMIL-LADFFREEMAN5-4",
-      "numeric_fields": {
-        "can_close_early": true,
-        "exchange_index": 3,
-        "floor_strike": 3.5,
-        "settlement_timer_seconds": 300
-      },
-      "detected_by": "ticker"
-    },
-    {
-      "title": "Freddie Freeman: 3+ total bases?",
-      "series_ticker": "",
-      "event_ticker": "KXMLBTB-26OCT112000LADMIL",
-      "ticker": "KXMLBTB-26OCT112000LADMIL-LADFFREEMAN5-3",
-      "numeric_fields": {
-        "can_close_early": true,
-        "exchange_index": 3,
-        "floor_strike": 2.5,
-        "settlement_timer_seconds": 300
-      },
-      "detected_by": "ticker"
-    },
-    {
-      "title": "Freddie Freeman: 2+ total bases?",
-      "series_ticker": "",
-      "event_ticker": "KXMLBTB-26OCT112000LADMIL",
-      "ticker": "KXMLBTB-26OCT112000LADMIL-LADFFREEMAN5-2",
-      "numeric_fields": {
-        "can_close_early": true,
-        "exchange_index": 3,
-        "floor_strike": 1.5,
-        "settlement_timer_seconds": 300
-      },
-      "detected_by": "ticker"
-    },
-    {
-      "title": "Andy Pages: 4+ total bases?",
-      "series_ticker": "",
-      "event_ticker": "KXMLBTB-26OCT112000LADMIL",
-      "ticker": "KXMLBTB-26OCT112000LADMIL-LADAPAGES44-4",
-      "numeric_fields": {
-        "can_close_early": true,
-        "exchange_index": 3,
-        "floor_strike": 3.5,
-        "settlement_timer_seconds": 300
-      },
-      "detected_by": "ticker"
-    },
-    {
-      "title": "Andy Pages: 3+ total bases?",
-      "series_ticker": "",
-      "event_ticker": "KXMLBTB-26OCT112000LADMIL",
-      "ticker": "KXMLBTB-26OCT112000LADMIL-LADAPAGES44-3",
-      "numeric_fields": {
-        "can_close_early": true,
-        "exchange_index": 3,
-        "floor_strike": 2.5,
-        "settlement_timer_seconds": 300
-      },
-      "detected_by": "ticker"
-    },
-    {
-      "title": "Andy Pages: 2+ total bases?",
-      "series_ticker": "",
-      "event_ticker": "KXMLBTB-26OCT112000LADMIL",
-      "ticker": "KXMLBTB-26OCT112000LADMIL-LADAPAGES44-2",
-      "numeric_fields": {
-        "can_close_early": true,
-        "exchange_index": 3,
-        "floor_strike": 1.5,
-        "settlement_timer_seconds": 300
       },
       "detected_by": "ticker"
     },
@@ -2140,230 +2130,36 @@
         "settlement_timer_seconds": 60
       },
       "detected_by": "ticker"
-    },
-    {
-      "title": "Over 8.5 runs scored",
-      "series_ticker": "",
-      "event_ticker": "KXMLBTOTAL-26OCT122000CLETB",
-      "ticker": "KXMLBTOTAL-26OCT122000CLETB-9",
-      "numeric_fields": {
-        "can_close_early": true,
-        "exchange_index": 3,
-        "floor_strike": 8.5,
-        "settlement_timer_seconds": 60
-      },
-      "detected_by": "ticker"
-    },
-    {
-      "title": "Over 7.5 runs scored",
-      "series_ticker": "",
-      "event_ticker": "KXMLBTOTAL-26OCT122000CLETB",
-      "ticker": "KXMLBTOTAL-26OCT122000CLETB-8",
-      "numeric_fields": {
-        "can_close_early": true,
-        "exchange_index": 3,
-        "floor_strike": 7.5,
-        "settlement_timer_seconds": 60
-      },
-      "detected_by": "ticker"
-    },
-    {
-      "title": "Over 6.5 runs scored",
-      "series_ticker": "",
-      "event_ticker": "KXMLBTOTAL-26OCT122000CLETB",
-      "ticker": "KXMLBTOTAL-26OCT122000CLETB-7",
-      "numeric_fields": {
-        "can_close_early": true,
-        "exchange_index": 3,
-        "floor_strike": 6.5,
-        "settlement_timer_seconds": 60
-      },
-      "detected_by": "ticker"
-    },
-    {
-      "title": "Over 5.5 runs scored",
-      "series_ticker": "",
-      "event_ticker": "KXMLBTOTAL-26OCT122000CLETB",
-      "ticker": "KXMLBTOTAL-26OCT122000CLETB-6",
-      "numeric_fields": {
-        "can_close_early": true,
-        "exchange_index": 3,
-        "floor_strike": 5.5,
-        "settlement_timer_seconds": 60
-      },
-      "detected_by": "ticker"
-    },
-    {
-      "title": "Over 4.5 runs scored",
-      "series_ticker": "",
-      "event_ticker": "KXMLBTOTAL-26OCT122000CLETB",
-      "ticker": "KXMLBTOTAL-26OCT122000CLETB-5",
-      "numeric_fields": {
-        "can_close_early": true,
-        "exchange_index": 3,
-        "floor_strike": 4.5,
-        "settlement_timer_seconds": 60
-      },
-      "detected_by": "ticker"
-    },
-    {
-      "title": "Over 3.5 runs scored",
-      "series_ticker": "",
-      "event_ticker": "KXMLBTOTAL-26OCT122000CLETB",
-      "ticker": "KXMLBTOTAL-26OCT122000CLETB-4",
-      "numeric_fields": {
-        "can_close_early": true,
-        "exchange_index": 3,
-        "floor_strike": 3.5,
-        "settlement_timer_seconds": 60
-      },
-      "detected_by": "ticker"
-    },
-    {
-      "title": "Over 2.5 runs scored",
-      "series_ticker": "",
-      "event_ticker": "KXMLBTOTAL-26OCT122000CLETB",
-      "ticker": "KXMLBTOTAL-26OCT122000CLETB-3",
-      "numeric_fields": {
-        "can_close_early": true,
-        "exchange_index": 3,
-        "floor_strike": 2.5,
-        "settlement_timer_seconds": 60
-      },
-      "detected_by": "ticker"
-    },
-    {
-      "title": "Over 1.5 runs scored",
-      "series_ticker": "",
-      "event_ticker": "KXMLBTOTAL-26OCT122000CLETB",
-      "ticker": "KXMLBTOTAL-26OCT122000CLETB-2",
-      "numeric_fields": {
-        "can_close_early": true,
-        "exchange_index": 3,
-        "floor_strike": 1.5,
-        "settlement_timer_seconds": 60
-      },
-      "detected_by": "ticker"
-    },
-    {
-      "title": "Over 11.5 runs scored",
-      "series_ticker": "",
-      "event_ticker": "KXMLBTOTAL-26OCT122000CLETB",
-      "ticker": "KXMLBTOTAL-26OCT122000CLETB-12",
-      "numeric_fields": {
-        "can_close_early": true,
-        "exchange_index": 3,
-        "floor_strike": 11.5,
-        "settlement_timer_seconds": 60
-      },
-      "detected_by": "ticker"
-    },
-    {
-      "title": "Over 10.5 runs scored",
-      "series_ticker": "",
-      "event_ticker": "KXMLBTOTAL-26OCT122000CLETB",
-      "ticker": "KXMLBTOTAL-26OCT122000CLETB-11",
-      "numeric_fields": {
-        "can_close_early": true,
-        "exchange_index": 3,
-        "floor_strike": 10.5,
-        "settlement_timer_seconds": 60
-      },
-      "detected_by": "ticker"
-    },
-    {
-      "title": "Over 9.5 runs scored",
-      "series_ticker": "",
-      "event_ticker": "KXMLBTOTAL-26OCT122000CLETB",
-      "ticker": "KXMLBTOTAL-26OCT122000CLETB-10",
-      "numeric_fields": {
-        "can_close_early": true,
-        "exchange_index": 3,
-        "floor_strike": 9.5,
-        "settlement_timer_seconds": 60
-      },
-      "detected_by": "ticker"
     }
   ],
   "raw_schema_sample": [
     {
       "can_close_early": true,
       "close_time": "2026-10-15T00:00:00Z",
-      "created_time": "2026-10-09T04:01:41.972225Z",
-      "custom_strike": {
-        "baseball_team": "b8c3e2a1-7f4d-4e9b-a6d0-3c5f8e1b2a49"
-      },
-      "early_close_condition": "This market will close and expire after a winner is declared.",
-      "event_ticker": "KXMLBF3-26OCT112000LADMIL",
-      "exchange_index": 3,
-      "expected_expiration_time": "2026-10-12T03:00:00Z",
-      "expiration_time": "2026-10-15T00:00:00Z",
-      "expiration_value": "",
-      "last_price_dollars": "0.3500",
-      "latest_expiration_time": "2026-10-15T00:00:00Z",
-      "market_type": "binary",
-      "no_ask_dollars": "0.6700",
-      "no_bid_dollars": "0.6600",
-      "no_sub_title": "Tie",
-      "notional_value_dollars": "1.0000",
-      "occurrence_datetime": "2026-10-12T05:00:00Z",
-      "open_interest_fp": "4277.09",
-      "open_time": "2026-10-09T04:11:00Z",
-      "previous_price_dollars": "0.3400",
-      "previous_yes_ask_dollars": "0.3400",
-      "previous_yes_bid_dollars": "0.3200",
-      "price_level_structure": "linear_cent",
-      "price_ranges": [
-        {
-          "end": "1.0000",
-          "start": "0.0000",
-          "step": "0.0100"
-        }
-      ],
-      "result": "",
-      "rules_primary": "If Los Angeles D and Milwaukee tie in the first 3 innings of the Los Angeles D vs Milwaukee professional baseball game originally scheduled for Oct 11, 2026 at 8:00 PM EDT, then the market resolves to Yes.",
-      "rules_secondary": "This market refers to the first 3 innings of the Los Angeles D vs Milwaukee professional baseball game originally scheduled for Oct 11, 2026 at 8:00 PM EDT. If the score at the end of the first 3 innings is tied, the \"Tie\" strike will resolve to Yes and all team strikes will resolve to No. If this game is postponed or delayed, the market will remain open and close after the rescheduled game has finished (within two days).\n\nKalshi is not affiliated, associated, authorized, endorsed by, or in any way officially connected with the Governing League. All trademarks, logos, and brand names are the property of their respective owners.",
-      "settlement_bounds_type": "default",
-      "settlement_timer_seconds": 300,
-      "status": "active",
-      "strike_type": "structured",
-      "ticker": "KXMLBF3-26OCT112000LADMIL-TIE",
-      "title": "first 3 innings tie",
-      "updated_time": "2026-10-09T04:11:00.803857Z",
-      "volume_24h_fp": "3631.73",
-      "volume_fp": "5163.53",
-      "yes_ask_dollars": "0.3400",
-      "yes_ask_size_fp": "687.00",
-      "yes_bid_dollars": "0.3300",
-      "yes_bid_size_fp": "686.00",
-      "yes_sub_title": "Tie"
-    },
-    {
-      "can_close_early": true,
-      "close_time": "2026-10-15T00:00:00Z",
-      "created_time": "2026-10-09T04:01:41.972225Z",
+      "created_time": "2026-10-09T04:01:41.344012Z",
       "custom_strike": {
         "baseball_team": "087f0ae7-c231-4dcd-b7e5-f026c1769e40"
       },
       "early_close_condition": "This market will close and expire after a winner is declared.",
-      "event_ticker": "KXMLBF3-26OCT112000LADMIL",
+      "event_ticker": "KXMLBF5SPREAD-26OCT112000LADMIL",
       "exchange_index": 3,
       "expected_expiration_time": "2026-10-12T03:00:00Z",
       "expiration_time": "2026-10-15T00:00:00Z",
       "expiration_value": "",
-      "last_price_dollars": "0.3500",
+      "floor_strike": 2.5,
+      "last_price_dollars": "0.1500",
       "latest_expiration_time": "2026-10-15T00:00:00Z",
       "market_type": "binary",
-      "no_ask_dollars": "0.6700",
-      "no_bid_dollars": "0.6600",
-      "no_sub_title": "Milwaukee",
+      "no_ask_dollars": "0.8700",
+      "no_bid_dollars": "0.8500",
+      "no_sub_title": "Milwaukee wins by over 2.5 runs",
       "notional_value_dollars": "1.0000",
-      "occurrence_datetime": "2026-10-12T05:00:00Z",
-      "open_interest_fp": "160.90",
+      "occurrence_datetime": "2026-10-12T03:00:00Z",
+      "open_interest_fp": "66.41",
       "open_time": "2026-10-09T04:11:00Z",
-      "previous_price_dollars": "0.3500",
-      "previous_yes_ask_dollars": "0.3400",
-      "previous_yes_bid_dollars": "0.3200",
+      "previous_price_dollars": "0.0000",
+      "previous_yes_ask_dollars": "0.1600",
+      "previous_yes_bid_dollars": "0.1300",
       "price_level_structure": "linear_cent",
       "price_ranges": [
         {
@@ -2373,49 +2169,50 @@
         }
       ],
       "result": "",
-      "rules_primary": "If Milwaukee wins the first 3 innings of the Los Angeles D vs Milwaukee professional baseball game originally scheduled for Oct 11, 2026 at 8:00 PM EDT, then the market resolves to Yes.",
-      "rules_secondary": "This market refers to the first 3 innings of the Los Angeles D vs Milwaukee professional baseball game originally scheduled for Oct 11, 2026 at 8:00 PM EDT. If the score at the end of the first 3 innings is tied, the \"Tie\" strike will resolve to Yes and all team strikes will resolve to No. If this game is postponed or delayed, the market will remain open and close after the rescheduled game has finished (within two days).\n\nKalshi is not affiliated, associated, authorized, endorsed by, or in any way officially connected with the Governing League. All trademarks, logos, and brand names are the property of their respective owners.",
+      "rules_primary": "If Milwaukee wins by more than 2.5 runs in the first 5 innings of the Los Angeles D vs Milwaukee professional baseball game originally scheduled for Oct 11, 2026 at 8:00 PM EDT, then the market resolves to Yes.",
+      "rules_secondary": "If this game is postponed or delayed, the market will remain open and close after the rescheduled game has finished (within two days).\n\nKalshi is not affiliated, associated, authorized, endorsed by, or in any way officially connected with the Governing League. All trademarks, logos, and brand names are the property of their respective owners.",
       "settlement_bounds_type": "default",
-      "settlement_timer_seconds": 300,
+      "settlement_timer_seconds": 60,
       "status": "active",
-      "strike_type": "structured",
-      "ticker": "KXMLBF3-26OCT112000LADMIL-MIL",
-      "title": "Milwaukee first 3 innings winner",
+      "strike_type": "greater",
+      "ticker": "KXMLBF5SPREAD-26OCT112000LADMIL-MIL3",
+      "title": "Milwaukee wins first 5 innings by over 2.5 runs?",
       "updated_time": "2026-10-09T04:11:00.803857Z",
-      "volume_24h_fp": "146.94",
-      "volume_fp": "160.90",
-      "yes_ask_dollars": "0.3400",
-      "yes_ask_size_fp": "1188.00",
-      "yes_bid_dollars": "0.3300",
-      "yes_bid_size_fp": "701.00",
-      "yes_sub_title": "Milwaukee"
+      "volume_24h_fp": "73.88",
+      "volume_fp": "73.88",
+      "yes_ask_dollars": "0.1500",
+      "yes_ask_size_fp": "1648.46",
+      "yes_bid_dollars": "0.1300",
+      "yes_bid_size_fp": "3444.00",
+      "yes_sub_title": "Milwaukee wins by over 2.5 runs"
     },
     {
       "can_close_early": true,
       "close_time": "2026-10-15T00:00:00Z",
-      "created_time": "2026-10-09T04:01:41.972225Z",
+      "created_time": "2026-10-09T04:01:41.344012Z",
       "custom_strike": {
-        "baseball_team": "5ee3dc32-f192-4b80-ac4a-fd285f36dc1a"
+        "baseball_team": "087f0ae7-c231-4dcd-b7e5-f026c1769e40"
       },
       "early_close_condition": "This market will close and expire after a winner is declared.",
-      "event_ticker": "KXMLBF3-26OCT112000LADMIL",
+      "event_ticker": "KXMLBF5SPREAD-26OCT112000LADMIL",
       "exchange_index": 3,
       "expected_expiration_time": "2026-10-12T03:00:00Z",
       "expiration_time": "2026-10-15T00:00:00Z",
       "expiration_value": "",
-      "last_price_dollars": "0.3100",
+      "floor_strike": 1.5,
+      "last_price_dollars": "0.2600",
       "latest_expiration_time": "2026-10-15T00:00:00Z",
       "market_type": "binary",
-      "no_ask_dollars": "0.6900",
-      "no_bid_dollars": "0.6800",
-      "no_sub_title": "Los Angeles D",
+      "no_ask_dollars": "0.7500",
+      "no_bid_dollars": "0.7400",
+      "no_sub_title": "Milwaukee wins by over 1.5 runs",
       "notional_value_dollars": "1.0000",
-      "occurrence_datetime": "2026-10-12T05:00:00Z",
-      "open_interest_fp": "148.42",
+      "occurrence_datetime": "2026-10-12T03:00:00Z",
+      "open_interest_fp": "1619.81",
       "open_time": "2026-10-09T04:11:00Z",
-      "previous_price_dollars": "0.3300",
-      "previous_yes_ask_dollars": "0.3300",
-      "previous_yes_bid_dollars": "0.3100",
+      "previous_price_dollars": "0.3100",
+      "previous_yes_ask_dollars": "0.2600",
+      "previous_yes_bid_dollars": "0.2400",
       "price_level_structure": "linear_cent",
       "price_ranges": [
         {
@@ -2425,22 +2222,75 @@
         }
       ],
       "result": "",
-      "rules_primary": "If Los Angeles D wins the first 3 innings of the Los Angeles D vs Milwaukee professional baseball game originally scheduled for Oct 11, 2026 at 8:00 PM EDT, then the market resolves to Yes.",
-      "rules_secondary": "This market refers to the first 3 innings of the Los Angeles D vs Milwaukee professional baseball game originally scheduled for Oct 11, 2026 at 8:00 PM EDT. If the score at the end of the first 3 innings is tied, the \"Tie\" strike will resolve to Yes and all team strikes will resolve to No. If this game is postponed or delayed, the market will remain open and close after the rescheduled game has finished (within two days).\n\nKalshi is not affiliated, associated, authorized, endorsed by, or in any way officially connected with the Governing League. All trademarks, logos, and brand names are the property of their respective owners.",
+      "rules_primary": "If Milwaukee wins by more than 1.5 runs in the first 5 innings of the Los Angeles D vs Milwaukee professional baseball game originally scheduled for Oct 11, 2026 at 8:00 PM EDT, then the market resolves to Yes.",
+      "rules_secondary": "If this game is postponed or delayed, the market will remain open and close after the rescheduled game has finished (within two days).\n\nKalshi is not affiliated, associated, authorized, endorsed by, or in any way officially connected with the Governing League. All trademarks, logos, and brand names are the property of their respective owners.",
       "settlement_bounds_type": "default",
-      "settlement_timer_seconds": 300,
+      "settlement_timer_seconds": 60,
       "status": "active",
-      "strike_type": "structured",
-      "ticker": "KXMLBF3-26OCT112000LADMIL-LAD",
-      "title": "Los Angeles D first 3 innings winner",
+      "strike_type": "greater",
+      "ticker": "KXMLBF5SPREAD-26OCT112000LADMIL-MIL2",
+      "title": "Milwaukee wins first 5 innings by over 1.5 runs?",
       "updated_time": "2026-10-09T04:11:00.803857Z",
-      "volume_24h_fp": "121.62",
-      "volume_fp": "229.28",
-      "yes_ask_dollars": "0.3200",
-      "yes_ask_size_fp": "1265.48",
-      "yes_bid_dollars": "0.3100",
-      "yes_bid_size_fp": "269.48",
-      "yes_sub_title": "Los Angeles D"
+      "volume_24h_fp": "1619.05",
+      "volume_fp": "1638.63",
+      "yes_ask_dollars": "0.2600",
+      "yes_ask_size_fp": "2708.24",
+      "yes_bid_dollars": "0.2500",
+      "yes_bid_size_fp": "619.70",
+      "yes_sub_title": "Milwaukee wins by over 1.5 runs"
+    },
+    {
+      "can_close_early": true,
+      "close_time": "2026-10-15T00:00:00Z",
+      "created_time": "2026-10-09T04:01:41.344012Z",
+      "custom_strike": {
+        "baseball_team": "5ee3dc32-f192-4b80-ac4a-fd285f36dc1a"
+      },
+      "early_close_condition": "This market will close and expire after a winner is declared.",
+      "event_ticker": "KXMLBF5SPREAD-26OCT112000LADMIL",
+      "exchange_index": 3,
+      "expected_expiration_time": "2026-10-12T03:00:00Z",
+      "expiration_time": "2026-10-15T00:00:00Z",
+      "expiration_value": "",
+      "floor_strike": 2.5,
+      "last_price_dollars": "0.1300",
+      "latest_expiration_time": "2026-10-15T00:00:00Z",
+      "market_type": "binary",
+      "no_ask_dollars": "0.8800",
+      "no_bid_dollars": "0.8700",
+      "no_sub_title": "Los Angeles D wins by over 2.5 runs",
+      "notional_value_dollars": "1.0000",
+      "occurrence_datetime": "2026-10-12T03:00:00Z",
+      "open_interest_fp": "445.45",
+      "open_time": "2026-10-09T04:11:00Z",
+      "previous_price_dollars": "0.0000",
+      "previous_yes_ask_dollars": "0.1400",
+      "previous_yes_bid_dollars": "0.1200",
+      "price_level_structure": "linear_cent",
+      "price_ranges": [
+        {
+          "end": "1.0000",
+          "start": "0.0000",
+          "step": "0.0100"
+        }
+      ],
+      "result": "",
+      "rules_primary": "If Los Angeles D wins by more than 2.5 runs in the first 5 innings of the Los Angeles D vs Milwaukee professional baseball game originally scheduled for Oct 11, 2026 at 8:00 PM EDT, then the market resolves to Yes.",
+      "rules_secondary": "If this game is postponed or delayed, the market will remain open and close after the rescheduled game has finished (within two days).\n\nKalshi is not affiliated, associated, authorized, endorsed by, or in any way officially connected with the Governing League. All trademarks, logos, and brand names are the property of their respective owners.",
+      "settlement_bounds_type": "default",
+      "settlement_timer_seconds": 60,
+      "status": "active",
+      "strike_type": "greater",
+      "ticker": "KXMLBF5SPREAD-26OCT112000LADMIL-LAD3",
+      "title": "Los Angeles D wins first 5 innings by over 2.5 runs?",
+      "updated_time": "2026-10-09T04:11:00.803857Z",
+      "volume_24h_fp": "445.45",
+      "volume_fp": "445.45",
+      "yes_ask_dollars": "0.1300",
+      "yes_ask_size_fp": "1429.39",
+      "yes_bid_dollars": "0.1200",
+      "yes_bid_size_fp": "1078.00",
+      "yes_sub_title": "Los Angeles D wins by over 2.5 runs"
     }
   ]
 }
