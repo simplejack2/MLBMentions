@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-10-19T20:52:44.053725",
-  "total_raw": 323,
-  "priced_any_numeric": 323,
+  "generated_at": "2026-10-20T00:06:26.194854",
+  "total_raw": 338,
+  "priced_any_numeric": 338,
   "no_price": 0,
-  "ticker_mlb": 323,
+  "ticker_mlb": 338,
   "keyword_mlb": 0,
   "all_field_names_first_20": [
     "can_close_early",
@@ -66,12 +66,12 @@
       55
     ],
     [
-      "KXMLBHR-26OCT192",
-      30
+      "KXMLBRBI-26OCT19",
+      36
     ],
     [
-      "KXMLBRBI-26OCT19",
-      22
+      "KXMLBHR-26OCT192",
+      30
     ],
     [
       "KXMLBSB-26OCT192",
@@ -98,11 +98,11 @@
       6
     ],
     [
-      "KXMLBF3-26OCT192",
-      3
+      "KXMLBF5SPREAD-26",
+      4
     ],
     [
-      "KXMLBF5-26OCT192",
+      "KXMLBF3-26OCT192",
       3
     ],
     [
@@ -156,38 +156,54 @@
       "detected_by": "ticker"
     },
     {
-      "title": "first 5 innings tie",
+      "title": "Tampa Bay wins first 5 innings by over 2.5 runs?",
       "series_ticker": "",
-      "event_ticker": "KXMLBF5-26OCT192008CLETB",
-      "ticker": "KXMLBF5-26OCT192008CLETB-TIE",
+      "event_ticker": "KXMLBF5SPREAD-26OCT192008CLETB",
+      "ticker": "KXMLBF5SPREAD-26OCT192008CLETB-TB3",
       "numeric_fields": {
         "can_close_early": true,
         "exchange_index": 3,
-        "settlement_timer_seconds": 300
+        "floor_strike": 2.5,
+        "settlement_timer_seconds": 60
       },
       "detected_by": "ticker"
     },
     {
-      "title": "Tampa Bay first 5 innings winner",
+      "title": "Tampa Bay wins first 5 innings by over 1.5 runs?",
       "series_ticker": "",
-      "event_ticker": "KXMLBF5-26OCT192008CLETB",
-      "ticker": "KXMLBF5-26OCT192008CLETB-TB",
+      "event_ticker": "KXMLBF5SPREAD-26OCT192008CLETB",
+      "ticker": "KXMLBF5SPREAD-26OCT192008CLETB-TB2",
       "numeric_fields": {
         "can_close_early": true,
         "exchange_index": 3,
-        "settlement_timer_seconds": 300
+        "floor_strike": 1.5,
+        "settlement_timer_seconds": 60
       },
       "detected_by": "ticker"
     },
     {
-      "title": "Cleveland first 5 innings winner",
+      "title": "Cleveland wins first 5 innings by over 2.5 runs?",
       "series_ticker": "",
-      "event_ticker": "KXMLBF5-26OCT192008CLETB",
-      "ticker": "KXMLBF5-26OCT192008CLETB-CLE",
+      "event_ticker": "KXMLBF5SPREAD-26OCT192008CLETB",
+      "ticker": "KXMLBF5SPREAD-26OCT192008CLETB-CLE3",
       "numeric_fields": {
         "can_close_early": true,
         "exchange_index": 3,
-        "settlement_timer_seconds": 300
+        "floor_strike": 2.5,
+        "settlement_timer_seconds": 60
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Cleveland wins first 5 innings by over 1.5 runs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBF5SPREAD-26OCT192008CLETB",
+      "ticker": "KXMLBF5SPREAD-26OCT192008CLETB-CLE2",
+      "numeric_fields": {
+        "can_close_early": true,
+        "exchange_index": 3,
+        "floor_strike": 1.5,
+        "settlement_timer_seconds": 60
       },
       "detected_by": "ticker"
     },
@@ -2634,6 +2650,188 @@
       "detected_by": "ticker"
     },
     {
+      "title": "Victor Mesa Jr.: 2+ RBIs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBRBI-26OCT192008CLETB",
+      "ticker": "KXMLBRBI-26OCT192008CLETB-TBVMESA25-2",
+      "numeric_fields": {
+        "can_close_early": true,
+        "exchange_index": 3,
+        "floor_strike": 1.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Victor Mesa Jr.: 1+ RBIs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBRBI-26OCT192008CLETB",
+      "ticker": "KXMLBRBI-26OCT192008CLETB-TBVMESA25-1",
+      "numeric_fields": {
+        "can_close_early": true,
+        "exchange_index": 3,
+        "floor_strike": 0.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Travis Bazzana: 2+ RBIs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBRBI-26OCT192008CLETB",
+      "ticker": "KXMLBRBI-26OCT192008CLETB-CLETBAZZANA37-2",
+      "numeric_fields": {
+        "can_close_early": true,
+        "exchange_index": 3,
+        "floor_strike": 1.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Travis Bazzana: 1+ RBIs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBRBI-26OCT192008CLETB",
+      "ticker": "KXMLBRBI-26OCT192008CLETB-CLETBAZZANA37-1",
+      "numeric_fields": {
+        "can_close_early": true,
+        "exchange_index": 3,
+        "floor_strike": 0.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Taylor Walls: 2+ RBIs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBRBI-26OCT192008CLETB",
+      "ticker": "KXMLBRBI-26OCT192008CLETB-TBTWALLS6-2",
+      "numeric_fields": {
+        "can_close_early": true,
+        "exchange_index": 3,
+        "floor_strike": 1.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Taylor Walls: 1+ RBIs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBRBI-26OCT192008CLETB",
+      "ticker": "KXMLBRBI-26OCT192008CLETB-TBTWALLS6-1",
+      "numeric_fields": {
+        "can_close_early": true,
+        "exchange_index": 3,
+        "floor_strike": 0.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Steven Kwan: 2+ RBIs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBRBI-26OCT192008CLETB",
+      "ticker": "KXMLBRBI-26OCT192008CLETB-CLESKWAN38-2",
+      "numeric_fields": {
+        "can_close_early": true,
+        "exchange_index": 3,
+        "floor_strike": 1.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Steven Kwan: 1+ RBIs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBRBI-26OCT192008CLETB",
+      "ticker": "KXMLBRBI-26OCT192008CLETB-CLESKWAN38-1",
+      "numeric_fields": {
+        "can_close_early": true,
+        "exchange_index": 3,
+        "floor_strike": 0.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Richie Palacios: 2+ RBIs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBRBI-26OCT192008CLETB",
+      "ticker": "KXMLBRBI-26OCT192008CLETB-TBRPALACIOS1-2",
+      "numeric_fields": {
+        "can_close_early": true,
+        "exchange_index": 3,
+        "floor_strike": 1.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Richie Palacios: 1+ RBIs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBRBI-26OCT192008CLETB",
+      "ticker": "KXMLBRBI-26OCT192008CLETB-TBRPALACIOS1-1",
+      "numeric_fields": {
+        "can_close_early": true,
+        "exchange_index": 3,
+        "floor_strike": 0.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Petey Halpin: 2+ RBIs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBRBI-26OCT192008CLETB",
+      "ticker": "KXMLBRBI-26OCT192008CLETB-CLEPHALPIN0-2",
+      "numeric_fields": {
+        "can_close_early": true,
+        "exchange_index": 3,
+        "floor_strike": 1.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Petey Halpin: 1+ RBIs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBRBI-26OCT192008CLETB",
+      "ticker": "KXMLBRBI-26OCT192008CLETB-CLEPHALPIN0-1",
+      "numeric_fields": {
+        "can_close_early": true,
+        "exchange_index": 3,
+        "floor_strike": 0.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Patrick Bailey: 2+ RBIs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBRBI-26OCT192008CLETB",
+      "ticker": "KXMLBRBI-26OCT192008CLETB-CLEPBAILEY16-2",
+      "numeric_fields": {
+        "can_close_early": true,
+        "exchange_index": 3,
+        "floor_strike": 1.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Patrick Bailey: 1+ RBIs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBRBI-26OCT192008CLETB",
+      "ticker": "KXMLBRBI-26OCT192008CLETB-CLEPBAILEY16-1",
+      "numeric_fields": {
+        "can_close_early": true,
+        "exchange_index": 3,
+        "floor_strike": 0.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
       "title": "Nathaniel Lowe: 2+ RBIs?",
       "series_ticker": "",
       "event_ticker": "KXMLBRBI-26OCT192008CLETB",
@@ -4325,15 +4523,15 @@
       "expected_expiration_time": "2026-10-20T03:08:00Z",
       "expiration_time": "2026-10-23T00:08:00Z",
       "expiration_value": "",
-      "last_price_dollars": "0.3000",
+      "last_price_dollars": "0.3100",
       "latest_expiration_time": "2026-10-23T00:08:00Z",
       "market_type": "binary",
-      "no_ask_dollars": "0.7200",
-      "no_bid_dollars": "0.7000",
+      "no_ask_dollars": "0.7000",
+      "no_bid_dollars": "0.6900",
       "no_sub_title": "Tie",
       "notional_value_dollars": "1.0000",
       "occurrence_datetime": "2026-10-20T05:08:00Z",
-      "open_interest_fp": "3825.90",
+      "open_interest_fp": "20828.18",
       "open_time": "2026-10-19T00:20:00Z",
       "previous_price_dollars": "0.0000",
       "previous_yes_ask_dollars": "0.0000",
@@ -4356,12 +4554,12 @@
       "ticker": "KXMLBF3-26OCT192008CLETB-TIE",
       "title": "first 3 innings tie",
       "updated_time": "2026-10-19T00:20:00.358802Z",
-      "volume_24h_fp": "3865.79",
-      "volume_fp": "3865.79",
-      "yes_ask_dollars": "0.3000",
-      "yes_ask_size_fp": "6869.67",
-      "yes_bid_dollars": "0.2800",
-      "yes_bid_size_fp": "2936.01",
+      "volume_24h_fp": "20790.93",
+      "volume_fp": "20985.17",
+      "yes_ask_dollars": "0.3100",
+      "yes_ask_size_fp": "629.71",
+      "yes_bid_dollars": "0.3000",
+      "yes_bid_size_fp": "440.01",
       "yes_sub_title": "Tie"
     },
     {
@@ -4380,12 +4578,12 @@
       "last_price_dollars": "0.4000",
       "latest_expiration_time": "2026-10-23T00:08:00Z",
       "market_type": "binary",
-      "no_ask_dollars": "0.6100",
+      "no_ask_dollars": "0.6200",
       "no_bid_dollars": "0.6000",
       "no_sub_title": "Tampa Bay",
       "notional_value_dollars": "1.0000",
       "occurrence_datetime": "2026-10-20T05:08:00Z",
-      "open_interest_fp": "1368.65",
+      "open_interest_fp": "4586.73",
       "open_time": "2026-10-19T00:20:00Z",
       "previous_price_dollars": "0.0000",
       "previous_yes_ask_dollars": "0.0000",
@@ -4408,12 +4606,12 @@
       "ticker": "KXMLBF3-26OCT192008CLETB-TB",
       "title": "Tampa Bay first 3 innings winner",
       "updated_time": "2026-10-19T00:20:00.358802Z",
-      "volume_24h_fp": "1356.15",
-      "volume_fp": "1368.65",
+      "volume_24h_fp": "4632.33",
+      "volume_fp": "4732.72",
       "yes_ask_dollars": "0.4000",
-      "yes_ask_size_fp": "2191.50",
-      "yes_bid_dollars": "0.3900",
-      "yes_bid_size_fp": "680.00",
+      "yes_ask_size_fp": "7192.61",
+      "yes_bid_dollars": "0.3800",
+      "yes_bid_size_fp": "690.00",
       "yes_sub_title": "Tampa Bay"
     },
     {
@@ -4433,11 +4631,11 @@
       "latest_expiration_time": "2026-10-23T00:08:00Z",
       "market_type": "binary",
       "no_ask_dollars": "0.7000",
-      "no_bid_dollars": "0.6900",
+      "no_bid_dollars": "0.6800",
       "no_sub_title": "Cleveland",
       "notional_value_dollars": "1.0000",
       "occurrence_datetime": "2026-10-20T05:08:00Z",
-      "open_interest_fp": "1249.49",
+      "open_interest_fp": "4518.70",
       "open_time": "2026-10-19T00:20:00Z",
       "previous_price_dollars": "0.0000",
       "previous_yes_ask_dollars": "0.0000",
@@ -4460,12 +4658,12 @@
       "ticker": "KXMLBF3-26OCT192008CLETB-CLE",
       "title": "Cleveland first 3 innings winner",
       "updated_time": "2026-10-19T00:20:00.358802Z",
-      "volume_24h_fp": "1252.27",
-      "volume_fp": "1252.27",
-      "yes_ask_dollars": "0.3100",
-      "yes_ask_size_fp": "1484.00",
+      "volume_24h_fp": "4405.97",
+      "volume_fp": "4529.96",
+      "yes_ask_dollars": "0.3200",
+      "yes_ask_size_fp": "7809.57",
       "yes_bid_dollars": "0.3000",
-      "yes_bid_size_fp": "551.00",
+      "yes_bid_size_fp": "440.01",
       "yes_sub_title": "Cleveland"
     }
   ]
