@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-10-21T02:48:07.366681",
-  "total_raw": 84,
-  "priced_any_numeric": 84,
+  "generated_at": "2026-10-21T08:10:13.603555",
+  "total_raw": 131,
+  "priced_any_numeric": 131,
   "no_price": 0,
-  "ticker_mlb": 84,
+  "ticker_mlb": 131,
   "keyword_mlb": 0,
   "all_field_names_first_20": [
     "can_close_early",
@@ -54,8 +54,12 @@
   "top_series_tickers": [],
   "top_event_prefixes": [
     [
-      "KXMLBTB-26OCT232",
-      23
+      "KXMLBHRR-26OCT23",
+      30
+    ],
+    [
+      "KXMLBHIT-26OCT23",
+      18
     ],
     [
       "KXMLBKS-26OCT232",
@@ -74,11 +78,27 @@
       10
     ],
     [
+      "KXMLBF5TOTAL-26O",
+      7
+    ],
+    [
+      "KXMLBGAME-26OCT2",
+      6
+    ],
+    [
+      "KXMLBSB-26OCT232",
+      6
+    ],
+    [
       "KXMLBSPREAD-26OC",
       6
     ],
     [
-      "KXMLBGAME-26OCT2",
+      "KXMLBF5-26OCT232",
+      3
+    ],
+    [
+      "KXMLB-26",
       2
     ],
     [
@@ -87,6 +107,155 @@
     ]
   ],
   "mlb_candidates": [
+    {
+      "title": "Will Tampa Bay win the 2026 Pro Baseball Championship?",
+      "series_ticker": "",
+      "event_ticker": "KXMLB-26",
+      "ticker": "KXMLB-26-TB",
+      "numeric_fields": {
+        "can_close_early": true,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Will Milwaukee win the 2026 Pro Baseball Championship?",
+      "series_ticker": "",
+      "event_ticker": "KXMLB-26",
+      "ticker": "KXMLB-26-MIL",
+      "numeric_fields": {
+        "can_close_early": true,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "first 5 innings tie",
+      "series_ticker": "",
+      "event_ticker": "KXMLBF5-26OCT232000TBMIL",
+      "ticker": "KXMLBF5-26OCT232000TBMIL-TIE",
+      "numeric_fields": {
+        "can_close_early": true,
+        "exchange_index": 3,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Tampa Bay first 5 innings winner",
+      "series_ticker": "",
+      "event_ticker": "KXMLBF5-26OCT232000TBMIL",
+      "ticker": "KXMLBF5-26OCT232000TBMIL-TB",
+      "numeric_fields": {
+        "can_close_early": true,
+        "exchange_index": 3,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Milwaukee first 5 innings winner",
+      "series_ticker": "",
+      "event_ticker": "KXMLBF5-26OCT232000TBMIL",
+      "ticker": "KXMLBF5-26OCT232000TBMIL-MIL",
+      "numeric_fields": {
+        "can_close_early": true,
+        "exchange_index": 3,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "First 5 innings: Over 6.5 runs",
+      "series_ticker": "",
+      "event_ticker": "KXMLBF5TOTAL-26OCT232000TBMIL",
+      "ticker": "KXMLBF5TOTAL-26OCT232000TBMIL-7",
+      "numeric_fields": {
+        "can_close_early": true,
+        "exchange_index": 3,
+        "floor_strike": 6.5,
+        "settlement_timer_seconds": 180
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "First 5 innings: Over 5.5 runs",
+      "series_ticker": "",
+      "event_ticker": "KXMLBF5TOTAL-26OCT232000TBMIL",
+      "ticker": "KXMLBF5TOTAL-26OCT232000TBMIL-6",
+      "numeric_fields": {
+        "can_close_early": true,
+        "exchange_index": 3,
+        "floor_strike": 5.5,
+        "settlement_timer_seconds": 180
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "First 5 innings: Over 4.5 runs",
+      "series_ticker": "",
+      "event_ticker": "KXMLBF5TOTAL-26OCT232000TBMIL",
+      "ticker": "KXMLBF5TOTAL-26OCT232000TBMIL-5",
+      "numeric_fields": {
+        "can_close_early": true,
+        "exchange_index": 3,
+        "floor_strike": 4.5,
+        "settlement_timer_seconds": 180
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "First 5 innings: Over 3.5 runs",
+      "series_ticker": "",
+      "event_ticker": "KXMLBF5TOTAL-26OCT232000TBMIL",
+      "ticker": "KXMLBF5TOTAL-26OCT232000TBMIL-4",
+      "numeric_fields": {
+        "can_close_early": true,
+        "exchange_index": 3,
+        "floor_strike": 3.5,
+        "settlement_timer_seconds": 180
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "First 5 innings: Over 2.5 runs",
+      "series_ticker": "",
+      "event_ticker": "KXMLBF5TOTAL-26OCT232000TBMIL",
+      "ticker": "KXMLBF5TOTAL-26OCT232000TBMIL-3",
+      "numeric_fields": {
+        "can_close_early": true,
+        "exchange_index": 3,
+        "floor_strike": 2.5,
+        "settlement_timer_seconds": 180
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "First 5 innings: Over 1.5 runs",
+      "series_ticker": "",
+      "event_ticker": "KXMLBF5TOTAL-26OCT232000TBMIL",
+      "ticker": "KXMLBF5TOTAL-26OCT232000TBMIL-2",
+      "numeric_fields": {
+        "can_close_early": true,
+        "exchange_index": 3,
+        "floor_strike": 1.5,
+        "settlement_timer_seconds": 180
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "First 5 innings: Over 0.5 runs",
+      "series_ticker": "",
+      "event_ticker": "KXMLBF5TOTAL-26OCT232000TBMIL",
+      "ticker": "KXMLBF5TOTAL-26OCT232000TBMIL-1",
+      "numeric_fields": {
+        "can_close_early": true,
+        "exchange_index": 3,
+        "floor_strike": 0.5,
+        "settlement_timer_seconds": 180
+      },
+      "detected_by": "ticker"
+    },
     {
       "title": "Tampa Bay wins",
       "series_ticker": "",
@@ -108,6 +277,678 @@
         "can_close_early": true,
         "exchange_index": 3,
         "settlement_timer_seconds": 120
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Tampa Bay wins",
+      "series_ticker": "",
+      "event_ticker": "KXMLBGAME-26OCT242000TBMIL",
+      "ticker": "KXMLBGAME-26OCT242000TBMIL-TB",
+      "numeric_fields": {
+        "can_close_early": true,
+        "exchange_index": 3,
+        "settlement_timer_seconds": 120
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Milwaukee wins",
+      "series_ticker": "",
+      "event_ticker": "KXMLBGAME-26OCT242000TBMIL",
+      "ticker": "KXMLBGAME-26OCT242000TBMIL-MIL",
+      "numeric_fields": {
+        "can_close_early": true,
+        "exchange_index": 3,
+        "settlement_timer_seconds": 120
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Tampa Bay wins",
+      "series_ticker": "",
+      "event_ticker": "KXMLBGAME-26OCT272000MILTB",
+      "ticker": "KXMLBGAME-26OCT272000MILTB-TB",
+      "numeric_fields": {
+        "can_close_early": true,
+        "exchange_index": 3,
+        "settlement_timer_seconds": 120
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Milwaukee wins",
+      "series_ticker": "",
+      "event_ticker": "KXMLBGAME-26OCT272000MILTB",
+      "ticker": "KXMLBGAME-26OCT272000MILTB-MIL",
+      "numeric_fields": {
+        "can_close_early": true,
+        "exchange_index": 3,
+        "settlement_timer_seconds": 120
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Yandy D\u00edaz: 3+ hits?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHIT-26OCT232000TBMIL",
+      "ticker": "KXMLBHIT-26OCT232000TBMIL-TBYDIAZ2-3",
+      "numeric_fields": {
+        "can_close_early": true,
+        "exchange_index": 3,
+        "floor_strike": 2.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Yandy D\u00edaz: 2+ hits?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHIT-26OCT232000TBMIL",
+      "ticker": "KXMLBHIT-26OCT232000TBMIL-TBYDIAZ2-2",
+      "numeric_fields": {
+        "can_close_early": true,
+        "exchange_index": 3,
+        "floor_strike": 1.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Yandy D\u00edaz: 1+ hits?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHIT-26OCT232000TBMIL",
+      "ticker": "KXMLBHIT-26OCT232000TBMIL-TBYDIAZ2-1",
+      "numeric_fields": {
+        "can_close_early": true,
+        "exchange_index": 3,
+        "floor_strike": 0.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Junior Caminero: 3+ hits?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHIT-26OCT232000TBMIL",
+      "ticker": "KXMLBHIT-26OCT232000TBMIL-TBJCAMINERO13-3",
+      "numeric_fields": {
+        "can_close_early": true,
+        "exchange_index": 3,
+        "floor_strike": 2.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Junior Caminero: 2+ hits?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHIT-26OCT232000TBMIL",
+      "ticker": "KXMLBHIT-26OCT232000TBMIL-TBJCAMINERO13-2",
+      "numeric_fields": {
+        "can_close_early": true,
+        "exchange_index": 3,
+        "floor_strike": 1.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Junior Caminero: 1+ hits?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHIT-26OCT232000TBMIL",
+      "ticker": "KXMLBHIT-26OCT232000TBMIL-TBJCAMINERO13-1",
+      "numeric_fields": {
+        "can_close_early": true,
+        "exchange_index": 3,
+        "floor_strike": 0.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Jonathan Aranda: 3+ hits?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHIT-26OCT232000TBMIL",
+      "ticker": "KXMLBHIT-26OCT232000TBMIL-TBJARANDA8-3",
+      "numeric_fields": {
+        "can_close_early": true,
+        "exchange_index": 3,
+        "floor_strike": 2.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Jonathan Aranda: 2+ hits?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHIT-26OCT232000TBMIL",
+      "ticker": "KXMLBHIT-26OCT232000TBMIL-TBJARANDA8-2",
+      "numeric_fields": {
+        "can_close_early": true,
+        "exchange_index": 3,
+        "floor_strike": 1.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Jonathan Aranda: 1+ hits?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHIT-26OCT232000TBMIL",
+      "ticker": "KXMLBHIT-26OCT232000TBMIL-TBJARANDA8-1",
+      "numeric_fields": {
+        "can_close_early": true,
+        "exchange_index": 3,
+        "floor_strike": 0.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "William Contreras: 3+ hits?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHIT-26OCT232000TBMIL",
+      "ticker": "KXMLBHIT-26OCT232000TBMIL-MILWCONTRERAS24-3",
+      "numeric_fields": {
+        "can_close_early": true,
+        "exchange_index": 3,
+        "floor_strike": 2.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "William Contreras: 2+ hits?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHIT-26OCT232000TBMIL",
+      "ticker": "KXMLBHIT-26OCT232000TBMIL-MILWCONTRERAS24-2",
+      "numeric_fields": {
+        "can_close_early": true,
+        "exchange_index": 3,
+        "floor_strike": 1.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "William Contreras: 1+ hits?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHIT-26OCT232000TBMIL",
+      "ticker": "KXMLBHIT-26OCT232000TBMIL-MILWCONTRERAS24-1",
+      "numeric_fields": {
+        "can_close_early": true,
+        "exchange_index": 3,
+        "floor_strike": 0.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Jackson Chourio: 3+ hits?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHIT-26OCT232000TBMIL",
+      "ticker": "KXMLBHIT-26OCT232000TBMIL-MILJCHOURIO11-3",
+      "numeric_fields": {
+        "can_close_early": true,
+        "exchange_index": 3,
+        "floor_strike": 2.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Jackson Chourio: 2+ hits?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHIT-26OCT232000TBMIL",
+      "ticker": "KXMLBHIT-26OCT232000TBMIL-MILJCHOURIO11-2",
+      "numeric_fields": {
+        "can_close_early": true,
+        "exchange_index": 3,
+        "floor_strike": 1.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Jackson Chourio: 1+ hits?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHIT-26OCT232000TBMIL",
+      "ticker": "KXMLBHIT-26OCT232000TBMIL-MILJCHOURIO11-1",
+      "numeric_fields": {
+        "can_close_early": true,
+        "exchange_index": 3,
+        "floor_strike": 0.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Brice Turang: 3+ hits?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHIT-26OCT232000TBMIL",
+      "ticker": "KXMLBHIT-26OCT232000TBMIL-MILBTURANG2-3",
+      "numeric_fields": {
+        "can_close_early": true,
+        "exchange_index": 3,
+        "floor_strike": 2.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Brice Turang: 2+ hits?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHIT-26OCT232000TBMIL",
+      "ticker": "KXMLBHIT-26OCT232000TBMIL-MILBTURANG2-2",
+      "numeric_fields": {
+        "can_close_early": true,
+        "exchange_index": 3,
+        "floor_strike": 1.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Brice Turang: 1+ hits?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHIT-26OCT232000TBMIL",
+      "ticker": "KXMLBHIT-26OCT232000TBMIL-MILBTURANG2-1",
+      "numeric_fields": {
+        "can_close_early": true,
+        "exchange_index": 3,
+        "floor_strike": 0.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Yandy D\u00edaz: 5+ hits + runs + RBIs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHRR-26OCT232000TBMIL",
+      "ticker": "KXMLBHRR-26OCT232000TBMIL-TBYDIAZ2-5",
+      "numeric_fields": {
+        "can_close_early": true,
+        "exchange_index": 3,
+        "floor_strike": 4.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Yandy D\u00edaz: 4+ hits + runs + RBIs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHRR-26OCT232000TBMIL",
+      "ticker": "KXMLBHRR-26OCT232000TBMIL-TBYDIAZ2-4",
+      "numeric_fields": {
+        "can_close_early": true,
+        "exchange_index": 3,
+        "floor_strike": 3.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Yandy D\u00edaz: 3+ hits + runs + RBIs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHRR-26OCT232000TBMIL",
+      "ticker": "KXMLBHRR-26OCT232000TBMIL-TBYDIAZ2-3",
+      "numeric_fields": {
+        "can_close_early": true,
+        "exchange_index": 3,
+        "floor_strike": 2.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Yandy D\u00edaz: 2+ hits + runs + RBIs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHRR-26OCT232000TBMIL",
+      "ticker": "KXMLBHRR-26OCT232000TBMIL-TBYDIAZ2-2",
+      "numeric_fields": {
+        "can_close_early": true,
+        "exchange_index": 3,
+        "floor_strike": 1.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Yandy D\u00edaz: 1+ hits + runs + RBIs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHRR-26OCT232000TBMIL",
+      "ticker": "KXMLBHRR-26OCT232000TBMIL-TBYDIAZ2-1",
+      "numeric_fields": {
+        "can_close_early": true,
+        "exchange_index": 3,
+        "floor_strike": 0.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Junior Caminero: 5+ hits + runs + RBIs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHRR-26OCT232000TBMIL",
+      "ticker": "KXMLBHRR-26OCT232000TBMIL-TBJCAMINERO13-5",
+      "numeric_fields": {
+        "can_close_early": true,
+        "exchange_index": 3,
+        "floor_strike": 4.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Junior Caminero: 4+ hits + runs + RBIs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHRR-26OCT232000TBMIL",
+      "ticker": "KXMLBHRR-26OCT232000TBMIL-TBJCAMINERO13-4",
+      "numeric_fields": {
+        "can_close_early": true,
+        "exchange_index": 3,
+        "floor_strike": 3.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Junior Caminero: 3+ hits + runs + RBIs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHRR-26OCT232000TBMIL",
+      "ticker": "KXMLBHRR-26OCT232000TBMIL-TBJCAMINERO13-3",
+      "numeric_fields": {
+        "can_close_early": true,
+        "exchange_index": 3,
+        "floor_strike": 2.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Junior Caminero: 2+ hits + runs + RBIs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHRR-26OCT232000TBMIL",
+      "ticker": "KXMLBHRR-26OCT232000TBMIL-TBJCAMINERO13-2",
+      "numeric_fields": {
+        "can_close_early": true,
+        "exchange_index": 3,
+        "floor_strike": 1.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Junior Caminero: 1+ hits + runs + RBIs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHRR-26OCT232000TBMIL",
+      "ticker": "KXMLBHRR-26OCT232000TBMIL-TBJCAMINERO13-1",
+      "numeric_fields": {
+        "can_close_early": true,
+        "exchange_index": 3,
+        "floor_strike": 0.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Jonathan Aranda: 5+ hits + runs + RBIs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHRR-26OCT232000TBMIL",
+      "ticker": "KXMLBHRR-26OCT232000TBMIL-TBJARANDA8-5",
+      "numeric_fields": {
+        "can_close_early": true,
+        "exchange_index": 3,
+        "floor_strike": 4.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Jonathan Aranda: 4+ hits + runs + RBIs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHRR-26OCT232000TBMIL",
+      "ticker": "KXMLBHRR-26OCT232000TBMIL-TBJARANDA8-4",
+      "numeric_fields": {
+        "can_close_early": true,
+        "exchange_index": 3,
+        "floor_strike": 3.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Jonathan Aranda: 3+ hits + runs + RBIs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHRR-26OCT232000TBMIL",
+      "ticker": "KXMLBHRR-26OCT232000TBMIL-TBJARANDA8-3",
+      "numeric_fields": {
+        "can_close_early": true,
+        "exchange_index": 3,
+        "floor_strike": 2.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Jonathan Aranda: 2+ hits + runs + RBIs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHRR-26OCT232000TBMIL",
+      "ticker": "KXMLBHRR-26OCT232000TBMIL-TBJARANDA8-2",
+      "numeric_fields": {
+        "can_close_early": true,
+        "exchange_index": 3,
+        "floor_strike": 1.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Jonathan Aranda: 1+ hits + runs + RBIs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHRR-26OCT232000TBMIL",
+      "ticker": "KXMLBHRR-26OCT232000TBMIL-TBJARANDA8-1",
+      "numeric_fields": {
+        "can_close_early": true,
+        "exchange_index": 3,
+        "floor_strike": 0.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "William Contreras: 5+ hits + runs + RBIs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHRR-26OCT232000TBMIL",
+      "ticker": "KXMLBHRR-26OCT232000TBMIL-MILWCONTRERAS24-5",
+      "numeric_fields": {
+        "can_close_early": true,
+        "exchange_index": 3,
+        "floor_strike": 4.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "William Contreras: 4+ hits + runs + RBIs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHRR-26OCT232000TBMIL",
+      "ticker": "KXMLBHRR-26OCT232000TBMIL-MILWCONTRERAS24-4",
+      "numeric_fields": {
+        "can_close_early": true,
+        "exchange_index": 3,
+        "floor_strike": 3.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "William Contreras: 3+ hits + runs + RBIs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHRR-26OCT232000TBMIL",
+      "ticker": "KXMLBHRR-26OCT232000TBMIL-MILWCONTRERAS24-3",
+      "numeric_fields": {
+        "can_close_early": true,
+        "exchange_index": 3,
+        "floor_strike": 2.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "William Contreras: 2+ hits + runs + RBIs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHRR-26OCT232000TBMIL",
+      "ticker": "KXMLBHRR-26OCT232000TBMIL-MILWCONTRERAS24-2",
+      "numeric_fields": {
+        "can_close_early": true,
+        "exchange_index": 3,
+        "floor_strike": 1.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "William Contreras: 1+ hits + runs + RBIs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHRR-26OCT232000TBMIL",
+      "ticker": "KXMLBHRR-26OCT232000TBMIL-MILWCONTRERAS24-1",
+      "numeric_fields": {
+        "can_close_early": true,
+        "exchange_index": 3,
+        "floor_strike": 0.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Jackson Chourio: 5+ hits + runs + RBIs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHRR-26OCT232000TBMIL",
+      "ticker": "KXMLBHRR-26OCT232000TBMIL-MILJCHOURIO11-5",
+      "numeric_fields": {
+        "can_close_early": true,
+        "exchange_index": 3,
+        "floor_strike": 4.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Jackson Chourio: 4+ hits + runs + RBIs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHRR-26OCT232000TBMIL",
+      "ticker": "KXMLBHRR-26OCT232000TBMIL-MILJCHOURIO11-4",
+      "numeric_fields": {
+        "can_close_early": true,
+        "exchange_index": 3,
+        "floor_strike": 3.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Jackson Chourio: 3+ hits + runs + RBIs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHRR-26OCT232000TBMIL",
+      "ticker": "KXMLBHRR-26OCT232000TBMIL-MILJCHOURIO11-3",
+      "numeric_fields": {
+        "can_close_early": true,
+        "exchange_index": 3,
+        "floor_strike": 2.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Jackson Chourio: 2+ hits + runs + RBIs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHRR-26OCT232000TBMIL",
+      "ticker": "KXMLBHRR-26OCT232000TBMIL-MILJCHOURIO11-2",
+      "numeric_fields": {
+        "can_close_early": true,
+        "exchange_index": 3,
+        "floor_strike": 1.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Jackson Chourio: 1+ hits + runs + RBIs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHRR-26OCT232000TBMIL",
+      "ticker": "KXMLBHRR-26OCT232000TBMIL-MILJCHOURIO11-1",
+      "numeric_fields": {
+        "can_close_early": true,
+        "exchange_index": 3,
+        "floor_strike": 0.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Brice Turang: 5+ hits + runs + RBIs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHRR-26OCT232000TBMIL",
+      "ticker": "KXMLBHRR-26OCT232000TBMIL-MILBTURANG2-5",
+      "numeric_fields": {
+        "can_close_early": true,
+        "exchange_index": 3,
+        "floor_strike": 4.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Brice Turang: 4+ hits + runs + RBIs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHRR-26OCT232000TBMIL",
+      "ticker": "KXMLBHRR-26OCT232000TBMIL-MILBTURANG2-4",
+      "numeric_fields": {
+        "can_close_early": true,
+        "exchange_index": 3,
+        "floor_strike": 3.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Brice Turang: 3+ hits + runs + RBIs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHRR-26OCT232000TBMIL",
+      "ticker": "KXMLBHRR-26OCT232000TBMIL-MILBTURANG2-3",
+      "numeric_fields": {
+        "can_close_early": true,
+        "exchange_index": 3,
+        "floor_strike": 2.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Brice Turang: 2+ hits + runs + RBIs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHRR-26OCT232000TBMIL",
+      "ticker": "KXMLBHRR-26OCT232000TBMIL-MILBTURANG2-2",
+      "numeric_fields": {
+        "can_close_early": true,
+        "exchange_index": 3,
+        "floor_strike": 1.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Brice Turang: 1+ hits + runs + RBIs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHRR-26OCT232000TBMIL",
+      "ticker": "KXMLBHRR-26OCT232000TBMIL-MILBTURANG2-1",
+      "numeric_fields": {
+        "can_close_early": true,
+        "exchange_index": 3,
+        "floor_strike": 0.5,
+        "settlement_timer_seconds": 300
       },
       "detected_by": "ticker"
     },
@@ -489,6 +1330,84 @@
       "detected_by": "ticker"
     },
     {
+      "title": "Yandy D\u00edaz: 1+ stolen bases?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBSB-26OCT232000TBMIL",
+      "ticker": "KXMLBSB-26OCT232000TBMIL-TBYDIAZ2-1",
+      "numeric_fields": {
+        "can_close_early": true,
+        "exchange_index": 3,
+        "floor_strike": 0.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Junior Caminero: 1+ stolen bases?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBSB-26OCT232000TBMIL",
+      "ticker": "KXMLBSB-26OCT232000TBMIL-TBJCAMINERO13-1",
+      "numeric_fields": {
+        "can_close_early": true,
+        "exchange_index": 3,
+        "floor_strike": 0.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Jonathan Aranda: 1+ stolen bases?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBSB-26OCT232000TBMIL",
+      "ticker": "KXMLBSB-26OCT232000TBMIL-TBJARANDA8-1",
+      "numeric_fields": {
+        "can_close_early": true,
+        "exchange_index": 3,
+        "floor_strike": 0.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "William Contreras: 1+ stolen bases?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBSB-26OCT232000TBMIL",
+      "ticker": "KXMLBSB-26OCT232000TBMIL-MILWCONTRERAS24-1",
+      "numeric_fields": {
+        "can_close_early": true,
+        "exchange_index": 3,
+        "floor_strike": 0.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Jackson Chourio: 1+ stolen bases?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBSB-26OCT232000TBMIL",
+      "ticker": "KXMLBSB-26OCT232000TBMIL-MILJCHOURIO11-1",
+      "numeric_fields": {
+        "can_close_early": true,
+        "exchange_index": 3,
+        "floor_strike": 0.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Brice Turang: 1+ stolen bases?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBSB-26OCT232000TBMIL",
+      "ticker": "KXMLBSB-26OCT232000TBMIL-MILBTURANG2-1",
+      "numeric_fields": {
+        "can_close_early": true,
+        "exchange_index": 3,
+        "floor_strike": 0.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
       "title": "Tampa Bay wins by over 3.5 runs?",
       "series_ticker": "",
       "event_ticker": "KXMLBSPREAD-26OCT232000TBMIL",
@@ -563,305 +1482,6 @@
         "exchange_index": 3,
         "floor_strike": 1.5,
         "settlement_timer_seconds": 60
-      },
-      "detected_by": "ticker"
-    },
-    {
-      "title": "Yandy D\u00edaz: 5+ total bases?",
-      "series_ticker": "",
-      "event_ticker": "KXMLBTB-26OCT232000TBMIL",
-      "ticker": "KXMLBTB-26OCT232000TBMIL-TBYDIAZ2-5",
-      "numeric_fields": {
-        "can_close_early": true,
-        "exchange_index": 3,
-        "floor_strike": 4.5,
-        "settlement_timer_seconds": 300
-      },
-      "detected_by": "ticker"
-    },
-    {
-      "title": "Yandy D\u00edaz: 4+ total bases?",
-      "series_ticker": "",
-      "event_ticker": "KXMLBTB-26OCT232000TBMIL",
-      "ticker": "KXMLBTB-26OCT232000TBMIL-TBYDIAZ2-4",
-      "numeric_fields": {
-        "can_close_early": true,
-        "exchange_index": 3,
-        "floor_strike": 3.5,
-        "settlement_timer_seconds": 300
-      },
-      "detected_by": "ticker"
-    },
-    {
-      "title": "Yandy D\u00edaz: 3+ total bases?",
-      "series_ticker": "",
-      "event_ticker": "KXMLBTB-26OCT232000TBMIL",
-      "ticker": "KXMLBTB-26OCT232000TBMIL-TBYDIAZ2-3",
-      "numeric_fields": {
-        "can_close_early": true,
-        "exchange_index": 3,
-        "floor_strike": 2.5,
-        "settlement_timer_seconds": 300
-      },
-      "detected_by": "ticker"
-    },
-    {
-      "title": "Yandy D\u00edaz: 2+ total bases?",
-      "series_ticker": "",
-      "event_ticker": "KXMLBTB-26OCT232000TBMIL",
-      "ticker": "KXMLBTB-26OCT232000TBMIL-TBYDIAZ2-2",
-      "numeric_fields": {
-        "can_close_early": true,
-        "exchange_index": 3,
-        "floor_strike": 1.5,
-        "settlement_timer_seconds": 300
-      },
-      "detected_by": "ticker"
-    },
-    {
-      "title": "Junior Caminero: 5+ total bases?",
-      "series_ticker": "",
-      "event_ticker": "KXMLBTB-26OCT232000TBMIL",
-      "ticker": "KXMLBTB-26OCT232000TBMIL-TBJCAMINERO13-5",
-      "numeric_fields": {
-        "can_close_early": true,
-        "exchange_index": 3,
-        "floor_strike": 4.5,
-        "settlement_timer_seconds": 300
-      },
-      "detected_by": "ticker"
-    },
-    {
-      "title": "Junior Caminero: 4+ total bases?",
-      "series_ticker": "",
-      "event_ticker": "KXMLBTB-26OCT232000TBMIL",
-      "ticker": "KXMLBTB-26OCT232000TBMIL-TBJCAMINERO13-4",
-      "numeric_fields": {
-        "can_close_early": true,
-        "exchange_index": 3,
-        "floor_strike": 3.5,
-        "settlement_timer_seconds": 300
-      },
-      "detected_by": "ticker"
-    },
-    {
-      "title": "Junior Caminero: 3+ total bases?",
-      "series_ticker": "",
-      "event_ticker": "KXMLBTB-26OCT232000TBMIL",
-      "ticker": "KXMLBTB-26OCT232000TBMIL-TBJCAMINERO13-3",
-      "numeric_fields": {
-        "can_close_early": true,
-        "exchange_index": 3,
-        "floor_strike": 2.5,
-        "settlement_timer_seconds": 300
-      },
-      "detected_by": "ticker"
-    },
-    {
-      "title": "Junior Caminero: 2+ total bases?",
-      "series_ticker": "",
-      "event_ticker": "KXMLBTB-26OCT232000TBMIL",
-      "ticker": "KXMLBTB-26OCT232000TBMIL-TBJCAMINERO13-2",
-      "numeric_fields": {
-        "can_close_early": true,
-        "exchange_index": 3,
-        "floor_strike": 1.5,
-        "settlement_timer_seconds": 300
-      },
-      "detected_by": "ticker"
-    },
-    {
-      "title": "Jonathan Aranda: 4+ total bases?",
-      "series_ticker": "",
-      "event_ticker": "KXMLBTB-26OCT232000TBMIL",
-      "ticker": "KXMLBTB-26OCT232000TBMIL-TBJARANDA8-4",
-      "numeric_fields": {
-        "can_close_early": true,
-        "exchange_index": 3,
-        "floor_strike": 3.5,
-        "settlement_timer_seconds": 300
-      },
-      "detected_by": "ticker"
-    },
-    {
-      "title": "Jonathan Aranda: 3+ total bases?",
-      "series_ticker": "",
-      "event_ticker": "KXMLBTB-26OCT232000TBMIL",
-      "ticker": "KXMLBTB-26OCT232000TBMIL-TBJARANDA8-3",
-      "numeric_fields": {
-        "can_close_early": true,
-        "exchange_index": 3,
-        "floor_strike": 2.5,
-        "settlement_timer_seconds": 300
-      },
-      "detected_by": "ticker"
-    },
-    {
-      "title": "Jonathan Aranda: 2+ total bases?",
-      "series_ticker": "",
-      "event_ticker": "KXMLBTB-26OCT232000TBMIL",
-      "ticker": "KXMLBTB-26OCT232000TBMIL-TBJARANDA8-2",
-      "numeric_fields": {
-        "can_close_early": true,
-        "exchange_index": 3,
-        "floor_strike": 1.5,
-        "settlement_timer_seconds": 300
-      },
-      "detected_by": "ticker"
-    },
-    {
-      "title": "William Contreras: 5+ total bases?",
-      "series_ticker": "",
-      "event_ticker": "KXMLBTB-26OCT232000TBMIL",
-      "ticker": "KXMLBTB-26OCT232000TBMIL-MILWCONTRERAS24-5",
-      "numeric_fields": {
-        "can_close_early": true,
-        "exchange_index": 3,
-        "floor_strike": 4.5,
-        "settlement_timer_seconds": 300
-      },
-      "detected_by": "ticker"
-    },
-    {
-      "title": "William Contreras: 4+ total bases?",
-      "series_ticker": "",
-      "event_ticker": "KXMLBTB-26OCT232000TBMIL",
-      "ticker": "KXMLBTB-26OCT232000TBMIL-MILWCONTRERAS24-4",
-      "numeric_fields": {
-        "can_close_early": true,
-        "exchange_index": 3,
-        "floor_strike": 3.5,
-        "settlement_timer_seconds": 300
-      },
-      "detected_by": "ticker"
-    },
-    {
-      "title": "William Contreras: 3+ total bases?",
-      "series_ticker": "",
-      "event_ticker": "KXMLBTB-26OCT232000TBMIL",
-      "ticker": "KXMLBTB-26OCT232000TBMIL-MILWCONTRERAS24-3",
-      "numeric_fields": {
-        "can_close_early": true,
-        "exchange_index": 3,
-        "floor_strike": 2.5,
-        "settlement_timer_seconds": 300
-      },
-      "detected_by": "ticker"
-    },
-    {
-      "title": "William Contreras: 2+ total bases?",
-      "series_ticker": "",
-      "event_ticker": "KXMLBTB-26OCT232000TBMIL",
-      "ticker": "KXMLBTB-26OCT232000TBMIL-MILWCONTRERAS24-2",
-      "numeric_fields": {
-        "can_close_early": true,
-        "exchange_index": 3,
-        "floor_strike": 1.5,
-        "settlement_timer_seconds": 300
-      },
-      "detected_by": "ticker"
-    },
-    {
-      "title": "Jackson Chourio: 5+ total bases?",
-      "series_ticker": "",
-      "event_ticker": "KXMLBTB-26OCT232000TBMIL",
-      "ticker": "KXMLBTB-26OCT232000TBMIL-MILJCHOURIO11-5",
-      "numeric_fields": {
-        "can_close_early": true,
-        "exchange_index": 3,
-        "floor_strike": 4.5,
-        "settlement_timer_seconds": 300
-      },
-      "detected_by": "ticker"
-    },
-    {
-      "title": "Jackson Chourio: 4+ total bases?",
-      "series_ticker": "",
-      "event_ticker": "KXMLBTB-26OCT232000TBMIL",
-      "ticker": "KXMLBTB-26OCT232000TBMIL-MILJCHOURIO11-4",
-      "numeric_fields": {
-        "can_close_early": true,
-        "exchange_index": 3,
-        "floor_strike": 3.5,
-        "settlement_timer_seconds": 300
-      },
-      "detected_by": "ticker"
-    },
-    {
-      "title": "Jackson Chourio: 3+ total bases?",
-      "series_ticker": "",
-      "event_ticker": "KXMLBTB-26OCT232000TBMIL",
-      "ticker": "KXMLBTB-26OCT232000TBMIL-MILJCHOURIO11-3",
-      "numeric_fields": {
-        "can_close_early": true,
-        "exchange_index": 3,
-        "floor_strike": 2.5,
-        "settlement_timer_seconds": 300
-      },
-      "detected_by": "ticker"
-    },
-    {
-      "title": "Jackson Chourio: 2+ total bases?",
-      "series_ticker": "",
-      "event_ticker": "KXMLBTB-26OCT232000TBMIL",
-      "ticker": "KXMLBTB-26OCT232000TBMIL-MILJCHOURIO11-2",
-      "numeric_fields": {
-        "can_close_early": true,
-        "exchange_index": 3,
-        "floor_strike": 1.5,
-        "settlement_timer_seconds": 300
-      },
-      "detected_by": "ticker"
-    },
-    {
-      "title": "Brice Turang: 5+ total bases?",
-      "series_ticker": "",
-      "event_ticker": "KXMLBTB-26OCT232000TBMIL",
-      "ticker": "KXMLBTB-26OCT232000TBMIL-MILBTURANG2-5",
-      "numeric_fields": {
-        "can_close_early": true,
-        "exchange_index": 3,
-        "floor_strike": 4.5,
-        "settlement_timer_seconds": 300
-      },
-      "detected_by": "ticker"
-    },
-    {
-      "title": "Brice Turang: 4+ total bases?",
-      "series_ticker": "",
-      "event_ticker": "KXMLBTB-26OCT232000TBMIL",
-      "ticker": "KXMLBTB-26OCT232000TBMIL-MILBTURANG2-4",
-      "numeric_fields": {
-        "can_close_early": true,
-        "exchange_index": 3,
-        "floor_strike": 3.5,
-        "settlement_timer_seconds": 300
-      },
-      "detected_by": "ticker"
-    },
-    {
-      "title": "Brice Turang: 3+ total bases?",
-      "series_ticker": "",
-      "event_ticker": "KXMLBTB-26OCT232000TBMIL",
-      "ticker": "KXMLBTB-26OCT232000TBMIL-MILBTURANG2-3",
-      "numeric_fields": {
-        "can_close_early": true,
-        "exchange_index": 3,
-        "floor_strike": 2.5,
-        "settlement_timer_seconds": 300
-      },
-      "detected_by": "ticker"
-    },
-    {
-      "title": "Brice Turang: 2+ total bases?",
-      "series_ticker": "",
-      "event_ticker": "KXMLBTB-26OCT232000TBMIL",
-      "ticker": "KXMLBTB-26OCT232000TBMIL-MILBTURANG2-2",
-      "numeric_fields": {
-        "can_close_early": true,
-        "exchange_index": 3,
-        "floor_strike": 1.5,
-        "settlement_timer_seconds": 300
       },
       "detected_by": "ticker"
     },
@@ -1181,136 +1801,132 @@
   "raw_schema_sample": [
     {
       "can_close_early": true,
-      "close_time": "2026-10-27T00:00:00Z",
-      "created_time": "2026-10-20T03:31:31.076776Z",
+      "close_time": "2028-10-31T04:00:00Z",
+      "created_time": "2025-12-16T23:26:57.633826Z",
       "custom_strike": {
         "baseball_team": "942f3f85-869a-4f7a-8e5a-336365c5294b"
       },
-      "early_close_condition": "This market will close and expire after a winner is declared.",
-      "event_ticker": "KXMLBGAME-26OCT232000TBMIL",
-      "exchange_index": 3,
-      "expected_expiration_time": "2026-10-24T03:00:00Z",
-      "expiration_time": "2026-10-27T00:00:00Z",
+      "early_close_condition": "This market will close and expire after a title holder is declared.",
+      "event_ticker": "KXMLB-26",
+      "exchange_index": 0,
+      "expected_expiration_time": "2026-11-01T04:00:00Z",
+      "expiration_time": "2028-10-31T04:00:00Z",
       "expiration_value": "",
-      "last_price_dollars": "0.4000",
-      "latest_expiration_time": "2026-10-27T00:00:00Z",
+      "last_price_dollars": "0.3640",
+      "latest_expiration_time": "2028-10-31T04:00:00Z",
       "market_type": "binary",
-      "no_ask_dollars": "0.6100",
-      "no_bid_dollars": "0.6000",
+      "no_ask_dollars": "0.6360",
+      "no_bid_dollars": "0.6300",
       "no_sub_title": "Tampa Bay",
       "notional_value_dollars": "1.0000",
-      "occurrence_datetime": "2026-10-24T03:00:00Z",
-      "open_interest_fp": "69242.89",
-      "open_time": "2026-10-20T03:41:00Z",
-      "previous_price_dollars": "0.0000",
-      "previous_yes_ask_dollars": "0.0000",
-      "previous_yes_bid_dollars": "0.0000",
-      "price_level_structure": "linear_cent",
+      "open_interest_fp": "4140032.71",
+      "open_time": "2025-12-17T15:00:00Z",
+      "previous_price_dollars": "0.3800",
+      "previous_yes_ask_dollars": "0.3800",
+      "previous_yes_bid_dollars": "0.3790",
+      "price_level_structure": "deci_cent",
       "price_ranges": [
         {
           "end": "1.0000",
           "start": "0.0000",
-          "step": "0.0100"
+          "step": "0.0010"
         }
       ],
       "result": "",
-      "rules_primary": "If Tampa Bay wins the Tampa Bay vs Milwaukee professional baseball game originally scheduled for Oct 23, 2026, then the market resolves to Yes.",
-      "rules_secondary": "The following market refers to the Tampa Bay vs Milwaukee professional baseball game originally scheduled for Oct 23, 2026. If this game is postponed or delayed, the market will remain open and close after the rescheduled game has finished (within two days). If the game is cancelled or rescheduled to over two days away, the market will resolve to a fair price in accordance with the rules.\n\nKalshi is not affiliated, associated, authorized, endorsed by, or in any way officially connected with the Governing League. All trademarks, logos, and brand names are the property of their respective owners.",
+      "rules_primary": "If Tampa Bay wins the 2026 Pro Baseball Championship, then the market resolves to Yes.",
+      "rules_secondary": "Kalshi is not affiliated, associated, authorized, endorsed by, or in any way officially connected with the Governing League. All trademarks, logos, and brand names are the property of their respective owners.",
       "settlement_bounds_type": "default",
-      "settlement_timer_seconds": 120,
+      "settlement_timer_seconds": 300,
       "status": "active",
       "strike_type": "structured",
-      "ticker": "KXMLBGAME-26OCT232000TBMIL-TB",
-      "title": "Tampa Bay wins",
-      "updated_time": "2026-10-20T03:41:00.418055Z",
-      "volume_24h_fp": "71733.64",
-      "volume_fp": "72245.11",
-      "yes_ask_dollars": "0.4000",
-      "yes_ask_size_fp": "408089.23",
-      "yes_bid_dollars": "0.3900",
-      "yes_bid_size_fp": "82508.68",
+      "ticker": "KXMLB-26-TB",
+      "title": "Will Tampa Bay win the 2026 Pro Baseball Championship?",
+      "updated_time": "2026-07-13T21:35:15.63415Z",
+      "volume_24h_fp": "483238.91",
+      "volume_fp": "7224029.86",
+      "yes_ask_dollars": "0.3700",
+      "yes_ask_size_fp": "4141.12",
+      "yes_bid_dollars": "0.3640",
+      "yes_bid_size_fp": "0.09",
       "yes_sub_title": "Tampa Bay"
     },
     {
       "can_close_early": true,
-      "close_time": "2026-10-27T00:00:00Z",
-      "created_time": "2026-10-20T03:31:31.076776Z",
+      "close_time": "2028-10-31T04:00:00Z",
+      "created_time": "2025-12-16T23:26:57.633826Z",
       "custom_strike": {
         "baseball_team": "087f0ae7-c231-4dcd-b7e5-f026c1769e40"
       },
-      "early_close_condition": "This market will close and expire after a winner is declared.",
-      "event_ticker": "KXMLBGAME-26OCT232000TBMIL",
-      "exchange_index": 3,
-      "expected_expiration_time": "2026-10-24T03:00:00Z",
-      "expiration_time": "2026-10-27T00:00:00Z",
+      "early_close_condition": "This market will close and expire after a title holder is declared.",
+      "event_ticker": "KXMLB-26",
+      "exchange_index": 0,
+      "expected_expiration_time": "2026-11-01T04:00:00Z",
+      "expiration_time": "2028-10-31T04:00:00Z",
       "expiration_value": "",
-      "last_price_dollars": "0.6000",
-      "latest_expiration_time": "2026-10-27T00:00:00Z",
+      "last_price_dollars": "0.6400",
+      "latest_expiration_time": "2028-10-31T04:00:00Z",
       "market_type": "binary",
-      "no_ask_dollars": "0.4000",
-      "no_bid_dollars": "0.3900",
+      "no_ask_dollars": "0.3670",
+      "no_bid_dollars": "0.3600",
       "no_sub_title": "Milwaukee",
       "notional_value_dollars": "1.0000",
-      "occurrence_datetime": "2026-10-24T03:00:00Z",
-      "open_interest_fp": "207059.79",
-      "open_time": "2026-10-20T03:41:00Z",
-      "previous_price_dollars": "0.0000",
-      "previous_yes_ask_dollars": "0.0000",
-      "previous_yes_bid_dollars": "0.0000",
-      "price_level_structure": "linear_cent",
+      "open_interest_fp": "6268871.03",
+      "open_time": "2025-12-17T15:00:00Z",
+      "previous_price_dollars": "0.6220",
+      "previous_yes_ask_dollars": "0.6220",
+      "previous_yes_bid_dollars": "0.6190",
+      "price_level_structure": "deci_cent",
       "price_ranges": [
         {
           "end": "1.0000",
           "start": "0.0000",
-          "step": "0.0100"
+          "step": "0.0010"
         }
       ],
       "result": "",
-      "rules_primary": "If Milwaukee wins the Tampa Bay vs Milwaukee professional baseball game originally scheduled for Oct 23, 2026, then the market resolves to Yes.",
-      "rules_secondary": "The following market refers to the Tampa Bay vs Milwaukee professional baseball game originally scheduled for Oct 23, 2026. If this game is postponed or delayed, the market will remain open and close after the rescheduled game has finished (within two days). If the game is cancelled or rescheduled to over two days away, the market will resolve to a fair price in accordance with the rules.\n\nKalshi is not affiliated, associated, authorized, endorsed by, or in any way officially connected with the Governing League. All trademarks, logos, and brand names are the property of their respective owners.",
+      "rules_primary": "If Milwaukee wins the 2026 Pro Baseball Championship, then the market resolves to Yes.",
+      "rules_secondary": "Kalshi is not affiliated, associated, authorized, endorsed by, or in any way officially connected with the Governing League. All trademarks, logos, and brand names are the property of their respective owners.",
       "settlement_bounds_type": "default",
-      "settlement_timer_seconds": 120,
+      "settlement_timer_seconds": 300,
       "status": "active",
       "strike_type": "structured",
-      "ticker": "KXMLBGAME-26OCT232000TBMIL-MIL",
-      "title": "Milwaukee wins",
-      "updated_time": "2026-10-20T03:41:00.418055Z",
-      "volume_24h_fp": "219123.78",
-      "volume_fp": "219443.12",
-      "yes_ask_dollars": "0.6100",
-      "yes_ask_size_fp": "1023539.63",
-      "yes_bid_dollars": "0.6000",
-      "yes_bid_size_fp": "52509.16",
+      "ticker": "KXMLB-26-MIL",
+      "title": "Will Milwaukee win the 2026 Pro Baseball Championship?",
+      "updated_time": "2026-07-13T21:31:32.511076Z",
+      "volume_24h_fp": "371557.57",
+      "volume_fp": "11033791.25",
+      "yes_ask_dollars": "0.6400",
+      "yes_ask_size_fp": "800.00",
+      "yes_bid_dollars": "0.6330",
+      "yes_bid_size_fp": "10.68",
       "yes_sub_title": "Milwaukee"
     },
     {
       "can_close_early": true,
       "close_time": "2026-10-27T00:00:00Z",
-      "created_time": "2026-10-20T04:15:47.406034Z",
+      "created_time": "2026-10-20T03:51:55.854172Z",
       "custom_strike": {
-        "baseball_player": "bdda8549-f0f5-4aa4-8d41-f42439b120a2",
-        "baseball_team": "942f3f85-869a-4f7a-8e5a-336365c5294b"
+        "baseball_team": "b8c3e2a1-7f4d-4e9b-a6d0-3c5f8e1b2a49"
       },
-      "early_close_condition": "This market will close and expire after the event occurs.",
-      "event_ticker": "KXMLBKS-26OCT232000TBMIL",
+      "early_close_condition": "This market will close and expire after a winner is declared.",
+      "event_ticker": "KXMLBF5-26OCT232000TBMIL",
       "exchange_index": 3,
       "expected_expiration_time": "2026-10-24T03:00:00Z",
       "expiration_time": "2026-10-27T00:00:00Z",
       "expiration_value": "",
-      "floor_strike": 8.5,
-      "last_price_dollars": "0.0000",
+      "last_price_dollars": "0.2000",
       "latest_expiration_time": "2026-10-27T00:00:00Z",
       "market_type": "binary",
-      "no_ask_dollars": "0.9700",
-      "no_bid_dollars": "0.9000",
-      "no_sub_title": "Drew Rasmussen: 9+",
+      "no_ask_dollars": "0.8100",
+      "no_bid_dollars": "0.8000",
+      "no_sub_title": "Tie",
       "notional_value_dollars": "1.0000",
-      "occurrence_datetime": "2026-10-24T03:00:00Z",
-      "open_interest_fp": "0.00",
-      "open_time": "2026-10-20T04:25:00Z",
-      "previous_price_dollars": "0.0000",
-      "previous_yes_ask_dollars": "0.0000",
-      "previous_yes_bid_dollars": "0.0000",
+      "occurrence_datetime": "2026-10-24T05:00:00Z",
+      "open_interest_fp": "642.64",
+      "open_time": "2026-10-20T04:00:00Z",
+      "previous_price_dollars": "0.2200",
+      "previous_yes_ask_dollars": "0.2200",
+      "previous_yes_bid_dollars": "0.1900",
       "price_level_structure": "linear_cent",
       "price_ranges": [
         {
@@ -1319,24 +1935,23 @@
           "step": "0.0100"
         }
       ],
-      "primary_participant_key": "baseball_player",
       "result": "",
-      "rules_primary": "If Drew Rasmussen records 9+ strikeouts in the Tampa Bay vs Milwaukee professional baseball game originally scheduled for Oct 23, 2026 at 8:00 PM EDT, then the market resolves to Yes.",
-      "rules_secondary": "Player Participation & Settlement Criteria\nIf Drew Rasmussen is scratched or is not a starting pitcher, the market will resolve to the fair market price.\nIf Drew Rasmussen is not a starting pitcher but later enters the game, the market will resolve to the fair market price, relief appearances will not count towards this market.\nIf Drew Rasmussen is a starting pitcher and records at least one batter faced the market will settle based on strikeouts recorded.\n\nKalshi is not affiliated, associated, authorized, endorsed by, or in any way officially connected with the Governing League. All trademarks, logos, and brand names are the property of their respective owners.",
+      "rules_primary": "If Tampa Bay and Milwaukee tie in the first 5 innings of the Tampa Bay vs Milwaukee professional baseball game originally scheduled for Oct 23, 2026 at 8:00 PM EDT, then the market resolves to Yes.",
+      "rules_secondary": "This market refers to the first 5 innings of the Tampa Bay vs Milwaukee professional baseball game originally scheduled for Oct 23, 2026 at 8:00 PM EDT. If the score at the end of the first 5 innings is tied, the \"Tie\" strike will resolve to Yes and all team strikes will resolve to No. If this game is postponed or delayed, the market will remain open and close after the rescheduled game has finished (within two days).\n\nKalshi is not affiliated, associated, authorized, endorsed by, or in any way officially connected with the Governing League. All trademarks, logos, and brand names are the property of their respective owners.",
       "settlement_bounds_type": "default",
       "settlement_timer_seconds": 300,
       "status": "active",
-      "strike_type": "greater",
-      "ticker": "KXMLBKS-26OCT232000TBMIL-TBDRASMUSSEN57-9",
-      "title": "Drew Rasmussen: 9+ strikeouts?",
-      "updated_time": "2026-10-20T04:25:00.417245Z",
-      "volume_24h_fp": "0.00",
-      "volume_fp": "0.00",
-      "yes_ask_dollars": "0.1000",
-      "yes_ask_size_fp": "2600.00",
-      "yes_bid_dollars": "0.0300",
-      "yes_bid_size_fp": "1.00",
-      "yes_sub_title": "Drew Rasmussen: 9+"
+      "strike_type": "structured",
+      "ticker": "KXMLBF5-26OCT232000TBMIL-TIE",
+      "title": "first 5 innings tie",
+      "updated_time": "2026-10-20T04:00:02.413763Z",
+      "volume_24h_fp": "578.27",
+      "volume_fp": "642.64",
+      "yes_ask_dollars": "0.2000",
+      "yes_ask_size_fp": "314.46",
+      "yes_bid_dollars": "0.1900",
+      "yes_bid_size_fp": "353.00",
+      "yes_sub_title": "Tie"
     }
   ]
 }
