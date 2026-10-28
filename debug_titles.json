@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-10-28T03:25:41.021201",
-  "total_raw": 334,
-  "priced_any_numeric": 334,
+  "generated_at": "2026-10-28T09:59:04.488745",
+  "total_raw": 165,
+  "priced_any_numeric": 165,
   "no_price": 0,
-  "ticker_mlb": 334,
+  "ticker_mlb": 165,
   "keyword_mlb": 0,
   "all_field_names_first_20": [
     "can_close_early",
@@ -54,82 +54,227 @@
   "top_series_tickers": [],
   "top_event_prefixes": [
     [
-      "KXMLBHRR-26OCT27",
-      87
+      "KXMLBHRR-26OCT28",
+      54
     ],
     [
-      "KXMLBTB-26OCT272",
-      64
-    ],
-    [
-      "KXMLBHIT-26OCT27",
-      56
-    ],
-    [
-      "KXMLBRBI-26OCT27",
+      "KXMLBHIT-26OCT28",
       36
     ],
     [
-      "KXMLBHR-26OCT272",
-      29
-    ],
-    [
-      "KXMLBSB-26OCT272",
-      17
+      "KXMLBHR-26OCT282",
+      20
     ],
     [
       "KXMLBTEAMTOTAL-2",
       14
     ],
     [
-      "KXMLBKS-26OCT272",
-      13
+      "KXMLBTOTAL-26OCT",
+      10
     ],
     [
-      "KXMLBTOTAL-26OCT",
+      "KXMLBKS-26OCT282",
       8
+    ],
+    [
+      "KXMLBF5TOTAL-26O",
+      7
     ],
     [
       "KXMLBSPREAD-26OC",
       6
     ],
     [
-      "KXMLB-26",
-      2
+      "KXMLBF3-26OCT282",
+      3
+    ],
+    [
+      "KXMLBF5-26OCT282",
+      3
     ],
     [
       "KXMLBGAME-26OCT2",
       2
+    ],
+    [
+      "KXMLBOUTS-26OCT2",
+      1
+    ],
+    [
+      "KXMLBRFI-26OCT28",
+      1
     ]
   ],
   "mlb_candidates": [
     {
-      "title": "Will Tampa Bay win the 2026 Pro Baseball Championship?",
+      "title": "first 3 innings tie",
       "series_ticker": "",
-      "event_ticker": "KXMLB-26",
-      "ticker": "KXMLB-26-TB",
+      "event_ticker": "KXMLBF3-26OCT282000MILTB",
+      "ticker": "KXMLBF3-26OCT282000MILTB-TIE",
       "numeric_fields": {
         "can_close_early": true,
+        "exchange_index": 3,
         "settlement_timer_seconds": 300
       },
       "detected_by": "ticker"
     },
     {
-      "title": "Will Milwaukee win the 2026 Pro Baseball Championship?",
+      "title": "Tampa Bay first 3 innings winner",
       "series_ticker": "",
-      "event_ticker": "KXMLB-26",
-      "ticker": "KXMLB-26-MIL",
+      "event_ticker": "KXMLBF3-26OCT282000MILTB",
+      "ticker": "KXMLBF3-26OCT282000MILTB-TB",
       "numeric_fields": {
         "can_close_early": true,
+        "exchange_index": 3,
         "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Milwaukee first 3 innings winner",
+      "series_ticker": "",
+      "event_ticker": "KXMLBF3-26OCT282000MILTB",
+      "ticker": "KXMLBF3-26OCT282000MILTB-MIL",
+      "numeric_fields": {
+        "can_close_early": true,
+        "exchange_index": 3,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "first 5 innings tie",
+      "series_ticker": "",
+      "event_ticker": "KXMLBF5-26OCT282000MILTB",
+      "ticker": "KXMLBF5-26OCT282000MILTB-TIE",
+      "numeric_fields": {
+        "can_close_early": true,
+        "exchange_index": 3,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Tampa Bay first 5 innings winner",
+      "series_ticker": "",
+      "event_ticker": "KXMLBF5-26OCT282000MILTB",
+      "ticker": "KXMLBF5-26OCT282000MILTB-TB",
+      "numeric_fields": {
+        "can_close_early": true,
+        "exchange_index": 3,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Milwaukee first 5 innings winner",
+      "series_ticker": "",
+      "event_ticker": "KXMLBF5-26OCT282000MILTB",
+      "ticker": "KXMLBF5-26OCT282000MILTB-MIL",
+      "numeric_fields": {
+        "can_close_early": true,
+        "exchange_index": 3,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "First 5 innings: Over 6.5 runs",
+      "series_ticker": "",
+      "event_ticker": "KXMLBF5TOTAL-26OCT282000MILTB",
+      "ticker": "KXMLBF5TOTAL-26OCT282000MILTB-7",
+      "numeric_fields": {
+        "can_close_early": true,
+        "exchange_index": 3,
+        "floor_strike": 6.5,
+        "settlement_timer_seconds": 180
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "First 5 innings: Over 5.5 runs",
+      "series_ticker": "",
+      "event_ticker": "KXMLBF5TOTAL-26OCT282000MILTB",
+      "ticker": "KXMLBF5TOTAL-26OCT282000MILTB-6",
+      "numeric_fields": {
+        "can_close_early": true,
+        "exchange_index": 3,
+        "floor_strike": 5.5,
+        "settlement_timer_seconds": 180
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "First 5 innings: Over 4.5 runs",
+      "series_ticker": "",
+      "event_ticker": "KXMLBF5TOTAL-26OCT282000MILTB",
+      "ticker": "KXMLBF5TOTAL-26OCT282000MILTB-5",
+      "numeric_fields": {
+        "can_close_early": true,
+        "exchange_index": 3,
+        "floor_strike": 4.5,
+        "settlement_timer_seconds": 180
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "First 5 innings: Over 3.5 runs",
+      "series_ticker": "",
+      "event_ticker": "KXMLBF5TOTAL-26OCT282000MILTB",
+      "ticker": "KXMLBF5TOTAL-26OCT282000MILTB-4",
+      "numeric_fields": {
+        "can_close_early": true,
+        "exchange_index": 3,
+        "floor_strike": 3.5,
+        "settlement_timer_seconds": 180
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "First 5 innings: Over 2.5 runs",
+      "series_ticker": "",
+      "event_ticker": "KXMLBF5TOTAL-26OCT282000MILTB",
+      "ticker": "KXMLBF5TOTAL-26OCT282000MILTB-3",
+      "numeric_fields": {
+        "can_close_early": true,
+        "exchange_index": 3,
+        "floor_strike": 2.5,
+        "settlement_timer_seconds": 180
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "First 5 innings: Over 1.5 runs",
+      "series_ticker": "",
+      "event_ticker": "KXMLBF5TOTAL-26OCT282000MILTB",
+      "ticker": "KXMLBF5TOTAL-26OCT282000MILTB-2",
+      "numeric_fields": {
+        "can_close_early": true,
+        "exchange_index": 3,
+        "floor_strike": 1.5,
+        "settlement_timer_seconds": 180
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "First 5 innings: Over 0.5 runs",
+      "series_ticker": "",
+      "event_ticker": "KXMLBF5TOTAL-26OCT282000MILTB",
+      "ticker": "KXMLBF5TOTAL-26OCT282000MILTB-1",
+      "numeric_fields": {
+        "can_close_early": true,
+        "exchange_index": 3,
+        "floor_strike": 0.5,
+        "settlement_timer_seconds": 180
       },
       "detected_by": "ticker"
     },
     {
       "title": "Tampa Bay wins",
       "series_ticker": "",
-      "event_ticker": "KXMLBGAME-26OCT272000MILTB",
-      "ticker": "KXMLBGAME-26OCT272000MILTB-TB",
+      "event_ticker": "KXMLBGAME-26OCT282000MILTB",
+      "ticker": "KXMLBGAME-26OCT282000MILTB-TB",
       "numeric_fields": {
         "can_close_early": true,
         "exchange_index": 3,
@@ -140,8 +285,8 @@
     {
       "title": "Milwaukee wins",
       "series_ticker": "",
-      "event_ticker": "KXMLBGAME-26OCT272000MILTB",
-      "ticker": "KXMLBGAME-26OCT272000MILTB-MIL",
+      "event_ticker": "KXMLBGAME-26OCT282000MILTB",
+      "ticker": "KXMLBGAME-26OCT282000MILTB-MIL",
       "numeric_fields": {
         "can_close_early": true,
         "exchange_index": 3,
@@ -150,283 +295,10 @@
       "detected_by": "ticker"
     },
     {
-      "title": "Sal Frelick: 3+ hits?",
-      "series_ticker": "",
-      "event_ticker": "KXMLBHIT-26OCT272000MILTB",
-      "ticker": "KXMLBHIT-26OCT272000MILTB-MILSFRELICK10-3",
-      "numeric_fields": {
-        "can_close_early": true,
-        "exchange_index": 3,
-        "floor_strike": 2.5,
-        "settlement_timer_seconds": 300
-      },
-      "detected_by": "ticker"
-    },
-    {
-      "title": "Sal Frelick: 2+ hits?",
-      "series_ticker": "",
-      "event_ticker": "KXMLBHIT-26OCT272000MILTB",
-      "ticker": "KXMLBHIT-26OCT272000MILTB-MILSFRELICK10-2",
-      "numeric_fields": {
-        "can_close_early": true,
-        "exchange_index": 3,
-        "floor_strike": 1.5,
-        "settlement_timer_seconds": 300
-      },
-      "detected_by": "ticker"
-    },
-    {
-      "title": "Sal Frelick: 1+ hits?",
-      "series_ticker": "",
-      "event_ticker": "KXMLBHIT-26OCT272000MILTB",
-      "ticker": "KXMLBHIT-26OCT272000MILTB-MILSFRELICK10-1",
-      "numeric_fields": {
-        "can_close_early": true,
-        "exchange_index": 3,
-        "floor_strike": 0.5,
-        "settlement_timer_seconds": 300
-      },
-      "detected_by": "ticker"
-    },
-    {
-      "title": "Ryan Vilade: 3+ hits?",
-      "series_ticker": "",
-      "event_ticker": "KXMLBHIT-26OCT272000MILTB",
-      "ticker": "KXMLBHIT-26OCT272000MILTB-TBRVILADE26-3",
-      "numeric_fields": {
-        "can_close_early": true,
-        "exchange_index": 3,
-        "floor_strike": 2.5,
-        "settlement_timer_seconds": 300
-      },
-      "detected_by": "ticker"
-    },
-    {
-      "title": "Ryan Vilade: 2+ hits?",
-      "series_ticker": "",
-      "event_ticker": "KXMLBHIT-26OCT272000MILTB",
-      "ticker": "KXMLBHIT-26OCT272000MILTB-TBRVILADE26-2",
-      "numeric_fields": {
-        "can_close_early": true,
-        "exchange_index": 3,
-        "floor_strike": 1.5,
-        "settlement_timer_seconds": 300
-      },
-      "detected_by": "ticker"
-    },
-    {
-      "title": "Ryan Vilade: 1+ hits?",
-      "series_ticker": "",
-      "event_ticker": "KXMLBHIT-26OCT272000MILTB",
-      "ticker": "KXMLBHIT-26OCT272000MILTB-TBRVILADE26-1",
-      "numeric_fields": {
-        "can_close_early": true,
-        "exchange_index": 3,
-        "floor_strike": 0.5,
-        "settlement_timer_seconds": 300
-      },
-      "detected_by": "ticker"
-    },
-    {
-      "title": "Richie Palacios: 3+ hits?",
-      "series_ticker": "",
-      "event_ticker": "KXMLBHIT-26OCT272000MILTB",
-      "ticker": "KXMLBHIT-26OCT272000MILTB-TBRPALACIOS1-3",
-      "numeric_fields": {
-        "can_close_early": true,
-        "exchange_index": 3,
-        "floor_strike": 2.5,
-        "settlement_timer_seconds": 300
-      },
-      "detected_by": "ticker"
-    },
-    {
-      "title": "Richie Palacios: 2+ hits?",
-      "series_ticker": "",
-      "event_ticker": "KXMLBHIT-26OCT272000MILTB",
-      "ticker": "KXMLBHIT-26OCT272000MILTB-TBRPALACIOS1-2",
-      "numeric_fields": {
-        "can_close_early": true,
-        "exchange_index": 3,
-        "floor_strike": 1.5,
-        "settlement_timer_seconds": 300
-      },
-      "detected_by": "ticker"
-    },
-    {
-      "title": "Richie Palacios: 1+ hits?",
-      "series_ticker": "",
-      "event_ticker": "KXMLBHIT-26OCT272000MILTB",
-      "ticker": "KXMLBHIT-26OCT272000MILTB-TBRPALACIOS1-1",
-      "numeric_fields": {
-        "can_close_early": true,
-        "exchange_index": 3,
-        "floor_strike": 0.5,
-        "settlement_timer_seconds": 300
-      },
-      "detected_by": "ticker"
-    },
-    {
-      "title": "Liam Hicks: 3+ hits?",
-      "series_ticker": "",
-      "event_ticker": "KXMLBHIT-26OCT272000MILTB",
-      "ticker": "KXMLBHIT-26OCT272000MILTB-TBLHICKS34-3",
-      "numeric_fields": {
-        "can_close_early": true,
-        "exchange_index": 3,
-        "floor_strike": 2.5,
-        "settlement_timer_seconds": 300
-      },
-      "detected_by": "ticker"
-    },
-    {
-      "title": "Liam Hicks: 2+ hits?",
-      "series_ticker": "",
-      "event_ticker": "KXMLBHIT-26OCT272000MILTB",
-      "ticker": "KXMLBHIT-26OCT272000MILTB-TBLHICKS34-2",
-      "numeric_fields": {
-        "can_close_early": true,
-        "exchange_index": 3,
-        "floor_strike": 1.5,
-        "settlement_timer_seconds": 300
-      },
-      "detected_by": "ticker"
-    },
-    {
-      "title": "Liam Hicks: 1+ hits?",
-      "series_ticker": "",
-      "event_ticker": "KXMLBHIT-26OCT272000MILTB",
-      "ticker": "KXMLBHIT-26OCT272000MILTB-TBLHICKS34-1",
-      "numeric_fields": {
-        "can_close_early": true,
-        "exchange_index": 3,
-        "floor_strike": 0.5,
-        "settlement_timer_seconds": 300
-      },
-      "detected_by": "ticker"
-    },
-    {
-      "title": "David Hamilton: 3+ hits?",
-      "series_ticker": "",
-      "event_ticker": "KXMLBHIT-26OCT272000MILTB",
-      "ticker": "KXMLBHIT-26OCT272000MILTB-MILDHAMILTON6-3",
-      "numeric_fields": {
-        "can_close_early": true,
-        "exchange_index": 3,
-        "floor_strike": 2.5,
-        "settlement_timer_seconds": 300
-      },
-      "detected_by": "ticker"
-    },
-    {
-      "title": "David Hamilton: 2+ hits?",
-      "series_ticker": "",
-      "event_ticker": "KXMLBHIT-26OCT272000MILTB",
-      "ticker": "KXMLBHIT-26OCT272000MILTB-MILDHAMILTON6-2",
-      "numeric_fields": {
-        "can_close_early": true,
-        "exchange_index": 3,
-        "floor_strike": 1.5,
-        "settlement_timer_seconds": 300
-      },
-      "detected_by": "ticker"
-    },
-    {
-      "title": "David Hamilton: 1+ hits?",
-      "series_ticker": "",
-      "event_ticker": "KXMLBHIT-26OCT272000MILTB",
-      "ticker": "KXMLBHIT-26OCT272000MILTB-MILDHAMILTON6-1",
-      "numeric_fields": {
-        "can_close_early": true,
-        "exchange_index": 3,
-        "floor_strike": 0.5,
-        "settlement_timer_seconds": 300
-      },
-      "detected_by": "ticker"
-    },
-    {
-      "title": "Christian Yelich: 3+ hits?",
-      "series_ticker": "",
-      "event_ticker": "KXMLBHIT-26OCT272000MILTB",
-      "ticker": "KXMLBHIT-26OCT272000MILTB-MILCYELICH22-3",
-      "numeric_fields": {
-        "can_close_early": true,
-        "exchange_index": 3,
-        "floor_strike": 2.5,
-        "settlement_timer_seconds": 300
-      },
-      "detected_by": "ticker"
-    },
-    {
-      "title": "Christian Yelich: 2+ hits?",
-      "series_ticker": "",
-      "event_ticker": "KXMLBHIT-26OCT272000MILTB",
-      "ticker": "KXMLBHIT-26OCT272000MILTB-MILCYELICH22-2",
-      "numeric_fields": {
-        "can_close_early": true,
-        "exchange_index": 3,
-        "floor_strike": 1.5,
-        "settlement_timer_seconds": 300
-      },
-      "detected_by": "ticker"
-    },
-    {
-      "title": "Christian Yelich: 1+ hits?",
-      "series_ticker": "",
-      "event_ticker": "KXMLBHIT-26OCT272000MILTB",
-      "ticker": "KXMLBHIT-26OCT272000MILTB-MILCYELICH22-1",
-      "numeric_fields": {
-        "can_close_early": true,
-        "exchange_index": 3,
-        "floor_strike": 0.5,
-        "settlement_timer_seconds": 300
-      },
-      "detected_by": "ticker"
-    },
-    {
-      "title": "Chandler Simpson: 3+ hits?",
-      "series_ticker": "",
-      "event_ticker": "KXMLBHIT-26OCT272000MILTB",
-      "ticker": "KXMLBHIT-26OCT272000MILTB-TBCSIMPSON14-3",
-      "numeric_fields": {
-        "can_close_early": true,
-        "exchange_index": 3,
-        "floor_strike": 2.5,
-        "settlement_timer_seconds": 300
-      },
-      "detected_by": "ticker"
-    },
-    {
-      "title": "Chandler Simpson: 2+ hits?",
-      "series_ticker": "",
-      "event_ticker": "KXMLBHIT-26OCT272000MILTB",
-      "ticker": "KXMLBHIT-26OCT272000MILTB-TBCSIMPSON14-2",
-      "numeric_fields": {
-        "can_close_early": true,
-        "exchange_index": 3,
-        "floor_strike": 1.5,
-        "settlement_timer_seconds": 300
-      },
-      "detected_by": "ticker"
-    },
-    {
-      "title": "Chandler Simpson: 1+ hits?",
-      "series_ticker": "",
-      "event_ticker": "KXMLBHIT-26OCT272000MILTB",
-      "ticker": "KXMLBHIT-26OCT272000MILTB-TBCSIMPSON14-1",
-      "numeric_fields": {
-        "can_close_early": true,
-        "exchange_index": 3,
-        "floor_strike": 0.5,
-        "settlement_timer_seconds": 300
-      },
-      "detected_by": "ticker"
-    },
-    {
       "title": "Yandy D\u00edaz: 4+ hits?",
       "series_ticker": "",
-      "event_ticker": "KXMLBHIT-26OCT272000MILTB",
-      "ticker": "KXMLBHIT-26OCT272000MILTB-TBYDIAZ2-4",
+      "event_ticker": "KXMLBHIT-26OCT282000MILTB",
+      "ticker": "KXMLBHIT-26OCT282000MILTB-TBYDIAZ2-4",
       "numeric_fields": {
         "can_close_early": true,
         "exchange_index": 3,
@@ -438,8 +310,8 @@
     {
       "title": "Yandy D\u00edaz: 3+ hits?",
       "series_ticker": "",
-      "event_ticker": "KXMLBHIT-26OCT272000MILTB",
-      "ticker": "KXMLBHIT-26OCT272000MILTB-TBYDIAZ2-3",
+      "event_ticker": "KXMLBHIT-26OCT282000MILTB",
+      "ticker": "KXMLBHIT-26OCT282000MILTB-TBYDIAZ2-3",
       "numeric_fields": {
         "can_close_early": true,
         "exchange_index": 3,
@@ -451,8 +323,8 @@
     {
       "title": "Yandy D\u00edaz: 2+ hits?",
       "series_ticker": "",
-      "event_ticker": "KXMLBHIT-26OCT272000MILTB",
-      "ticker": "KXMLBHIT-26OCT272000MILTB-TBYDIAZ2-2",
+      "event_ticker": "KXMLBHIT-26OCT282000MILTB",
+      "ticker": "KXMLBHIT-26OCT282000MILTB-TBYDIAZ2-2",
       "numeric_fields": {
         "can_close_early": true,
         "exchange_index": 3,
@@ -464,8 +336,8 @@
     {
       "title": "Yandy D\u00edaz: 1+ hits?",
       "series_ticker": "",
-      "event_ticker": "KXMLBHIT-26OCT272000MILTB",
-      "ticker": "KXMLBHIT-26OCT272000MILTB-TBYDIAZ2-1",
+      "event_ticker": "KXMLBHIT-26OCT282000MILTB",
+      "ticker": "KXMLBHIT-26OCT282000MILTB-TBYDIAZ2-1",
       "numeric_fields": {
         "can_close_early": true,
         "exchange_index": 3,
@@ -477,8 +349,8 @@
     {
       "title": "Taylor Walls: 3+ hits?",
       "series_ticker": "",
-      "event_ticker": "KXMLBHIT-26OCT272000MILTB",
-      "ticker": "KXMLBHIT-26OCT272000MILTB-TBTWALLS6-3",
+      "event_ticker": "KXMLBHIT-26OCT282000MILTB",
+      "ticker": "KXMLBHIT-26OCT282000MILTB-TBTWALLS6-3",
       "numeric_fields": {
         "can_close_early": true,
         "exchange_index": 3,
@@ -490,8 +362,8 @@
     {
       "title": "Taylor Walls: 2+ hits?",
       "series_ticker": "",
-      "event_ticker": "KXMLBHIT-26OCT272000MILTB",
-      "ticker": "KXMLBHIT-26OCT272000MILTB-TBTWALLS6-2",
+      "event_ticker": "KXMLBHIT-26OCT282000MILTB",
+      "ticker": "KXMLBHIT-26OCT282000MILTB-TBTWALLS6-2",
       "numeric_fields": {
         "can_close_early": true,
         "exchange_index": 3,
@@ -503,8 +375,8 @@
     {
       "title": "Taylor Walls: 1+ hits?",
       "series_ticker": "",
-      "event_ticker": "KXMLBHIT-26OCT272000MILTB",
-      "ticker": "KXMLBHIT-26OCT272000MILTB-TBTWALLS6-1",
+      "event_ticker": "KXMLBHIT-26OCT282000MILTB",
+      "ticker": "KXMLBHIT-26OCT282000MILTB-TBTWALLS6-1",
       "numeric_fields": {
         "can_close_early": true,
         "exchange_index": 3,
@@ -516,8 +388,8 @@
     {
       "title": "Jonny DeLuca: 3+ hits?",
       "series_ticker": "",
-      "event_ticker": "KXMLBHIT-26OCT272000MILTB",
-      "ticker": "KXMLBHIT-26OCT272000MILTB-TBJDELUCA21-3",
+      "event_ticker": "KXMLBHIT-26OCT282000MILTB",
+      "ticker": "KXMLBHIT-26OCT282000MILTB-TBJDELUCA21-3",
       "numeric_fields": {
         "can_close_early": true,
         "exchange_index": 3,
@@ -529,8 +401,8 @@
     {
       "title": "Jonny DeLuca: 2+ hits?",
       "series_ticker": "",
-      "event_ticker": "KXMLBHIT-26OCT272000MILTB",
-      "ticker": "KXMLBHIT-26OCT272000MILTB-TBJDELUCA21-2",
+      "event_ticker": "KXMLBHIT-26OCT282000MILTB",
+      "ticker": "KXMLBHIT-26OCT282000MILTB-TBJDELUCA21-2",
       "numeric_fields": {
         "can_close_early": true,
         "exchange_index": 3,
@@ -542,8 +414,8 @@
     {
       "title": "Jonny DeLuca: 1+ hits?",
       "series_ticker": "",
-      "event_ticker": "KXMLBHIT-26OCT272000MILTB",
-      "ticker": "KXMLBHIT-26OCT272000MILTB-TBJDELUCA21-1",
+      "event_ticker": "KXMLBHIT-26OCT282000MILTB",
+      "ticker": "KXMLBHIT-26OCT282000MILTB-TBJDELUCA21-1",
       "numeric_fields": {
         "can_close_early": true,
         "exchange_index": 3,
@@ -555,8 +427,8 @@
     {
       "title": "Junior Caminero: 3+ hits?",
       "series_ticker": "",
-      "event_ticker": "KXMLBHIT-26OCT272000MILTB",
-      "ticker": "KXMLBHIT-26OCT272000MILTB-TBJCAMINERO13-3",
+      "event_ticker": "KXMLBHIT-26OCT282000MILTB",
+      "ticker": "KXMLBHIT-26OCT282000MILTB-TBJCAMINERO13-3",
       "numeric_fields": {
         "can_close_early": true,
         "exchange_index": 3,
@@ -568,8 +440,8 @@
     {
       "title": "Junior Caminero: 2+ hits?",
       "series_ticker": "",
-      "event_ticker": "KXMLBHIT-26OCT272000MILTB",
-      "ticker": "KXMLBHIT-26OCT272000MILTB-TBJCAMINERO13-2",
+      "event_ticker": "KXMLBHIT-26OCT282000MILTB",
+      "ticker": "KXMLBHIT-26OCT282000MILTB-TBJCAMINERO13-2",
       "numeric_fields": {
         "can_close_early": true,
         "exchange_index": 3,
@@ -581,8 +453,8 @@
     {
       "title": "Junior Caminero: 1+ hits?",
       "series_ticker": "",
-      "event_ticker": "KXMLBHIT-26OCT272000MILTB",
-      "ticker": "KXMLBHIT-26OCT272000MILTB-TBJCAMINERO13-1",
+      "event_ticker": "KXMLBHIT-26OCT282000MILTB",
+      "ticker": "KXMLBHIT-26OCT282000MILTB-TBJCAMINERO13-1",
       "numeric_fields": {
         "can_close_early": true,
         "exchange_index": 3,
@@ -594,8 +466,8 @@
     {
       "title": "Jonathan Aranda: 3+ hits?",
       "series_ticker": "",
-      "event_ticker": "KXMLBHIT-26OCT272000MILTB",
-      "ticker": "KXMLBHIT-26OCT272000MILTB-TBJARANDA8-3",
+      "event_ticker": "KXMLBHIT-26OCT282000MILTB",
+      "ticker": "KXMLBHIT-26OCT282000MILTB-TBJARANDA8-3",
       "numeric_fields": {
         "can_close_early": true,
         "exchange_index": 3,
@@ -607,8 +479,8 @@
     {
       "title": "Jonathan Aranda: 2+ hits?",
       "series_ticker": "",
-      "event_ticker": "KXMLBHIT-26OCT272000MILTB",
-      "ticker": "KXMLBHIT-26OCT272000MILTB-TBJARANDA8-2",
+      "event_ticker": "KXMLBHIT-26OCT282000MILTB",
+      "ticker": "KXMLBHIT-26OCT282000MILTB-TBJARANDA8-2",
       "numeric_fields": {
         "can_close_early": true,
         "exchange_index": 3,
@@ -620,8 +492,8 @@
     {
       "title": "Jonathan Aranda: 1+ hits?",
       "series_ticker": "",
-      "event_ticker": "KXMLBHIT-26OCT272000MILTB",
-      "ticker": "KXMLBHIT-26OCT272000MILTB-TBJARANDA8-1",
+      "event_ticker": "KXMLBHIT-26OCT282000MILTB",
+      "ticker": "KXMLBHIT-26OCT282000MILTB-TBJARANDA8-1",
       "numeric_fields": {
         "can_close_early": true,
         "exchange_index": 3,
@@ -631,10 +503,23 @@
       "detected_by": "ticker"
     },
     {
+      "title": "William Contreras: 4+ hits?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHIT-26OCT282000MILTB",
+      "ticker": "KXMLBHIT-26OCT282000MILTB-MILWCONTRERAS24-4",
+      "numeric_fields": {
+        "can_close_early": true,
+        "exchange_index": 3,
+        "floor_strike": 3.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
       "title": "William Contreras: 3+ hits?",
       "series_ticker": "",
-      "event_ticker": "KXMLBHIT-26OCT272000MILTB",
-      "ticker": "KXMLBHIT-26OCT272000MILTB-MILWCONTRERAS24-3",
+      "event_ticker": "KXMLBHIT-26OCT282000MILTB",
+      "ticker": "KXMLBHIT-26OCT282000MILTB-MILWCONTRERAS24-3",
       "numeric_fields": {
         "can_close_early": true,
         "exchange_index": 3,
@@ -646,8 +531,8 @@
     {
       "title": "William Contreras: 2+ hits?",
       "series_ticker": "",
-      "event_ticker": "KXMLBHIT-26OCT272000MILTB",
-      "ticker": "KXMLBHIT-26OCT272000MILTB-MILWCONTRERAS24-2",
+      "event_ticker": "KXMLBHIT-26OCT282000MILTB",
+      "ticker": "KXMLBHIT-26OCT282000MILTB-MILWCONTRERAS24-2",
       "numeric_fields": {
         "can_close_early": true,
         "exchange_index": 3,
@@ -659,8 +544,8 @@
     {
       "title": "William Contreras: 1+ hits?",
       "series_ticker": "",
-      "event_ticker": "KXMLBHIT-26OCT272000MILTB",
-      "ticker": "KXMLBHIT-26OCT272000MILTB-MILWCONTRERAS24-1",
+      "event_ticker": "KXMLBHIT-26OCT282000MILTB",
+      "ticker": "KXMLBHIT-26OCT282000MILTB-MILWCONTRERAS24-1",
       "numeric_fields": {
         "can_close_early": true,
         "exchange_index": 3,
@@ -672,8 +557,8 @@
     {
       "title": "Jackson Chourio: 4+ hits?",
       "series_ticker": "",
-      "event_ticker": "KXMLBHIT-26OCT272000MILTB",
-      "ticker": "KXMLBHIT-26OCT272000MILTB-MILJCHOURIO11-4",
+      "event_ticker": "KXMLBHIT-26OCT282000MILTB",
+      "ticker": "KXMLBHIT-26OCT282000MILTB-MILJCHOURIO11-4",
       "numeric_fields": {
         "can_close_early": true,
         "exchange_index": 3,
@@ -685,8 +570,8 @@
     {
       "title": "Jackson Chourio: 3+ hits?",
       "series_ticker": "",
-      "event_ticker": "KXMLBHIT-26OCT272000MILTB",
-      "ticker": "KXMLBHIT-26OCT272000MILTB-MILJCHOURIO11-3",
+      "event_ticker": "KXMLBHIT-26OCT282000MILTB",
+      "ticker": "KXMLBHIT-26OCT282000MILTB-MILJCHOURIO11-3",
       "numeric_fields": {
         "can_close_early": true,
         "exchange_index": 3,
@@ -698,8 +583,8 @@
     {
       "title": "Jackson Chourio: 2+ hits?",
       "series_ticker": "",
-      "event_ticker": "KXMLBHIT-26OCT272000MILTB",
-      "ticker": "KXMLBHIT-26OCT272000MILTB-MILJCHOURIO11-2",
+      "event_ticker": "KXMLBHIT-26OCT282000MILTB",
+      "ticker": "KXMLBHIT-26OCT282000MILTB-MILJCHOURIO11-2",
       "numeric_fields": {
         "can_close_early": true,
         "exchange_index": 3,
@@ -711,8 +596,8 @@
     {
       "title": "Jackson Chourio: 1+ hits?",
       "series_ticker": "",
-      "event_ticker": "KXMLBHIT-26OCT272000MILTB",
-      "ticker": "KXMLBHIT-26OCT272000MILTB-MILJCHOURIO11-1",
+      "event_ticker": "KXMLBHIT-26OCT282000MILTB",
+      "ticker": "KXMLBHIT-26OCT282000MILTB-MILJCHOURIO11-1",
       "numeric_fields": {
         "can_close_early": true,
         "exchange_index": 3,
@@ -724,8 +609,8 @@
     {
       "title": "Jake Bauers: 3+ hits?",
       "series_ticker": "",
-      "event_ticker": "KXMLBHIT-26OCT272000MILTB",
-      "ticker": "KXMLBHIT-26OCT272000MILTB-MILJBAUERS9-3",
+      "event_ticker": "KXMLBHIT-26OCT282000MILTB",
+      "ticker": "KXMLBHIT-26OCT282000MILTB-MILJBAUERS9-3",
       "numeric_fields": {
         "can_close_early": true,
         "exchange_index": 3,
@@ -737,8 +622,8 @@
     {
       "title": "Jake Bauers: 2+ hits?",
       "series_ticker": "",
-      "event_ticker": "KXMLBHIT-26OCT272000MILTB",
-      "ticker": "KXMLBHIT-26OCT272000MILTB-MILJBAUERS9-2",
+      "event_ticker": "KXMLBHIT-26OCT282000MILTB",
+      "ticker": "KXMLBHIT-26OCT282000MILTB-MILJBAUERS9-2",
       "numeric_fields": {
         "can_close_early": true,
         "exchange_index": 3,
@@ -750,8 +635,8 @@
     {
       "title": "Jake Bauers: 1+ hits?",
       "series_ticker": "",
-      "event_ticker": "KXMLBHIT-26OCT272000MILTB",
-      "ticker": "KXMLBHIT-26OCT272000MILTB-MILJBAUERS9-1",
+      "event_ticker": "KXMLBHIT-26OCT282000MILTB",
+      "ticker": "KXMLBHIT-26OCT282000MILTB-MILJBAUERS9-1",
       "numeric_fields": {
         "can_close_early": true,
         "exchange_index": 3,
@@ -763,8 +648,8 @@
     {
       "title": "Garrett Mitchell: 3+ hits?",
       "series_ticker": "",
-      "event_ticker": "KXMLBHIT-26OCT272000MILTB",
-      "ticker": "KXMLBHIT-26OCT272000MILTB-MILGMITCHELL5-3",
+      "event_ticker": "KXMLBHIT-26OCT282000MILTB",
+      "ticker": "KXMLBHIT-26OCT282000MILTB-MILGMITCHELL5-3",
       "numeric_fields": {
         "can_close_early": true,
         "exchange_index": 3,
@@ -776,8 +661,8 @@
     {
       "title": "Garrett Mitchell: 2+ hits?",
       "series_ticker": "",
-      "event_ticker": "KXMLBHIT-26OCT272000MILTB",
-      "ticker": "KXMLBHIT-26OCT272000MILTB-MILGMITCHELL5-2",
+      "event_ticker": "KXMLBHIT-26OCT282000MILTB",
+      "ticker": "KXMLBHIT-26OCT282000MILTB-MILGMITCHELL5-2",
       "numeric_fields": {
         "can_close_early": true,
         "exchange_index": 3,
@@ -789,8 +674,8 @@
     {
       "title": "Garrett Mitchell: 1+ hits?",
       "series_ticker": "",
-      "event_ticker": "KXMLBHIT-26OCT272000MILTB",
-      "ticker": "KXMLBHIT-26OCT272000MILTB-MILGMITCHELL5-1",
+      "event_ticker": "KXMLBHIT-26OCT282000MILTB",
+      "ticker": "KXMLBHIT-26OCT282000MILTB-MILGMITCHELL5-1",
       "numeric_fields": {
         "can_close_early": true,
         "exchange_index": 3,
@@ -802,8 +687,8 @@
     {
       "title": "Cooper Pratt: 3+ hits?",
       "series_ticker": "",
-      "event_ticker": "KXMLBHIT-26OCT272000MILTB",
-      "ticker": "KXMLBHIT-26OCT272000MILTB-MILCPRATT87-3",
+      "event_ticker": "KXMLBHIT-26OCT282000MILTB",
+      "ticker": "KXMLBHIT-26OCT282000MILTB-MILCPRATT87-3",
       "numeric_fields": {
         "can_close_early": true,
         "exchange_index": 3,
@@ -815,8 +700,8 @@
     {
       "title": "Cooper Pratt: 2+ hits?",
       "series_ticker": "",
-      "event_ticker": "KXMLBHIT-26OCT272000MILTB",
-      "ticker": "KXMLBHIT-26OCT272000MILTB-MILCPRATT87-2",
+      "event_ticker": "KXMLBHIT-26OCT282000MILTB",
+      "ticker": "KXMLBHIT-26OCT282000MILTB-MILCPRATT87-2",
       "numeric_fields": {
         "can_close_early": true,
         "exchange_index": 3,
@@ -828,8 +713,8 @@
     {
       "title": "Cooper Pratt: 1+ hits?",
       "series_ticker": "",
-      "event_ticker": "KXMLBHIT-26OCT272000MILTB",
-      "ticker": "KXMLBHIT-26OCT272000MILTB-MILCPRATT87-1",
+      "event_ticker": "KXMLBHIT-26OCT282000MILTB",
+      "ticker": "KXMLBHIT-26OCT282000MILTB-MILCPRATT87-1",
       "numeric_fields": {
         "can_close_early": true,
         "exchange_index": 3,
@@ -841,8 +726,8 @@
     {
       "title": "Brice Turang: 3+ hits?",
       "series_ticker": "",
-      "event_ticker": "KXMLBHIT-26OCT272000MILTB",
-      "ticker": "KXMLBHIT-26OCT272000MILTB-MILBTURANG2-3",
+      "event_ticker": "KXMLBHIT-26OCT282000MILTB",
+      "ticker": "KXMLBHIT-26OCT282000MILTB-MILBTURANG2-3",
       "numeric_fields": {
         "can_close_early": true,
         "exchange_index": 3,
@@ -854,8 +739,8 @@
     {
       "title": "Brice Turang: 2+ hits?",
       "series_ticker": "",
-      "event_ticker": "KXMLBHIT-26OCT272000MILTB",
-      "ticker": "KXMLBHIT-26OCT272000MILTB-MILBTURANG2-2",
+      "event_ticker": "KXMLBHIT-26OCT282000MILTB",
+      "ticker": "KXMLBHIT-26OCT282000MILTB-MILBTURANG2-2",
       "numeric_fields": {
         "can_close_early": true,
         "exchange_index": 3,
@@ -867,138 +752,8 @@
     {
       "title": "Brice Turang: 1+ hits?",
       "series_ticker": "",
-      "event_ticker": "KXMLBHIT-26OCT272000MILTB",
-      "ticker": "KXMLBHIT-26OCT272000MILTB-MILBTURANG2-1",
-      "numeric_fields": {
-        "can_close_early": true,
-        "exchange_index": 3,
-        "floor_strike": 0.5,
-        "settlement_timer_seconds": 300
-      },
-      "detected_by": "ticker"
-    },
-    {
-      "title": "Sal Frelick: 1+ home runs?",
-      "series_ticker": "",
-      "event_ticker": "KXMLBHR-26OCT272000MILTB",
-      "ticker": "KXMLBHR-26OCT272000MILTB-MILSFRELICK10-1",
-      "numeric_fields": {
-        "can_close_early": true,
-        "exchange_index": 3,
-        "floor_strike": 0.5,
-        "settlement_timer_seconds": 300
-      },
-      "detected_by": "ticker"
-    },
-    {
-      "title": "Ryan Vilade: 2+ home runs?",
-      "series_ticker": "",
-      "event_ticker": "KXMLBHR-26OCT272000MILTB",
-      "ticker": "KXMLBHR-26OCT272000MILTB-TBRVILADE26-2",
-      "numeric_fields": {
-        "can_close_early": true,
-        "exchange_index": 3,
-        "floor_strike": 1.5,
-        "settlement_timer_seconds": 300
-      },
-      "detected_by": "ticker"
-    },
-    {
-      "title": "Ryan Vilade: 1+ home runs?",
-      "series_ticker": "",
-      "event_ticker": "KXMLBHR-26OCT272000MILTB",
-      "ticker": "KXMLBHR-26OCT272000MILTB-TBRVILADE26-1",
-      "numeric_fields": {
-        "can_close_early": true,
-        "exchange_index": 3,
-        "floor_strike": 0.5,
-        "settlement_timer_seconds": 300
-      },
-      "detected_by": "ticker"
-    },
-    {
-      "title": "Richie Palacios: 1+ home runs?",
-      "series_ticker": "",
-      "event_ticker": "KXMLBHR-26OCT272000MILTB",
-      "ticker": "KXMLBHR-26OCT272000MILTB-TBRPALACIOS1-1",
-      "numeric_fields": {
-        "can_close_early": true,
-        "exchange_index": 3,
-        "floor_strike": 0.5,
-        "settlement_timer_seconds": 300
-      },
-      "detected_by": "ticker"
-    },
-    {
-      "title": "Liam Hicks: 2+ home runs?",
-      "series_ticker": "",
-      "event_ticker": "KXMLBHR-26OCT272000MILTB",
-      "ticker": "KXMLBHR-26OCT272000MILTB-TBLHICKS34-2",
-      "numeric_fields": {
-        "can_close_early": true,
-        "exchange_index": 3,
-        "floor_strike": 1.5,
-        "settlement_timer_seconds": 300
-      },
-      "detected_by": "ticker"
-    },
-    {
-      "title": "Liam Hicks: 1+ home runs?",
-      "series_ticker": "",
-      "event_ticker": "KXMLBHR-26OCT272000MILTB",
-      "ticker": "KXMLBHR-26OCT272000MILTB-TBLHICKS34-1",
-      "numeric_fields": {
-        "can_close_early": true,
-        "exchange_index": 3,
-        "floor_strike": 0.5,
-        "settlement_timer_seconds": 300
-      },
-      "detected_by": "ticker"
-    },
-    {
-      "title": "David Hamilton: 1+ home runs?",
-      "series_ticker": "",
-      "event_ticker": "KXMLBHR-26OCT272000MILTB",
-      "ticker": "KXMLBHR-26OCT272000MILTB-MILDHAMILTON6-1",
-      "numeric_fields": {
-        "can_close_early": true,
-        "exchange_index": 3,
-        "floor_strike": 0.5,
-        "settlement_timer_seconds": 300
-      },
-      "detected_by": "ticker"
-    },
-    {
-      "title": "Christian Yelich: 2+ home runs?",
-      "series_ticker": "",
-      "event_ticker": "KXMLBHR-26OCT272000MILTB",
-      "ticker": "KXMLBHR-26OCT272000MILTB-MILCYELICH22-2",
-      "numeric_fields": {
-        "can_close_early": true,
-        "exchange_index": 3,
-        "floor_strike": 1.5,
-        "settlement_timer_seconds": 300
-      },
-      "detected_by": "ticker"
-    },
-    {
-      "title": "Christian Yelich: 1+ home runs?",
-      "series_ticker": "",
-      "event_ticker": "KXMLBHR-26OCT272000MILTB",
-      "ticker": "KXMLBHR-26OCT272000MILTB-MILCYELICH22-1",
-      "numeric_fields": {
-        "can_close_early": true,
-        "exchange_index": 3,
-        "floor_strike": 0.5,
-        "settlement_timer_seconds": 300
-      },
-      "detected_by": "ticker"
-    },
-    {
-      "title": "Chandler Simpson: 1+ home runs?",
-      "series_ticker": "",
-      "event_ticker": "KXMLBHR-26OCT272000MILTB",
-      "ticker": "KXMLBHR-26OCT272000MILTB-TBCSIMPSON14-1",
+      "event_ticker": "KXMLBHIT-26OCT282000MILTB",
+      "ticker": "KXMLBHIT-26OCT282000MILTB-MILBTURANG2-1",
       "numeric_fields": {
         "can_close_early": true,
         "exchange_index": 3,
@@ -1010,8 +765,8 @@
     {
       "title": "Yandy D\u00edaz: 2+ home runs?",
       "series_ticker": "",
-      "event_ticker": "KXMLBHR-26OCT272000MILTB",
-      "ticker": "KXMLBHR-26OCT272000MILTB-TBYDIAZ2-2",
+      "event_ticker": "KXMLBHR-26OCT282000MILTB",
+      "ticker": "KXMLBHR-26OCT282000MILTB-TBYDIAZ2-2",
       "numeric_fields": {
         "can_close_early": true,
         "exchange_index": 3,
@@ -1023,8 +778,8 @@
     {
       "title": "Yandy D\u00edaz: 1+ home runs?",
       "series_ticker": "",
-      "event_ticker": "KXMLBHR-26OCT272000MILTB",
-      "ticker": "KXMLBHR-26OCT272000MILTB-TBYDIAZ2-1",
+      "event_ticker": "KXMLBHR-26OCT282000MILTB",
+      "ticker": "KXMLBHR-26OCT282000MILTB-TBYDIAZ2-1",
       "numeric_fields": {
         "can_close_early": true,
         "exchange_index": 3,
@@ -1036,8 +791,8 @@
     {
       "title": "Taylor Walls: 1+ home runs?",
       "series_ticker": "",
-      "event_ticker": "KXMLBHR-26OCT272000MILTB",
-      "ticker": "KXMLBHR-26OCT272000MILTB-TBTWALLS6-1",
+      "event_ticker": "KXMLBHR-26OCT282000MILTB",
+      "ticker": "KXMLBHR-26OCT282000MILTB-TBTWALLS6-1",
       "numeric_fields": {
         "can_close_early": true,
         "exchange_index": 3,
@@ -1047,10 +802,23 @@
       "detected_by": "ticker"
     },
     {
+      "title": "Jonny DeLuca: 2+ home runs?",
+      "series_ticker": "",
+      "event_ticker": "KXMLBHR-26OCT282000MILTB",
+      "ticker": "KXMLBHR-26OCT282000MILTB-TBJDELUCA21-2",
+      "numeric_fields": {
+        "can_close_early": true,
+        "exchange_index": 3,
+        "floor_strike": 1.5,
+        "settlement_timer_seconds": 300
+      },
+      "detected_by": "ticker"
+    },
+    {
       "title": "Jonny DeLuca: 1+ home runs?",
       "series_ticker": "",
-      "event_ticker": "KXMLBHR-26OCT272000MILTB",
-      "ticker": "KXMLBHR-26OCT272000MILTB-TBJDELUCA21-1",
+      "event_ticker": "KXMLBHR-26OCT282000MILTB",
+      "ticker": "KXMLBHR-26OCT282000MILTB-TBJDELUCA21-1",
       "numeric_fields": {
         "can_close_early": true,
         "exchange_index": 3,
@@ -1062,8 +830,8 @@
     {
       "title": "Junior Caminero: 2+ home runs?",
       "series_ticker": "",
-      "event_ticker": "KXMLBHR-26OCT272000MILTB",
-      "ticker": "KXMLBHR-26OCT272000MILTB-TBJCAMINERO13-2",
+      "event_ticker": "KXMLBHR-26OCT282000MILTB",
+      "ticker": "KXMLBHR-26OCT282000MILTB-TBJCAMINERO13-2",
       "numeric_fields": {
         "can_close_early": true,
         "exchange_index": 3,
@@ -1075,8 +843,8 @@
     {
       "title": "Junior Caminero: 1+ home runs?",
       "series_ticker": "",
-      "event_ticker": "KXMLBHR-26OCT272000MILTB",
-      "ticker": "KXMLBHR-26OCT272000MILTB-TBJCAMINERO13-1",
+      "event_ticker": "KXMLBHR-26OCT282000MILTB",
+      "ticker": "KXMLBHR-26OCT282000MILTB-TBJCAMINERO13-1",
       "numeric_fields": {
         "can_close_early": true,
         "exchange_index": 3,
@@ -1088,8 +856,8 @@
     {
       "title": "Jonathan Aranda: 2+ home runs?",
       "series_ticker": "",
-      "event_ticker": "KXMLBHR-26OCT272000MILTB",
-      "ticker": "KXMLBHR-26OCT272000MILTB-TBJARANDA8-2",
+      "event_ticker": "KXMLBHR-26OCT282000MILTB",
+      "ticker": "KXMLBHR-26OCT282000MILTB-TBJARANDA8-2",
       "numeric_fields": {
         "can_close_early": true,
         "exchange_index": 3,
@@ -1101,8 +869,8 @@
     {
       "title": "Jonathan Aranda: 1+ home runs?",
       "series_ticker": "",
-      "event_ticker": "KXMLBHR-26OCT272000MILTB",
-      "ticker": "KXMLBHR-26OCT272000MILTB-TBJARANDA8-1",
+      "event_ticker": "KXMLBHR-26OCT282000MILTB",
+      "ticker": "KXMLBHR-26OCT282000MILTB-TBJARANDA8-1",
       "numeric_fields": {
         "can_close_early": true,
         "exchange_index": 3,
@@ -1114,8 +882,8 @@
     {
       "title": "William Contreras: 2+ home runs?",
       "series_ticker": "",
-      "event_ticker": "KXMLBHR-26OCT272000MILTB",
-      "ticker": "KXMLBHR-26OCT272000MILTB-MILWCONTRERAS24-2",
+      "event_ticker": "KXMLBHR-26OCT282000MILTB",
+      "ticker": "KXMLBHR-26OCT282000MILTB-MILWCONTRERAS24-2",
       "numeric_fields": {
         "can_close_early": true,
         "exchange_index": 3,
@@ -1127,8 +895,8 @@
     {
       "title": "William Contreras: 1+ home runs?",
       "series_ticker": "",
-      "event_ticker": "KXMLBHR-26OCT272000MILTB",
-      "ticker": "KXMLBHR-26OCT272000MILTB-MILWCONTRERAS24-1",
+      "event_ticker": "KXMLBHR-26OCT282000MILTB",
+      "ticker": "KXMLBHR-26OCT282000MILTB-MILWCONTRERAS24-1",
       "numeric_fields": {
         "can_close_early": true,
         "exchange_index": 3,
@@ -1140,8 +908,8 @@
     {
       "title": "Jackson Chourio: 2+ home runs?",
       "series_ticker": "",
-      "event_ticker": "KXMLBHR-26OCT272000MILTB",
-      "ticker": "KXMLBHR-26OCT272000MILTB-MILJCHOURIO11-2",
+      "event_ticker": "KXMLBHR-26OCT282000MILTB",
+      "ticker": "KXMLBHR-26OCT282000MILTB-MILJCHOURIO11-2",
       "numeric_fields": {
         "can_close_early": true,
         "exchange_index": 3,
@@ -1153,8 +921,8 @@
     {
       "title": "Jackson Chourio: 1+ home runs?",
       "series_ticker": "",
-      "event_ticker": "KXMLBHR-26OCT272000MILTB",
-      "ticker": "KXMLBHR-26OCT272000MILTB-MILJCHOURIO11-1",
+      "event_ticker": "KXMLBHR-26OCT282000MILTB",
+      "ticker": "KXMLBHR-26OCT282000MILTB-MILJCHOURIO11-1",
       "numeric_fields": {
         "can_close_early": true,
         "exchange_index": 3,
@@ -1166,8 +934,8 @@
     {
       "title": "Jake Bauers: 2+ home runs?",
       "series_ticker": "",
-      "event_ticker": "KXMLBHR-26OCT272000MILTB",
-      "ticker": "KXMLBHR-26OCT272000MILTB-MILJBAUERS9-2",
+      "event_ticker": "KXMLBHR-26OCT282000MILTB",
+      "ticker": "KXMLBHR-26OCT282000MILTB-MILJBAUERS9-2",
       "numeric_fields": {
         "can_close_early": true,
         "exchange_index": 3,
@@ -1179,8 +947,8 @@
     {
       "title": "Jake Bauers: 1+ home runs?",
       "series_ticker": "",
-      "event_ticker": "KXMLBHR-26OCT272000MILTB",
-      "ticker": "KXMLBHR-26OCT272000MILTB-MILJBAUERS9-1",
+      "event_ticker": "KXMLBHR-26OCT282000MILTB",
+      "ticker": "KXMLBHR-26OCT282000MILTB-MILJBAUERS9-1",
       "numeric_fields": {
         "can_close_early": true,
         "exchange_index": 3,
@@ -1192,8 +960,8 @@
     {
       "title": "Garrett Mitchell: 2+ home runs?",
       "series_ticker": "",
-      "event_ticker": "KXMLBHR-26OCT272000MILTB",
-      "ticker": "KXMLBHR-26OCT272000MILTB-MILGMITCHELL5-2",
+      "event_ticker": "KXMLBHR-26OCT282000MILTB",
+      "ticker": "KXMLBHR-26OCT282000MILTB-MILGMITCHELL5-2",
       "numeric_fields": {
         "can_close_early": true,
         "exchange_index": 3,
@@ -1205,8 +973,8 @@
     {
       "title": "Garrett Mitchell: 1+ home runs?",
       "series_ticker": "",
-      "event_ticker": "KXMLBHR-26OCT272000MILTB",
-      "ticker": "KXMLBHR-26OCT272000MILTB-MILGMITCHELL5-1",
+      "event_ticker": "KXMLBHR-26OCT282000MILTB",
+      "ticker": "KXMLBHR-26OCT282000MILTB-MILGMITCHELL5-1",
       "numeric_fields": {
         "can_close_early": true,
         "exchange_index": 3,
@@ -1218,8 +986,8 @@
     {
       "title": "Cooper Pratt: 1+ home runs?",
       "series_ticker": "",
-      "event_ticker": "KXMLBHR-26OCT272000MILTB",
-      "ticker": "KXMLBHR-26OCT272000MILTB-MILCPRATT87-1",
+      "event_ticker": "KXMLBHR-26OCT282000MILTB",
+      "ticker": "KXMLBHR-26OCT282000MILTB-MILCPRATT87-1",
       "numeric_fields": {
         "can_close_early": true,
         "exchange_index": 3,
@@ -1231,8 +999,8 @@
     {
       "title": "Brice Turang: 2+ home runs?",
       "series_ticker": "",
-      "event_ticker": "KXMLBHR-26OCT272000MILTB",
-      "ticker": "KXMLBHR-26OCT272000MILTB-MILBTURANG2-2",
+      "event_ticker": "KXMLBHR-26OCT282000MILTB",
+      "ticker": "KXMLBHR-26OCT282000MILTB-MILBTURANG2-2",
       "numeric_fields": {
         "can_close_early": true,
         "exchange_index": 3,
@@ -1244,437 +1012,8 @@
     {
       "title": "Brice Turang: 1+ home runs?",
       "series_ticker": "",
-      "event_ticker": "KXMLBHR-26OCT272000MILTB",
-      "ticker": "KXMLBHR-26OCT272000MILTB-MILBTURANG2-1",
-      "numeric_fields": {
-        "can_close_early": true,
-        "exchange_index": 3,
-        "floor_strike": 0.5,
-        "settlement_timer_seconds": 300
-      },
-      "detected_by": "ticker"
-    },
-    {
-      "title": "Sal Frelick: 5+ hits + runs + RBIs?",
-      "series_ticker": "",
-      "event_ticker": "KXMLBHRR-26OCT272000MILTB",
-      "ticker": "KXMLBHRR-26OCT272000MILTB-MILSFRELICK10-5",
-      "numeric_fields": {
-        "can_close_early": true,
-        "exchange_index": 3,
-        "floor_strike": 4.5,
-        "settlement_timer_seconds": 300
-      },
-      "detected_by": "ticker"
-    },
-    {
-      "title": "Sal Frelick: 4+ hits + runs + RBIs?",
-      "series_ticker": "",
-      "event_ticker": "KXMLBHRR-26OCT272000MILTB",
-      "ticker": "KXMLBHRR-26OCT272000MILTB-MILSFRELICK10-4",
-      "numeric_fields": {
-        "can_close_early": true,
-        "exchange_index": 3,
-        "floor_strike": 3.5,
-        "settlement_timer_seconds": 300
-      },
-      "detected_by": "ticker"
-    },
-    {
-      "title": "Sal Frelick: 3+ hits + runs + RBIs?",
-      "series_ticker": "",
-      "event_ticker": "KXMLBHRR-26OCT272000MILTB",
-      "ticker": "KXMLBHRR-26OCT272000MILTB-MILSFRELICK10-3",
-      "numeric_fields": {
-        "can_close_early": true,
-        "exchange_index": 3,
-        "floor_strike": 2.5,
-        "settlement_timer_seconds": 300
-      },
-      "detected_by": "ticker"
-    },
-    {
-      "title": "Sal Frelick: 2+ hits + runs + RBIs?",
-      "series_ticker": "",
-      "event_ticker": "KXMLBHRR-26OCT272000MILTB",
-      "ticker": "KXMLBHRR-26OCT272000MILTB-MILSFRELICK10-2",
-      "numeric_fields": {
-        "can_close_early": true,
-        "exchange_index": 3,
-        "floor_strike": 1.5,
-        "settlement_timer_seconds": 300
-      },
-      "detected_by": "ticker"
-    },
-    {
-      "title": "Sal Frelick: 1+ hits + runs + RBIs?",
-      "series_ticker": "",
-      "event_ticker": "KXMLBHRR-26OCT272000MILTB",
-      "ticker": "KXMLBHRR-26OCT272000MILTB-MILSFRELICK10-1",
-      "numeric_fields": {
-        "can_close_early": true,
-        "exchange_index": 3,
-        "floor_strike": 0.5,
-        "settlement_timer_seconds": 300
-      },
-      "detected_by": "ticker"
-    },
-    {
-      "title": "Ryan Vilade: 5+ hits + runs + RBIs?",
-      "series_ticker": "",
-      "event_ticker": "KXMLBHRR-26OCT272000MILTB",
-      "ticker": "KXMLBHRR-26OCT272000MILTB-TBRVILADE26-5",
-      "numeric_fields": {
-        "can_close_early": true,
-        "exchange_index": 3,
-        "floor_strike": 4.5,
-        "settlement_timer_seconds": 300
-      },
-      "detected_by": "ticker"
-    },
-    {
-      "title": "Ryan Vilade: 4+ hits + runs + RBIs?",
-      "series_ticker": "",
-      "event_ticker": "KXMLBHRR-26OCT272000MILTB",
-      "ticker": "KXMLBHRR-26OCT272000MILTB-TBRVILADE26-4",
-      "numeric_fields": {
-        "can_close_early": true,
-        "exchange_index": 3,
-        "floor_strike": 3.5,
-        "settlement_timer_seconds": 300
-      },
-      "detected_by": "ticker"
-    },
-    {
-      "title": "Ryan Vilade: 3+ hits + runs + RBIs?",
-      "series_ticker": "",
-      "event_ticker": "KXMLBHRR-26OCT272000MILTB",
-      "ticker": "KXMLBHRR-26OCT272000MILTB-TBRVILADE26-3",
-      "numeric_fields": {
-        "can_close_early": true,
-        "exchange_index": 3,
-        "floor_strike": 2.5,
-        "settlement_timer_seconds": 300
-      },
-      "detected_by": "ticker"
-    },
-    {
-      "title": "Ryan Vilade: 2+ hits + runs + RBIs?",
-      "series_ticker": "",
-      "event_ticker": "KXMLBHRR-26OCT272000MILTB",
-      "ticker": "KXMLBHRR-26OCT272000MILTB-TBRVILADE26-2",
-      "numeric_fields": {
-        "can_close_early": true,
-        "exchange_index": 3,
-        "floor_strike": 1.5,
-        "settlement_timer_seconds": 300
-      },
-      "detected_by": "ticker"
-    },
-    {
-      "title": "Ryan Vilade: 1+ hits + runs + RBIs?",
-      "series_ticker": "",
-      "event_ticker": "KXMLBHRR-26OCT272000MILTB",
-      "ticker": "KXMLBHRR-26OCT272000MILTB-TBRVILADE26-1",
-      "numeric_fields": {
-        "can_close_early": true,
-        "exchange_index": 3,
-        "floor_strike": 0.5,
-        "settlement_timer_seconds": 300
-      },
-      "detected_by": "ticker"
-    },
-    {
-      "title": "Richie Palacios: 4+ hits + runs + RBIs?",
-      "series_ticker": "",
-      "event_ticker": "KXMLBHRR-26OCT272000MILTB",
-      "ticker": "KXMLBHRR-26OCT272000MILTB-TBRPALACIOS1-4",
-      "numeric_fields": {
-        "can_close_early": true,
-        "exchange_index": 3,
-        "floor_strike": 3.5,
-        "settlement_timer_seconds": 300
-      },
-      "detected_by": "ticker"
-    },
-    {
-      "title": "Richie Palacios: 3+ hits + runs + RBIs?",
-      "series_ticker": "",
-      "event_ticker": "KXMLBHRR-26OCT272000MILTB",
-      "ticker": "KXMLBHRR-26OCT272000MILTB-TBRPALACIOS1-3",
-      "numeric_fields": {
-        "can_close_early": true,
-        "exchange_index": 3,
-        "floor_strike": 2.5,
-        "settlement_timer_seconds": 300
-      },
-      "detected_by": "ticker"
-    },
-    {
-      "title": "Richie Palacios: 2+ hits + runs + RBIs?",
-      "series_ticker": "",
-      "event_ticker": "KXMLBHRR-26OCT272000MILTB",
-      "ticker": "KXMLBHRR-26OCT272000MILTB-TBRPALACIOS1-2",
-      "numeric_fields": {
-        "can_close_early": true,
-        "exchange_index": 3,
-        "floor_strike": 1.5,
-        "settlement_timer_seconds": 300
-      },
-      "detected_by": "ticker"
-    },
-    {
-      "title": "Richie Palacios: 1+ hits + runs + RBIs?",
-      "series_ticker": "",
-      "event_ticker": "KXMLBHRR-26OCT272000MILTB",
-      "ticker": "KXMLBHRR-26OCT272000MILTB-TBRPALACIOS1-1",
-      "numeric_fields": {
-        "can_close_early": true,
-        "exchange_index": 3,
-        "floor_strike": 0.5,
-        "settlement_timer_seconds": 300
-      },
-      "detected_by": "ticker"
-    },
-    {
-      "title": "Liam Hicks: 5+ hits + runs + RBIs?",
-      "series_ticker": "",
-      "event_ticker": "KXMLBHRR-26OCT272000MILTB",
-      "ticker": "KXMLBHRR-26OCT272000MILTB-TBLHICKS34-5",
-      "numeric_fields": {
-        "can_close_early": true,
-        "exchange_index": 3,
-        "floor_strike": 4.5,
-        "settlement_timer_seconds": 300
-      },
-      "detected_by": "ticker"
-    },
-    {
-      "title": "Liam Hicks: 4+ hits + runs + RBIs?",
-      "series_ticker": "",
-      "event_ticker": "KXMLBHRR-26OCT272000MILTB",
-      "ticker": "KXMLBHRR-26OCT272000MILTB-TBLHICKS34-4",
-      "numeric_fields": {
-        "can_close_early": true,
-        "exchange_index": 3,
-        "floor_strike": 3.5,
-        "settlement_timer_seconds": 300
-      },
-      "detected_by": "ticker"
-    },
-    {
-      "title": "Liam Hicks: 3+ hits + runs + RBIs?",
-      "series_ticker": "",
-      "event_ticker": "KXMLBHRR-26OCT272000MILTB",
-      "ticker": "KXMLBHRR-26OCT272000MILTB-TBLHICKS34-3",
-      "numeric_fields": {
-        "can_close_early": true,
-        "exchange_index": 3,
-        "floor_strike": 2.5,
-        "settlement_timer_seconds": 300
-      },
-      "detected_by": "ticker"
-    },
-    {
-      "title": "Liam Hicks: 2+ hits + runs + RBIs?",
-      "series_ticker": "",
-      "event_ticker": "KXMLBHRR-26OCT272000MILTB",
-      "ticker": "KXMLBHRR-26OCT272000MILTB-TBLHICKS34-2",
-      "numeric_fields": {
-        "can_close_early": true,
-        "exchange_index": 3,
-        "floor_strike": 1.5,
-        "settlement_timer_seconds": 300
-      },
-      "detected_by": "ticker"
-    },
-    {
-      "title": "Liam Hicks: 1+ hits + runs + RBIs?",
-      "series_ticker": "",
-      "event_ticker": "KXMLBHRR-26OCT272000MILTB",
-      "ticker": "KXMLBHRR-26OCT272000MILTB-TBLHICKS34-1",
-      "numeric_fields": {
-        "can_close_early": true,
-        "exchange_index": 3,
-        "floor_strike": 0.5,
-        "settlement_timer_seconds": 300
-      },
-      "detected_by": "ticker"
-    },
-    {
-      "title": "David Hamilton: 4+ hits + runs + RBIs?",
-      "series_ticker": "",
-      "event_ticker": "KXMLBHRR-26OCT272000MILTB",
-      "ticker": "KXMLBHRR-26OCT272000MILTB-MILDHAMILTON6-4",
-      "numeric_fields": {
-        "can_close_early": true,
-        "exchange_index": 3,
-        "floor_strike": 3.5,
-        "settlement_timer_seconds": 300
-      },
-      "detected_by": "ticker"
-    },
-    {
-      "title": "David Hamilton: 3+ hits + runs + RBIs?",
-      "series_ticker": "",
-      "event_ticker": "KXMLBHRR-26OCT272000MILTB",
-      "ticker": "KXMLBHRR-26OCT272000MILTB-MILDHAMILTON6-3",
-      "numeric_fields": {
-        "can_close_early": true,
-        "exchange_index": 3,
-        "floor_strike": 2.5,
-        "settlement_timer_seconds": 300
-      },
-      "detected_by": "ticker"
-    },
-    {
-      "title": "David Hamilton: 2+ hits + runs + RBIs?",
-      "series_ticker": "",
-      "event_ticker": "KXMLBHRR-26OCT272000MILTB",
-      "ticker": "KXMLBHRR-26OCT272000MILTB-MILDHAMILTON6-2",
-      "numeric_fields": {
-        "can_close_early": true,
-        "exchange_index": 3,
-        "floor_strike": 1.5,
-        "settlement_timer_seconds": 300
-      },
-      "detected_by": "ticker"
-    },
-    {
-      "title": "David Hamilton: 1+ hits + runs + RBIs?",
-      "series_ticker": "",
-      "event_ticker": "KXMLBHRR-26OCT272000MILTB",
-      "ticker": "KXMLBHRR-26OCT272000MILTB-MILDHAMILTON6-1",
-      "numeric_fields": {
-        "can_close_early": true,
-        "exchange_index": 3,
-        "floor_strike": 0.5,
-        "settlement_timer_seconds": 300
-      },
-      "detected_by": "ticker"
-    },
-    {
-      "title": "Christian Yelich: 5+ hits + runs + RBIs?",
-      "series_ticker": "",
-      "event_ticker": "KXMLBHRR-26OCT272000MILTB",
-      "ticker": "KXMLBHRR-26OCT272000MILTB-MILCYELICH22-5",
-      "numeric_fields": {
-        "can_close_early": true,
-        "exchange_index": 3,
-        "floor_strike": 4.5,
-        "settlement_timer_seconds": 300
-      },
-      "detected_by": "ticker"
-    },
-    {
-      "title": "Christian Yelich: 4+ hits + runs + RBIs?",
-      "series_ticker": "",
-      "event_ticker": "KXMLBHRR-26OCT272000MILTB",
-      "ticker": "KXMLBHRR-26OCT272000MILTB-MILCYELICH22-4",
-      "numeric_fields": {
-        "can_close_early": true,
-        "exchange_index": 3,
-        "floor_strike": 3.5,
-        "settlement_timer_seconds": 300
-      },
-      "detected_by": "ticker"
-    },
-    {
-      "title": "Christian Yelich: 3+ hits + runs + RBIs?",
-      "series_ticker": "",
-      "event_ticker": "KXMLBHRR-26OCT272000MILTB",
-      "ticker": "KXMLBHRR-26OCT272000MILTB-MILCYELICH22-3",
-      "numeric_fields": {
-        "can_close_early": true,
-        "exchange_index": 3,
-        "floor_strike": 2.5,
-        "settlement_timer_seconds": 300
-      },
-      "detected_by": "ticker"
-    },
-    {
-      "title": "Christian Yelich: 2+ hits + runs + RBIs?",
-      "series_ticker": "",
-      "event_ticker": "KXMLBHRR-26OCT272000MILTB",
-      "ticker": "KXMLBHRR-26OCT272000MILTB-MILCYELICH22-2",
-      "numeric_fields": {
-        "can_close_early": true,
-        "exchange_index": 3,
-        "floor_strike": 1.5,
-        "settlement_timer_seconds": 300
-      },
-      "detected_by": "ticker"
-    },
-    {
-      "title": "Christian Yelich: 1+ hits + runs + RBIs?",
-      "series_ticker": "",
-      "event_ticker": "KXMLBHRR-26OCT272000MILTB",
-      "ticker": "KXMLBHRR-26OCT272000MILTB-MILCYELICH22-1",
-      "numeric_fields": {
-        "can_close_early": true,
-        "exchange_index": 3,
-        "floor_strike": 0.5,
-        "settlement_timer_seconds": 300
-      },
-      "detected_by": "ticker"
-    },
-    {
-      "title": "Chandler Simpson: 5+ hits + runs + RBIs?",
-      "series_ticker": "",
-      "event_ticker": "KXMLBHRR-26OCT272000MILTB",
-      "ticker": "KXMLBHRR-26OCT272000MILTB-TBCSIMPSON14-5",
-      "numeric_fields": {
-        "can_close_early": true,
-        "exchange_index": 3,
-        "floor_strike": 4.5,
-        "settlement_timer_seconds": 300
-      },
-      "detected_by": "ticker"
-    },
-    {
-      "title": "Chandler Simpson: 4+ hits + runs + RBIs?",
-      "series_ticker": "",
-      "event_ticker": "KXMLBHRR-26OCT272000MILTB",
-      "ticker": "KXMLBHRR-26OCT272000MILTB-TBCSIMPSON14-4",
-      "numeric_fields": {
-        "can_close_early": true,
-        "exchange_index": 3,
-        "floor_strike": 3.5,
-        "settlement_timer_seconds": 300
-      },
-      "detected_by": "ticker"
-    },
-    {
-      "title": "Chandler Simpson: 3+ hits + runs + RBIs?",
-      "series_ticker": "",
-      "event_ticker": "KXMLBHRR-26OCT272000MILTB",
-      "ticker": "KXMLBHRR-26OCT272000MILTB-TBCSIMPSON14-3",
-      "numeric_fields": {
-        "can_close_early": true,
-        "exchange_index": 3,
-        "floor_strike": 2.5,
-        "settlement_timer_seconds": 300
-      },
-      "detected_by": "ticker"
-    },
-    {
-      "title": "Chandler Simpson: 2+ hits + runs + RBIs?",
-      "series_ticker": "",
-      "event_ticker": "KXMLBHRR-26OCT272000MILTB",
-      "ticker": "KXMLBHRR-26OCT272000MILTB-TBCSIMPSON14-2",
-      "numeric_fields": {
-        "can_close_early": true,
-        "exchange_index": 3,
-        "floor_strike": 1.5,
-        "settlement_timer_seconds": 300
-      },
-      "detected_by": "ticker"
-    },
-    {
-      "title": "Chandler Simpson: 1+ hits + runs + RBIs?",
-      "series_ticker": "",
-      "event_ticker": "KXMLBHRR-26OCT272000MILTB",
-      "ticker": "KXMLBHRR-26OCT272000MILTB-TBCSIMPSON14-1",
+      "event_ticker": "KXMLBHR-26OCT282000MILTB",
+      "ticker": "KXMLBHR-26OCT282000MILTB-MILBTURANG2-1",
       "numeric_fields": {
         "can_close_early": true,
         "exchange_index": 3,
@@ -1686,8 +1025,8 @@
     {
       "title": "Yandy D\u00edaz: 5+ hits + runs + RBIs?",
       "series_ticker": "",
-      "event_ticker": "KXMLBHRR-26OCT272000MILTB",
-      "ticker": "KXMLBHRR-26OCT272000MILTB-TBYDIAZ2-5",
+      "event_ticker": "KXMLBHRR-26OCT282000MILTB",
+      "ticker": "KXMLBHRR-26OCT282000MILTB-TBYDIAZ2-5",
       "numeric_fields": {
         "can_close_early": true,
         "exchange_index": 3,
@@ -1699,8 +1038,8 @@
     {
       "title": "Yandy D\u00edaz: 4+ hits + runs + RBIs?",
       "series_ticker": "",
-      "event_ticker": "KXMLBHRR-26OCT272000MILTB",
-      "ticker": "KXMLBHRR-26OCT272000MILTB-TBYDIAZ2-4",
+      "event_ticker": "KXMLBHRR-26OCT282000MILTB",
+      "ticker": "KXMLBHRR-26OCT282000MILTB-TBYDIAZ2-4",
       "numeric_fields": {
         "can_close_early": true,
         "exchange_index": 3,
@@ -1712,8 +1051,8 @@
     {
       "title": "Yandy D\u00edaz: 3+ hits + runs + RBIs?",
       "series_ticker": "",
-      "event_ticker": "KXMLBHRR-26OCT272000MILTB",
-      "ticker": "KXMLBHRR-26OCT272000MILTB-TBYDIAZ2-3",
+      "event_ticker": "KXMLBHRR-26OCT282000MILTB",
+      "ticker": "KXMLBHRR-26OCT282000MILTB-TBYDIAZ2-3",
       "numeric_fields": {
         "can_close_early": true,
         "exchange_index": 3,
@@ -1725,8 +1064,8 @@
     {
       "title": "Yandy D\u00edaz: 2+ hits + runs + RBIs?",
       "series_ticker": "",
-      "event_ticker": "KXMLBHRR-26OCT272000MILTB",
-      "ticker": "KXMLBHRR-26OCT272000MILTB-TBYDIAZ2-2",
+      "event_ticker": "KXMLBHRR-26OCT282000MILTB",
+      "ticker": "KXMLBHRR-26OCT282000MILTB-TBYDIAZ2-2",
       "numeric_fields": {
         "can_close_early": true,
         "exchange_index": 3,
@@ -1738,8 +1077,8 @@
     {
       "title": "Yandy D\u00edaz: 1+ hits + runs + RBIs?",
       "series_ticker": "",
-      "event_ticker": "KXMLBHRR-26OCT272000MILTB",
-      "ticker": "KXMLBHRR-26OCT272000MILTB-TBYDIAZ2-1",
+      "event_ticker": "KXMLBHRR-26OCT282000MILTB",
+      "ticker": "KXMLBHRR-26OCT282000MILTB-TBYDIAZ2-1",
       "numeric_fields": {
         "can_close_early": true,
         "exchange_index": 3,
@@ -1751,8 +1090,8 @@
     {
       "title": "Taylor Walls: 4+ hits + runs + RBIs?",
       "series_ticker": "",
-      "event_ticker": "KXMLBHRR-26OCT272000MILTB",
-      "ticker": "KXMLBHRR-26OCT272000MILTB-TBTWALLS6-4",
+      "event_ticker": "KXMLBHRR-26OCT282000MILTB",
+      "ticker": "KXMLBHRR-26OCT282000MILTB-TBTWALLS6-4",
       "numeric_fields": {
         "can_close_early": true,
         "exchange_index": 3,
@@ -1764,8 +1103,8 @@
     {
       "title": "Taylor Walls: 3+ hits + runs + RBIs?",
       "series_ticker": "",
-      "event_ticker": "KXMLBHRR-26OCT272000MILTB",
-      "ticker": "KXMLBHRR-26OCT272000MILTB-TBTWALLS6-3",
+      "event_ticker": "KXMLBHRR-26OCT282000MILTB",
+      "ticker": "KXMLBHRR-26OCT282000MILTB-TBTWALLS6-3",
       "numeric_fields": {
         "can_close_early": true,
         "exchange_index": 3,
@@ -1777,8 +1116,8 @@
     {
       "title": "Taylor Walls: 2+ hits + runs + RBIs?",
       "series_ticker": "",
-      "event_ticker": "KXMLBHRR-26OCT272000MILTB",
-      "ticker": "KXMLBHRR-26OCT272000MILTB-TBTWALLS6-2",
+      "event_ticker": "KXMLBHRR-26OCT282000MILTB",
+      "ticker": "KXMLBHRR-26OCT282000MILTB-TBTWALLS6-2",
       "numeric_fields": {
         "can_close_early": true,
         "exchange_index": 3,
@@ -1790,8 +1129,8 @@
     {
       "title": "Taylor Walls: 1+ hits + runs + RBIs?",
       "series_ticker": "",
-      "event_ticker": "KXMLBHRR-26OCT272000MILTB",
-      "ticker": "KXMLBHRR-26OCT272000MILTB-TBTWALLS6-1",
+      "event_ticker": "KXMLBHRR-26OCT282000MILTB",
+      "ticker": "KXMLBHRR-26OCT282000MILTB-TBTWALLS6-1",
       "numeric_fields": {
         "can_close_early": true,
         "exchange_index": 3,
@@ -1803,8 +1142,8 @@
     {
       "title": "Jonny DeLuca: 5+ hits + runs + RBIs?",
       "series_ticker": "",
-      "event_ticker": "KXMLBHRR-26OCT272000MILTB",
-      "ticker": "KXMLBHRR-26OCT272000MILTB-TBJDELUCA21-5",
+      "event_ticker": "KXMLBHRR-26OCT282000MILTB",
+      "ticker": "KXMLBHRR-26OCT282000MILTB-TBJDELUCA21-5",
       "numeric_fields": {
         "can_close_early": true,
         "exchange_index": 3,
@@ -1816,8 +1155,8 @@
     {
       "title": "Jonny DeLuca: 4+ hits + runs + RBIs?",
       "series_ticker": "",
-      "event_ticker": "KXMLBHRR-26OCT272000MILTB",
-      "ticker": "KXMLBHRR-26OCT272000MILTB-TBJDELUCA21-4",
+      "event_ticker": "KXMLBHRR-26OCT282000MILTB",
+      "ticker": "KXMLBHRR-26OCT282000MILTB-TBJDELUCA21-4",
       "numeric_fields": {
         "can_close_early": true,
         "exchange_index": 3,
@@ -1829,8 +1168,8 @@
     {
       "title": "Jonny DeLuca: 3+ hits + runs + RBIs?",
       "series_ticker": "",
-      "event_ticker": "KXMLBHRR-26OCT272000MILTB",
-      "ticker": "KXMLBHRR-26OCT272000MILTB-TBJDELUCA21-3",
+      "event_ticker": "KXMLBHRR-26OCT282000MILTB",
+      "ticker": "KXMLBHRR-26OCT282000MILTB-TBJDELUCA21-3",
       "numeric_fields": {
         "can_close_early": true,
         "exchange_index": 3,
@@ -1842,8 +1181,8 @@
     {
       "title": "Jonny DeLuca: 2+ hits + runs + RBIs?",
       "series_ticker": "",
-      "event_ticker": "KXMLBHRR-26OCT272000MILTB",
-      "ticker": "KXMLBHRR-26OCT272000MILTB-TBJDELUCA21-2",
+      "event_ticker": "KXMLBHRR-26OCT282000MILTB",
+      "ticker": "KXMLBHRR-26OCT282000MILTB-TBJDELUCA21-2",
       "numeric_fields": {
         "can_close_early": true,
         "exchange_index": 3,
@@ -1855,8 +1194,8 @@
     {
       "title": "Jonny DeLuca: 1+ hits + runs + RBIs?",
       "series_ticker": "",
-      "event_ticker": "KXMLBHRR-26OCT272000MILTB",
-      "ticker": "KXMLBHRR-26OCT272000MILTB-TBJDELUCA21-1",
+      "event_ticker": "KXMLBHRR-26OCT282000MILTB",
+      "ticker": "KXMLBHRR-26OCT282000MILTB-TBJDELUCA21-1",
       "numeric_fields": {
         "can_close_early": true,
         "exchange_index": 3,
@@ -1868,8 +1207,8 @@
     {
       "title": "Junior Caminero: 5+ hits + runs + RBIs?",
       "series_ticker": "",
-      "event_ticker": "KXMLBHRR-26OCT272000MILTB",
-      "ticker": "KXMLBHRR-26OCT272000MILTB-TBJCAMINERO13-5",
+      "event_ticker": "KXMLBHRR-26OCT282000MILTB",
+      "ticker": "KXMLBHRR-26OCT282000MILTB-TBJCAMINERO13-5",
       "numeric_fields": {
         "can_close_early": true,
         "exchange_index": 3,
@@ -1881,8 +1220,8 @@
     {
       "title": "Junior Caminero: 4+ hits + runs + RBIs?",
       "series_ticker": "",
-      "event_ticker": "KXMLBHRR-26OCT272000MILTB",
-      "ticker": "KXMLBHRR-26OCT272000MILTB-TBJCAMINERO13-4",
+      "event_ticker": "KXMLBHRR-26OCT282000MILTB",
+      "ticker": "KXMLBHRR-26OCT282000MILTB-TBJCAMINERO13-4",
       "numeric_fields": {
         "can_close_early": true,
         "exchange_index": 3,
@@ -1894,8 +1233,8 @@
     {
       "title": "Junior Caminero: 3+ hits + runs + RBIs?",
       "series_ticker": "",
-      "event_ticker": "KXMLBHRR-26OCT272000MILTB",
-      "ticker": "KXMLBHRR-26OCT272000MILTB-TBJCAMINERO13-3",
+      "event_ticker": "KXMLBHRR-26OCT282000MILTB",
+      "ticker": "KXMLBHRR-26OCT282000MILTB-TBJCAMINERO13-3",
       "numeric_fields": {
         "can_close_early": true,
         "exchange_index": 3,
@@ -1907,8 +1246,8 @@
     {
       "title": "Junior Caminero: 2+ hits + runs + RBIs?",
       "series_ticker": "",
-      "event_ticker": "KXMLBHRR-26OCT272000MILTB",
-      "ticker": "KXMLBHRR-26OCT272000MILTB-TBJCAMINERO13-2",
+      "event_ticker": "KXMLBHRR-26OCT282000MILTB",
+      "ticker": "KXMLBHRR-26OCT282000MILTB-TBJCAMINERO13-2",
       "numeric_fields": {
         "can_close_early": true,
         "exchange_index": 3,
@@ -1920,8 +1259,8 @@
     {
       "title": "Junior Caminero: 1+ hits + runs + RBIs?",
       "series_ticker": "",
-      "event_ticker": "KXMLBHRR-26OCT272000MILTB",
-      "ticker": "KXMLBHRR-26OCT272000MILTB-TBJCAMINERO13-1",
+      "event_ticker": "KXMLBHRR-26OCT282000MILTB",
+      "ticker": "KXMLBHRR-26OCT282000MILTB-TBJCAMINERO13-1",
       "numeric_fields": {
         "can_close_early": true,
         "exchange_index": 3,
@@ -1933,8 +1272,8 @@
     {
       "title": "Jonathan Aranda: 5+ hits + runs + RBIs?",
       "series_ticker": "",
-      "event_ticker": "KXMLBHRR-26OCT272000MILTB",
-      "ticker": "KXMLBHRR-26OCT272000MILTB-TBJARANDA8-5",
+      "event_ticker": "KXMLBHRR-26OCT282000MILTB",
+      "ticker": "KXMLBHRR-26OCT282000MILTB-TBJARANDA8-5",
       "numeric_fields": {
         "can_close_early": true,
         "exchange_index": 3,
@@ -1946,8 +1285,8 @@
     {
       "title": "Jonathan Aranda: 4+ hits + runs + RBIs?",
       "series_ticker": "",
-      "event_ticker": "KXMLBHRR-26OCT272000MILTB",
-      "ticker": "KXMLBHRR-26OCT272000MILTB-TBJARANDA8-4",
+      "event_ticker": "KXMLBHRR-26OCT282000MILTB",
+      "ticker": "KXMLBHRR-26OCT282000MILTB-TBJARANDA8-4",
       "numeric_fields": {
         "can_close_early": true,
         "exchange_index": 3,
@@ -1959,8 +1298,8 @@
     {
       "title": "Jonathan Aranda: 3+ hits + runs + RBIs?",
       "series_ticker": "",
-      "event_ticker": "KXMLBHRR-26OCT272000MILTB",
-      "ticker": "KXMLBHRR-26OCT272000MILTB-TBJARANDA8-3",
+      "event_ticker": "KXMLBHRR-26OCT282000MILTB",
+      "ticker": "KXMLBHRR-26OCT282000MILTB-TBJARANDA8-3",
       "numeric_fields": {
         "can_close_early": true,
         "exchange_index": 3,
@@ -1972,8 +1311,8 @@
     {
       "title": "Jonathan Aranda: 2+ hits + runs + RBIs?",
       "series_ticker": "",
-      "event_ticker": "KXMLBHRR-26OCT272000MILTB",
-      "ticker": "KXMLBHRR-26OCT272000MILTB-TBJARANDA8-2",
+      "event_ticker": "KXMLBHRR-26OCT282000MILTB",
+      "ticker": "KXMLBHRR-26OCT282000MILTB-TBJARANDA8-2",
       "numeric_fields": {
         "can_close_early": true,
         "exchange_index": 3,
@@ -1985,8 +1324,8 @@
     {
       "title": "Jonathan Aranda: 1+ hits + runs + RBIs?",
       "series_ticker": "",
-      "event_ticker": "KXMLBHRR-26OCT272000MILTB",
-      "ticker": "KXMLBHRR-26OCT272000MILTB-TBJARANDA8-1",
+      "event_ticker": "KXMLBHRR-26OCT282000MILTB",
+      "ticker": "KXMLBHRR-26OCT282000MILTB-TBJARANDA8-1",
       "numeric_fields": {
         "can_close_early": true,
         "exchange_index": 3,
@@ -1998,8 +1337,8 @@
     {
       "title": "William Contreras: 5+ hits + runs + RBIs?",
       "series_ticker": "",
-      "event_ticker": "KXMLBHRR-26OCT272000MILTB",
-      "ticker": "KXMLBHRR-26OCT272000MILTB-MILWCONTRERAS24-5",
+      "event_ticker": "KXMLBHRR-26OCT282000MILTB",
+      "ticker": "KXMLBHRR-26OCT282000MILTB-MILWCONTRERAS24-5",
       "numeric_fields": {
         "can_close_early": true,
         "exchange_index": 3,
@@ -2011,8 +1350,8 @@
     {
       "title": "William Contreras: 4+ hits + runs + RBIs?",
       "series_ticker": "",
-      "event_ticker": "KXMLBHRR-26OCT272000MILTB",
-      "ticker": "KXMLBHRR-26OCT272000MILTB-MILWCONTRERAS24-4",
+      "event_ticker": "KXMLBHRR-26OCT282000MILTB",
+      "ticker": "KXMLBHRR-26OCT282000MILTB-MILWCONTRERAS24-4",
       "numeric_fields": {
         "can_close_early": true,
         "exchange_index": 3,
@@ -2024,8 +1363,8 @@
     {
       "title": "William Contreras: 3+ hits + runs + RBIs?",
       "series_ticker": "",
-      "event_ticker": "KXMLBHRR-26OCT272000MILTB",
-      "ticker": "KXMLBHRR-26OCT272000MILTB-MILWCONTRERAS24-3",
+      "event_ticker": "KXMLBHRR-26OCT282000MILTB",
+      "ticker": "KXMLBHRR-26OCT282000MILTB-MILWCONTRERAS24-3",
       "numeric_fields": {
         "can_close_early": true,
         "exchange_index": 3,
@@ -2037,8 +1376,8 @@
     {
       "title": "William Contreras: 2+ hits + runs + RBIs?",
       "series_ticker": "",
-      "event_ticker": "KXMLBHRR-26OCT272000MILTB",
-      "ticker": "KXMLBHRR-26OCT272000MILTB-MILWCONTRERAS24-2",
+      "event_ticker": "KXMLBHRR-26OCT282000MILTB",
+      "ticker": "KXMLBHRR-26OCT282000MILTB-MILWCONTRERAS24-2",
       "numeric_fields": {
         "can_close_early": true,
         "exchange_index": 3,
@@ -2050,8 +1389,8 @@
     {
       "title": "William Contreras: 1+ hits + runs + RBIs?",
       "series_ticker": "",
-      "event_ticker": "KXMLBHRR-26OCT272000MILTB",
-      "ticker": "KXMLBHRR-26OCT272000MILTB-MILWCONTRERAS24-1",
+      "event_ticker": "KXMLBHRR-26OCT282000MILTB",
+      "ticker": "KXMLBHRR-26OCT282000MILTB-MILWCONTRERAS24-1",
       "numeric_fields": {
         "can_close_early": true,
         "exchange_index": 3,
@@ -2063,8 +1402,8 @@
     {
       "title": "Jackson Chourio: 5+ hits + runs + RBIs?",
       "series_ticker": "",
-      "event_ticker": "KXMLBHRR-26OCT272000MILTB",
-      "ticker": "KXMLBHRR-26OCT272000MILTB-MILJCHOURIO11-5",
+      "event_ticker": "KXMLBHRR-26OCT282000MILTB",
+      "ticker": "KXMLBHRR-26OCT282000MILTB-MILJCHOURIO11-5",
       "numeric_fields": {
         "can_close_early": true,
         "exchange_index": 3,
@@ -2076,8 +1415,8 @@
     {
       "title": "Jackson Chourio: 4+ hits + runs + RBIs?",
       "series_ticker": "",
-      "event_ticker": "KXMLBHRR-26OCT272000MILTB",
-      "ticker": "KXMLBHRR-26OCT272000MILTB-MILJCHOURIO11-4",
+      "event_ticker": "KXMLBHRR-26OCT282000MILTB",
+      "ticker": "KXMLBHRR-26OCT282000MILTB-MILJCHOURIO11-4",
       "numeric_fields": {
         "can_close_early": true,
         "exchange_index": 3,
@@ -2089,8 +1428,8 @@
     {
       "title": "Jackson Chourio: 3+ hits + runs + RBIs?",
       "series_ticker": "",
-      "event_ticker": "KXMLBHRR-26OCT272000MILTB",
-      "ticker": "KXMLBHRR-26OCT272000MILTB-MILJCHOURIO11-3",
+      "event_ticker": "KXMLBHRR-26OCT282000MILTB",
+      "ticker": "KXMLBHRR-26OCT282000MILTB-MILJCHOURIO11-3",
       "numeric_fields": {
         "can_close_early": true,
         "exchange_index": 3,
@@ -2102,8 +1441,8 @@
     {
       "title": "Jackson Chourio: 2+ hits + runs + RBIs?",
       "series_ticker": "",
-      "event_ticker": "KXMLBHRR-26OCT272000MILTB",
-      "ticker": "KXMLBHRR-26OCT272000MILTB-MILJCHOURIO11-2",
+      "event_ticker": "KXMLBHRR-26OCT282000MILTB",
+      "ticker": "KXMLBHRR-26OCT282000MILTB-MILJCHOURIO11-2",
       "numeric_fields": {
         "can_close_early": true,
         "exchange_index": 3,
@@ -2115,8 +1454,8 @@
     {
       "title": "Jackson Chourio: 1+ hits + runs + RBIs?",
       "series_ticker": "",
-      "event_ticker": "KXMLBHRR-26OCT272000MILTB",
-      "ticker": "KXMLBHRR-26OCT272000MILTB-MILJCHOURIO11-1",
+      "event_ticker": "KXMLBHRR-26OCT282000MILTB",
+      "ticker": "KXMLBHRR-26OCT282000MILTB-MILJCHOURIO11-1",
       "numeric_fields": {
         "can_close_early": true,
         "exchange_index": 3,
@@ -2128,8 +1467,8 @@
     {
       "title": "Jake Bauers: 5+ hits + runs + RBIs?",
       "series_ticker": "",
-      "event_ticker": "KXMLBHRR-26OCT272000MILTB",
-      "ticker": "KXMLBHRR-26OCT272000MILTB-MILJBAUERS9-5",
+      "event_ticker": "KXMLBHRR-26OCT282000MILTB",
+      "ticker": "KXMLBHRR-26OCT282000MILTB-MILJBAUERS9-5",
       "numeric_fields": {
         "can_close_early": true,
         "exchange_index": 3,
@@ -2141,8 +1480,8 @@
     {
       "title": "Jake Bauers: 4+ hits + runs + RBIs?",
       "series_ticker": "",
-      "event_ticker": "KXMLBHRR-26OCT272000MILTB",
-      "ticker": "KXMLBHRR-26OCT272000MILTB-MILJBAUERS9-4",
+      "event_ticker": "KXMLBHRR-26OCT282000MILTB",
+      "ticker": "KXMLBHRR-26OCT282000MILTB-MILJBAUERS9-4",
       "numeric_fields": {
         "can_close_early": true,
         "exchange_index": 3,
@@ -2154,8 +1493,8 @@
     {
       "title": "Jake Bauers: 3+ hits + runs + RBIs?",
       "series_ticker": "",
-      "event_ticker": "KXMLBHRR-26OCT272000MILTB",
-      "ticker": "KXMLBHRR-26OCT272000MILTB-MILJBAUERS9-3",
+      "event_ticker": "KXMLBHRR-26OCT282000MILTB",
+      "ticker": "KXMLBHRR-26OCT282000MILTB-MILJBAUERS9-3",
       "numeric_fields": {
         "can_close_early": true,
         "exchange_index": 3,
@@ -2167,8 +1506,8 @@
     {
       "title": "Jake Bauers: 2+ hits + runs + RBIs?",
       "series_ticker": "",
-      "event_ticker": "KXMLBHRR-26OCT272000MILTB",
-      "ticker": "KXMLBHRR-26OCT272000MILTB-MILJBAUERS9-2",
+      "event_ticker": "KXMLBHRR-26OCT282000MILTB",
+      "ticker": "KXMLBHRR-26OCT282000MILTB-MILJBAUERS9-2",
       "numeric_fields": {
         "can_close_early": true,
         "exchange_index": 3,
@@ -2180,8 +1519,8 @@
     {
       "title": "Jake Bauers: 1+ hits + runs + RBIs?",
       "series_ticker": "",
-      "event_ticker": "KXMLBHRR-26OCT272000MILTB",
-      "ticker": "KXMLBHRR-26OCT272000MILTB-MILJBAUERS9-1",
+      "event_ticker": "KXMLBHRR-26OCT282000MILTB",
+      "ticker": "KXMLBHRR-26OCT282000MILTB-MILJBAUERS9-1",
       "numeric_fields": {
         "can_close_early": true,
         "exchange_index": 3,
@@ -2193,8 +1532,8 @@
     {
       "title": "Garrett Mitchell: 5+ hits + runs + RBIs?",
       "series_ticker": "",
-      "event_ticker": "KXMLBHRR-26OCT272000MILTB",
-      "ticker": "KXMLBHRR-26OCT272000MILTB-MILGMITCHELL5-5",
+      "event_ticker": "KXMLBHRR-26OCT282000MILTB",
+      "ticker": "KXMLBHRR-26OCT282000MILTB-MILGMITCHELL5-5",
       "numeric_fields": {
         "can_close_early": true,
         "exchange_index": 3,
@@ -2206,8 +1545,8 @@
     {
       "title": "Garrett Mitchell: 4+ hits + runs + RBIs?",
       "series_ticker": "",
-      "event_ticker": "KXMLBHRR-26OCT272000MILTB",
-      "ticker": "KXMLBHRR-26OCT272000MILTB-MILGMITCHELL5-4",
+      "event_ticker": "KXMLBHRR-26OCT282000MILTB",
+      "ticker": "KXMLBHRR-26OCT282000MILTB-MILGMITCHELL5-4",
       "numeric_fields": {
         "can_close_early": true,
         "exchange_index": 3,
@@ -2219,8 +1558,8 @@
     {
       "title": "Garrett Mitchell: 3+ hits + runs + RBIs?",
       "series_ticker": "",
-      "event_ticker": "KXMLBHRR-26OCT272000MILTB",
-      "ticker": "KXMLBHRR-26OCT272000MILTB-MILGMITCHELL5-3",
+      "event_ticker": "KXMLBHRR-26OCT282000MILTB",
+      "ticker": "KXMLBHRR-26OCT282000MILTB-MILGMITCHELL5-3",
       "numeric_fields": {
         "can_close_early": true,
         "exchange_index": 3,
@@ -2232,8 +1571,8 @@
     {
       "title": "Garrett Mitchell: 2+ hits + runs + RBIs?",
       "series_ticker": "",
-      "event_ticker": "KXMLBHRR-26OCT272000MILTB",
-      "ticker": "KXMLBHRR-26OCT272000MILTB-MILGMITCHELL5-2",
+      "event_ticker": "KXMLBHRR-26OCT282000MILTB",
+      "ticker": "KXMLBHRR-26OCT282000MILTB-MILGMITCHELL5-2",
       "numeric_fields": {
         "can_close_early": true,
         "exchange_index": 3,
@@ -2245,8 +1584,8 @@
     {
       "title": "Garrett Mitchell: 1+ hits + runs + RBIs?",
       "series_ticker": "",
-      "event_ticker": "KXMLBHRR-26OCT272000MILTB",
-      "ticker": "KXMLBHRR-26OCT272000MILTB-MILGMITCHELL5-1",
+      "event_ticker": "KXMLBHRR-26OCT282000MILTB",
+      "ticker": "KXMLBHRR-26OCT282000MILTB-MILGMITCHELL5-1",
       "numeric_fields": {
         "can_close_early": true,
         "exchange_index": 3,
@@ -2258,8 +1597,8 @@
     {
       "title": "Cooper Pratt: 5+ hits + runs + RBIs?",
       "series_ticker": "",
-      "event_ticker": "KXMLBHRR-26OCT272000MILTB",
-      "ticker": "KXMLBHRR-26OCT272000MILTB-MILCPRATT87-5",
+      "event_ticker": "KXMLBHRR-26OCT282000MILTB",
+      "ticker": "KXMLBHRR-26OCT282000MILTB-MILCPRATT87-5",
       "numeric_fields": {
         "can_close_early": true,
         "exchange_index": 3,
@@ -2271,8 +1610,8 @@
     {
       "title": "Cooper Pratt: 4+ hits + runs + RBIs?",
       "series_ticker": "",
-      "event_ticker": "KXMLBHRR-26OCT272000MILTB",
-      "ticker": "KXMLBHRR-26OCT272000MILTB-MILCPRATT87-4",
+      "event_ticker": "KXMLBHRR-26OCT282000MILTB",
+      "ticker": "KXMLBHRR-26OCT282000MILTB-MILCPRATT87-4",
       "numeric_fields": {
         "can_close_early": true,
         "exchange_index": 3,
@@ -2284,8 +1623,8 @@
     {
       "title": "Cooper Pratt: 3+ hits + runs + RBIs?",
       "series_ticker": "",
-      "event_ticker": "KXMLBHRR-26OCT272000MILTB",
-      "ticker": "KXMLBHRR-26OCT272000MILTB-MILCPRATT87-3",
+      "event_ticker": "KXMLBHRR-26OCT282000MILTB",
+      "ticker": "KXMLBHRR-26OCT282000MILTB-MILCPRATT87-3",
       "numeric_fields": {
         "can_close_early": true,
         "exchange_index": 3,
@@ -2297,8 +1636,8 @@
     {
       "title": "Cooper Pratt: 2+ hits + runs + RBIs?",
       "series_ticker": "",
-      "event_ticker": "KXMLBHRR-26OCT272000MILTB",
-      "ticker": "KXMLBHRR-26OCT272000MILTB-MILCPRATT87-2",
+      "event_ticker": "KXMLBHRR-26OCT282000MILTB",
+      "ticker": "KXMLBHRR-26OCT282000MILTB-MILCPRATT87-2",
       "numeric_fields": {
         "can_close_early": true,
         "exchange_index": 3,
@@ -2310,8 +1649,8 @@
     {
       "title": "Cooper Pratt: 1+ hits + runs + RBIs?",
       "series_ticker": "",
-      "event_ticker": "KXMLBHRR-26OCT272000MILTB",
-      "ticker": "KXMLBHRR-26OCT272000MILTB-MILCPRATT87-1",
+      "event_ticker": "KXMLBHRR-26OCT282000MILTB",
+      "ticker": "KXMLBHRR-26OCT282000MILTB-MILCPRATT87-1",
       "numeric_fields": {
         "can_close_early": true,
         "exchange_index": 3,
@@ -2323,8 +1662,8 @@
     {
       "title": "Brice Turang: 5+ hits + runs + RBIs?",
       "series_ticker": "",
-      "event_ticker": "KXMLBHRR-26OCT272000MILTB",
-      "ticker": "KXMLBHRR-26OCT272000MILTB-MILBTURANG2-5",
+      "event_ticker": "KXMLBHRR-26OCT282000MILTB",
+      "ticker": "KXMLBHRR-26OCT282000MILTB-MILBTURANG2-5",
       "numeric_fields": {
         "can_close_early": true,
         "exchange_index": 3,
@@ -2336,8 +1675,8 @@
     {
       "title": "Brice Turang: 4+ hits + runs + RBIs?",
       "series_ticker": "",
-      "event_ticker": "KXMLBHRR-26OCT272000MILTB",
-      "ticker": "KXMLBHRR-26OCT272000MILTB-MILBTURANG2-4",
+      "event_ticker": "KXMLBHRR-26OCT282000MILTB",
+      "ticker": "KXMLBHRR-26OCT282000MILTB-MILBTURANG2-4",
       "numeric_fields": {
         "can_close_early": true,
         "exchange_index": 3,
@@ -2349,8 +1688,8 @@
     {
       "title": "Brice Turang: 3+ hits + runs + RBIs?",
       "series_ticker": "",
-      "event_ticker": "KXMLBHRR-26OCT272000MILTB",
-      "ticker": "KXMLBHRR-26OCT272000MILTB-MILBTURANG2-3",
+      "event_ticker": "KXMLBHRR-26OCT282000MILTB",
+      "ticker": "KXMLBHRR-26OCT282000MILTB-MILBTURANG2-3",
       "numeric_fields": {
         "can_close_early": true,
         "exchange_index": 3,
@@ -2362,8 +1701,8 @@
     {
       "title": "Brice Turang: 2+ hits + runs + RBIs?",
       "series_ticker": "",
-      "event_ticker": "KXMLBHRR-26OCT272000MILTB",
-      "ticker": "KXMLBHRR-26OCT272000MILTB-MILBTURANG2-2",
+      "event_ticker": "KXMLBHRR-26OCT282000MILTB",
+      "ticker": "KXMLBHRR-26OCT282000MILTB-MILBTURANG2-2",
       "numeric_fields": {
         "can_close_early": true,
         "exchange_index": 3,
@@ -2375,8 +1714,8 @@
     {
       "title": "Brice Turang: 1+ hits + runs + RBIs?",
       "series_ticker": "",
-      "event_ticker": "KXMLBHRR-26OCT272000MILTB",
-      "ticker": "KXMLBHRR-26OCT272000MILTB-MILBTURANG2-1",
+      "event_ticker": "KXMLBHRR-26OCT282000MILTB",
+      "ticker": "KXMLBHRR-26OCT282000MILTB-MILBTURANG2-1",
       "numeric_fields": {
         "can_close_early": true,
         "exchange_index": 3,
@@ -2386,88 +1725,23 @@
       "detected_by": "ticker"
     },
     {
-      "title": "Dustin May: 6+ strikeouts?",
+      "title": "Jacob Misiorowski: 9+ strikeouts?",
       "series_ticker": "",
-      "event_ticker": "KXMLBKS-26OCT272000MILTB",
-      "ticker": "KXMLBKS-26OCT272000MILTB-MILDMAY3-6",
+      "event_ticker": "KXMLBKS-26OCT282000MILTB",
+      "ticker": "KXMLBKS-26OCT282000MILTB-MILJMISIOROWSKI32-9",
       "numeric_fields": {
         "can_close_early": true,
         "exchange_index": 3,
-        "floor_strike": 5.5,
+        "floor_strike": 8.5,
         "settlement_timer_seconds": 300
       },
       "detected_by": "ticker"
     },
     {
-      "title": "Dustin May: 5+ strikeouts?",
+      "title": "Jacob Misiorowski: 8+ strikeouts?",
       "series_ticker": "",
-      "event_ticker": "KXMLBKS-26OCT272000MILTB",
-      "ticker": "KXMLBKS-26OCT272000MILTB-MILDMAY3-5",
-      "numeric_fields": {
-        "can_close_early": true,
-        "exchange_index": 3,
-        "floor_strike": 4.5,
-        "settlement_timer_seconds": 300
-      },
-      "detected_by": "ticker"
-    },
-    {
-      "title": "Dustin May: 4+ strikeouts?",
-      "series_ticker": "",
-      "event_ticker": "KXMLBKS-26OCT272000MILTB",
-      "ticker": "KXMLBKS-26OCT272000MILTB-MILDMAY3-4",
-      "numeric_fields": {
-        "can_close_early": true,
-        "exchange_index": 3,
-        "floor_strike": 3.5,
-        "settlement_timer_seconds": 300
-      },
-      "detected_by": "ticker"
-    },
-    {
-      "title": "Dustin May: 3+ strikeouts?",
-      "series_ticker": "",
-      "event_ticker": "KXMLBKS-26OCT272000MILTB",
-      "ticker": "KXMLBKS-26OCT272000MILTB-MILDMAY3-3",
-      "numeric_fields": {
-        "can_close_early": true,
-        "exchange_index": 3,
-        "floor_strike": 2.5,
-        "settlement_timer_seconds": 300
-      },
-      "detected_by": "ticker"
-    },
-    {
-      "title": "Dustin May: 2+ strikeouts?",
-      "series_ticker": "",
-      "event_ticker": "KXMLBKS-26OCT272000MILTB",
-      "ticker": "KXMLBKS-26OCT272000MILTB-MILDMAY3-2",
-      "numeric_fields": {
-        "can_close_early": true,
-        "exchange_index": 3,
-        "floor_strike": 1.5,
-        "settlement_timer_seconds": 300
-      },
-      "detected_by": "ticker"
-    },
-    {
-      "title": "Dustin May: 1+ strikeouts?",
-      "series_ticker": "",
-      "event_ticker": "KXMLBKS-26OCT272000MILTB",
-      "ticker": "KXMLBKS-26OCT272000MILTB-MILDMAY3-1",
-      "numeric_fields": {
-        "can_close_early": true,
-        "exchange_index": 3,
-        "floor_strike": 0.5,
-        "settlement_timer_seconds": 300
-      },
-      "detected_by": "ticker"
-    },
-    {
-      "title": "Griffin Jax: 8+ strikeouts?",
-      "series_ticker": "",
-      "event_ticker": "KXMLBKS-26OCT272000MILTB",
-      "ticker": "KXMLBKS-26OCT272000MILTB-TBGJAX22-8",
+      "event_ticker": "KXMLBKS-26OCT282000MILTB",
+      "ticker": "KXMLBKS-26OCT282000MILTB-MILJMISIOROWSKI32-8",
       "numeric_fields": {
         "can_close_early": true,
         "exchange_index": 3,
@@ -2477,10 +1751,10 @@
       "detected_by": "ticker"
     },
     {
-      "title": "Griffin Jax: 7+ strikeouts?",
+      "title": "Jacob Misiorowski: 7+ strikeouts?",
       "series_ticker": "",
-      "event_ticker": "KXMLBKS-26OCT272000MILTB",
-      "ticker": "KXMLBKS-26OCT272000MILTB-TBGJAX22-7",
+      "event_ticker": "KXMLBKS-26OCT282000MILTB",
+      "ticker": "KXMLBKS-26OCT282000MILTB-MILJMISIOROWSKI32-7",
       "numeric_fields": {
         "can_close_early": true,
         "exchange_index": 3,
@@ -2490,10 +1764,10 @@
       "detected_by": "ticker"
     },
     {
-      "title": "Griffin Jax: 6+ strikeouts?",
+      "title": "Jacob Misiorowski: 6+ strikeouts?",
       "series_ticker": "",
-      "event_ticker": "KXMLBKS-26OCT272000MILTB",
-      "ticker": "KXMLBKS-26OCT272000MILTB-TBGJAX22-6",
+      "event_ticker": "KXMLBKS-26OCT282000MILTB",
+      "ticker": "KXMLBKS-26OCT282000MILTB-MILJMISIOROWSKI32-6",
       "numeric_fields": {
         "can_close_early": true,
         "exchange_index": 3,
@@ -2503,10 +1777,10 @@
       "detected_by": "ticker"
     },
     {
-      "title": "Griffin Jax: 5+ strikeouts?",
+      "title": "Jacob Misiorowski: 5+ strikeouts?",
       "series_ticker": "",
-      "event_ticker": "KXMLBKS-26OCT272000MILTB",
-      "ticker": "KXMLBKS-26OCT272000MILTB-TBGJAX22-5",
+      "event_ticker": "KXMLBKS-26OCT282000MILTB",
+      "ticker": "KXMLBKS-26OCT282000MILTB-MILJMISIOROWSKI32-5",
       "numeric_fields": {
         "can_close_early": true,
         "exchange_index": 3,
@@ -2516,10 +1790,10 @@
       "detected_by": "ticker"
     },
     {
-      "title": "Griffin Jax: 4+ strikeouts?",
+      "title": "Jacob Misiorowski: 4+ strikeouts?",
       "series_ticker": "",
-      "event_ticker": "KXMLBKS-26OCT272000MILTB",
-      "ticker": "KXMLBKS-26OCT272000MILTB-TBGJAX22-4",
+      "event_ticker": "KXMLBKS-26OCT282000MILTB",
+      "ticker": "KXMLBKS-26OCT282000MILTB-MILJMISIOROWSKI32-4",
       "numeric_fields": {
         "can_close_early": true,
         "exchange_index": 3,
@@ -2529,10 +1803,10 @@
       "detected_by": "ticker"
     },
     {
-      "title": "Griffin Jax: 3+ strikeouts?",
+      "title": "Jacob Misiorowski: 3+ strikeouts?",
       "series_ticker": "",
-      "event_ticker": "KXMLBKS-26OCT272000MILTB",
-      "ticker": "KXMLBKS-26OCT272000MILTB-TBGJAX22-3",
+      "event_ticker": "KXMLBKS-26OCT282000MILTB",
+      "ticker": "KXMLBKS-26OCT282000MILTB-MILJMISIOROWSKI32-3",
       "numeric_fields": {
         "can_close_early": true,
         "exchange_index": 3,
@@ -2542,712 +1816,49 @@
       "detected_by": "ticker"
     },
     {
-      "title": "Griffin Jax: 2+ strikeouts?",
+      "title": "Jacob Misiorowski: 10+ strikeouts?",
       "series_ticker": "",
-      "event_ticker": "KXMLBKS-26OCT272000MILTB",
-      "ticker": "KXMLBKS-26OCT272000MILTB-TBGJAX22-2",
+      "event_ticker": "KXMLBKS-26OCT282000MILTB",
+      "ticker": "KXMLBKS-26OCT282000MILTB-MILJMISIOROWSKI32-10",
       "numeric_fields": {
         "can_close_early": true,
         "exchange_index": 3,
-        "floor_strike": 1.5,
+        "floor_strike": 9.5,
         "settlement_timer_seconds": 300
       },
       "detected_by": "ticker"
     },
     {
-      "title": "Taylor Walls: 2+ RBIs?",
+      "title": "Jacob Misiorowski: 16+ Outs Recorded?",
       "series_ticker": "",
-      "event_ticker": "KXMLBRBI-26OCT272000MILTB",
-      "ticker": "KXMLBRBI-26OCT272000MILTB-TBTWALLS6-2",
+      "event_ticker": "KXMLBOUTS-26OCT282000MILTB",
+      "ticker": "KXMLBOUTS-26OCT282000MILTB-MILJMISIOROWSKI32-16",
       "numeric_fields": {
         "can_close_early": true,
         "exchange_index": 3,
-        "floor_strike": 1.5,
+        "floor_strike": 15.5,
         "settlement_timer_seconds": 300
       },
       "detected_by": "ticker"
     },
     {
-      "title": "Taylor Walls: 1+ RBIs?",
+      "title": "1st inning: Over 0.5 runs",
       "series_ticker": "",
-      "event_ticker": "KXMLBRBI-26OCT272000MILTB",
-      "ticker": "KXMLBRBI-26OCT272000MILTB-TBTWALLS6-1",
+      "event_ticker": "KXMLBRFI-26OCT282000MILTB",
+      "ticker": "KXMLBRFI-26OCT282000MILTB",
       "numeric_fields": {
         "can_close_early": true,
         "exchange_index": 3,
-        "floor_strike": 0.5,
-        "settlement_timer_seconds": 300
-      },
-      "detected_by": "ticker"
-    },
-    {
-      "title": "Sal Frelick: 2+ RBIs?",
-      "series_ticker": "",
-      "event_ticker": "KXMLBRBI-26OCT272000MILTB",
-      "ticker": "KXMLBRBI-26OCT272000MILTB-MILSFRELICK10-2",
-      "numeric_fields": {
-        "can_close_early": true,
-        "exchange_index": 3,
-        "floor_strike": 1.5,
-        "settlement_timer_seconds": 300
-      },
-      "detected_by": "ticker"
-    },
-    {
-      "title": "Sal Frelick: 1+ RBIs?",
-      "series_ticker": "",
-      "event_ticker": "KXMLBRBI-26OCT272000MILTB",
-      "ticker": "KXMLBRBI-26OCT272000MILTB-MILSFRELICK10-1",
-      "numeric_fields": {
-        "can_close_early": true,
-        "exchange_index": 3,
-        "floor_strike": 0.5,
-        "settlement_timer_seconds": 300
-      },
-      "detected_by": "ticker"
-    },
-    {
-      "title": "Ryan Vilade: 2+ RBIs?",
-      "series_ticker": "",
-      "event_ticker": "KXMLBRBI-26OCT272000MILTB",
-      "ticker": "KXMLBRBI-26OCT272000MILTB-TBRVILADE26-2",
-      "numeric_fields": {
-        "can_close_early": true,
-        "exchange_index": 3,
-        "floor_strike": 1.5,
-        "settlement_timer_seconds": 300
-      },
-      "detected_by": "ticker"
-    },
-    {
-      "title": "Ryan Vilade: 1+ RBIs?",
-      "series_ticker": "",
-      "event_ticker": "KXMLBRBI-26OCT272000MILTB",
-      "ticker": "KXMLBRBI-26OCT272000MILTB-TBRVILADE26-1",
-      "numeric_fields": {
-        "can_close_early": true,
-        "exchange_index": 3,
-        "floor_strike": 0.5,
-        "settlement_timer_seconds": 300
-      },
-      "detected_by": "ticker"
-    },
-    {
-      "title": "Richie Palacios: 2+ RBIs?",
-      "series_ticker": "",
-      "event_ticker": "KXMLBRBI-26OCT272000MILTB",
-      "ticker": "KXMLBRBI-26OCT272000MILTB-TBRPALACIOS1-2",
-      "numeric_fields": {
-        "can_close_early": true,
-        "exchange_index": 3,
-        "floor_strike": 1.5,
-        "settlement_timer_seconds": 300
-      },
-      "detected_by": "ticker"
-    },
-    {
-      "title": "Richie Palacios: 1+ RBIs?",
-      "series_ticker": "",
-      "event_ticker": "KXMLBRBI-26OCT272000MILTB",
-      "ticker": "KXMLBRBI-26OCT272000MILTB-TBRPALACIOS1-1",
-      "numeric_fields": {
-        "can_close_early": true,
-        "exchange_index": 3,
-        "floor_strike": 0.5,
-        "settlement_timer_seconds": 300
-      },
-      "detected_by": "ticker"
-    },
-    {
-      "title": "Liam Hicks: 2+ RBIs?",
-      "series_ticker": "",
-      "event_ticker": "KXMLBRBI-26OCT272000MILTB",
-      "ticker": "KXMLBRBI-26OCT272000MILTB-TBLHICKS34-2",
-      "numeric_fields": {
-        "can_close_early": true,
-        "exchange_index": 3,
-        "floor_strike": 1.5,
-        "settlement_timer_seconds": 300
-      },
-      "detected_by": "ticker"
-    },
-    {
-      "title": "Liam Hicks: 1+ RBIs?",
-      "series_ticker": "",
-      "event_ticker": "KXMLBRBI-26OCT272000MILTB",
-      "ticker": "KXMLBRBI-26OCT272000MILTB-TBLHICKS34-1",
-      "numeric_fields": {
-        "can_close_early": true,
-        "exchange_index": 3,
-        "floor_strike": 0.5,
-        "settlement_timer_seconds": 300
-      },
-      "detected_by": "ticker"
-    },
-    {
-      "title": "David Hamilton: 2+ RBIs?",
-      "series_ticker": "",
-      "event_ticker": "KXMLBRBI-26OCT272000MILTB",
-      "ticker": "KXMLBRBI-26OCT272000MILTB-MILDHAMILTON6-2",
-      "numeric_fields": {
-        "can_close_early": true,
-        "exchange_index": 3,
-        "floor_strike": 1.5,
-        "settlement_timer_seconds": 300
-      },
-      "detected_by": "ticker"
-    },
-    {
-      "title": "David Hamilton: 1+ RBIs?",
-      "series_ticker": "",
-      "event_ticker": "KXMLBRBI-26OCT272000MILTB",
-      "ticker": "KXMLBRBI-26OCT272000MILTB-MILDHAMILTON6-1",
-      "numeric_fields": {
-        "can_close_early": true,
-        "exchange_index": 3,
-        "floor_strike": 0.5,
-        "settlement_timer_seconds": 300
-      },
-      "detected_by": "ticker"
-    },
-    {
-      "title": "Christian Yelich: 2+ RBIs?",
-      "series_ticker": "",
-      "event_ticker": "KXMLBRBI-26OCT272000MILTB",
-      "ticker": "KXMLBRBI-26OCT272000MILTB-MILCYELICH22-2",
-      "numeric_fields": {
-        "can_close_early": true,
-        "exchange_index": 3,
-        "floor_strike": 1.5,
-        "settlement_timer_seconds": 300
-      },
-      "detected_by": "ticker"
-    },
-    {
-      "title": "Christian Yelich: 1+ RBIs?",
-      "series_ticker": "",
-      "event_ticker": "KXMLBRBI-26OCT272000MILTB",
-      "ticker": "KXMLBRBI-26OCT272000MILTB-MILCYELICH22-1",
-      "numeric_fields": {
-        "can_close_early": true,
-        "exchange_index": 3,
-        "floor_strike": 0.5,
-        "settlement_timer_seconds": 300
-      },
-      "detected_by": "ticker"
-    },
-    {
-      "title": "Chandler Simpson: 2+ RBIs?",
-      "series_ticker": "",
-      "event_ticker": "KXMLBRBI-26OCT272000MILTB",
-      "ticker": "KXMLBRBI-26OCT272000MILTB-TBCSIMPSON14-2",
-      "numeric_fields": {
-        "can_close_early": true,
-        "exchange_index": 3,
-        "floor_strike": 1.5,
-        "settlement_timer_seconds": 300
-      },
-      "detected_by": "ticker"
-    },
-    {
-      "title": "Chandler Simpson: 1+ RBIs?",
-      "series_ticker": "",
-      "event_ticker": "KXMLBRBI-26OCT272000MILTB",
-      "ticker": "KXMLBRBI-26OCT272000MILTB-TBCSIMPSON14-1",
-      "numeric_fields": {
-        "can_close_early": true,
-        "exchange_index": 3,
-        "floor_strike": 0.5,
-        "settlement_timer_seconds": 300
-      },
-      "detected_by": "ticker"
-    },
-    {
-      "title": "Yandy D\u00edaz: 2+ RBIs?",
-      "series_ticker": "",
-      "event_ticker": "KXMLBRBI-26OCT272000MILTB",
-      "ticker": "KXMLBRBI-26OCT272000MILTB-TBYDIAZ2-2",
-      "numeric_fields": {
-        "can_close_early": true,
-        "exchange_index": 3,
-        "floor_strike": 1.5,
-        "settlement_timer_seconds": 300
-      },
-      "detected_by": "ticker"
-    },
-    {
-      "title": "Yandy D\u00edaz: 1+ RBIs?",
-      "series_ticker": "",
-      "event_ticker": "KXMLBRBI-26OCT272000MILTB",
-      "ticker": "KXMLBRBI-26OCT272000MILTB-TBYDIAZ2-1",
-      "numeric_fields": {
-        "can_close_early": true,
-        "exchange_index": 3,
-        "floor_strike": 0.5,
-        "settlement_timer_seconds": 300
-      },
-      "detected_by": "ticker"
-    },
-    {
-      "title": "Jonny DeLuca: 2+ RBIs?",
-      "series_ticker": "",
-      "event_ticker": "KXMLBRBI-26OCT272000MILTB",
-      "ticker": "KXMLBRBI-26OCT272000MILTB-TBJDELUCA21-2",
-      "numeric_fields": {
-        "can_close_early": true,
-        "exchange_index": 3,
-        "floor_strike": 1.5,
-        "settlement_timer_seconds": 300
-      },
-      "detected_by": "ticker"
-    },
-    {
-      "title": "Jonny DeLuca: 1+ RBIs?",
-      "series_ticker": "",
-      "event_ticker": "KXMLBRBI-26OCT272000MILTB",
-      "ticker": "KXMLBRBI-26OCT272000MILTB-TBJDELUCA21-1",
-      "numeric_fields": {
-        "can_close_early": true,
-        "exchange_index": 3,
-        "floor_strike": 0.5,
-        "settlement_timer_seconds": 300
-      },
-      "detected_by": "ticker"
-    },
-    {
-      "title": "Junior Caminero: 2+ RBIs?",
-      "series_ticker": "",
-      "event_ticker": "KXMLBRBI-26OCT272000MILTB",
-      "ticker": "KXMLBRBI-26OCT272000MILTB-TBJCAMINERO13-2",
-      "numeric_fields": {
-        "can_close_early": true,
-        "exchange_index": 3,
-        "floor_strike": 1.5,
-        "settlement_timer_seconds": 300
-      },
-      "detected_by": "ticker"
-    },
-    {
-      "title": "Junior Caminero: 1+ RBIs?",
-      "series_ticker": "",
-      "event_ticker": "KXMLBRBI-26OCT272000MILTB",
-      "ticker": "KXMLBRBI-26OCT272000MILTB-TBJCAMINERO13-1",
-      "numeric_fields": {
-        "can_close_early": true,
-        "exchange_index": 3,
-        "floor_strike": 0.5,
-        "settlement_timer_seconds": 300
-      },
-      "detected_by": "ticker"
-    },
-    {
-      "title": "Jonathan Aranda: 2+ RBIs?",
-      "series_ticker": "",
-      "event_ticker": "KXMLBRBI-26OCT272000MILTB",
-      "ticker": "KXMLBRBI-26OCT272000MILTB-TBJARANDA8-2",
-      "numeric_fields": {
-        "can_close_early": true,
-        "exchange_index": 3,
-        "floor_strike": 1.5,
-        "settlement_timer_seconds": 300
-      },
-      "detected_by": "ticker"
-    },
-    {
-      "title": "Jonathan Aranda: 1+ RBIs?",
-      "series_ticker": "",
-      "event_ticker": "KXMLBRBI-26OCT272000MILTB",
-      "ticker": "KXMLBRBI-26OCT272000MILTB-TBJARANDA8-1",
-      "numeric_fields": {
-        "can_close_early": true,
-        "exchange_index": 3,
-        "floor_strike": 0.5,
-        "settlement_timer_seconds": 300
-      },
-      "detected_by": "ticker"
-    },
-    {
-      "title": "William Contreras: 2+ RBIs?",
-      "series_ticker": "",
-      "event_ticker": "KXMLBRBI-26OCT272000MILTB",
-      "ticker": "KXMLBRBI-26OCT272000MILTB-MILWCONTRERAS24-2",
-      "numeric_fields": {
-        "can_close_early": true,
-        "exchange_index": 3,
-        "floor_strike": 1.5,
-        "settlement_timer_seconds": 300
-      },
-      "detected_by": "ticker"
-    },
-    {
-      "title": "William Contreras: 1+ RBIs?",
-      "series_ticker": "",
-      "event_ticker": "KXMLBRBI-26OCT272000MILTB",
-      "ticker": "KXMLBRBI-26OCT272000MILTB-MILWCONTRERAS24-1",
-      "numeric_fields": {
-        "can_close_early": true,
-        "exchange_index": 3,
-        "floor_strike": 0.5,
-        "settlement_timer_seconds": 300
-      },
-      "detected_by": "ticker"
-    },
-    {
-      "title": "Jackson Chourio: 2+ RBIs?",
-      "series_ticker": "",
-      "event_ticker": "KXMLBRBI-26OCT272000MILTB",
-      "ticker": "KXMLBRBI-26OCT272000MILTB-MILJCHOURIO11-2",
-      "numeric_fields": {
-        "can_close_early": true,
-        "exchange_index": 3,
-        "floor_strike": 1.5,
-        "settlement_timer_seconds": 300
-      },
-      "detected_by": "ticker"
-    },
-    {
-      "title": "Jackson Chourio: 1+ RBIs?",
-      "series_ticker": "",
-      "event_ticker": "KXMLBRBI-26OCT272000MILTB",
-      "ticker": "KXMLBRBI-26OCT272000MILTB-MILJCHOURIO11-1",
-      "numeric_fields": {
-        "can_close_early": true,
-        "exchange_index": 3,
-        "floor_strike": 0.5,
-        "settlement_timer_seconds": 300
-      },
-      "detected_by": "ticker"
-    },
-    {
-      "title": "Jake Bauers: 2+ RBIs?",
-      "series_ticker": "",
-      "event_ticker": "KXMLBRBI-26OCT272000MILTB",
-      "ticker": "KXMLBRBI-26OCT272000MILTB-MILJBAUERS9-2",
-      "numeric_fields": {
-        "can_close_early": true,
-        "exchange_index": 3,
-        "floor_strike": 1.5,
-        "settlement_timer_seconds": 300
-      },
-      "detected_by": "ticker"
-    },
-    {
-      "title": "Jake Bauers: 1+ RBIs?",
-      "series_ticker": "",
-      "event_ticker": "KXMLBRBI-26OCT272000MILTB",
-      "ticker": "KXMLBRBI-26OCT272000MILTB-MILJBAUERS9-1",
-      "numeric_fields": {
-        "can_close_early": true,
-        "exchange_index": 3,
-        "floor_strike": 0.5,
-        "settlement_timer_seconds": 300
-      },
-      "detected_by": "ticker"
-    },
-    {
-      "title": "Garrett Mitchell: 2+ RBIs?",
-      "series_ticker": "",
-      "event_ticker": "KXMLBRBI-26OCT272000MILTB",
-      "ticker": "KXMLBRBI-26OCT272000MILTB-MILGMITCHELL5-2",
-      "numeric_fields": {
-        "can_close_early": true,
-        "exchange_index": 3,
-        "floor_strike": 1.5,
-        "settlement_timer_seconds": 300
-      },
-      "detected_by": "ticker"
-    },
-    {
-      "title": "Garrett Mitchell: 1+ RBIs?",
-      "series_ticker": "",
-      "event_ticker": "KXMLBRBI-26OCT272000MILTB",
-      "ticker": "KXMLBRBI-26OCT272000MILTB-MILGMITCHELL5-1",
-      "numeric_fields": {
-        "can_close_early": true,
-        "exchange_index": 3,
-        "floor_strike": 0.5,
-        "settlement_timer_seconds": 300
-      },
-      "detected_by": "ticker"
-    },
-    {
-      "title": "Cooper Pratt: 2+ RBIs?",
-      "series_ticker": "",
-      "event_ticker": "KXMLBRBI-26OCT272000MILTB",
-      "ticker": "KXMLBRBI-26OCT272000MILTB-MILCPRATT87-2",
-      "numeric_fields": {
-        "can_close_early": true,
-        "exchange_index": 3,
-        "floor_strike": 1.5,
-        "settlement_timer_seconds": 300
-      },
-      "detected_by": "ticker"
-    },
-    {
-      "title": "Cooper Pratt: 1+ RBIs?",
-      "series_ticker": "",
-      "event_ticker": "KXMLBRBI-26OCT272000MILTB",
-      "ticker": "KXMLBRBI-26OCT272000MILTB-MILCPRATT87-1",
-      "numeric_fields": {
-        "can_close_early": true,
-        "exchange_index": 3,
-        "floor_strike": 0.5,
-        "settlement_timer_seconds": 300
-      },
-      "detected_by": "ticker"
-    },
-    {
-      "title": "Brice Turang: 2+ RBIs?",
-      "series_ticker": "",
-      "event_ticker": "KXMLBRBI-26OCT272000MILTB",
-      "ticker": "KXMLBRBI-26OCT272000MILTB-MILBTURANG2-2",
-      "numeric_fields": {
-        "can_close_early": true,
-        "exchange_index": 3,
-        "floor_strike": 1.5,
-        "settlement_timer_seconds": 300
-      },
-      "detected_by": "ticker"
-    },
-    {
-      "title": "Brice Turang: 1+ RBIs?",
-      "series_ticker": "",
-      "event_ticker": "KXMLBRBI-26OCT272000MILTB",
-      "ticker": "KXMLBRBI-26OCT272000MILTB-MILBTURANG2-1",
-      "numeric_fields": {
-        "can_close_early": true,
-        "exchange_index": 3,
-        "floor_strike": 0.5,
-        "settlement_timer_seconds": 300
-      },
-      "detected_by": "ticker"
-    },
-    {
-      "title": "Sal Frelick: 1+ stolen bases?",
-      "series_ticker": "",
-      "event_ticker": "KXMLBSB-26OCT272000MILTB",
-      "ticker": "KXMLBSB-26OCT272000MILTB-MILSFRELICK10-1",
-      "numeric_fields": {
-        "can_close_early": true,
-        "exchange_index": 3,
-        "floor_strike": 0.5,
-        "settlement_timer_seconds": 300
-      },
-      "detected_by": "ticker"
-    },
-    {
-      "title": "Ryan Vilade: 1+ stolen bases?",
-      "series_ticker": "",
-      "event_ticker": "KXMLBSB-26OCT272000MILTB",
-      "ticker": "KXMLBSB-26OCT272000MILTB-TBRVILADE26-1",
-      "numeric_fields": {
-        "can_close_early": true,
-        "exchange_index": 3,
-        "floor_strike": 0.5,
-        "settlement_timer_seconds": 300
-      },
-      "detected_by": "ticker"
-    },
-    {
-      "title": "Richie Palacios: 1+ stolen bases?",
-      "series_ticker": "",
-      "event_ticker": "KXMLBSB-26OCT272000MILTB",
-      "ticker": "KXMLBSB-26OCT272000MILTB-TBRPALACIOS1-1",
-      "numeric_fields": {
-        "can_close_early": true,
-        "exchange_index": 3,
-        "floor_strike": 0.5,
-        "settlement_timer_seconds": 300
-      },
-      "detected_by": "ticker"
-    },
-    {
-      "title": "David Hamilton: 1+ stolen bases?",
-      "series_ticker": "",
-      "event_ticker": "KXMLBSB-26OCT272000MILTB",
-      "ticker": "KXMLBSB-26OCT272000MILTB-MILDHAMILTON6-1",
-      "numeric_fields": {
-        "can_close_early": true,
-        "exchange_index": 3,
-        "floor_strike": 0.5,
-        "settlement_timer_seconds": 300
-      },
-      "detected_by": "ticker"
-    },
-    {
-      "title": "Christian Yelich: 1+ stolen bases?",
-      "series_ticker": "",
-      "event_ticker": "KXMLBSB-26OCT272000MILTB",
-      "ticker": "KXMLBSB-26OCT272000MILTB-MILCYELICH22-1",
-      "numeric_fields": {
-        "can_close_early": true,
-        "exchange_index": 3,
-        "floor_strike": 0.5,
-        "settlement_timer_seconds": 300
-      },
-      "detected_by": "ticker"
-    },
-    {
-      "title": "Chandler Simpson: 1+ stolen bases?",
-      "series_ticker": "",
-      "event_ticker": "KXMLBSB-26OCT272000MILTB",
-      "ticker": "KXMLBSB-26OCT272000MILTB-TBCSIMPSON14-1",
-      "numeric_fields": {
-        "can_close_early": true,
-        "exchange_index": 3,
-        "floor_strike": 0.5,
-        "settlement_timer_seconds": 300
-      },
-      "detected_by": "ticker"
-    },
-    {
-      "title": "Yandy D\u00edaz: 1+ stolen bases?",
-      "series_ticker": "",
-      "event_ticker": "KXMLBSB-26OCT272000MILTB",
-      "ticker": "KXMLBSB-26OCT272000MILTB-TBYDIAZ2-1",
-      "numeric_fields": {
-        "can_close_early": true,
-        "exchange_index": 3,
-        "floor_strike": 0.5,
-        "settlement_timer_seconds": 300
-      },
-      "detected_by": "ticker"
-    },
-    {
-      "title": "Taylor Walls: 1+ stolen bases?",
-      "series_ticker": "",
-      "event_ticker": "KXMLBSB-26OCT272000MILTB",
-      "ticker": "KXMLBSB-26OCT272000MILTB-TBTWALLS6-1",
-      "numeric_fields": {
-        "can_close_early": true,
-        "exchange_index": 3,
-        "floor_strike": 0.5,
-        "settlement_timer_seconds": 300
-      },
-      "detected_by": "ticker"
-    },
-    {
-      "title": "Junior Caminero: 1+ stolen bases?",
-      "series_ticker": "",
-      "event_ticker": "KXMLBSB-26OCT272000MILTB",
-      "ticker": "KXMLBSB-26OCT272000MILTB-TBJCAMINERO13-1",
-      "numeric_fields": {
-        "can_close_early": true,
-        "exchange_index": 3,
-        "floor_strike": 0.5,
-        "settlement_timer_seconds": 300
-      },
-      "detected_by": "ticker"
-    },
-    {
-      "title": "Jonny DeLuca: 1+ stolen bases?",
-      "series_ticker": "",
-      "event_ticker": "KXMLBSB-26OCT272000MILTB",
-      "ticker": "KXMLBSB-26OCT272000MILTB-TBJDELUCA21-1",
-      "numeric_fields": {
-        "can_close_early": true,
-        "exchange_index": 3,
-        "floor_strike": 0.5,
-        "settlement_timer_seconds": 300
-      },
-      "detected_by": "ticker"
-    },
-    {
-      "title": "Jonathan Aranda: 1+ stolen bases?",
-      "series_ticker": "",
-      "event_ticker": "KXMLBSB-26OCT272000MILTB",
-      "ticker": "KXMLBSB-26OCT272000MILTB-TBJARANDA8-1",
-      "numeric_fields": {
-        "can_close_early": true,
-        "exchange_index": 3,
-        "floor_strike": 0.5,
-        "settlement_timer_seconds": 300
-      },
-      "detected_by": "ticker"
-    },
-    {
-      "title": "William Contreras: 1+ stolen bases?",
-      "series_ticker": "",
-      "event_ticker": "KXMLBSB-26OCT272000MILTB",
-      "ticker": "KXMLBSB-26OCT272000MILTB-MILWCONTRERAS24-1",
-      "numeric_fields": {
-        "can_close_early": true,
-        "exchange_index": 3,
-        "floor_strike": 0.5,
-        "settlement_timer_seconds": 300
-      },
-      "detected_by": "ticker"
-    },
-    {
-      "title": "Jackson Chourio: 1+ stolen bases?",
-      "series_ticker": "",
-      "event_ticker": "KXMLBSB-26OCT272000MILTB",
-      "ticker": "KXMLBSB-26OCT272000MILTB-MILJCHOURIO11-1",
-      "numeric_fields": {
-        "can_close_early": true,
-        "exchange_index": 3,
-        "floor_strike": 0.5,
-        "settlement_timer_seconds": 300
-      },
-      "detected_by": "ticker"
-    },
-    {
-      "title": "Jake Bauers: 1+ stolen bases?",
-      "series_ticker": "",
-      "event_ticker": "KXMLBSB-26OCT272000MILTB",
-      "ticker": "KXMLBSB-26OCT272000MILTB-MILJBAUERS9-1",
-      "numeric_fields": {
-        "can_close_early": true,
-        "exchange_index": 3,
-        "floor_strike": 0.5,
-        "settlement_timer_seconds": 300
-      },
-      "detected_by": "ticker"
-    },
-    {
-      "title": "Garrett Mitchell: 1+ stolen bases?",
-      "series_ticker": "",
-      "event_ticker": "KXMLBSB-26OCT272000MILTB",
-      "ticker": "KXMLBSB-26OCT272000MILTB-MILGMITCHELL5-1",
-      "numeric_fields": {
-        "can_close_early": true,
-        "exchange_index": 3,
-        "floor_strike": 0.5,
-        "settlement_timer_seconds": 300
-      },
-      "detected_by": "ticker"
-    },
-    {
-      "title": "Cooper Pratt: 1+ stolen bases?",
-      "series_ticker": "",
-      "event_ticker": "KXMLBSB-26OCT272000MILTB",
-      "ticker": "KXMLBSB-26OCT272000MILTB-MILCPRATT87-1",
-      "numeric_fields": {
-        "can_close_early": true,
-        "exchange_index": 3,
-        "floor_strike": 0.5,
-        "settlement_timer_seconds": 300
-      },
-      "detected_by": "ticker"
-    },
-    {
-      "title": "Brice Turang: 1+ stolen bases?",
-      "series_ticker": "",
-      "event_ticker": "KXMLBSB-26OCT272000MILTB",
-      "ticker": "KXMLBSB-26OCT272000MILTB-MILBTURANG2-1",
-      "numeric_fields": {
-        "can_close_early": true,
-        "exchange_index": 3,
-        "floor_strike": 0.5,
-        "settlement_timer_seconds": 300
+        "floor_strike": 1,
+        "settlement_timer_seconds": 60
       },
       "detected_by": "ticker"
     },
     {
       "title": "Tampa Bay wins by over 3.5 runs?",
       "series_ticker": "",
-      "event_ticker": "KXMLBSPREAD-26OCT272000MILTB",
-      "ticker": "KXMLBSPREAD-26OCT272000MILTB-TB4",
+      "event_ticker": "KXMLBSPREAD-26OCT282000MILTB",
+      "ticker": "KXMLBSPREAD-26OCT282000MILTB-TB4",
       "numeric_fields": {
         "can_close_early": true,
         "exchange_index": 3,
@@ -3259,8 +1870,8 @@
     {
       "title": "Tampa Bay wins by over 2.5 runs?",
       "series_ticker": "",
-      "event_ticker": "KXMLBSPREAD-26OCT272000MILTB",
-      "ticker": "KXMLBSPREAD-26OCT272000MILTB-TB3",
+      "event_ticker": "KXMLBSPREAD-26OCT282000MILTB",
+      "ticker": "KXMLBSPREAD-26OCT282000MILTB-TB3",
       "numeric_fields": {
         "can_close_early": true,
         "exchange_index": 3,
@@ -3272,8 +1883,8 @@
     {
       "title": "Tampa Bay wins by over 1.5 runs?",
       "series_ticker": "",
-      "event_ticker": "KXMLBSPREAD-26OCT272000MILTB",
-      "ticker": "KXMLBSPREAD-26OCT272000MILTB-TB2",
+      "event_ticker": "KXMLBSPREAD-26OCT282000MILTB",
+      "ticker": "KXMLBSPREAD-26OCT282000MILTB-TB2",
       "numeric_fields": {
         "can_close_early": true,
         "exchange_index": 3,
@@ -3285,8 +1896,8 @@
     {
       "title": "Milwaukee wins by over 3.5 runs?",
       "series_ticker": "",
-      "event_ticker": "KXMLBSPREAD-26OCT272000MILTB",
-      "ticker": "KXMLBSPREAD-26OCT272000MILTB-MIL4",
+      "event_ticker": "KXMLBSPREAD-26OCT282000MILTB",
+      "ticker": "KXMLBSPREAD-26OCT282000MILTB-MIL4",
       "numeric_fields": {
         "can_close_early": true,
         "exchange_index": 3,
@@ -3298,8 +1909,8 @@
     {
       "title": "Milwaukee wins by over 2.5 runs?",
       "series_ticker": "",
-      "event_ticker": "KXMLBSPREAD-26OCT272000MILTB",
-      "ticker": "KXMLBSPREAD-26OCT272000MILTB-MIL3",
+      "event_ticker": "KXMLBSPREAD-26OCT282000MILTB",
+      "ticker": "KXMLBSPREAD-26OCT282000MILTB-MIL3",
       "numeric_fields": {
         "can_close_early": true,
         "exchange_index": 3,
@@ -3311,8 +1922,8 @@
     {
       "title": "Milwaukee wins by over 1.5 runs?",
       "series_ticker": "",
-      "event_ticker": "KXMLBSPREAD-26OCT272000MILTB",
-      "ticker": "KXMLBSPREAD-26OCT272000MILTB-MIL2",
+      "event_ticker": "KXMLBSPREAD-26OCT282000MILTB",
+      "ticker": "KXMLBSPREAD-26OCT282000MILTB-MIL2",
       "numeric_fields": {
         "can_close_early": true,
         "exchange_index": 3,
@@ -3322,842 +1933,10 @@
       "detected_by": "ticker"
     },
     {
-      "title": "Sal Frelick: 4+ total bases?",
-      "series_ticker": "",
-      "event_ticker": "KXMLBTB-26OCT272000MILTB",
-      "ticker": "KXMLBTB-26OCT272000MILTB-MILSFRELICK10-4",
-      "numeric_fields": {
-        "can_close_early": true,
-        "exchange_index": 3,
-        "floor_strike": 3.5,
-        "settlement_timer_seconds": 300
-      },
-      "detected_by": "ticker"
-    },
-    {
-      "title": "Sal Frelick: 3+ total bases?",
-      "series_ticker": "",
-      "event_ticker": "KXMLBTB-26OCT272000MILTB",
-      "ticker": "KXMLBTB-26OCT272000MILTB-MILSFRELICK10-3",
-      "numeric_fields": {
-        "can_close_early": true,
-        "exchange_index": 3,
-        "floor_strike": 2.5,
-        "settlement_timer_seconds": 300
-      },
-      "detected_by": "ticker"
-    },
-    {
-      "title": "Sal Frelick: 2+ total bases?",
-      "series_ticker": "",
-      "event_ticker": "KXMLBTB-26OCT272000MILTB",
-      "ticker": "KXMLBTB-26OCT272000MILTB-MILSFRELICK10-2",
-      "numeric_fields": {
-        "can_close_early": true,
-        "exchange_index": 3,
-        "floor_strike": 1.5,
-        "settlement_timer_seconds": 300
-      },
-      "detected_by": "ticker"
-    },
-    {
-      "title": "Ryan Vilade: 4+ total bases?",
-      "series_ticker": "",
-      "event_ticker": "KXMLBTB-26OCT272000MILTB",
-      "ticker": "KXMLBTB-26OCT272000MILTB-TBRVILADE26-4",
-      "numeric_fields": {
-        "can_close_early": true,
-        "exchange_index": 3,
-        "floor_strike": 3.5,
-        "settlement_timer_seconds": 300
-      },
-      "detected_by": "ticker"
-    },
-    {
-      "title": "Ryan Vilade: 3+ total bases?",
-      "series_ticker": "",
-      "event_ticker": "KXMLBTB-26OCT272000MILTB",
-      "ticker": "KXMLBTB-26OCT272000MILTB-TBRVILADE26-3",
-      "numeric_fields": {
-        "can_close_early": true,
-        "exchange_index": 3,
-        "floor_strike": 2.5,
-        "settlement_timer_seconds": 300
-      },
-      "detected_by": "ticker"
-    },
-    {
-      "title": "Ryan Vilade: 2+ total bases?",
-      "series_ticker": "",
-      "event_ticker": "KXMLBTB-26OCT272000MILTB",
-      "ticker": "KXMLBTB-26OCT272000MILTB-TBRVILADE26-2",
-      "numeric_fields": {
-        "can_close_early": true,
-        "exchange_index": 3,
-        "floor_strike": 1.5,
-        "settlement_timer_seconds": 300
-      },
-      "detected_by": "ticker"
-    },
-    {
-      "title": "Richie Palacios: 4+ total bases?",
-      "series_ticker": "",
-      "event_ticker": "KXMLBTB-26OCT272000MILTB",
-      "ticker": "KXMLBTB-26OCT272000MILTB-TBRPALACIOS1-4",
-      "numeric_fields": {
-        "can_close_early": true,
-        "exchange_index": 3,
-        "floor_strike": 3.5,
-        "settlement_timer_seconds": 300
-      },
-      "detected_by": "ticker"
-    },
-    {
-      "title": "Richie Palacios: 3+ total bases?",
-      "series_ticker": "",
-      "event_ticker": "KXMLBTB-26OCT272000MILTB",
-      "ticker": "KXMLBTB-26OCT272000MILTB-TBRPALACIOS1-3",
-      "numeric_fields": {
-        "can_close_early": true,
-        "exchange_index": 3,
-        "floor_strike": 2.5,
-        "settlement_timer_seconds": 300
-      },
-      "detected_by": "ticker"
-    },
-    {
-      "title": "Richie Palacios: 2+ total bases?",
-      "series_ticker": "",
-      "event_ticker": "KXMLBTB-26OCT272000MILTB",
-      "ticker": "KXMLBTB-26OCT272000MILTB-TBRPALACIOS1-2",
-      "numeric_fields": {
-        "can_close_early": true,
-        "exchange_index": 3,
-        "floor_strike": 1.5,
-        "settlement_timer_seconds": 300
-      },
-      "detected_by": "ticker"
-    },
-    {
-      "title": "Liam Hicks: 4+ total bases?",
-      "series_ticker": "",
-      "event_ticker": "KXMLBTB-26OCT272000MILTB",
-      "ticker": "KXMLBTB-26OCT272000MILTB-TBLHICKS34-4",
-      "numeric_fields": {
-        "can_close_early": true,
-        "exchange_index": 3,
-        "floor_strike": 3.5,
-        "settlement_timer_seconds": 300
-      },
-      "detected_by": "ticker"
-    },
-    {
-      "title": "Liam Hicks: 3+ total bases?",
-      "series_ticker": "",
-      "event_ticker": "KXMLBTB-26OCT272000MILTB",
-      "ticker": "KXMLBTB-26OCT272000MILTB-TBLHICKS34-3",
-      "numeric_fields": {
-        "can_close_early": true,
-        "exchange_index": 3,
-        "floor_strike": 2.5,
-        "settlement_timer_seconds": 300
-      },
-      "detected_by": "ticker"
-    },
-    {
-      "title": "Liam Hicks: 2+ total bases?",
-      "series_ticker": "",
-      "event_ticker": "KXMLBTB-26OCT272000MILTB",
-      "ticker": "KXMLBTB-26OCT272000MILTB-TBLHICKS34-2",
-      "numeric_fields": {
-        "can_close_early": true,
-        "exchange_index": 3,
-        "floor_strike": 1.5,
-        "settlement_timer_seconds": 300
-      },
-      "detected_by": "ticker"
-    },
-    {
-      "title": "David Hamilton: 4+ total bases?",
-      "series_ticker": "",
-      "event_ticker": "KXMLBTB-26OCT272000MILTB",
-      "ticker": "KXMLBTB-26OCT272000MILTB-MILDHAMILTON6-4",
-      "numeric_fields": {
-        "can_close_early": true,
-        "exchange_index": 3,
-        "floor_strike": 3.5,
-        "settlement_timer_seconds": 300
-      },
-      "detected_by": "ticker"
-    },
-    {
-      "title": "David Hamilton: 3+ total bases?",
-      "series_ticker": "",
-      "event_ticker": "KXMLBTB-26OCT272000MILTB",
-      "ticker": "KXMLBTB-26OCT272000MILTB-MILDHAMILTON6-3",
-      "numeric_fields": {
-        "can_close_early": true,
-        "exchange_index": 3,
-        "floor_strike": 2.5,
-        "settlement_timer_seconds": 300
-      },
-      "detected_by": "ticker"
-    },
-    {
-      "title": "David Hamilton: 2+ total bases?",
-      "series_ticker": "",
-      "event_ticker": "KXMLBTB-26OCT272000MILTB",
-      "ticker": "KXMLBTB-26OCT272000MILTB-MILDHAMILTON6-2",
-      "numeric_fields": {
-        "can_close_early": true,
-        "exchange_index": 3,
-        "floor_strike": 1.5,
-        "settlement_timer_seconds": 300
-      },
-      "detected_by": "ticker"
-    },
-    {
-      "title": "Christian Yelich: 5+ total bases?",
-      "series_ticker": "",
-      "event_ticker": "KXMLBTB-26OCT272000MILTB",
-      "ticker": "KXMLBTB-26OCT272000MILTB-MILCYELICH22-5",
-      "numeric_fields": {
-        "can_close_early": true,
-        "exchange_index": 3,
-        "floor_strike": 4.5,
-        "settlement_timer_seconds": 300
-      },
-      "detected_by": "ticker"
-    },
-    {
-      "title": "Christian Yelich: 4+ total bases?",
-      "series_ticker": "",
-      "event_ticker": "KXMLBTB-26OCT272000MILTB",
-      "ticker": "KXMLBTB-26OCT272000MILTB-MILCYELICH22-4",
-      "numeric_fields": {
-        "can_close_early": true,
-        "exchange_index": 3,
-        "floor_strike": 3.5,
-        "settlement_timer_seconds": 300
-      },
-      "detected_by": "ticker"
-    },
-    {
-      "title": "Christian Yelich: 3+ total bases?",
-      "series_ticker": "",
-      "event_ticker": "KXMLBTB-26OCT272000MILTB",
-      "ticker": "KXMLBTB-26OCT272000MILTB-MILCYELICH22-3",
-      "numeric_fields": {
-        "can_close_early": true,
-        "exchange_index": 3,
-        "floor_strike": 2.5,
-        "settlement_timer_seconds": 300
-      },
-      "detected_by": "ticker"
-    },
-    {
-      "title": "Christian Yelich: 2+ total bases?",
-      "series_ticker": "",
-      "event_ticker": "KXMLBTB-26OCT272000MILTB",
-      "ticker": "KXMLBTB-26OCT272000MILTB-MILCYELICH22-2",
-      "numeric_fields": {
-        "can_close_early": true,
-        "exchange_index": 3,
-        "floor_strike": 1.5,
-        "settlement_timer_seconds": 300
-      },
-      "detected_by": "ticker"
-    },
-    {
-      "title": "Chandler Simpson: 4+ total bases?",
-      "series_ticker": "",
-      "event_ticker": "KXMLBTB-26OCT272000MILTB",
-      "ticker": "KXMLBTB-26OCT272000MILTB-TBCSIMPSON14-4",
-      "numeric_fields": {
-        "can_close_early": true,
-        "exchange_index": 3,
-        "floor_strike": 3.5,
-        "settlement_timer_seconds": 300
-      },
-      "detected_by": "ticker"
-    },
-    {
-      "title": "Chandler Simpson: 3+ total bases?",
-      "series_ticker": "",
-      "event_ticker": "KXMLBTB-26OCT272000MILTB",
-      "ticker": "KXMLBTB-26OCT272000MILTB-TBCSIMPSON14-3",
-      "numeric_fields": {
-        "can_close_early": true,
-        "exchange_index": 3,
-        "floor_strike": 2.5,
-        "settlement_timer_seconds": 300
-      },
-      "detected_by": "ticker"
-    },
-    {
-      "title": "Chandler Simpson: 2+ total bases?",
-      "series_ticker": "",
-      "event_ticker": "KXMLBTB-26OCT272000MILTB",
-      "ticker": "KXMLBTB-26OCT272000MILTB-TBCSIMPSON14-2",
-      "numeric_fields": {
-        "can_close_early": true,
-        "exchange_index": 3,
-        "floor_strike": 1.5,
-        "settlement_timer_seconds": 300
-      },
-      "detected_by": "ticker"
-    },
-    {
-      "title": "Yandy D\u00edaz: 5+ total bases?",
-      "series_ticker": "",
-      "event_ticker": "KXMLBTB-26OCT272000MILTB",
-      "ticker": "KXMLBTB-26OCT272000MILTB-TBYDIAZ2-5",
-      "numeric_fields": {
-        "can_close_early": true,
-        "exchange_index": 3,
-        "floor_strike": 4.5,
-        "settlement_timer_seconds": 300
-      },
-      "detected_by": "ticker"
-    },
-    {
-      "title": "Yandy D\u00edaz: 4+ total bases?",
-      "series_ticker": "",
-      "event_ticker": "KXMLBTB-26OCT272000MILTB",
-      "ticker": "KXMLBTB-26OCT272000MILTB-TBYDIAZ2-4",
-      "numeric_fields": {
-        "can_close_early": true,
-        "exchange_index": 3,
-        "floor_strike": 3.5,
-        "settlement_timer_seconds": 300
-      },
-      "detected_by": "ticker"
-    },
-    {
-      "title": "Yandy D\u00edaz: 3+ total bases?",
-      "series_ticker": "",
-      "event_ticker": "KXMLBTB-26OCT272000MILTB",
-      "ticker": "KXMLBTB-26OCT272000MILTB-TBYDIAZ2-3",
-      "numeric_fields": {
-        "can_close_early": true,
-        "exchange_index": 3,
-        "floor_strike": 2.5,
-        "settlement_timer_seconds": 300
-      },
-      "detected_by": "ticker"
-    },
-    {
-      "title": "Yandy D\u00edaz: 2+ total bases?",
-      "series_ticker": "",
-      "event_ticker": "KXMLBTB-26OCT272000MILTB",
-      "ticker": "KXMLBTB-26OCT272000MILTB-TBYDIAZ2-2",
-      "numeric_fields": {
-        "can_close_early": true,
-        "exchange_index": 3,
-        "floor_strike": 1.5,
-        "settlement_timer_seconds": 300
-      },
-      "detected_by": "ticker"
-    },
-    {
-      "title": "Taylor Walls: 4+ total bases?",
-      "series_ticker": "",
-      "event_ticker": "KXMLBTB-26OCT272000MILTB",
-      "ticker": "KXMLBTB-26OCT272000MILTB-TBTWALLS6-4",
-      "numeric_fields": {
-        "can_close_early": true,
-        "exchange_index": 3,
-        "floor_strike": 3.5,
-        "settlement_timer_seconds": 300
-      },
-      "detected_by": "ticker"
-    },
-    {
-      "title": "Taylor Walls: 3+ total bases?",
-      "series_ticker": "",
-      "event_ticker": "KXMLBTB-26OCT272000MILTB",
-      "ticker": "KXMLBTB-26OCT272000MILTB-TBTWALLS6-3",
-      "numeric_fields": {
-        "can_close_early": true,
-        "exchange_index": 3,
-        "floor_strike": 2.5,
-        "settlement_timer_seconds": 300
-      },
-      "detected_by": "ticker"
-    },
-    {
-      "title": "Taylor Walls: 2+ total bases?",
-      "series_ticker": "",
-      "event_ticker": "KXMLBTB-26OCT272000MILTB",
-      "ticker": "KXMLBTB-26OCT272000MILTB-TBTWALLS6-2",
-      "numeric_fields": {
-        "can_close_early": true,
-        "exchange_index": 3,
-        "floor_strike": 1.5,
-        "settlement_timer_seconds": 300
-      },
-      "detected_by": "ticker"
-    },
-    {
-      "title": "Jonny DeLuca: 4+ total bases?",
-      "series_ticker": "",
-      "event_ticker": "KXMLBTB-26OCT272000MILTB",
-      "ticker": "KXMLBTB-26OCT272000MILTB-TBJDELUCA21-4",
-      "numeric_fields": {
-        "can_close_early": true,
-        "exchange_index": 3,
-        "floor_strike": 3.5,
-        "settlement_timer_seconds": 300
-      },
-      "detected_by": "ticker"
-    },
-    {
-      "title": "Jonny DeLuca: 3+ total bases?",
-      "series_ticker": "",
-      "event_ticker": "KXMLBTB-26OCT272000MILTB",
-      "ticker": "KXMLBTB-26OCT272000MILTB-TBJDELUCA21-3",
-      "numeric_fields": {
-        "can_close_early": true,
-        "exchange_index": 3,
-        "floor_strike": 2.5,
-        "settlement_timer_seconds": 300
-      },
-      "detected_by": "ticker"
-    },
-    {
-      "title": "Jonny DeLuca: 2+ total bases?",
-      "series_ticker": "",
-      "event_ticker": "KXMLBTB-26OCT272000MILTB",
-      "ticker": "KXMLBTB-26OCT272000MILTB-TBJDELUCA21-2",
-      "numeric_fields": {
-        "can_close_early": true,
-        "exchange_index": 3,
-        "floor_strike": 1.5,
-        "settlement_timer_seconds": 300
-      },
-      "detected_by": "ticker"
-    },
-    {
-      "title": "Junior Caminero: 5+ total bases?",
-      "series_ticker": "",
-      "event_ticker": "KXMLBTB-26OCT272000MILTB",
-      "ticker": "KXMLBTB-26OCT272000MILTB-TBJCAMINERO13-5",
-      "numeric_fields": {
-        "can_close_early": true,
-        "exchange_index": 3,
-        "floor_strike": 4.5,
-        "settlement_timer_seconds": 300
-      },
-      "detected_by": "ticker"
-    },
-    {
-      "title": "Junior Caminero: 4+ total bases?",
-      "series_ticker": "",
-      "event_ticker": "KXMLBTB-26OCT272000MILTB",
-      "ticker": "KXMLBTB-26OCT272000MILTB-TBJCAMINERO13-4",
-      "numeric_fields": {
-        "can_close_early": true,
-        "exchange_index": 3,
-        "floor_strike": 3.5,
-        "settlement_timer_seconds": 300
-      },
-      "detected_by": "ticker"
-    },
-    {
-      "title": "Junior Caminero: 3+ total bases?",
-      "series_ticker": "",
-      "event_ticker": "KXMLBTB-26OCT272000MILTB",
-      "ticker": "KXMLBTB-26OCT272000MILTB-TBJCAMINERO13-3",
-      "numeric_fields": {
-        "can_close_early": true,
-        "exchange_index": 3,
-        "floor_strike": 2.5,
-        "settlement_timer_seconds": 300
-      },
-      "detected_by": "ticker"
-    },
-    {
-      "title": "Junior Caminero: 2+ total bases?",
-      "series_ticker": "",
-      "event_ticker": "KXMLBTB-26OCT272000MILTB",
-      "ticker": "KXMLBTB-26OCT272000MILTB-TBJCAMINERO13-2",
-      "numeric_fields": {
-        "can_close_early": true,
-        "exchange_index": 3,
-        "floor_strike": 1.5,
-        "settlement_timer_seconds": 300
-      },
-      "detected_by": "ticker"
-    },
-    {
-      "title": "Jonathan Aranda: 5+ total bases?",
-      "series_ticker": "",
-      "event_ticker": "KXMLBTB-26OCT272000MILTB",
-      "ticker": "KXMLBTB-26OCT272000MILTB-TBJARANDA8-5",
-      "numeric_fields": {
-        "can_close_early": true,
-        "exchange_index": 3,
-        "floor_strike": 4.5,
-        "settlement_timer_seconds": 300
-      },
-      "detected_by": "ticker"
-    },
-    {
-      "title": "Jonathan Aranda: 4+ total bases?",
-      "series_ticker": "",
-      "event_ticker": "KXMLBTB-26OCT272000MILTB",
-      "ticker": "KXMLBTB-26OCT272000MILTB-TBJARANDA8-4",
-      "numeric_fields": {
-        "can_close_early": true,
-        "exchange_index": 3,
-        "floor_strike": 3.5,
-        "settlement_timer_seconds": 300
-      },
-      "detected_by": "ticker"
-    },
-    {
-      "title": "Jonathan Aranda: 3+ total bases?",
-      "series_ticker": "",
-      "event_ticker": "KXMLBTB-26OCT272000MILTB",
-      "ticker": "KXMLBTB-26OCT272000MILTB-TBJARANDA8-3",
-      "numeric_fields": {
-        "can_close_early": true,
-        "exchange_index": 3,
-        "floor_strike": 2.5,
-        "settlement_timer_seconds": 300
-      },
-      "detected_by": "ticker"
-    },
-    {
-      "title": "Jonathan Aranda: 2+ total bases?",
-      "series_ticker": "",
-      "event_ticker": "KXMLBTB-26OCT272000MILTB",
-      "ticker": "KXMLBTB-26OCT272000MILTB-TBJARANDA8-2",
-      "numeric_fields": {
-        "can_close_early": true,
-        "exchange_index": 3,
-        "floor_strike": 1.5,
-        "settlement_timer_seconds": 300
-      },
-      "detected_by": "ticker"
-    },
-    {
-      "title": "William Contreras: 5+ total bases?",
-      "series_ticker": "",
-      "event_ticker": "KXMLBTB-26OCT272000MILTB",
-      "ticker": "KXMLBTB-26OCT272000MILTB-MILWCONTRERAS24-5",
-      "numeric_fields": {
-        "can_close_early": true,
-        "exchange_index": 3,
-        "floor_strike": 4.5,
-        "settlement_timer_seconds": 300
-      },
-      "detected_by": "ticker"
-    },
-    {
-      "title": "William Contreras: 4+ total bases?",
-      "series_ticker": "",
-      "event_ticker": "KXMLBTB-26OCT272000MILTB",
-      "ticker": "KXMLBTB-26OCT272000MILTB-MILWCONTRERAS24-4",
-      "numeric_fields": {
-        "can_close_early": true,
-        "exchange_index": 3,
-        "floor_strike": 3.5,
-        "settlement_timer_seconds": 300
-      },
-      "detected_by": "ticker"
-    },
-    {
-      "title": "William Contreras: 3+ total bases?",
-      "series_ticker": "",
-      "event_ticker": "KXMLBTB-26OCT272000MILTB",
-      "ticker": "KXMLBTB-26OCT272000MILTB-MILWCONTRERAS24-3",
-      "numeric_fields": {
-        "can_close_early": true,
-        "exchange_index": 3,
-        "floor_strike": 2.5,
-        "settlement_timer_seconds": 300
-      },
-      "detected_by": "ticker"
-    },
-    {
-      "title": "William Contreras: 2+ total bases?",
-      "series_ticker": "",
-      "event_ticker": "KXMLBTB-26OCT272000MILTB",
-      "ticker": "KXMLBTB-26OCT272000MILTB-MILWCONTRERAS24-2",
-      "numeric_fields": {
-        "can_close_early": true,
-        "exchange_index": 3,
-        "floor_strike": 1.5,
-        "settlement_timer_seconds": 300
-      },
-      "detected_by": "ticker"
-    },
-    {
-      "title": "Jackson Chourio: 6+ total bases?",
-      "series_ticker": "",
-      "event_ticker": "KXMLBTB-26OCT272000MILTB",
-      "ticker": "KXMLBTB-26OCT272000MILTB-MILJCHOURIO11-6",
-      "numeric_fields": {
-        "can_close_early": true,
-        "exchange_index": 3,
-        "floor_strike": 5.5,
-        "settlement_timer_seconds": 300
-      },
-      "detected_by": "ticker"
-    },
-    {
-      "title": "Jackson Chourio: 5+ total bases?",
-      "series_ticker": "",
-      "event_ticker": "KXMLBTB-26OCT272000MILTB",
-      "ticker": "KXMLBTB-26OCT272000MILTB-MILJCHOURIO11-5",
-      "numeric_fields": {
-        "can_close_early": true,
-        "exchange_index": 3,
-        "floor_strike": 4.5,
-        "settlement_timer_seconds": 300
-      },
-      "detected_by": "ticker"
-    },
-    {
-      "title": "Jackson Chourio: 4+ total bases?",
-      "series_ticker": "",
-      "event_ticker": "KXMLBTB-26OCT272000MILTB",
-      "ticker": "KXMLBTB-26OCT272000MILTB-MILJCHOURIO11-4",
-      "numeric_fields": {
-        "can_close_early": true,
-        "exchange_index": 3,
-        "floor_strike": 3.5,
-        "settlement_timer_seconds": 300
-      },
-      "detected_by": "ticker"
-    },
-    {
-      "title": "Jackson Chourio: 3+ total bases?",
-      "series_ticker": "",
-      "event_ticker": "KXMLBTB-26OCT272000MILTB",
-      "ticker": "KXMLBTB-26OCT272000MILTB-MILJCHOURIO11-3",
-      "numeric_fields": {
-        "can_close_early": true,
-        "exchange_index": 3,
-        "floor_strike": 2.5,
-        "settlement_timer_seconds": 300
-      },
-      "detected_by": "ticker"
-    },
-    {
-      "title": "Jackson Chourio: 2+ total bases?",
-      "series_ticker": "",
-      "event_ticker": "KXMLBTB-26OCT272000MILTB",
-      "ticker": "KXMLBTB-26OCT272000MILTB-MILJCHOURIO11-2",
-      "numeric_fields": {
-        "can_close_early": true,
-        "exchange_index": 3,
-        "floor_strike": 1.5,
-        "settlement_timer_seconds": 300
-      },
-      "detected_by": "ticker"
-    },
-    {
-      "title": "Jake Bauers: 5+ total bases?",
-      "series_ticker": "",
-      "event_ticker": "KXMLBTB-26OCT272000MILTB",
-      "ticker": "KXMLBTB-26OCT272000MILTB-MILJBAUERS9-5",
-      "numeric_fields": {
-        "can_close_early": true,
-        "exchange_index": 3,
-        "floor_strike": 4.5,
-        "settlement_timer_seconds": 300
-      },
-      "detected_by": "ticker"
-    },
-    {
-      "title": "Jake Bauers: 4+ total bases?",
-      "series_ticker": "",
-      "event_ticker": "KXMLBTB-26OCT272000MILTB",
-      "ticker": "KXMLBTB-26OCT272000MILTB-MILJBAUERS9-4",
-      "numeric_fields": {
-        "can_close_early": true,
-        "exchange_index": 3,
-        "floor_strike": 3.5,
-        "settlement_timer_seconds": 300
-      },
-      "detected_by": "ticker"
-    },
-    {
-      "title": "Jake Bauers: 3+ total bases?",
-      "series_ticker": "",
-      "event_ticker": "KXMLBTB-26OCT272000MILTB",
-      "ticker": "KXMLBTB-26OCT272000MILTB-MILJBAUERS9-3",
-      "numeric_fields": {
-        "can_close_early": true,
-        "exchange_index": 3,
-        "floor_strike": 2.5,
-        "settlement_timer_seconds": 300
-      },
-      "detected_by": "ticker"
-    },
-    {
-      "title": "Jake Bauers: 2+ total bases?",
-      "series_ticker": "",
-      "event_ticker": "KXMLBTB-26OCT272000MILTB",
-      "ticker": "KXMLBTB-26OCT272000MILTB-MILJBAUERS9-2",
-      "numeric_fields": {
-        "can_close_early": true,
-        "exchange_index": 3,
-        "floor_strike": 1.5,
-        "settlement_timer_seconds": 300
-      },
-      "detected_by": "ticker"
-    },
-    {
-      "title": "Garrett Mitchell: 5+ total bases?",
-      "series_ticker": "",
-      "event_ticker": "KXMLBTB-26OCT272000MILTB",
-      "ticker": "KXMLBTB-26OCT272000MILTB-MILGMITCHELL5-5",
-      "numeric_fields": {
-        "can_close_early": true,
-        "exchange_index": 3,
-        "floor_strike": 4.5,
-        "settlement_timer_seconds": 300
-      },
-      "detected_by": "ticker"
-    },
-    {
-      "title": "Garrett Mitchell: 4+ total bases?",
-      "series_ticker": "",
-      "event_ticker": "KXMLBTB-26OCT272000MILTB",
-      "ticker": "KXMLBTB-26OCT272000MILTB-MILGMITCHELL5-4",
-      "numeric_fields": {
-        "can_close_early": true,
-        "exchange_index": 3,
-        "floor_strike": 3.5,
-        "settlement_timer_seconds": 300
-      },
-      "detected_by": "ticker"
-    },
-    {
-      "title": "Garrett Mitchell: 3+ total bases?",
-      "series_ticker": "",
-      "event_ticker": "KXMLBTB-26OCT272000MILTB",
-      "ticker": "KXMLBTB-26OCT272000MILTB-MILGMITCHELL5-3",
-      "numeric_fields": {
-        "can_close_early": true,
-        "exchange_index": 3,
-        "floor_strike": 2.5,
-        "settlement_timer_seconds": 300
-      },
-      "detected_by": "ticker"
-    },
-    {
-      "title": "Garrett Mitchell: 2+ total bases?",
-      "series_ticker": "",
-      "event_ticker": "KXMLBTB-26OCT272000MILTB",
-      "ticker": "KXMLBTB-26OCT272000MILTB-MILGMITCHELL5-2",
-      "numeric_fields": {
-        "can_close_early": true,
-        "exchange_index": 3,
-        "floor_strike": 1.5,
-        "settlement_timer_seconds": 300
-      },
-      "detected_by": "ticker"
-    },
-    {
-      "title": "Cooper Pratt: 4+ total bases?",
-      "series_ticker": "",
-      "event_ticker": "KXMLBTB-26OCT272000MILTB",
-      "ticker": "KXMLBTB-26OCT272000MILTB-MILCPRATT87-4",
-      "numeric_fields": {
-        "can_close_early": true,
-        "exchange_index": 3,
-        "floor_strike": 3.5,
-        "settlement_timer_seconds": 300
-      },
-      "detected_by": "ticker"
-    },
-    {
-      "title": "Cooper Pratt: 3+ total bases?",
-      "series_ticker": "",
-      "event_ticker": "KXMLBTB-26OCT272000MILTB",
-      "ticker": "KXMLBTB-26OCT272000MILTB-MILCPRATT87-3",
-      "numeric_fields": {
-        "can_close_early": true,
-        "exchange_index": 3,
-        "floor_strike": 2.5,
-        "settlement_timer_seconds": 300
-      },
-      "detected_by": "ticker"
-    },
-    {
-      "title": "Cooper Pratt: 2+ total bases?",
-      "series_ticker": "",
-      "event_ticker": "KXMLBTB-26OCT272000MILTB",
-      "ticker": "KXMLBTB-26OCT272000MILTB-MILCPRATT87-2",
-      "numeric_fields": {
-        "can_close_early": true,
-        "exchange_index": 3,
-        "floor_strike": 1.5,
-        "settlement_timer_seconds": 300
-      },
-      "detected_by": "ticker"
-    },
-    {
-      "title": "Brice Turang: 5+ total bases?",
-      "series_ticker": "",
-      "event_ticker": "KXMLBTB-26OCT272000MILTB",
-      "ticker": "KXMLBTB-26OCT272000MILTB-MILBTURANG2-5",
-      "numeric_fields": {
-        "can_close_early": true,
-        "exchange_index": 3,
-        "floor_strike": 4.5,
-        "settlement_timer_seconds": 300
-      },
-      "detected_by": "ticker"
-    },
-    {
-      "title": "Brice Turang: 4+ total bases?",
-      "series_ticker": "",
-      "event_ticker": "KXMLBTB-26OCT272000MILTB",
-      "ticker": "KXMLBTB-26OCT272000MILTB-MILBTURANG2-4",
-      "numeric_fields": {
-        "can_close_early": true,
-        "exchange_index": 3,
-        "floor_strike": 3.5,
-        "settlement_timer_seconds": 300
-      },
-      "detected_by": "ticker"
-    },
-    {
-      "title": "Brice Turang: 3+ total bases?",
-      "series_ticker": "",
-      "event_ticker": "KXMLBTB-26OCT272000MILTB",
-      "ticker": "KXMLBTB-26OCT272000MILTB-MILBTURANG2-3",
-      "numeric_fields": {
-        "can_close_early": true,
-        "exchange_index": 3,
-        "floor_strike": 2.5,
-        "settlement_timer_seconds": 300
-      },
-      "detected_by": "ticker"
-    },
-    {
-      "title": "Brice Turang: 2+ total bases?",
-      "series_ticker": "",
-      "event_ticker": "KXMLBTB-26OCT272000MILTB",
-      "ticker": "KXMLBTB-26OCT272000MILTB-MILBTURANG2-2",
-      "numeric_fields": {
-        "can_close_early": true,
-        "exchange_index": 3,
-        "floor_strike": 1.5,
-        "settlement_timer_seconds": 300
-      },
-      "detected_by": "ticker"
-    },
-    {
       "title": "Will Tampa Bay score over 7.5 runs?",
       "series_ticker": "",
-      "event_ticker": "KXMLBTEAMTOTAL-26OCT272000MILTB",
-      "ticker": "KXMLBTEAMTOTAL-26OCT272000MILTB-TB8",
+      "event_ticker": "KXMLBTEAMTOTAL-26OCT282000MILTB",
+      "ticker": "KXMLBTEAMTOTAL-26OCT282000MILTB-TB8",
       "numeric_fields": {
         "can_close_early": true,
         "exchange_index": 3,
@@ -4169,8 +1948,8 @@
     {
       "title": "Will Tampa Bay score over 6.5 runs?",
       "series_ticker": "",
-      "event_ticker": "KXMLBTEAMTOTAL-26OCT272000MILTB",
-      "ticker": "KXMLBTEAMTOTAL-26OCT272000MILTB-TB7",
+      "event_ticker": "KXMLBTEAMTOTAL-26OCT282000MILTB",
+      "ticker": "KXMLBTEAMTOTAL-26OCT282000MILTB-TB7",
       "numeric_fields": {
         "can_close_early": true,
         "exchange_index": 3,
@@ -4182,8 +1961,8 @@
     {
       "title": "Will Tampa Bay score over 5.5 runs?",
       "series_ticker": "",
-      "event_ticker": "KXMLBTEAMTOTAL-26OCT272000MILTB",
-      "ticker": "KXMLBTEAMTOTAL-26OCT272000MILTB-TB6",
+      "event_ticker": "KXMLBTEAMTOTAL-26OCT282000MILTB",
+      "ticker": "KXMLBTEAMTOTAL-26OCT282000MILTB-TB6",
       "numeric_fields": {
         "can_close_early": true,
         "exchange_index": 3,
@@ -4195,8 +1974,8 @@
     {
       "title": "Will Tampa Bay score over 4.5 runs?",
       "series_ticker": "",
-      "event_ticker": "KXMLBTEAMTOTAL-26OCT272000MILTB",
-      "ticker": "KXMLBTEAMTOTAL-26OCT272000MILTB-TB5",
+      "event_ticker": "KXMLBTEAMTOTAL-26OCT282000MILTB",
+      "ticker": "KXMLBTEAMTOTAL-26OCT282000MILTB-TB5",
       "numeric_fields": {
         "can_close_early": true,
         "exchange_index": 3,
@@ -4208,8 +1987,8 @@
     {
       "title": "Will Tampa Bay score over 3.5 runs?",
       "series_ticker": "",
-      "event_ticker": "KXMLBTEAMTOTAL-26OCT272000MILTB",
-      "ticker": "KXMLBTEAMTOTAL-26OCT272000MILTB-TB4",
+      "event_ticker": "KXMLBTEAMTOTAL-26OCT282000MILTB",
+      "ticker": "KXMLBTEAMTOTAL-26OCT282000MILTB-TB4",
       "numeric_fields": {
         "can_close_early": true,
         "exchange_index": 3,
@@ -4221,8 +2000,8 @@
     {
       "title": "Will Tampa Bay score over 2.5 runs?",
       "series_ticker": "",
-      "event_ticker": "KXMLBTEAMTOTAL-26OCT272000MILTB",
-      "ticker": "KXMLBTEAMTOTAL-26OCT272000MILTB-TB3",
+      "event_ticker": "KXMLBTEAMTOTAL-26OCT282000MILTB",
+      "ticker": "KXMLBTEAMTOTAL-26OCT282000MILTB-TB3",
       "numeric_fields": {
         "can_close_early": true,
         "exchange_index": 3,
@@ -4234,8 +2013,8 @@
     {
       "title": "Will Tampa Bay score over 1.5 runs?",
       "series_ticker": "",
-      "event_ticker": "KXMLBTEAMTOTAL-26OCT272000MILTB",
-      "ticker": "KXMLBTEAMTOTAL-26OCT272000MILTB-TB2",
+      "event_ticker": "KXMLBTEAMTOTAL-26OCT282000MILTB",
+      "ticker": "KXMLBTEAMTOTAL-26OCT282000MILTB-TB2",
       "numeric_fields": {
         "can_close_early": true,
         "exchange_index": 3,
@@ -4247,8 +2026,8 @@
     {
       "title": "Will Milwaukee score over 7.5 runs?",
       "series_ticker": "",
-      "event_ticker": "KXMLBTEAMTOTAL-26OCT272000MILTB",
-      "ticker": "KXMLBTEAMTOTAL-26OCT272000MILTB-MIL8",
+      "event_ticker": "KXMLBTEAMTOTAL-26OCT282000MILTB",
+      "ticker": "KXMLBTEAMTOTAL-26OCT282000MILTB-MIL8",
       "numeric_fields": {
         "can_close_early": true,
         "exchange_index": 3,
@@ -4260,8 +2039,8 @@
     {
       "title": "Will Milwaukee score over 6.5 runs?",
       "series_ticker": "",
-      "event_ticker": "KXMLBTEAMTOTAL-26OCT272000MILTB",
-      "ticker": "KXMLBTEAMTOTAL-26OCT272000MILTB-MIL7",
+      "event_ticker": "KXMLBTEAMTOTAL-26OCT282000MILTB",
+      "ticker": "KXMLBTEAMTOTAL-26OCT282000MILTB-MIL7",
       "numeric_fields": {
         "can_close_early": true,
         "exchange_index": 3,
@@ -4273,8 +2052,8 @@
     {
       "title": "Will Milwaukee score over 5.5 runs?",
       "series_ticker": "",
-      "event_ticker": "KXMLBTEAMTOTAL-26OCT272000MILTB",
-      "ticker": "KXMLBTEAMTOTAL-26OCT272000MILTB-MIL6",
+      "event_ticker": "KXMLBTEAMTOTAL-26OCT282000MILTB",
+      "ticker": "KXMLBTEAMTOTAL-26OCT282000MILTB-MIL6",
       "numeric_fields": {
         "can_close_early": true,
         "exchange_index": 3,
@@ -4286,8 +2065,8 @@
     {
       "title": "Will Milwaukee score over 4.5 runs?",
       "series_ticker": "",
-      "event_ticker": "KXMLBTEAMTOTAL-26OCT272000MILTB",
-      "ticker": "KXMLBTEAMTOTAL-26OCT272000MILTB-MIL5",
+      "event_ticker": "KXMLBTEAMTOTAL-26OCT282000MILTB",
+      "ticker": "KXMLBTEAMTOTAL-26OCT282000MILTB-MIL5",
       "numeric_fields": {
         "can_close_early": true,
         "exchange_index": 3,
@@ -4299,8 +2078,8 @@
     {
       "title": "Will Milwaukee score over 3.5 runs?",
       "series_ticker": "",
-      "event_ticker": "KXMLBTEAMTOTAL-26OCT272000MILTB",
-      "ticker": "KXMLBTEAMTOTAL-26OCT272000MILTB-MIL4",
+      "event_ticker": "KXMLBTEAMTOTAL-26OCT282000MILTB",
+      "ticker": "KXMLBTEAMTOTAL-26OCT282000MILTB-MIL4",
       "numeric_fields": {
         "can_close_early": true,
         "exchange_index": 3,
@@ -4312,8 +2091,8 @@
     {
       "title": "Will Milwaukee score over 2.5 runs?",
       "series_ticker": "",
-      "event_ticker": "KXMLBTEAMTOTAL-26OCT272000MILTB",
-      "ticker": "KXMLBTEAMTOTAL-26OCT272000MILTB-MIL3",
+      "event_ticker": "KXMLBTEAMTOTAL-26OCT282000MILTB",
+      "ticker": "KXMLBTEAMTOTAL-26OCT282000MILTB-MIL3",
       "numeric_fields": {
         "can_close_early": true,
         "exchange_index": 3,
@@ -4325,8 +2104,8 @@
     {
       "title": "Will Milwaukee score over 1.5 runs?",
       "series_ticker": "",
-      "event_ticker": "KXMLBTEAMTOTAL-26OCT272000MILTB",
-      "ticker": "KXMLBTEAMTOTAL-26OCT272000MILTB-MIL2",
+      "event_ticker": "KXMLBTEAMTOTAL-26OCT282000MILTB",
+      "ticker": "KXMLBTEAMTOTAL-26OCT282000MILTB-MIL2",
       "numeric_fields": {
         "can_close_early": true,
         "exchange_index": 3,
@@ -4338,8 +2117,8 @@
     {
       "title": "Over 8.5 runs scored",
       "series_ticker": "",
-      "event_ticker": "KXMLBTOTAL-26OCT272000MILTB",
-      "ticker": "KXMLBTOTAL-26OCT272000MILTB-9",
+      "event_ticker": "KXMLBTOTAL-26OCT282000MILTB",
+      "ticker": "KXMLBTOTAL-26OCT282000MILTB-9",
       "numeric_fields": {
         "can_close_early": true,
         "exchange_index": 3,
@@ -4351,8 +2130,8 @@
     {
       "title": "Over 7.5 runs scored",
       "series_ticker": "",
-      "event_ticker": "KXMLBTOTAL-26OCT272000MILTB",
-      "ticker": "KXMLBTOTAL-26OCT272000MILTB-8",
+      "event_ticker": "KXMLBTOTAL-26OCT282000MILTB",
+      "ticker": "KXMLBTOTAL-26OCT282000MILTB-8",
       "numeric_fields": {
         "can_close_early": true,
         "exchange_index": 3,
@@ -4364,8 +2143,8 @@
     {
       "title": "Over 6.5 runs scored",
       "series_ticker": "",
-      "event_ticker": "KXMLBTOTAL-26OCT272000MILTB",
-      "ticker": "KXMLBTOTAL-26OCT272000MILTB-7",
+      "event_ticker": "KXMLBTOTAL-26OCT282000MILTB",
+      "ticker": "KXMLBTOTAL-26OCT282000MILTB-7",
       "numeric_fields": {
         "can_close_early": true,
         "exchange_index": 3,
@@ -4377,8 +2156,8 @@
     {
       "title": "Over 5.5 runs scored",
       "series_ticker": "",
-      "event_ticker": "KXMLBTOTAL-26OCT272000MILTB",
-      "ticker": "KXMLBTOTAL-26OCT272000MILTB-6",
+      "event_ticker": "KXMLBTOTAL-26OCT282000MILTB",
+      "ticker": "KXMLBTOTAL-26OCT282000MILTB-6",
       "numeric_fields": {
         "can_close_early": true,
         "exchange_index": 3,
@@ -4390,8 +2169,8 @@
     {
       "title": "Over 4.5 runs scored",
       "series_ticker": "",
-      "event_ticker": "KXMLBTOTAL-26OCT272000MILTB",
-      "ticker": "KXMLBTOTAL-26OCT272000MILTB-5",
+      "event_ticker": "KXMLBTOTAL-26OCT282000MILTB",
+      "ticker": "KXMLBTOTAL-26OCT282000MILTB-5",
       "numeric_fields": {
         "can_close_early": true,
         "exchange_index": 3,
@@ -4401,14 +2180,40 @@
       "detected_by": "ticker"
     },
     {
-      "title": "Over 11.5 runs scored",
+      "title": "Over 3.5 runs scored",
       "series_ticker": "",
-      "event_ticker": "KXMLBTOTAL-26OCT272000MILTB",
-      "ticker": "KXMLBTOTAL-26OCT272000MILTB-12",
+      "event_ticker": "KXMLBTOTAL-26OCT282000MILTB",
+      "ticker": "KXMLBTOTAL-26OCT282000MILTB-4",
       "numeric_fields": {
         "can_close_early": true,
         "exchange_index": 3,
-        "floor_strike": 11.5,
+        "floor_strike": 3.5,
+        "settlement_timer_seconds": 60
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Over 2.5 runs scored",
+      "series_ticker": "",
+      "event_ticker": "KXMLBTOTAL-26OCT282000MILTB",
+      "ticker": "KXMLBTOTAL-26OCT282000MILTB-3",
+      "numeric_fields": {
+        "can_close_early": true,
+        "exchange_index": 3,
+        "floor_strike": 2.5,
+        "settlement_timer_seconds": 60
+      },
+      "detected_by": "ticker"
+    },
+    {
+      "title": "Over 1.5 runs scored",
+      "series_ticker": "",
+      "event_ticker": "KXMLBTOTAL-26OCT282000MILTB",
+      "ticker": "KXMLBTOTAL-26OCT282000MILTB-2",
+      "numeric_fields": {
+        "can_close_early": true,
+        "exchange_index": 3,
+        "floor_strike": 1.5,
         "settlement_timer_seconds": 60
       },
       "detected_by": "ticker"
@@ -4416,8 +2221,8 @@
     {
       "title": "Over 10.5 runs scored",
       "series_ticker": "",
-      "event_ticker": "KXMLBTOTAL-26OCT272000MILTB",
-      "ticker": "KXMLBTOTAL-26OCT272000MILTB-11",
+      "event_ticker": "KXMLBTOTAL-26OCT282000MILTB",
+      "ticker": "KXMLBTOTAL-26OCT282000MILTB-11",
       "numeric_fields": {
         "can_close_early": true,
         "exchange_index": 3,
@@ -4429,8 +2234,8 @@
     {
       "title": "Over 9.5 runs scored",
       "series_ticker": "",
-      "event_ticker": "KXMLBTOTAL-26OCT272000MILTB",
-      "ticker": "KXMLBTOTAL-26OCT272000MILTB-10",
+      "event_ticker": "KXMLBTOTAL-26OCT282000MILTB",
+      "ticker": "KXMLBTOTAL-26OCT282000MILTB-10",
       "numeric_fields": {
         "can_close_early": true,
         "exchange_index": 3,
@@ -4443,132 +2248,30 @@
   "raw_schema_sample": [
     {
       "can_close_early": true,
-      "close_time": "2028-10-31T04:00:00Z",
-      "created_time": "2025-12-16T23:26:57.633826Z",
+      "close_time": "2026-11-01T00:00:00Z",
+      "created_time": "2026-10-28T05:32:12.95955Z",
       "custom_strike": {
-        "baseball_team": "942f3f85-869a-4f7a-8e5a-336365c5294b"
-      },
-      "early_close_condition": "This market will close and expire after a title holder is declared.",
-      "event_ticker": "KXMLB-26",
-      "exchange_index": 0,
-      "expected_expiration_time": "2026-11-01T04:00:00Z",
-      "expiration_time": "2028-10-31T04:00:00Z",
-      "expiration_value": "",
-      "last_price_dollars": "0.0530",
-      "latest_expiration_time": "2028-10-31T04:00:00Z",
-      "market_type": "binary",
-      "no_ask_dollars": "0.9480",
-      "no_bid_dollars": "0.9440",
-      "no_sub_title": "Tampa Bay",
-      "notional_value_dollars": "1.0000",
-      "open_interest_fp": "5946838.93",
-      "open_time": "2025-12-17T15:00:00Z",
-      "previous_price_dollars": "0.0420",
-      "previous_yes_ask_dollars": "0.0440",
-      "previous_yes_bid_dollars": "0.0420",
-      "price_level_structure": "deci_cent",
-      "price_ranges": [
-        {
-          "end": "1.0000",
-          "start": "0.0000",
-          "step": "0.0010"
-        }
-      ],
-      "result": "",
-      "rules_primary": "If Tampa Bay wins the 2026 Pro Baseball Championship, then the market resolves to Yes.",
-      "rules_secondary": "Kalshi is not affiliated, associated, authorized, endorsed by, or in any way officially connected with the Governing League. All trademarks, logos, and brand names are the property of their respective owners.",
-      "settlement_bounds_type": "default",
-      "settlement_timer_seconds": 300,
-      "status": "active",
-      "strike_type": "structured",
-      "ticker": "KXMLB-26-TB",
-      "title": "Will Tampa Bay win the 2026 Pro Baseball Championship?",
-      "updated_time": "2026-07-13T21:35:15.63415Z",
-      "volume_24h_fp": "1552182.74",
-      "volume_fp": "11463269.22",
-      "yes_ask_dollars": "0.0560",
-      "yes_ask_size_fp": "26.48",
-      "yes_bid_dollars": "0.0520",
-      "yes_bid_size_fp": "27.15",
-      "yes_sub_title": "Tampa Bay"
-    },
-    {
-      "can_close_early": true,
-      "close_time": "2028-10-31T04:00:00Z",
-      "created_time": "2025-12-16T23:26:57.633826Z",
-      "custom_strike": {
-        "baseball_team": "087f0ae7-c231-4dcd-b7e5-f026c1769e40"
-      },
-      "early_close_condition": "This market will close and expire after a title holder is declared.",
-      "event_ticker": "KXMLB-26",
-      "exchange_index": 0,
-      "expected_expiration_time": "2026-11-01T04:00:00Z",
-      "expiration_time": "2028-10-31T04:00:00Z",
-      "expiration_value": "",
-      "last_price_dollars": "0.9510",
-      "latest_expiration_time": "2028-10-31T04:00:00Z",
-      "market_type": "binary",
-      "no_ask_dollars": "0.0490",
-      "no_bid_dollars": "0.0480",
-      "no_sub_title": "Milwaukee",
-      "notional_value_dollars": "1.0000",
-      "open_interest_fp": "6481228.67",
-      "open_time": "2025-12-17T15:00:00Z",
-      "previous_price_dollars": "0.9580",
-      "previous_yes_ask_dollars": "0.9580",
-      "previous_yes_bid_dollars": "0.9540",
-      "price_level_structure": "deci_cent",
-      "price_ranges": [
-        {
-          "end": "1.0000",
-          "start": "0.0000",
-          "step": "0.0010"
-        }
-      ],
-      "result": "",
-      "rules_primary": "If Milwaukee wins the 2026 Pro Baseball Championship, then the market resolves to Yes.",
-      "rules_secondary": "Kalshi is not affiliated, associated, authorized, endorsed by, or in any way officially connected with the Governing League. All trademarks, logos, and brand names are the property of their respective owners.",
-      "settlement_bounds_type": "default",
-      "settlement_timer_seconds": 300,
-      "status": "active",
-      "strike_type": "structured",
-      "ticker": "KXMLB-26-MIL",
-      "title": "Will Milwaukee win the 2026 Pro Baseball Championship?",
-      "updated_time": "2026-07-13T21:31:32.511076Z",
-      "volume_24h_fp": "600672.58",
-      "volume_fp": "14051359.24",
-      "yes_ask_dollars": "0.9520",
-      "yes_ask_size_fp": "396.26",
-      "yes_bid_dollars": "0.9510",
-      "yes_bid_size_fp": "192.55",
-      "yes_sub_title": "Milwaukee"
-    },
-    {
-      "can_close_early": true,
-      "close_time": "2026-10-31T00:00:00Z",
-      "created_time": "2026-10-20T03:32:58.388303Z",
-      "custom_strike": {
-        "baseball_team": "942f3f85-869a-4f7a-8e5a-336365c5294b"
+        "baseball_team": "b8c3e2a1-7f4d-4e9b-a6d0-3c5f8e1b2a49"
       },
       "early_close_condition": "This market will close and expire after a winner is declared.",
-      "event_ticker": "KXMLBGAME-26OCT272000MILTB",
+      "event_ticker": "KXMLBF3-26OCT282000MILTB",
       "exchange_index": 3,
-      "expected_expiration_time": "2026-10-28T03:00:00Z",
-      "expiration_time": "2026-10-31T00:00:00Z",
+      "expected_expiration_time": "2026-10-29T03:00:00Z",
+      "expiration_time": "2026-11-01T00:00:00Z",
       "expiration_value": "",
-      "last_price_dollars": "0.4700",
-      "latest_expiration_time": "2026-10-31T00:00:00Z",
+      "last_price_dollars": "0.3100",
+      "latest_expiration_time": "2026-11-01T00:00:00Z",
       "market_type": "binary",
-      "no_ask_dollars": "0.5400",
-      "no_bid_dollars": "0.5300",
-      "no_sub_title": "Tampa Bay",
+      "no_ask_dollars": "0.7100",
+      "no_bid_dollars": "0.6900",
+      "no_sub_title": "Tie",
       "notional_value_dollars": "1.0000",
-      "occurrence_datetime": "2026-10-28T03:00:00Z",
-      "open_interest_fp": "5247776.56",
-      "open_time": "2026-10-20T03:41:00Z",
-      "previous_price_dollars": "0.4400",
-      "previous_yes_ask_dollars": "0.4400",
-      "previous_yes_bid_dollars": "0.4300",
+      "occurrence_datetime": "2026-10-29T05:00:00Z",
+      "open_interest_fp": "3342.70",
+      "open_time": "2026-10-28T05:40:00Z",
+      "previous_price_dollars": "0.0000",
+      "previous_yes_ask_dollars": "0.0000",
+      "previous_yes_bid_dollars": "0.0000",
       "price_level_structure": "linear_cent",
       "price_ranges": [
         {
@@ -4578,22 +2281,126 @@
         }
       ],
       "result": "",
-      "rules_primary": "If Tampa Bay wins the Milwaukee vs Tampa Bay professional baseball game originally scheduled for Oct 27, 2026, then the market resolves to Yes.",
-      "rules_secondary": "The following market refers to the Milwaukee vs Tampa Bay professional baseball game originally scheduled for Oct 27, 2026. If this game is postponed or delayed, the market will remain open and close after the rescheduled game has finished (within two days). If the game is cancelled or rescheduled to over two days away, the market will resolve to a fair price in accordance with the rules.\n\nKalshi is not affiliated, associated, authorized, endorsed by, or in any way officially connected with the Governing League. All trademarks, logos, and brand names are the property of their respective owners.",
+      "rules_primary": "If Milwaukee and Tampa Bay tie in the first 3 innings of the Milwaukee vs Tampa Bay professional baseball game originally scheduled for Oct 28, 2026 at 8:00 PM EDT, then the market resolves to Yes.",
+      "rules_secondary": "This market refers to the first 3 innings of the Milwaukee vs Tampa Bay professional baseball game originally scheduled for Oct 28, 2026 at 8:00 PM EDT. If the score at the end of the first 3 innings is tied, the \"Tie\" strike will resolve to Yes and all team strikes will resolve to No. If this game is postponed or delayed, the market will remain open and close after the rescheduled game has finished (within two days).\n\nKalshi is not affiliated, associated, authorized, endorsed by, or in any way officially connected with the Governing League. All trademarks, logos, and brand names are the property of their respective owners.",
       "settlement_bounds_type": "default",
-      "settlement_timer_seconds": 120,
+      "settlement_timer_seconds": 300,
       "status": "active",
       "strike_type": "structured",
-      "ticker": "KXMLBGAME-26OCT272000MILTB-TB",
-      "title": "Tampa Bay wins",
-      "updated_time": "2026-10-20T03:41:00.418055Z",
-      "volume_24h_fp": "7086498.38",
-      "volume_fp": "7402549.07",
-      "yes_ask_dollars": "0.4700",
-      "yes_ask_size_fp": "4950.05",
-      "yes_bid_dollars": "0.4600",
-      "yes_bid_size_fp": "16942.41",
+      "ticker": "KXMLBF3-26OCT282000MILTB-TIE",
+      "title": "first 3 innings tie",
+      "updated_time": "2026-10-28T05:40:00.28383Z",
+      "volume_24h_fp": "3263.96",
+      "volume_fp": "3342.70",
+      "yes_ask_dollars": "0.3100",
+      "yes_ask_size_fp": "2281.00",
+      "yes_bid_dollars": "0.2900",
+      "yes_bid_size_fp": "109.00",
+      "yes_sub_title": "Tie"
+    },
+    {
+      "can_close_early": true,
+      "close_time": "2026-11-01T00:00:00Z",
+      "created_time": "2026-10-28T05:32:12.95955Z",
+      "custom_strike": {
+        "baseball_team": "942f3f85-869a-4f7a-8e5a-336365c5294b"
+      },
+      "early_close_condition": "This market will close and expire after a winner is declared.",
+      "event_ticker": "KXMLBF3-26OCT282000MILTB",
+      "exchange_index": 3,
+      "expected_expiration_time": "2026-10-29T03:00:00Z",
+      "expiration_time": "2026-11-01T00:00:00Z",
+      "expiration_value": "",
+      "last_price_dollars": "0.3200",
+      "latest_expiration_time": "2026-11-01T00:00:00Z",
+      "market_type": "binary",
+      "no_ask_dollars": "0.7100",
+      "no_bid_dollars": "0.6800",
+      "no_sub_title": "Tampa Bay",
+      "notional_value_dollars": "1.0000",
+      "occurrence_datetime": "2026-10-29T05:00:00Z",
+      "open_interest_fp": "45.17",
+      "open_time": "2026-10-28T05:40:00Z",
+      "previous_price_dollars": "0.0000",
+      "previous_yes_ask_dollars": "0.0000",
+      "previous_yes_bid_dollars": "0.0000",
+      "price_level_structure": "linear_cent",
+      "price_ranges": [
+        {
+          "end": "1.0000",
+          "start": "0.0000",
+          "step": "0.0100"
+        }
+      ],
+      "result": "",
+      "rules_primary": "If Tampa Bay wins the first 3 innings of the Milwaukee vs Tampa Bay professional baseball game originally scheduled for Oct 28, 2026 at 8:00 PM EDT, then the market resolves to Yes.",
+      "rules_secondary": "This market refers to the first 3 innings of the Milwaukee vs Tampa Bay professional baseball game originally scheduled for Oct 28, 2026 at 8:00 PM EDT. If the score at the end of the first 3 innings is tied, the \"Tie\" strike will resolve to Yes and all team strikes will resolve to No. If this game is postponed or delayed, the market will remain open and close after the rescheduled game has finished (within two days).\n\nKalshi is not affiliated, associated, authorized, endorsed by, or in any way officially connected with the Governing League. All trademarks, logos, and brand names are the property of their respective owners.",
+      "settlement_bounds_type": "default",
+      "settlement_timer_seconds": 300,
+      "status": "active",
+      "strike_type": "structured",
+      "ticker": "KXMLBF3-26OCT282000MILTB-TB",
+      "title": "Tampa Bay first 3 innings winner",
+      "updated_time": "2026-10-28T05:40:00.28383Z",
+      "volume_24h_fp": "186.53",
+      "volume_fp": "186.53",
+      "yes_ask_dollars": "0.3200",
+      "yes_ask_size_fp": "1832.24",
+      "yes_bid_dollars": "0.2900",
+      "yes_bid_size_fp": "455.00",
       "yes_sub_title": "Tampa Bay"
+    },
+    {
+      "can_close_early": true,
+      "close_time": "2026-11-01T00:00:00Z",
+      "created_time": "2026-10-28T05:32:12.95955Z",
+      "custom_strike": {
+        "baseball_team": "087f0ae7-c231-4dcd-b7e5-f026c1769e40"
+      },
+      "early_close_condition": "This market will close and expire after a winner is declared.",
+      "event_ticker": "KXMLBF3-26OCT282000MILTB",
+      "exchange_index": 3,
+      "expected_expiration_time": "2026-10-29T03:00:00Z",
+      "expiration_time": "2026-11-01T00:00:00Z",
+      "expiration_value": "",
+      "last_price_dollars": "0.4000",
+      "latest_expiration_time": "2026-11-01T00:00:00Z",
+      "market_type": "binary",
+      "no_ask_dollars": "0.6200",
+      "no_bid_dollars": "0.6000",
+      "no_sub_title": "Milwaukee",
+      "notional_value_dollars": "1.0000",
+      "occurrence_datetime": "2026-10-29T05:00:00Z",
+      "open_interest_fp": "24.48",
+      "open_time": "2026-10-28T05:40:00Z",
+      "previous_price_dollars": "0.0000",
+      "previous_yes_ask_dollars": "0.0000",
+      "previous_yes_bid_dollars": "0.0000",
+      "price_level_structure": "linear_cent",
+      "price_ranges": [
+        {
+          "end": "1.0000",
+          "start": "0.0000",
+          "step": "0.0100"
+        }
+      ],
+      "result": "",
+      "rules_primary": "If Milwaukee wins the first 3 innings of the Milwaukee vs Tampa Bay professional baseball game originally scheduled for Oct 28, 2026 at 8:00 PM EDT, then the market resolves to Yes.",
+      "rules_secondary": "This market refers to the first 3 innings of the Milwaukee vs Tampa Bay professional baseball game originally scheduled for Oct 28, 2026 at 8:00 PM EDT. If the score at the end of the first 3 innings is tied, the \"Tie\" strike will resolve to Yes and all team strikes will resolve to No. If this game is postponed or delayed, the market will remain open and close after the rescheduled game has finished (within two days).\n\nKalshi is not affiliated, associated, authorized, endorsed by, or in any way officially connected with the Governing League. All trademarks, logos, and brand names are the property of their respective owners.",
+      "settlement_bounds_type": "default",
+      "settlement_timer_seconds": 300,
+      "status": "active",
+      "strike_type": "structured",
+      "ticker": "KXMLBF3-26OCT282000MILTB-MIL",
+      "title": "Milwaukee first 3 innings winner",
+      "updated_time": "2026-10-28T05:40:00.28383Z",
+      "volume_24h_fp": "24.48",
+      "volume_fp": "24.48",
+      "yes_ask_dollars": "0.4000",
+      "yes_ask_size_fp": "201.01",
+      "yes_bid_dollars": "0.3800",
+      "yes_bid_size_fp": "450.01",
+      "yes_sub_title": "Milwaukee"
     }
   ]
 }
